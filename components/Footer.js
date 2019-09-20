@@ -19,7 +19,7 @@ import {
 
 
 const PaddingBox = styled(Box)({
-  padding: 1,
+  padding: 3,
 });
 
 const CenteredBox = styled(PaddingBox)({
