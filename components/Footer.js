@@ -42,11 +42,13 @@ const SocialLink = ({ iconComp, social }) => (
 );
 
 const WithLove = () => (
-  <CenteredBox mb={1}>
-    <Typography>made with </Typography>
-    <Favorite color="error" style={{ fontSize: 20 }}>Love</Favorite>
-    <Typography> by CeSIUM</Typography>
-  </CenteredBox>
+  <Grid item xs={12}>
+    <CenteredBox mb={1}>
+      <Typography>made with </Typography>
+      <Favorite color="error" style={{ fontSize: 20 }}>Love</Favorite>
+      <Typography> by CeSIUM</Typography>
+    </CenteredBox>
+  </Grid>
 );
 
 const Footer = ({facebook, twitter, instagram, github}) => (
@@ -56,9 +58,7 @@ const Footer = ({facebook, twitter, instagram, github}) => (
       <SocialLink social={`https://www.twitter.com/${twitter}`} iconComp={faTwitter} />
       <SocialLink social={`https://www.instagram.com/${instagram}`} iconComp={faInstagram} />
       <SocialLink social={`https://www.github.com/${github}`} iconComp={faGithub} />
-      <Grid item xs={12}>
-        <WithLove />
-      </Grid>
+      <WithLove />
     </Grid>
   </FooterBar>
 );
