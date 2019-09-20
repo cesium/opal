@@ -24,7 +24,11 @@ const Title = styled(Typography)({
 
 const BodyBox = styled(Box)({
     width: '75%',
-})
+});
+
+const Body = styled(Typography)({
+    textAlign: 'left',
+});
 
 function HorizontalInfoBar(props) {
 
@@ -37,9 +41,9 @@ function HorizontalInfoBar(props) {
             </TitleBox>
             <BodyBox>
                 {props.body.map((line, i) =>
-                    <Typography key={i} variant="body1" align="left">
+                    <Body key={i} variant="body1">
                         {line}
-                    </Typography>
+                    </Body>
                 )}
             </BodyBox>
         </Wrapper>
