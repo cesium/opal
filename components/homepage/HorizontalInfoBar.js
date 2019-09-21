@@ -1,6 +1,7 @@
 import { styled } from '@material-ui/core/styles';
 import { Box, Divider, Typography } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import Markdown from 'react-markdown'
 
 const Wrapper = styled(Box)({
     width: '100%',
@@ -15,6 +16,7 @@ const Wrapper = styled(Box)({
 const TitleBox = styled(Box)({
     width: '25%',
     paddingRight: '1em',
+    paddingTop: '1em',
 });
 
 const Title = styled(Typography)({
@@ -40,11 +42,9 @@ function HorizontalInfoBar(props) {
                 </Title>
             </TitleBox>
             <BodyBox>
-                {props.body.map((line, i) =>
-                    <Body key={i} variant="body1">
-                        {line}
-                    </Body>
-                )}
+                <Body variant="body1">
+                    <Markdown source={props.body} />
+                </Body>
             </BodyBox>
         </Wrapper>
     );
@@ -52,7 +52,7 @@ function HorizontalInfoBar(props) {
 
 HorizontalInfoBar.propTypes = {
     title: PropTypes.string.isRequired,
-    body: PropTypes.array.isRequired,
+    body: PropTypes.string.isRequired,
 };
 
 export default HorizontalInfoBar;
