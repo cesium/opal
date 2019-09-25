@@ -8,24 +8,17 @@ const Wrapper = styled(Grid)({
     paddingTop: '1em',
     paddingBottom: '1em',
     direction: 'row',
-    justify: 'space-between',
+    justify: 'center',
     alignItems: 'flex-start',
 });
 
 const TitleBox = styled(Grid)({
-    paddingRight: '1em',
-});
-
-const Title = styled(Typography)({
+    paddingBottom: '1em',
     textAlign: 'center',
     textTransform: 'uppercase',
 });
 
 const BodyBox = styled(Grid)({
-    paddingLeft: '1em',
-});
-
-const Body = styled(Typography)({
     textAlign: 'left',
 });
 
@@ -33,16 +26,16 @@ function HorizontalInfoBar(props) {
 
     return (
         <Wrapper container>
-            <TitleBox xs="3">
-                <Title variant="h5">
+            <TitleBox item sm="12" md="3">
+                <Typography variant="h5">
                     {props.title}
-                </Title>
+                </Typography>
             </TitleBox>
-            <BodyBox xs="9">
+            <BodyBox item sm="12" md="9">
                 {props.body.map((line, i) =>
-                    <Body key={i} variant="body1">
+                    <Typography key={i} variant="body1">
                         {line}
-                    </Body>
+                    </Typography>
                 )}
             </BodyBox>
         </Wrapper>
