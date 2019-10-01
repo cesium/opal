@@ -31,11 +31,18 @@ const FooterBar = styled(AppBar)({
   position: 'static',
 });
 
+const DynamicFontAwesomeIcon = styled(FontAwesomeIcon)({
+  color: 'white',
+  '&:hover': {
+    color: '#29b6f6',
+  }
+});
+
 const SocialLink = ({ iconComp, social }) => (
   <Grid item>
     <PaddingBox mt={1}>
       <Link href={social}>
-        <FontAwesomeIcon icon={iconComp} size="2x" color="white" />
+        <DynamicFontAwesomeIcon icon={iconComp} size="2x"/>
       </Link>
     </PaddingBox>
   </Grid>
