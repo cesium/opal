@@ -30,6 +30,10 @@ const TextBox = styled(Box)({
     color: 'white',
 });
 
+const Bold = styled(Typography)({
+    fontWeight: 'bold'
+})
+
 const FeaturedImage = ({ src, title, subtitle }) => (
     <Grid item>
         <Image src={src} />
@@ -53,9 +57,9 @@ function FeaturedImages(props) {
     return (
             <Wrapper bgcolor="secondary.main">
                 <TitleBox xs="12">
-                    <Typography variant="h5">
+                    <Bold variant="h5">
                         {props.title}
-                    </Typography>
+                    </Bold>
                 </TitleBox>
                 <ImageBox container direction="row" justify="center" alignItems="center" spacing={4}>
                     {props.featured.map((data, i) =>
