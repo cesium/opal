@@ -1,5 +1,5 @@
 import { styled } from '@material-ui/core/styles';
-import { Divider, Typography, Grid } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled(Grid)({
@@ -7,9 +7,6 @@ const Wrapper = styled(Grid)({
     paddingRight: '2em',
     paddingTop: '1em',
     paddingBottom: '1em',
-    direction: 'row',
-    justify: 'center',
-    alignItems: 'flex-start',
 });
 
 const TitleBox = styled(Grid)({
@@ -22,14 +19,18 @@ const BodyBox = styled(Grid)({
     textAlign: 'left',
 });
 
+const Bold = styled(Typography)({
+    fontWeight: 'bold',
+})
+
 function HorizontalInfoBar(props) {
 
     return (
-        <Wrapper container>
+        <Wrapper container direction="row" justify="center" alignItems="flex-start" >
             <TitleBox item sm="12" md="3">
-                <Typography variant="h5">
+                <Bold variant="h5">
                     {props.title}
-                </Typography>
+                </Bold>
             </TitleBox>
             <BodyBox item sm="12" md="9">
                 {props.body.map((line, i) =>
