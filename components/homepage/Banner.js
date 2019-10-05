@@ -3,15 +3,15 @@ import { Typography, Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled(Grid)({
-    paddingTop: '1em',
     paddingBottom: '1em',
     position: 'relative',
     overflow: 'hidden',
+    zIndex: '-5',
 });
 
 const Body = styled(Grid)({
     position: 'absolute',
-    paddingTop: '5%',
+    paddingTop: '15%',
     paddingLeft: '5%',
     maxWidth: '60%',
     overflow: 'hidden',
