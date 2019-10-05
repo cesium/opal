@@ -1,50 +1,47 @@
 import { styled } from '@material-ui/core/styles';
-import { Typography, Box } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
-const Wrapper = styled(Box)({
+const Wrapper = styled(Grid)({
     paddingTop: '1em',
     paddingBottom: '1em',
     position: 'relative',
+    overflow: 'hidden',
 });
 
-const Image = ({ src }) => (
-    <Box>
-        <img src={src} width="100%"/>
-    </Box>
-);
+const Body = styled(Grid)({
+    position: 'absolute',
+    paddingTop: '5%',
+    paddingLeft: '5%',
+    maxWidth: '60%',
+    overflow: 'hidden',
+});
 
-const StyledTitle = styled(Typography)({
+const StyledText = styled(Typography)({
     color: 'white',
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    maxWidth: '50%',
-    lineHeight: '1.2em',
-    position: 'relative',
+    lineHeight: '1.1em',
+    textShadow: '0.08em 0.08em black',
+    paddingBottom: '0.1em',
+    overflow: 'hidden'
 });
 
-const Body = styled(Box)({
-    position: 'absolute',
-    top: '2em',
-    left: '2em',
-})
-
-const StyledSubTitle = styled(StyledTitle)({
-    position: 'relative',
-    paddingTop: '1em',
-});
+const Text = ({ src, variant }) => (
+    <Grid item>
+        <StyledText variant={variant}>
+            {src}
+        </StyledText>
+    </Grid>
+);
 
 function Banner(props) {
     return (
-            <Wrapper>
-                <Image src={props.src}/>
-                <Body>
-                    <StyledTitle variant="h2">
-                        {props.title}
-                    </StyledTitle>
-                    <StyledSubTitle variant="h6">
-                        {props.subtitle}
-                    </StyledSubTitle>
+            <Wrapper container direction="column">
+                <img src={props.src} width="100%"/>
+                <Body container direction="column" justify="center" alignItems="flex-start">
+                    <Text src={props.title} variant="h1" />
+                    <Text src={props.subtitle} variant="h5" />
                 </Body>
             </Wrapper>
     );
