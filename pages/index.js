@@ -1,18 +1,10 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import Layout from '../components/Layout';
+import Banner from '../components/homepage/Banner';
+import home from '../static/homepage.json';
 
 const Index = () => (
   <Layout>
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1">
-          moonstone v2
-        </Typography>
-      </Box>
-    </Container>
+    <Banner src={home.banner.src} title={home.banner.title} subtitle={home.banner.subtitle} />
   </Layout>
   );
 
