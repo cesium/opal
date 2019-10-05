@@ -40,8 +40,8 @@ function Banner(props) {
             <Wrapper container direction="column">
                 <img src={props.src} width="100%"/>
                 <Body container direction="column" justify="center" alignItems="flex-start">
-                    <Text src={props.title} variant="h1" />
-                    <Text src={props.subtitle} variant="h5" />
+                    <Text src={props.title} variant="h2" />
+                    <Text src={props.subtitle} variant="h6" />
                 </Body>
             </Wrapper>
     );
