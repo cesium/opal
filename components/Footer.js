@@ -28,7 +28,8 @@ const CenteredBox = styled(PaddingBox)({
 });
 
 const FooterBar = styled(AppBar)({
-  position: 'static',
+  position: 'absolute',
+  bottom: 0,
 });
 
 const DynamicFontAwesomeIcon = styled(FontAwesomeIcon)({
@@ -59,7 +60,7 @@ const WithLove = () => (
 );
 
 const Footer = ({facebook, twitter, instagram, github}) => (
-  <FooterBar color="secondary">
+  <FooterBar color="secondary" position="bottom">
     <Grid container justify="center" alignItems="center">
       <SocialLink social={`https://www.facebook.com/${facebook}`} iconComp={faFacebook} />
       <SocialLink social={`https://www.twitter.com/${twitter}`} iconComp={faTwitter} />
