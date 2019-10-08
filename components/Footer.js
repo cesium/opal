@@ -60,7 +60,7 @@ const WithLove = () => (
 );
 
 const Footer = ({facebook, twitter, instagram, github}) => (
-  <FooterBar color="secondary" position="bottom">
+  <FooterBar color="secondary" position="relative">
     <Grid container justify="center" alignItems="center">
       <SocialLink social={`https://www.facebook.com/${facebook}`} iconComp={faFacebook} />
       <SocialLink social={`https://www.twitter.com/${twitter}`} iconComp={faTwitter} />
