@@ -16,7 +16,7 @@ import {
   faInstagram,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
-
+import theme from '../static/theme';
 
 const PaddingBox = styled(Box)({
   padding: 3,
@@ -38,7 +38,7 @@ const SocialLink = ({ iconComp, social }) => (
   <Grid item>
     <PaddingBox mt={1}>
       <Link href={social}>
-        <DynamicFontAwesomeIcon icon={iconComp} size="2x" hover="primary"/>
+        <DynamicFontAwesomeIcon icon={iconComp} size="2x" hover={theme.palette.secondary.light}/>
       </Link>
     </PaddingBox>
   </Grid>
