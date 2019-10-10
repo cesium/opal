@@ -6,7 +6,6 @@ import FeaturedImages from '../components/homepage/FeaturedImages';
 import home from '../static/homepage.json'
 import Layout from '../components/Layout';
 import HorizontalInfoBar from '../components/homepage/HorizontalInfoBar';
-import home from '../static/homepage.json'
 
 const Index = () => (
     <Layout>
