@@ -6,12 +6,7 @@ import Layout from '../components/Layout';
 
 const Index = () => (
   <Layout>
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1">
-          moonstone v2
-        </Typography>
-      </Box>
+    <Container style={{ backgroundColor: '#cfe8fc', height: '1000px'}}>
     </Container>
   </Layout>
   );

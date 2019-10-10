@@ -27,23 +27,18 @@ const CenteredBox = styled(PaddingBox)({
   justifyContent: 'center',
 });
 
-const FooterBar = styled(AppBar)({
-  position: 'absolute',
-  bottom: 0,
-});
-
-const DynamicFontAwesomeIcon = styled(FontAwesomeIcon)({
+const DynamicFontAwesomeIcon = styled(FontAwesomeIcon)(props => ({
   color: 'white',
   '&:hover': {
-    color: '#29b6f6',
+    color: props.hover,
   }
-});
+}));
 
 const SocialLink = ({ iconComp, social }) => (
   <Grid item>
     <PaddingBox mt={1}>
       <Link href={social}>
-        <DynamicFontAwesomeIcon icon={iconComp} size="2x"/>
+        <DynamicFontAwesomeIcon icon={iconComp} size="2x" hover="primary"/>
       </Link>
     </PaddingBox>
   </Grid>
@@ -60,7 +55,7 @@ const WithLove = () => (
 );
 
 const Footer = ({facebook, twitter, instagram, github}) => (
-  <FooterBar color="secondary" position="relative">
+  <AppBar color="secondary" position="relative">
     <Grid container justify="center" alignItems="center">
       <SocialLink social={`https://www.facebook.com/${facebook}`} iconComp={faFacebook} />
       <SocialLink social={`https://www.twitter.com/${twitter}`} iconComp={faTwitter} />
@@ -68,7 +63,7 @@ const Footer = ({facebook, twitter, instagram, github}) => (
       <SocialLink social={`https://www.github.com/${github}`} iconComp={faGithub} />
       <WithLove />
     </Grid>
-  </FooterBar>
+  </AppBar>
 );
 
 Footer.propTypes = {
