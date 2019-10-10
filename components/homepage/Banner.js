@@ -3,7 +3,6 @@ import { Typography, Grid, Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled(Grid)({
-    paddingBottom: '1em',
     position: 'relative',
     overflow: 'hidden',
     zIndex: '-5',
