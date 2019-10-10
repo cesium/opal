@@ -6,8 +6,6 @@ import Layout from '../components/Layout';
 
 const Index = () => (
   <Layout>
-    <Container style={{ backgroundColor: '#cfe8fc', height: '1000px'}}>
-    </Container>
   </Layout>
   );
 
