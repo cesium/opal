@@ -1,5 +1,5 @@
 import { styled } from '@material-ui/core/styles';
-import { Typography, Grid } from '@material-ui/core';
+import { Typography, Grid, Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled(Grid)({
@@ -34,10 +34,16 @@ const Text = ({ src, variant }) => (
     </Grid>
 );
 
+const Image = styled(Box)({
+    maxHeight: '100vh',
+});
+
 function Banner(props) {
     return (
             <Wrapper container direction="column">
-                <img src={props.src} width="100%"/>
+                <Image>
+                    <img width="100%" src={props.src}/>
+                </Image>
                 <Body container direction="column" justify="center" alignItems="flex-start">
                     <Text src={props.title} variant="h2" />
                     <Text src={props.subtitle} variant="h4" />

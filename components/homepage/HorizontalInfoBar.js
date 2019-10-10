@@ -6,7 +6,7 @@ const Wrapper = styled(Grid)({
     paddingLeft: '2em',
     paddingRight: '2em',
     paddingTop: '1em',
-    paddingBottom: '2em',
+    paddingBottom: '1em',
 });
 
 const TitleBox = styled(Grid)({
