@@ -13,7 +13,7 @@ const Body = styled(Grid)({
     position: 'absolute',
     paddingTop: '15%',
     paddingLeft: '5%',
-    maxWidth: '60%',
+    maxWidth: '90%',
     overflow: 'hidden',
 });
 
@@ -23,8 +23,7 @@ const StyledText = styled(Typography)({
     textTransform: 'uppercase',
     lineHeight: '1.1em',
     textShadow: '0.08em 0.08em black',
-    paddingBottom: '0.1em',
-    overflow: 'hidden'
+    paddingBottom: '0.2em',
 });
 
 const Text = ({ src, variant }) => (
@@ -41,7 +40,7 @@ function Banner(props) {
                 <img src={props.src} width="100%"/>
                 <Body container direction="column" justify="center" alignItems="flex-start">
                     <Text src={props.title} variant="h2" />
-                    <Text src={props.subtitle} variant="h6" />
+                    <Text src={props.subtitle} variant="h4" />
                 </Body>
             </Wrapper>
     );
