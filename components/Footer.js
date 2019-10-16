@@ -27,15 +27,15 @@ const CenteredBox = styled(PaddingBox)({
   justifyContent: 'center',
 });
 
-const DynamicFontAwesomeIcon = styled(FontAwesomeIcon)(props => ({
+const DynamicFontAwesomeIcon = styled(FontAwesomeIcon)((props) => ({
   color: 'white',
   '&:hover': {
     color: props.hover,
-  }
+  },
 }));
 
 const StyledAppBar = styled(AppBar)({
-  position: 'absolute',
+  position: 'relative',
   bottom: 0,
 });
 
@@ -43,7 +43,7 @@ const SocialLink = ({ iconComp, social }) => (
   <Grid item>
     <PaddingBox mt={1}>
       <Link href={social}>
-        <DynamicFontAwesomeIcon icon={iconComp} size="2x" hover={theme.palette.secondary.light}/>
+        <DynamicFontAwesomeIcon icon={iconComp} size="2x" hover={theme.palette.secondary.light} />
       </Link>
     </PaddingBox>
   </Grid>
@@ -59,7 +59,9 @@ const WithLove = () => (
   </Grid>
 );
 
-const Footer = ({facebook, twitter, instagram, github}) => (
+const Footer = ({
+    facebook, twitter, instagram, github,
+ }) => (
   <StyledAppBar color="secondary" position="relative">
     <Grid container justify="center" alignItems="center">
       <SocialLink social={`https://www.facebook.com/${facebook}`} iconComp={faFacebook} />
