@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "src": "../static/good_jesus.jpg",
+        "title": "23 a 26 de fevereiro",
+        "subtitle": "Braga, Portugal"
+    },
     "featuredSpeakers": {
         "title": "Oradores Confirmados",
         "featured": [
