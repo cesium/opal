@@ -1,5 +1,8 @@
 {
-  "event": "ENEI",
+  "event": {
+    "title": "ENEI",
+    "description": "O Encontro Nacional de Estudantes de Informática regressa nos dias 23, 24, 25 e 26 de fevereiro e volta para marcar a diferença na cidade de Braga!"
+  },
   "navbar": {
     "pages": [
       { "name": "Agenda" },
@@ -11,5 +14,12 @@
       { "name": "FAQ" }
     ],
     "logo": "/static/Enei_logo_white.png"
+  },
+  "social": {
+    "facebook": "ENEIConf",
+    "twitter": "eneiconf",
+    "instagram": "eneiconf",
+    "github": "eneiconf",
+    "medium": "eneiconf"
   }
 }

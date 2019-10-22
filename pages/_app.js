@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../static/theme';
-import global from '../static/global.json';
+import { event } from '../static/global.json';
 
 export default class MyApp extends App {
   componentDidMount() {
@@ -21,7 +21,11 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
-          <title>{global.event}</title>
+          <title>{event.title}</title>
+          <meta name="description" content={event.description} />
+          <meta property="og:type" content="website" />
+          <meta name="og:title" property="og:title" content={event.title} />
+          <meta name="og:description" property="og:description" content={event.description} />
         </Head>
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

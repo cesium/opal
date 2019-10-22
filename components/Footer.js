@@ -15,6 +15,7 @@ import {
   faTwitter,
   faInstagram,
   faGithub,
+  faMedium,
 } from '@fortawesome/free-brands-svg-icons';
 import theme from '../static/theme';
 
@@ -39,11 +40,11 @@ const StyledAppBar = styled(AppBar)({
   bottom: 0,
 });
 
-const SocialLink = ({ iconComp, social }) => (
+const SocialLink = ({ icon, url }) => (
   <Grid item>
     <PaddingBox mt={1}>
-      <Link href={social}>
-        <DynamicFontAwesomeIcon icon={iconComp} size="2x" hover={theme.palette.secondary.light} />
+      <Link href={url}>
+        <DynamicFontAwesomeIcon icon={icon} size="2x" hover={theme.palette.secondary.light} />
       </Link>
     </PaddingBox>
   </Grid>
@@ -60,14 +61,15 @@ const WithLove = () => (
 );
 
 const Footer = ({
-    facebook, twitter, instagram, github,
+    facebook, twitter, instagram, github, medium,
  }) => (
   <StyledAppBar color="secondary" position="relative">
     <Grid container justify="center" alignItems="center">
-      <SocialLink social={`https://www.facebook.com/${facebook}`} iconComp={faFacebook} />
-      <SocialLink social={`https://www.twitter.com/${twitter}`} iconComp={faTwitter} />
-      <SocialLink social={`https://www.instagram.com/${instagram}`} iconComp={faInstagram} />
-      <SocialLink social={`https://www.github.com/${github}`} iconComp={faGithub} />
+      <SocialLink url={`https://www.facebook.com/${facebook}`} icon={faFacebook} />
+      <SocialLink url={`https://www.twitter.com/${twitter}`} icon={faTwitter} />
+      <SocialLink url={`https://www.instagram.com/${instagram}`} icon={faInstagram} />
+      <SocialLink url={`https://www.github.com/${github}`} icon={faGithub} />
+      <SocialLink url={`https://www.medium.com/${medium}`} icon={faMedium} />
       <WithLove />
     </Grid>
   </StyledAppBar>
@@ -78,11 +80,12 @@ Footer.propTypes = {
   twitter: PropTypes.string.isRequired,
   instagram: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
+  medium: PropTypes.string.isRequired,
 };
 
 SocialLink.propTypes = {
-  iconComp: PropTypes.object.isRequired,
-  social: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default Footer;
