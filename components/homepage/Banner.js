@@ -1,3 +1,4 @@
+import React from 'react';
 import { styled } from '@material-ui/core/styles';
 import { Typography, Grid, Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
@@ -10,8 +11,8 @@ const Wrapper = styled(Grid)({
 
 const Body = styled(Grid)({
     position: 'absolute',
-    paddingTop: '15%',
-    paddingLeft: '5%',
+    paddingTop: '25vh',
+    paddingLeft: '5vw',
     maxWidth: '90%',
     overflow: 'hidden',
 });
@@ -33,19 +34,22 @@ const Text = ({ src, variant }) => (
     </Grid>
 );
 
-const Image = styled(Box)({
-    maxHeight: '100vh',
-});
+const Image = styled(Box)(({ src }) => ({
+    height: '100vh',
+    width: '100vw',
+    backgroundImage: `url(${src})`,
+    backgroundPositionX: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+}));
 
-function Banner(props) {
+function Banner({ src, title, subtitle }) {
     return (
             <Wrapper container direction="column">
-                <Image>
-                    <img width="100%" src={props.src}/>
-                </Image>
+                <Image src={src} />
                 <Body container direction="column" justify="center" alignItems="flex-start">
-                    <Text src={props.title} variant="h2" />
-                    <Text src={props.subtitle} variant="h4" />
+                    <Text src={title} variant="h2" />
+                    <Text src={subtitle} variant="h4" />
                 </Body>
             </Wrapper>
     );
@@ -54,7 +58,12 @@ function Banner(props) {
 Banner.propTypes = {
     src: PropTypes.string.isRequired,
     title: PropTypes.string,
-    subtitle: PropTypes.string
-}
+    subtitle: PropTypes.string,
+};
+
+Text.propTypes = {
+    src: PropTypes.string,
+    variant: PropTypes.string,
+};
 
 export default Banner;
