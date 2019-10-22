@@ -1,0 +1,15 @@
+{
+  "event": "ENEI",
+  "navbar": {
+    "pages": [
+      { "name": "Agenda" },
+      { "name": "Desafios" },
+      { "name": "Workshops" },
+      { "name": "Equipa" },
+      { "name": "Preços" },
+      { "name": "Blog", "link": "https://medium.com/eneiconf" },
+      { "name": "FAQ" }
+    ],
+    "logo": "/static/Enei_logo_white.png"
+  }
+}
