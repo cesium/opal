@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Box from '@material-ui/core/Box';
 import Footer from './Footer';
 import NavBar from './navbar/NavBar';
-import { social } from '../static/global.json';
+import { social } from '../static/config/global.json';
 
 const Layout = ({ children }) => (
   <Box>

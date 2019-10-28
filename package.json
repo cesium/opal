@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "lint": "echo \"Running ESLint...\"; eslint --fix --ignore-path .prettierignore components; echo \"Running Prettier...\"; prettier --write './**/*.{json,css,md}'",
     "build": "next build",
     "start": "next start"
   },
@@ -24,9 +25,11 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2"
   }

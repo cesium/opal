@@ -1,7 +1,7 @@
 import React from 'react';
 import FeaturedImages from '../components/homepage/FeaturedImages';
 import Banner from '../components/homepage/Banner';
-import home from '../static/homepage.json';
+import home from '../static/config/homepage.json';
 import Layout from '../components/Layout';
 import HorizontalInfoBar from '../components/homepage/HorizontalInfoBar';
 

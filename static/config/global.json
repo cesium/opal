@@ -13,7 +13,8 @@
       { "name": "Blog", "link": "https://medium.com/eneiconf" },
       { "name": "FAQ" }
     ],
-    "logo": "/static/Enei_logo_white.png"
+    "logo": "/static/img/eneiLogoWhite.png",
+    "mobileMenuIcon": "/static/img/burger.png"
   },
   "social": {
     "facebook": "ENEIConf",

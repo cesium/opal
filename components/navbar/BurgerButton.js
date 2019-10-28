@@ -9,7 +9,7 @@ import {
   IconButton,
 } from '@material-ui/core';
 import { styled } from '@material-ui/styles';
-import global from '../../static/global.json';
+import global from '../../static/config/global.json';
 import theme from '../../static/theme';
 
 // As far as I could understand from the documentation,
@@ -45,7 +45,7 @@ function BurgerButton() {
   return (
     <Box>
       <IconButton onClick={handleClick}>
-        <img width="25‰" src="/static/burger3.png" alt="" />
+        <img width="25‰" src={global.navbar.mobileMenuIcon} alt="" />
       </IconButton>
       <Drawer
         classes={{ paper: classes.paper }}
