@@ -10,7 +10,7 @@ import {
   Grid,
   useMediaQuery,
 } from '@material-ui/core';
-import global from '../../static/config/global.json';
+import global from '../../data/global.json';
 import BurgerButton from './BurgerButton';
 
 export default function ButtonAppBar() {

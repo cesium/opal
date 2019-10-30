@@ -9,7 +9,7 @@ import {
   IconButton,
 } from '@material-ui/core';
 import { styled } from '@material-ui/styles';
-import global from '../../static/config/global.json';
+import global from '../../data/global.json';
 import theme from '../../static/theme';
 
 // As far as I could understand from the documentation,
@@ -20,15 +20,12 @@ const useStyles = makeStyles({
   },
 });
 
-const Spacer = styled('div')(
-  theme.mixins.toolbar,
-);
+const Spacer = styled('div')(theme.mixins.toolbar);
 
 const Item = styled(ListItemText)({
   color: theme.navbar.drawer.textColor,
   textAlign: 'right',
 });
-
 
 function BurgerButton() {
   const classes = useStyles();
@@ -47,22 +44,13 @@ function BurgerButton() {
       <IconButton onClick={handleClick}>
         <img width="25‰" src={global.navbar.mobileMenuIcon} alt="" />
       </IconButton>
-      <Drawer
-        classes={{ paper: classes.paper }}
-        anchor="top"
-        open={open}
-      >
-        <div
-          className={classes.list}
-          role="presentation"
-        >
+      <Drawer classes={{ paper: classes.paper }} anchor="top" open={open}>
+        <div className={classes.list} role="presentation">
           <Spacer />
           <List>
             {global.navbar.pages.map((page) => (
               <ListItem button key={page.name}>
-                <Item
-                  primary={page.name}
-                />
+                <Item primary={page.name} />
               </ListItem>
             ))}
           </List>

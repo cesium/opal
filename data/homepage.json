@@ -1,0 +1,46 @@
+{
+  "banner": {
+    "src": "../static/img/bomJesus.jpg",
+    "title": "23 a 26 de fevereiro",
+    "subtitle": "Braga, Portugal"
+  },
+  "featuredSpeakers": {
+    "title": "Oradores Confirmados",
+    "featured": [
+      {
+        "src": "https://bit.ly/2miPLvY",
+        "title": "Obi-Wan Kenobi",
+        "subtitle": "High ground expert"
+      },
+      {
+        "src": "https://bit.ly/2ml4q9Z",
+        "title": "Darth Vader",
+        "subtitle": "Bad parenting"
+      },
+      {
+        "src": "https://bit.ly/2m83ANS",
+        "title": "Princess Leia",
+        "subtitle": "Maria Eduarda"
+      },
+      {
+        "src": "https://bit.ly/2n9D4Uo",
+        "title": "Chewbacca",
+        "subtitle": "Awqehgjdashdgajd"
+      },
+      {
+        "src": "https://bit.ly/2nKH9hW",
+        "title": "Luke Skywalker",
+        "subtitle": "Not a walking expert"
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre o evento",
+    "body": [
+      "Já estavas com saudades? Não desesperes!",
+      "O Encontro Nacional de Estudantes de Informática regressa nos dias 23, 24, 25 e 26 de fevereiro e volta para marcar a diferença na cidade de Braga!",
+      "Mais novidades serão anunciadas, acompanha-nos nas nossas redes sociais!",
+      "Encontramo-nos em breve!"
+    ]
+  }
+}
