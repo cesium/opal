@@ -12,6 +12,7 @@ import {
 } from '@material-ui/core';
 import global from '../../data/global.json';
 import BurgerButton from './BurgerButton';
+import Link from '../Link';
 
 export default function ButtonAppBar() {
   const theme = useTheme();
@@ -33,6 +34,7 @@ export default function ButtonAppBar() {
   });
 
   const Entry = styled(Button)({
+    color: theme.navbar.textColor,
     '&:hover': {
       backgroundColor: theme.navbar.entryBackgroundColor,
     },
@@ -57,7 +59,9 @@ export default function ButtonAppBar() {
               {global.navbar.pages
                 .map((page) => (
                   <Grid item>
-                    <Entry color="inherit">{page.name}</Entry>
+                    <Link href={page.link}>
+                      <Entry color="inherit">{page.name}</Entry>
+                    </Link>
                   </Grid>
                 ))
                 .reverse()}

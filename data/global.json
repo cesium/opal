@@ -5,13 +5,8 @@
   },
   "navbar": {
     "pages": [
-      { "name": "Agenda" },
-      { "name": "Desafios" },
-      { "name": "Workshops" },
-      { "name": "Equipa" },
-      { "name": "Preços" },
-      { "name": "Blog", "link": "https://medium.com/eneiconf" },
-      { "name": "FAQ" }
+      { "name": "Index", "link": "/" },
+      { "name": "Blog", "link": "https://medium.com/eneiconf" }
     ],
     "logo": "/static/img/eneiLogoWhite.png",
     "mobileMenuIcon": "/static/img/burger.png"

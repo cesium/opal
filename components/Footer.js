@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, AppBar, Link, Box, Typography } from '@material-ui/core/';
+import { Grid, AppBar, Box, Typography } from '@material-ui/core/';
 import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
 import Favorite from '@material-ui/icons/Favorite';
@@ -11,6 +11,7 @@ import {
   faGithub,
   faMedium,
 } from '@fortawesome/free-brands-svg-icons';
+import Link from './Link';
 import theme from '../static/theme';
 
 const PaddingBox = styled(Box)({

@@ -22,6 +22,7 @@ const theme = responsiveFontSizes(
     navbar: {
       backgroundColor: '#052c49',
       entryBackgroundColor: 'rgba(255,255,255,0.3)',
+      textColor: '#fff',
       drawer: {
         backgroundColor: '#052c49',
         textColor: '#fff',

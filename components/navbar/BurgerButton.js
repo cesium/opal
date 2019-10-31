@@ -10,6 +10,7 @@ import {
 } from '@material-ui/core';
 import { styled } from '@material-ui/styles';
 import global from '../../data/global.json';
+import Link from '../Link';
 import theme from '../../static/theme';
 
 // As far as I could understand from the documentation,
@@ -49,9 +50,11 @@ function BurgerButton() {
           <Spacer />
           <List>
             {global.navbar.pages.map((page) => (
-              <ListItem button key={page.name}>
-                <Item primary={page.name} />
-              </ListItem>
+              <Link href={page.link}>
+                <ListItem button key={page.name}>
+                  <Item primary={page.name} />
+                </ListItem>
+              </Link>
             ))}
           </List>
         </div>
