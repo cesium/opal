@@ -1,1 +1,10 @@
-{ "name": "nextjs" }
+{
+  "name": "opal",
+  "scope": "cesiuminho",
+  "version": 2,
+  "public": true,
+  "alias": ["stg.enei.pt"],
+  "github": {
+    "autoAlias": false
+  }
+}
