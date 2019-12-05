@@ -4,8 +4,8 @@ import { Typography, Grid, Avatar, Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled(Box)({
-  paddingLeft: '2em',
-  paddingRight: '2em',
+  paddingLeft: '2%',
+  paddingRight: '2%',
   paddingTop: '1em',
   paddingBottom: '1em',
 });

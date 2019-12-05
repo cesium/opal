@@ -11,12 +11,15 @@ const Index = () => (
       src={home.banner.src}
       title={home.banner.title}
       subtitle={home.banner.subtitle}
-      spot={home.banner.spot}
     />
-    <HorizontalInfoBar title={home.about.title} body={home.about.body} />
     <FeaturedImages
       title={home.featuredSpeakers.title}
       featured={home.featuredSpeakers.featured}
+    />
+    <HorizontalInfoBar
+      title={home.about.title}
+      body={home.about.body}
+      url={home.about.teaserURL}
     />
   </Layout>
 );
