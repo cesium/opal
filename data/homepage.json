@@ -78,5 +78,28 @@
           "Phone & email support"
         ]
       }
-    ]
+  ],
+  "where": {
+    "location": "Altice Forum Braga",
+    "subtitle": "Como chegar",
+    "means": {
+      "plane": {
+        "title": "De Avião",
+        "description": "O aeroporto mais próximo da cidade de Braga é o Aeroporto Sá Carneiro, no Porto, a cerca de 50 km de distância. A partir deste tem à disposição diversas possibilidades para chegar ao campus de Gualtar: de táxi a viagem demora cerca de 40 minutos e custa, aproximadamente, 60 euros; poderá também utilizar o metro para se deslocar até à estação da CP de Campanhã (linha violeta, Aeroporto - Estádio do Dragão), onde poderá apanhar o comboio suburbano para Braga."
+      },
+      "bus": {
+        "title": "De Autocarro",
+        "description": "Poderá viajar desde o centro e arredores de Braga até ao campus de Gualtar recorrendo aos diversos autocarros dos Transportes Urbanos de Braga (TUB). A partir de outras cidades do país existem diversas companhias com autocarros directos até Braga. A Rede Expressos possui a cobertura mais alargada. Os autocarros regionais e expresso terminam a sua viajem na central de camionagem, no centro da cidade."
+      },
+      "train": {
+        "title": "De Comboio",
+        "description": "Recorrendo ao portal da CP poderá consultar todos os horários e as linhas disponíveis para chegar a Braga. O autocarro 43 dos TUB faz o percurso desde a estação da CP até ao campus de Gualtar, com partidas de 15 em 15 minutos."
+      },
+      "car": {
+        "title": "De Carro",
+        "description": "Para o campus de gualtar deverá introduzir como ponto de chegada a seguinte morada: Rua da Universidade, Gualtar, Portugal ou as seguintes coordenadas GPS 41.56131, -8.393804"
+      }
+    },
+    "background": "https://bit.ly/2RQEJeJ"
+  }
 }
