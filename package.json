@@ -6,6 +6,7 @@
     "dev": "next dev",
     "lint": "echo \"Running ESLint...\"; eslint --fix --ignore-path .prettierignore .; echo \"Running Prettier...\"; prettier --write './**/*.{json,js,css,md}'",
     "build": "next build",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
