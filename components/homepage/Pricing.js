@@ -13,40 +13,47 @@ import {
 import { styled } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import Link from '../Link';
+import TopSection from '../TopSection';
 import theme from '../../static/theme';
-
-const StyledGrid = styled(Grid)({
-  marginTop: '1em',
-  marginBottom: '1em',
-  justifyContent: 'center',
-});
 
 const StyledBox = styled(Box)({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'baseline',
-  marginBottom: '0.2em',
+  padding: '0.5rem',
+});
+
+const StyledCard = styled(Card)({
+  height: '100%',
 });
 
 const StyledCardHeader = styled(CardHeader)({
   backgroundColor: theme.palette.grey[200],
+  textColor: 'white',
 });
 
 const StyledCardActions = styled(CardActions)({
   justifyContent: 'center',
+  margin: '0.8em',
 });
 
-function PricingCard({ title, price, link, description }) {
+const StyledCardContent = styled(CardContent)({
+  paddingBottom: '0px',
+});
+
+function PricingCard({ title, subtitle, price, link, description }) {
   const priceLine = `${price}€`;
   return (
-    <Card>
+    <StyledCard>
       <StyledCardHeader
         title={title}
+        subheader={subtitle}
         titleTypographyProps={{ align: 'center' }}
+        subheaderTypographyProps={{ align: 'center' }}
       />
-      <CardContent>
+      <StyledCardContent>
         <StyledBox>
-          <Typography component="h2" variant="h3" color="textPrimary">
+          <Typography component="h2" variant="h3">
             {priceLine}
           </Typography>
         </StyledBox>
@@ -55,7 +62,7 @@ function PricingCard({ title, price, link, description }) {
             {line}
           </Typography>
         ))}
-      </CardContent>
+      </StyledCardContent>
       <StyledCardActions>
         <Link href={link}>
           <Button variant="contained" color="secondary">
@@ -63,31 +70,41 @@ function PricingCard({ title, price, link, description }) {
           </Button>
         </Link>
       </StyledCardActions>
-    </Card>
+    </StyledCard>
   );
 }
 
 function Pricing({ tiers }) {
   return (
-    <Container maxWidth="md" component="main">
-      <StyledGrid container spacing={5}>
-        {tiers.map((tier) => (
-          <Grid item key={tier.title} xs={8} sm={6} md={4}>
-            <PricingCard
-              title={tier.title}
-              price={tier.price}
-              link={tier.link}
-              description={tier.description}
-            />
-          </Grid>
-        ))}
-      </StyledGrid>
-    </Container>
+    <TopSection text="Bilhetes" color={theme.palette.secondary.light} title>
+      <Container maxWidth="md" component="main">
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="stretch"
+          spacing={5}
+        >
+          {tiers.map((tier) => (
+            <Grid item key={tier.title} xs={10} sm={6} md={4}>
+              <PricingCard
+                title={tier.title}
+                subtitle={tier.subtitle}
+                price={tier.price}
+                link={tier.link}
+                description={tier.description}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </TopSection>
   );
 }
 
 PricingCard.propTypes = {
   title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
   description: PropTypes.arrayOf(PropTypes.string).isRequired,
   price: PropTypes.number.isRequired,
   link: PropTypes.string.isRequired,

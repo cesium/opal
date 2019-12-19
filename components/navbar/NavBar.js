@@ -10,6 +10,7 @@ import {
   Grid,
   useMediaQuery,
 } from '@material-ui/core';
+import { useRouter } from 'next/router';
 import global from '../../data/global.json';
 import BurgerButton from './BurgerButton';
 import Link from '../Link';
@@ -17,8 +18,12 @@ import Link from '../Link';
 export default function ButtonAppBar() {
   const theme = useTheme();
   const desktopSize = useMediaQuery(theme.breakpoints.up('md'));
-  const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 1 });
-
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 1,
+  });
+  const router = useRouter();
+  const isIndex = router.pathname === '/';
   const Div = styled('div')({
     flexGrow: 1,
   });
@@ -44,10 +49,13 @@ export default function ButtonAppBar() {
     <Div>
       <NavBar elevation={trigger ? 3 : 0}>
         <Toolbar>
-          <Logo edge="start">
-            <img width="90‰" src={global.navbar.logo} alt="" />
-          </Logo>
-
+          {(trigger || !isIndex) && (
+            <Link href="/">
+              <Logo edge="start">
+                <img width="80‰" src={global.navbar.logo} alt="" />
+              </Logo>
+            </Link>
+          )}
           {desktopSize ? (
             <Grid
               container

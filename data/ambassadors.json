@@ -1,0 +1,67 @@
+[
+  {
+    "university": "Universidade de Évora",
+    "elements": [
+      {
+        "name": "Diogo Solipa",
+        "img": "/static/img/ambassadors/Evora_DiogoSalipa.jpg",
+        "facebook": "diogo.solipa"
+      }
+    ]
+  },
+  {
+    "university": "Universidade Nova de Lisboa",
+    "elements": [
+      {
+        "name": "Leonardo Correia",
+        "img": "/static/img/ambassadors/Lisboa_LeonardoCorreia.png",
+        "facebook": "leonardo.correia.92317"
+      }
+    ]
+  },
+  {
+    "university": "Universidade dos Açores",
+    "elements": [
+      {
+        "name": "André Sousa",
+        "img": "/static/img/ambassadors/Acores_AndreSousa.jpg",
+        "facebook": "andre.sousa.58760"
+      }
+    ]
+  },
+  {
+    "university": "Instituto Politécnico de Viseu",
+    "elements": [
+      {
+        "name": "João Pereira",
+        "img": "/static/img/ambassadors/Viseu_JoaoPereira.jpeg",
+        "facebook": "pedro.pereiraa"
+      }
+    ]
+  },
+  {
+    "university": "Universidade de Aveiro",
+    "elements": [
+      {
+        "name": "Tomás Costa",
+        "img": "/static/img/ambassadors/Aveiro_TomasCosta.jpg",
+        "facebook": "tomasoliveira.costa"
+      },
+      {
+        "name": "Filipe Vale",
+        "img": "/static/img/ambassadors/Aveiro_FilipeVale.png",
+        "facebook": "FilipeMiguelVale"
+      }
+    ]
+  },
+  {
+    "university": "Universidade de Trás-os-Montes e Alto Douro",
+    "elements": [
+      {
+        "name": "João Gonçalves",
+        "img": "/static/img/ambassadors/UTAD_JoaoGoncalves.jpg",
+        "facebook": "o.joao.goncalves.2000"
+      }
+    ]
+  }
+]

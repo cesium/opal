@@ -1,8 +1,11 @@
 {
   "banner": {
-    "src": "../static/img/bomJesus.jpg",
-    "title": "23 a 26 de fevereiro",
-    "subtitle": "Braga, Portugal"
+    "background": "../static/img/bomJesus.jpg",
+    "date": "23 a 26 de fevereiro",
+    "location": "Braga"
+  },
+  "timer": {
+    "starting": "2020-02-23T14:30:00"
   },
   "featuredSpeakers": {
     "title": "Oradores Confirmados",
@@ -42,64 +45,41 @@
       "Mais novidades serão anunciadas, acompanha-nos nas nossas redes sociais!",
       "Encontramo-nos em breve!"
     ],
-    "teaserURL": "https://www.youtube.com/watch?v=n_Hz6qpDf-c"
+    "teaserURL": "/static/video/teaser.mp4"
   },
   "ticketInfo": [
-      {
-        "title": "Free",
-        "price": 0,
-        "link": "https://www.eventbrite.pt",
-        "description": [
-          "10 users included",
-          "2 GB of storage",
-          "Help center access",
-          "Email support"
-        ]
-      },
-      {
-        "title": "Pro",
-        "price": 15,
-        "link": "https://www.eventbrite.pt",
-        "description": [
-          "20 users included",
-          "10 GB of storage",
-          "Help center access",
-          "Priority email support"
-        ]
-      },
-      {
-        "title": "Enterprise",
-        "price": 30,
-        "link": "https://www.eventbrite.pt",
-        "description": [
-          "50 users included",
-          "30 GB of storage",
-          "Help center access",
-          "Phone & email support"
-        ]
-      }
-  ],
-  "where": {
-    "location": "Altice Forum Braga",
-    "subtitle": "Como chegar",
-    "means": {
-      "plane": {
-        "title": "De Avião",
-        "description": "O aeroporto mais próximo da cidade de Braga é o Aeroporto Sá Carneiro, no Porto, a cerca de 50 km de distância. A partir deste tem à disposição diversas possibilidades para chegar ao campus de Gualtar: de táxi a viagem demora cerca de 40 minutos e custa, aproximadamente, 60 euros; poderá também utilizar o metro para se deslocar até à estação da CP de Campanhã (linha violeta, Aeroporto - Estádio do Dragão), onde poderá apanhar o comboio suburbano para Braga."
-      },
-      "bus": {
-        "title": "De Autocarro",
-        "description": "Poderá viajar desde o centro e arredores de Braga até ao campus de Gualtar recorrendo aos diversos autocarros dos Transportes Urbanos de Braga (TUB). A partir de outras cidades do país existem diversas companhias com autocarros directos até Braga. A Rede Expressos possui a cobertura mais alargada. Os autocarros regionais e expresso terminam a sua viajem na central de camionagem, no centro da cidade."
-      },
-      "train": {
-        "title": "De Comboio",
-        "description": "Recorrendo ao portal da CP poderá consultar todos os horários e as linhas disponíveis para chegar a Braga. O autocarro 43 dos TUB faz o percurso desde a estação da CP até ao campus de Gualtar, com partidas de 15 em 15 minutos."
-      },
-      "car": {
-        "title": "De Carro",
-        "description": "Para o campus de gualtar deverá introduzir como ponto de chegada a seguinte morada: Rua da Universidade, Gualtar, Portugal ou as seguintes coordenadas GPS 41.56131, -8.393804"
-      }
+    {
+      "title": "EARLY BIRD",
+      "subtitle": "Sem Alojamento",
+      "price": 20,
+      "link": "https://www.eventbrite.pt/e/bilhetes-enei-encontro-nacional-de-estudantes-de-informatica-86743840161?aff=ebdssbdestsearch",
+      "description": [
+        "Bilhete Geral com acesso a todas as atividades;",
+        "Inclui coffee breaks, almoços e jantares;",
+        ""
+      ]
     },
-    "background": "https://bit.ly/2RQEJeJ"
-  }
+    {
+      "title": "EARLY BIRD",
+      "subtitle": "Com Alojamento",
+      "price": 25,
+      "link": "https://www.eventbrite.pt/e/bilhetes-enei-encontro-nacional-de-estudantes-de-informatica-86743840161?aff=ebdssbdestsearch",
+      "description": [
+        "Bilhete Geral com acesso a todas as atividades;",
+        "Inclui coffee breaks, pequenos-almoços, almoços e jantares;",
+        "Inclui alojamento em pavilhão;"
+      ]
+    },
+    {
+      "title": "EMBAIXADOR",
+      "subtitle": "Encontra o teu embaixador",
+      "price": 25,
+      "link": "/ambassadors",
+      "description": [
+        "Bilhete Geral com acesso a todas as atividades;",
+        "Inclui coffee breaks, pequenos-almoços, almoços e jantares;",
+        "Inclui alojamento em pavilhão;"
+      ]
+    }
+  ]
 }
