@@ -1,0 +1,94 @@
+import React from 'react';
+import {
+  styled,
+  useTheme,
+  useScrollTrigger,
+  AppBar,
+  Toolbar,
+  Button,
+  IconButton,
+  Grid,
+  useMediaQuery,
+} from '@material-ui/core';
+import { useRouter } from 'next/router';
+import global from '../../data/global.json';
+import BurgerButton from './BurgerButton';
+import Link from '../Link';
+
+export default function ButtonAppBar() {
+  const theme = useTheme();
+  const desktopSize = useMediaQuery(theme.breakpoints.up('md'));
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 1,
+  });
+  const router = useRouter();
+  const isIndex = router.pathname === '/';
+  const Div = styled('div')({
+    flexGrow: 1,
+  });
+
+  const NavBar = styled(AppBar)({
+    position: 'fixed',
+    zIndex: 1400,
+    background: trigger ? theme.navbar.backgroundColor : 'none',
+  });
+
+  const Logo = styled(IconButton)({
+    marginRight: theme.spacing(2),
+  });
+
+  const Entry = styled(Button)({
+    color: theme.navbar.textColor,
+    '&:hover': {
+      backgroundColor: theme.navbar.entryBackgroundColor,
+    },
+  });
+
+  return (
+    <Div>
+      <NavBar elevation={trigger ? 3 : 0}>
+        <Toolbar>
+          {(trigger || !isIndex) && (
+            <Link href="/">
+              <Logo edge="start">
+                <img width="80‰" src={global.navbar.logo} alt="" />
+              </Logo>
+            </Link>
+          )}
+          {desktopSize ? (
+            <Grid
+              container
+              direction="row-reverse"
+              justify="flex-start"
+              alignItems="center"
+              spacing={2}
+            >
+              {global.navbar.pages
+                .map((page) => (
+                  <Grid item>
+                    <Link href={page.link}>
+                      <Entry color="inherit">{page.name}</Entry>
+                    </Link>
+                  </Grid>
+                ))
+                .reverse()}
+            </Grid>
+          ) : (
+            <Grid
+              container
+              direction="row"
+              justify="flex-end"
+              alignItems="center"
+              spacing={2}
+            >
+              <Grid item>
+                <BurgerButton />
+              </Grid>
+            </Grid>
+          )}
+        </Toolbar>
+      </NavBar>
+    </Div>
+  );
+}
