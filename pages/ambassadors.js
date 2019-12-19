@@ -14,6 +14,7 @@ const StyledBox = styled(Box)({
   paddingTop: '100px',
   paddingBottom: '100px',
   backgroundColor: theme.palette.secondary.light,
+  overflow: 'hidden',
 });
 
 const StyledGrid = styled(Grid)({
