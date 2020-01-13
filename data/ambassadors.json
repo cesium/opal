@@ -63,5 +63,35 @@
         "facebook": "o.joao.goncalves.2000"
       }
     ]
+  },
+  {
+    "university": "Instituto Politécnico de Viana do Castelo",
+    "elements": [
+      {
+        "name": "Benjamim Oliveira",
+        "img": "/static/img/ambassadors/VianaCastelo_BenjamimOliveira.png",
+        "facebook": "BMO003"
+      }
+    ]
+  },
+  {
+    "university": "Universidade de Coimbra",
+    "elements": [
+      {
+        "name": "Tiago Fernandes",
+        "img": "/static/img/ambassadors/Coimbra_TiagoFernandes.jpg",
+        "facebook": "tiago.fernandes.39545"
+      }
+    ]
+  },
+  {
+    "university": "Universidade do Algarve",
+    "elements": [
+      {
+        "name": "Ana Rocha",
+        "img": "/static/img/ambassadors/Algarve_AnaRocha.jpg",
+        "facebook": "ana.rocha.0"
+      }
+    ]
   }
 ]
