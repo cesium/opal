@@ -3,6 +3,11 @@
     "university": "Universidade de Évora",
     "elements": [
       {
+        "name": "Miguel Maia",
+        "img": "/static/img/ambassadors/Evora_MiguelMaia.jpg",
+        "facebook": "miguel.maia.16547"
+      },
+      {
         "name": "Diogo Solipa",
         "img": "/static/img/ambassadors/Evora_DiogoSalipa.jpg",
         "facebook": "diogo.solipa"
@@ -30,12 +35,22 @@
     ]
   },
   {
+    "university": "Intituto Superior Técnico",
+    "elements": [
+      {
+        "name": "José Afonso Garcia",
+        "img": "/static/img/ambassadors/IST_JoseAfonsoGarcia.jpg",
+        "facebook": "Joseafonsogarciaalves"
+      }
+    ]
+  },
+  {
     "university": "Instituto Politécnico de Viseu",
     "elements": [
       {
         "name": "João Pereira",
         "img": "/static/img/ambassadors/Viseu_JoaoPereira.jpeg",
-        "facebook": "pedro.pereiraa"
+        "facebook": "pedro.pereiraaa"
       }
     ]
   },
