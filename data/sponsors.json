@@ -1,0 +1,74 @@
+{
+  "exclusive": [
+    {
+      "name": "Accenture",
+      "img": "/static/img/sponsors/accenture_white.png"
+    }
+  ],
+  "gold": [
+    {
+      "name": "NOS",
+      "img": "/static/img/sponsors/nos_white.png"
+    },
+    {
+      "name": "KPMG",
+      "img": "/static/img/sponsors/kpmg_blue.png"
+    }
+  ],
+  "silver": [
+    {
+      "name": "Glintt",
+      "img": "/static/img/sponsors/glintt.png"
+    },
+    {
+      "name": "Primavera",
+      "img": "/static/img/sponsors/primavera.png"
+    },
+    {
+      "name": "Checkmarx",
+      "img": "/static/img/sponsors/checkmarx.png"
+    },
+    {
+      "name": "Bosch",
+      "img": "/static/img/sponsors/bosch.png"
+    },
+    {
+      "name": "Deloitte",
+      "img": "/static/img/sponsors/deloitte.png"
+    },
+    {
+      "name": "Retail Consult",
+      "img": "/static/img/sponsors/retailconsult.png"
+    },
+    {
+      "name": "Hitachi Solutions",
+      "img": "/static/img/sponsors/hitachisolutions.png"
+    }
+  ],
+  "bronze": [
+    {
+      "name": "Seegno",
+      "img": "/static/img/sponsors/seegno_white.png"
+    },
+    {
+      "name": "AlticeLabs/Inova-ria",
+      "img": "/static/img/sponsors/alticelabs.png"
+    },
+    {
+      "name": "OutSystems",
+      "img": "/static/img/sponsors/outsystems.png"
+    },
+    {
+      "name": "Apside",
+      "img": "/static/img/sponsors/apside_white.png"
+    },
+    {
+      "name": "UbiWhere",
+      "img": "/static/img/sponsors/ubiwhere.png"
+    },
+    {
+      "name": "Critical Software",
+      "img": "/static/img/sponsors/critical.png"
+    }
+  ]
+}

@@ -3,16 +3,21 @@ import { styled } from '@material-ui/core/styles';
 import { Typography, Grid, Box, Hidden } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
-const Canvas = styled(Box)(({ src }) => ({
+const Canvas = styled(Box)({
   position: 'relative',
   top: '0px',
   left: '0px',
   width: '100%',
   height: '100vh',
+  overflow: 'hidden',
+});
+
+const Background = styled(Box)(({ src }) => ({
+  width: '100%',
+  height: '100vh',
   backgroundImage: `url(${src})`,
   backgroundSize: 'cover',
   backgroundPositionX: 'center',
-  overflow: 'hidden',
 }));
 
 const StyledGrid = styled(Grid)({
@@ -58,7 +63,8 @@ const Circles = styled('img')(
     left: `${left}`,
     right: `${right}`,
     width: scale,
-    opacity: '20%',
+    // opacity: '20%',
+    filter: 'opacity(30%)',
     transform: `rotate(${rotation})`,
     userSelect: 'none',
     msUserSelect: 'none',
@@ -72,6 +78,7 @@ const Circles = styled('img')(
 function Banner({ background, logo, date, location }) {
   return (
     <Canvas src={background}>
+      <Background src={background} />
       <StyledGrid
         container
         direction="row"

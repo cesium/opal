@@ -37,4 +37,11 @@ const theme = responsiveFontSizes(
   }),
 );
 
+// ENEI 2020 colors:
+// Orange: #CF6733
+// Dark blue: #052C49
+// Aqua blue: #437C90
+// Green: #255957
+// Egg: #EEEBD3
+
 export default theme;
