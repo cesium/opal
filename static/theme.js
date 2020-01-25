@@ -12,6 +12,12 @@ const theme = responsiveFontSizes(
         main: '#052c49',
         light: '#437C90',
       },
+      orange: {
+        main: '#ED7A4E',
+      },
+      egg: {
+        main: '#EDEBD2',
+      },
       error: {
         main: red.A400,
       },

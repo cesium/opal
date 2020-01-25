@@ -1,5 +1,4 @@
 import React from 'react';
-import FeaturedImages from '../components/homepage/FeaturedImages';
 import Banner from '../components/homepage/Banner';
 import Layout from '../components/Layout';
 import About from '../components/homepage/About';
@@ -18,7 +17,12 @@ const Index = () => (
       date={home.banner.date}
       location={home.banner.location}
     />
-    <TopSection text="faltam" color={theme.palette.secondary.light} title>
+    <TopSection
+      text="faltam"
+      color={theme.palette.secondary.light}
+      title
+      contentUnderneath
+    >
       <Countdown date={home.timer.starting} />
     </TopSection>
     <About url={home.about.teaserURL} />

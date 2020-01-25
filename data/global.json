@@ -7,6 +7,7 @@
   "navbar": {
     "pages": [
       { "name": "Embaixadores", "link": "/ambassadors" },
+      { "name": "Oradores", "link": "/speakers" },
       { "name": "Blog", "link": "https://medium.com/eneiconf" }
     ],
     "logo": "/static/img/eneiLogoWhite.png",

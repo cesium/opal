@@ -76,7 +76,12 @@ function PricingCard({ title, subtitle, price, link, description }) {
 
 function Pricing({ tiers }) {
   return (
-    <TopSection text="Bilhetes" color={theme.palette.secondary.light} title>
+    <TopSection
+      text="Bilhetes"
+      color={theme.palette.secondary.light}
+      title
+      contentUnderneath
+    >
       <Container maxWidth="md" component="main">
         <Grid
           container

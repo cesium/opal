@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Paper, Typography, Grid } from '@material-ui/core';
 import { styled } from '@material-ui/styles';
+import Underline from './Underline';
 import theme from '../static/theme';
 
-const Canvas = styled(Paper)(({ color, image, topPadding }) => ({
+const Canvas = styled(Paper)(({ color, image, topPadding, botPadding }) => ({
   width: '100%',
   backgroundColor: color,
   position: 'relative',
   paddingTop: theme.spacing(topPadding),
-  paddingBottom: theme.spacing(8),
+  paddingBottom: theme.spacing(botPadding),
   overflow: 'hidden',
   backgroundImage: `url(${image})`,
   backgroundSize: '100%',
@@ -25,48 +26,6 @@ const Title = styled(Typography)({
     fontSize: theme.typography.h2.fontSize,
   },
 });
-
-const CircleUnderline = styled('div')(({ diameter, thickness }) => ({
-  width: diameter,
-  height: diameter,
-  borderStyle: 'solid',
-  borderRadius: '50%',
-  borderWidth: thickness,
-  borderColor: 'white',
-  // filter: 'drop-shadow(2px 2px 0 #000000)',
-}));
-
-const Dash = styled('div')(({ length, thickness }) => ({
-  width: length,
-  height: thickness,
-  backgroundColor: 'white',
-  // filter: 'drop-shadow(2px 2px 0 #000000)',
-  overflow: 'hidden',
-}));
-
-const DashLeft = styled(Dash)({
-  position: 'relative',
-  left: '1px',
-});
-
-const DashRight = styled(Dash)({
-  position: 'relative',
-  left: '-1px',
-});
-
-const Underline = ({ thickness, length, diameter }) => (
-  <Grid item container direction="row" justify="center" alignItems="center">
-    <Grid item>
-      <DashLeft thickness={thickness} length={length} />
-    </Grid>
-    <Grid item>
-      <CircleUnderline diameter={diameter} thickness={thickness} />
-    </Grid>
-    <Grid item>
-      <DashRight thickness={thickness} length={length} />
-    </Grid>
-  </Grid>
-);
 
 const TitleGrid = styled(Grid)({
   marginBottom: theme.spacing(5),
@@ -96,15 +55,20 @@ export default function TopSection({
   text,
   pageTitle,
   title,
+  contentUnderneath,
 }) {
-  let padding = 8;
+  let topPadding = 8;
+  let botPadding = 0;
   let variant = 'h4';
   let thickness = '0.4rem';
   let diameter = '1.8rem';
   let length = '4vw';
   if (title) {
     if (pageTitle) {
-      padding = 16;
+      topPadding = 16;
+    }
+    if (contentUnderneath) {
+      botPadding = 8;
     }
     variant = 'h1';
     thickness = '0.5rem';
@@ -117,7 +81,8 @@ export default function TopSection({
       elevation={2}
       color={color}
       image="/static/img/bubbles_20.png"
-      topPadding={padding}
+      botPadding={botPadding}
+      topPadding={topPadding}
     >
       {/* <Circle diameter="10" top="20%" left="5%" />
       <Circle diameter="7" bottom="-5%" left="9%" />
@@ -141,16 +106,11 @@ export default function TopSection({
   );
 }
 
-Underline.propTypes = {
-  thickness: PropTypes.string.isRequired,
-  diameter: PropTypes.string.isRequired,
-  length: PropTypes.string.isRequired,
-};
-
 TopSection.propTypes = {
   children: PropTypes.object.isRequired,
   color: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   pageTitle: PropTypes.bool,
   title: PropTypes.bool,
+  contentUnderneath: PropTypes.bool,
 };

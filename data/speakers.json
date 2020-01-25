@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Bill Gates",
+    "img": "https://abrilexame.files.wordpress.com/2019/04/bill.jpg",
+    "facebook": "my.facebook",
+    "twitter": "my.twitter",
+    "github": "my.github",
+    "linkedin": "my.linkedin",
+    "website": "https://www.website.com",
+    "shortbio": "This is totally a short bio!",
+    "title": "CEO",
+    "company": "Microsoft"
+  },
+  {
+    "name": "Mark Zuckerberg",
+    "img": "https://image.cnbcfm.com/api/v1/image/104445875-1548885263261gettyimages-669913902r.jpg?v=1548935008&w=1400&h=950",
+    "facebook": "my.facebook",
+    "twitter": "my.twitter",
+    "github": "my.github",
+    "linkedin": "my.linkedin",
+    "shortbio": "Mark Zuckerberg was born on May 14, 1984 in White Plains, New York, and was raised in nearby Dobbs Ferry. He was born into a well-educated family and developed an interest in computer programming at an early age",
+    "title": "Evil CEO",
+    "company": "Facebook"
+  },
+  {
+    "name": "Jeff Bezos",
+    "img": "https://thumbs.web.sapo.io/?W=800&H=0&delay_optim=1&epic=ODdjFi961MHki91N28oLT5DpNOUh0zDzD0mBt8fQeF2uJzwL1cxuX61JJbXbyVX4HBhzTrNxQEDACOOCDLw5I6R9WPwTG5ZRjBNbmOYtDPMRMkU=",
+    "twitter": "my.twitter",
+    "github": "my.github",
+    "linkedin": "my.linkedin",
+    "shortbio": "Jeff Bezos , byname of Jeffrey Preston Bezos, (born January 12, 1964, Albuquerque, New Mexico, U.S.), American entrepreneur who played a key role in the growth of e-commerce as the founder and chief executive officer of Amazon.com, Inc., an online merchant of books and later of a wide variety of products",
+    "title": "Rich CEO",
+    "company": "Amazon"
+  },
+  {
+    "name": "Sundar Pichai",
+    "img": "https://abrilveja.files.wordpress.com/2017/03/sundar_pichai_9533.jpg",
+    "facebook": "my.facebook",
+    "linkedin": "my.linkedin",
+    "shortbio": "Sundar Pichai, in full Pichai Sundararajan, (born July 12, 1972, Madras [now Chennai], Tamil Nadu, India), Indian-born American computer scientist and executive who was CEO of both Google, Inc. (2015– ), and its holding company, Alphabet Inc. (2019– )",
+    "title": "Not yet evil CEO",
+    "company": "Google"
+  }
+]
