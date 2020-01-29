@@ -76,6 +76,7 @@ export default function TopSection({
       botPadding={botPadding}
       topPadding={topPadding}
     >
+      {!backgroundImage && <Background src="/static/img/bubbles_20.png" />}
       <Background src={backgroundImage} />
       <TitleGrid
         container

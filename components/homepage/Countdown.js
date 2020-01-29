@@ -9,7 +9,7 @@ const StyledGrid = styled(Grid)({
   marginLeft: theme.spacing(5),
   marginRight: theme.spacing(5),
   width: 'auto',
-  backgroundColor: theme.palette.secondary.main,
+  backgroundColor: `rgba(${theme.palette.white.red}, ${theme.palette.white.green},${theme.palette.white.blue} , 0.3)`,
 });
 
 const NumberTypography = styled(Typography)({

@@ -12,6 +12,16 @@ const theme = responsiveFontSizes(
         main: '#052c49',
         light: '#437C90',
       },
+      darkRGB: {
+        red: 5,
+        green: 44,
+        blue: 73,
+      },
+      white: {
+        red: 255,
+        green: 255,
+        blue: 255,
+      },
       orange: {
         main: '#ED7A4E',
       },
