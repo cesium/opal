@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - $TRAVIS_NODE_VERSION
+
+os:
+  - linux
+
+cache:
+  npm: true
+  directories:
+    - node_modules
+    - .next
+
+install:
+    - npm install
+
+script:
+    - npm run test

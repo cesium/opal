@@ -15,6 +15,7 @@ const RoundedSkeleton = styled(Skeleton)({
   borderRadius: '1rem',
 });
 
+/* eslint-disable */
 function shuffle(array) {
   let currentIndex = array.length;
   let temporaryValue;
@@ -28,6 +29,7 @@ function shuffle(array) {
   }
   return array;
 }
+/* eslint-enable */
 
 export default function Sponsors({ data, color, type, backgroundImage }) {
   let size;

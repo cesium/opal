@@ -1,4 +1,4 @@
-[ci]: todo
+[ci]: https://travis-ci.org/cesium/opal
 
 # Contributing
 
@@ -14,7 +14,7 @@ interactions with the project.
 1. It is advised to create a Pull Request if you are stuck (so others can help
    you) or when your feature is complete and tested.
 2. To be merged, your Pull Request must have a passing build on the [Continuous
-   Integration server][ci].
+   Integration server][ci] and have a successful deploy preview.
 3. To be merged, your Pull Request should add relevant tests (when applicable).
 4. You may merge the Pull Request in once you have the sign-off of one other
    developer, or if you do not have permission to do that, you may request the

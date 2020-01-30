@@ -5,7 +5,7 @@ import TopSection from '../components/TopSection';
 import Layout from '../components/Layout';
 import Speaker from '../components/Speaker';
 import theme from '../static/theme';
-import speakers from '../data/speakers';
+import speakers from '../data/speakers.json';
 
 const StyledBox = styled(Box)({
   backgroundColor: theme.palette.secondary.light,
