@@ -3,10 +3,8 @@ import { styled } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import VolumeOffRoundedIcon from '@material-ui/icons/VolumeOffRounded';
 import VolumeUpRoundedIcon from '@material-ui/icons/VolumeUpRounded';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import ReactPlayer from 'react-player';
-import theme from '../../static/theme';
 
 const PlayerWrapper = styled('div')({
   position: 'relative',

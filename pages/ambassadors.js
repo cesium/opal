@@ -4,10 +4,8 @@ import { styled } from '@material-ui/styles';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import Person from '../components/Person';
-import home from '../data/homepage.json';
-import global from '../data/global.json';
-import theme from '../static/theme';
-import ambassadors from '../data/ambassadors';
+import theme from '../components/theme';
+import ambassadors from '../data/ambassadors.json';
 import Link from '../components/Link';
 
 const StyledBox = styled(Box)({
@@ -33,6 +31,7 @@ const Ambassadors = () => (
       color={theme.palette.secondary.main}
       title
       pageTitle
+      contentUnderneath
     >
       <Grid container justify="center">
         <Grid item>

@@ -1,14 +1,8 @@
 import React from 'react';
 import { styled } from '@material-ui/core/styles';
-import { Typography, Avatar, Box, Grid } from '@material-ui/core';
-import {
-  faFacebook,
-  faTwitter,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
+import { Typography, Avatar, Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import SocialLink from './SocialLink';
+import SocialIcons from './SocialIcons';
 
 const Image = styled(Avatar)({
   width: 200,
@@ -34,12 +28,7 @@ const Person = ({
   linkedin,
   github,
 }) => (
-  <Grid
-    container
-    direction="column"
-    justify="center"
-    alignItems="center"
-  >
+  <Grid container direction="column" justify="center" alignItems="center">
     <Grid item>
       <Image src={img} />
     </Grid>
@@ -57,38 +46,13 @@ const Person = ({
       alignItems="center"
       spacing={1}
     >
-      {facebook ? (
-        <Grid item>
-          <SocialLink
-            icon={faFacebook}
-            url={`https://www.facebook.com/${facebook}`}
-          />
-        </Grid>
-      ) : null}
-      {twitter ? (
-        <Grid item>
-          <SocialLink
-            icon={faTwitter}
-            url={`https://www.twitter.com/${twitter}`}
-          />
-        </Grid>
-      ) : null}
-      {linkedin ? (
-        <Grid item>
-          <SocialLink
-            icon={faLinkedin}
-            url={`https://www.linkedin.com/in/${linkedin}/`}
-          />
-        </Grid>
-      ) : null}
-      {github ? (
-        <Grid item>
-          <SocialLink
-            icon={faGithub}
-            url={`https://www.github.com/${github}`}
-          />
-        </Grid>
-      ) : null}
+      <SocialIcons
+        facebook={facebook}
+        twitter={twitter}
+        github={github}
+        linkedin={linkedin}
+        color="white"
+      />
     </Grid>
   </Grid>
 );

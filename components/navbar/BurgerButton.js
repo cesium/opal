@@ -11,7 +11,7 @@ import {
 import { styled } from '@material-ui/styles';
 import global from '../../data/global.json';
 import Link from '../Link';
-import theme from '../../static/theme';
+import theme from '../theme';
 
 // As far as I could understand from the documentation,
 // this can't be changed to a styled component

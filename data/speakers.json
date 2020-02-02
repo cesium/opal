@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Nikiforos Botis",
+    "img": "/img/speakers/nikiforos_botis.jpeg",
+    "github": "nikiforosbotis",
+    "linkedin": "nikiforosbotis",
+    "website": "https://nikiforosbotis.com/",
+    "shortbio": "Nikiforos was born in Athens. He holds a BSc from the Department of Management Science and Technology, Athens University of Economics and Business (AUEB). Having been in academia for five years in a row, Nikiforos decided to move to the industry and at 2018 he undertook the role of Solutions Architect in Amazon Web Services (AWS). In his free time, Nikiforos enjoys travelling, volunteering and playing basketball.",
+    "title": "Solutions Architect",
+    "company": "Amazon Web Services"
+  },
+  {
+    "name": "David Sopas",
+    "img": "/img/speakers/david_sopas.jpg",
+    "twitter": "dsopas",
+    "github": "dsopas",
+    "linkedin": "dsopas",
+    "website": "https://davidsopas.com",
+    "shortbio": "David Sopas lidera uma equipa de researchers na Checkmarx e ao mesmo tempo gere a sua empresa de segurança – Char49. Parte do seu trabalho já foi apresentado em conferências como a Defcon, hack.lu, BSides Lisbon, OWASP AppSec EU e muitas outras.",
+    "title": "Application Security Research Team Leader",
+    "company": "Checkmarx"
+  },
+  {
+    "name": "João Pereira",
+    "img": "/img/speakers/joao_pereira.jpg",
+    "linkedin": "joaojesuspereira",
+    "shortbio": "O João é Diretor de Investimento com enfoque em Digital da Portugal Ventures, considerada pela CB Insights a equipa venture capital mais ativa em Portugal. Obteve a Licenciatura e o Mestrado em Economia na Faculdade de Economia do Porto.",
+    "title": "Diretor de Investimento",
+    "company": "Portugal Ventures"
+  },
+  {
+    "name": "Rui Mendes",
+    "img": "/img/speakers/rui_mendes.jpg",
+    "twitter": "ruidamendes",
+    "github": "rui-mendes",
+    "linkedin": "ruidamendes",
+    "shortbio": "Rui Mendes is passionate about technologies, innovation, communities, data science and, of course, beer. He has a background in maths and information systems. Rui has several years of professional experience in fields like Software Development, Data Analysis and Training. Currently, he is a data analyst at GoWi-Fi, a national Wi-Fi network that everyone can access using any mobile device, allowing the use of the internet simply, safely and free of charges. He is the founder of Data Science Portugal (DSPT), the biggest community of data science enthusiasts in Portugal, created with the purpose of sharing knowledge and experience in the fields of Data Science, Machine Learning and Artificial Intelligence.",
+    "title": "Founder",
+    "company": "Data Science Portugal"
+  },
+  {
+    "name": "Helder Coelho",
+    "img": "/img/speakers/helder_coelho.jpg",
+    "website": "https://www.di.fc.ul.pt/~hcoelho/",
+    "shortbio": "Helder Coelho is a retired and emeritus full professor of the University of Lisbon (UL) in the Department of Informatics of the Faculty of Sciences, from August 1995. He is a permanent and elected member of the National Academy of Engineering (1999).",
+    "title": "Full Professor",
+    "company": "University of Lisbon"
+  },
+  {
+    "name": "André Barbosa",
+    "img": "/img/speakers/andre_barbosa.jpg",
+    "twitter": "AndreBarbosa88",
+    "github": "nata79",
+    "linkedin": "andrebarbosaie",
+    "website": "http://andrebarbosa.co/",
+    "shortbio": "Entrei para LEI em 2006 e, com alguma ajuda, lá consegui acabar o curso. Passei por várias indústrias e empresas até que acabei por me juntar à Skyscanner desafiado pela quantidade de dados e utilizadores diários. Atualmente passo os meus dias com uma equipa de Software Engineers e Data Scientists a tentar criar uma experiência personalizada para os nossos utilizadores.",
+    "title": "Engineering Manager",
+    "company": "Skyscanner"
+  },
+  {
+    "name": "David Amador",
+    "img": "/img/speakers/david_amador.jpg",
+    "twitter": "DJ_Link",
+    "github": "DJLink",
+    "linkedin": "davidamador",
+    "website": "https://david-amador.com",
+    "shortbio": "David started to mod (and play) games as soon as he had access to a computer/console. After some time working professionally in the gaming industry he decided to go independent and make his own games back in 2010 and never stopped working on them, either part-time or full time. Among some of the titles he worked on are Vizati, Puwang and Quest of Dungeons.",
+    "title": "¯\\_(ツ)_/¯",
+    "company": "Upfall Studios"
+  }
+]

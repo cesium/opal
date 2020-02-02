@@ -1,7 +1,12 @@
 [safira]: https://github.com/cesium/safira
 [nativemoon]: https://github.com/cesium/nativemoon
+[travis]: https://travis-ci.org/cesium/opal
+[netlify]: https://app.netlify.com/sites/enei-2020/deploys
 
 # Opal
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/92063f4b-5b41-49a5-b5cf-4defb8fc0473/deploy-status)][netlify]
+[![Travis](https://img.shields.io/travis/cesium/opal?style=flat-square)][travis]
 
 NextJS Web App for the Badge Platform for CeSIUM's Computer Engineering Week
 event.
@@ -34,18 +39,24 @@ Starting the development server.
 npm run dev
 ```
 
-### Deployment
-
-Builds the app for production.
+Format the code accordingly to common guide lines.
 
 ```shell
-npm run build
+npm run format
 ```
 
-Runs the built app in production mode.
+Lint your code with eslint.
 
 ```shell
-npm start
+npm run lint
+```
+
+### Deployment
+
+Builds and exports the app for production.
+
+```shell
+npm run deploy
 ```
 
 ## Contributing

@@ -4,12 +4,12 @@
     "elements": [
       {
         "name": "Miguel Maia",
-        "img": "/static/img/ambassadors/Evora_MiguelMaia.jpg",
+        "img": "/img/ambassadors/Evora_MiguelMaia.jpg",
         "facebook": "miguel.maia.16547"
       },
       {
         "name": "Diogo Solipa",
-        "img": "/static/img/ambassadors/Evora_DiogoSalipa.jpg",
+        "img": "/img/ambassadors/Evora_DiogoSalipa.jpg",
         "facebook": "diogo.solipa"
       }
     ]
@@ -19,7 +19,7 @@
     "elements": [
       {
         "name": "Leonardo Correia",
-        "img": "/static/img/ambassadors/Lisboa_LeonardoCorreia.png",
+        "img": "/img/ambassadors/Lisboa_LeonardoCorreia.png",
         "facebook": "leonardo.correia.92317"
       }
     ]
@@ -29,7 +29,7 @@
     "elements": [
       {
         "name": "André Sousa",
-        "img": "/static/img/ambassadors/Acores_AndreSousa.jpg",
+        "img": "/img/ambassadors/Acores_AndreSousa.jpg",
         "facebook": "andre.sousa.58760"
       }
     ]
@@ -39,7 +39,7 @@
     "elements": [
       {
         "name": "José Afonso Garcia",
-        "img": "/static/img/ambassadors/IST_JoseAfonsoGarcia.jpg",
+        "img": "/img/ambassadors/IST_JoseAfonsoGarcia.jpg",
         "facebook": "Joseafonsogarciaalves"
       }
     ]
@@ -49,7 +49,7 @@
     "elements": [
       {
         "name": "João Pereira",
-        "img": "/static/img/ambassadors/Viseu_JoaoPereira.jpeg",
+        "img": "/img/ambassadors/Viseu_JoaoPereira.jpeg",
         "facebook": "pedro.pereiraaa"
       }
     ]
@@ -59,12 +59,12 @@
     "elements": [
       {
         "name": "Tomás Costa",
-        "img": "/static/img/ambassadors/Aveiro_TomasCosta.jpg",
+        "img": "/img/ambassadors/Aveiro_TomasCosta.jpg",
         "facebook": "tomasoliveira.costa"
       },
       {
         "name": "Filipe Vale",
-        "img": "/static/img/ambassadors/Aveiro_FilipeVale.png",
+        "img": "/img/ambassadors/Aveiro_FilipeVale.png",
         "facebook": "FilipeMiguelVale"
       }
     ]
@@ -74,7 +74,7 @@
     "elements": [
       {
         "name": "João Gonçalves",
-        "img": "/static/img/ambassadors/UTAD_JoaoGoncalves.jpg",
+        "img": "/img/ambassadors/UTAD_JoaoGoncalves.jpg",
         "facebook": "o.joao.goncalves.2000"
       }
     ]
@@ -84,7 +84,7 @@
     "elements": [
       {
         "name": "Benjamim Oliveira",
-        "img": "/static/img/ambassadors/VianaCastelo_BenjamimOliveira.png",
+        "img": "/img/ambassadors/VianaCastelo_BenjamimOliveira.png",
         "facebook": "BMO003"
       }
     ]
@@ -94,7 +94,7 @@
     "elements": [
       {
         "name": "Tiago Fernandes",
-        "img": "/static/img/ambassadors/Coimbra_TiagoFernandes.jpg",
+        "img": "/img/ambassadors/Coimbra_TiagoFernandes.jpg",
         "facebook": "tiago.fernandes.39545"
       }
     ]
@@ -104,7 +104,7 @@
     "elements": [
       {
         "name": "Ana Rocha",
-        "img": "/static/img/ambassadors/Algarve_AnaRocha.jpg",
+        "img": "/img/ambassadors/Algarve_AnaRocha.jpg",
         "facebook": "ana.rocha.0"
       }
     ]

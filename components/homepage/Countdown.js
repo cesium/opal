@@ -3,13 +3,12 @@ import CountdownComponent from 'react-countdown-now';
 import { Typography, Grid } from '@material-ui/core';
 import { styled } from '@material-ui/styles';
 import PropTypes from 'prop-types';
-import theme from '../../static/theme';
+import theme from '../theme';
 
 const StyledGrid = styled(Grid)({
   marginLeft: theme.spacing(5),
   marginRight: theme.spacing(5),
   width: 'auto',
-  backgroundColor: theme.palette.secondary.main,
 });
 
 const NumberTypography = styled(Typography)({
