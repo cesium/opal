@@ -2,13 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@material-ui/styles';
 import { Skeleton } from '@material-ui/lab';
+import Link from '../../Link';
 import TopSection from '../../TopSection';
 import { SponsorGridContainer, SponsorGridItem } from './SponsorsGrid';
 
 const LogoImg = styled('img')(({ size }) => ({
-  maxWidth: '100%',
-  maxHeight: `${size}rem`,
+  maxWidth: `${size}rem`,
+  maxHeight: `${size - 10}rem`,
   filter: 'brightness(0%) invert(1)',
+  '@media (max-width: 480px)': {
+    maxWidth: '100%',
+    maxHeight: `${size * 5}px`,
+  },
 }));
 
 const RoundedSkeleton = styled(Skeleton)({
@@ -37,16 +42,16 @@ export default function Sponsors({ data, color, type, backgroundImage }) {
 
   switch (type) {
     case 'exclusive':
-      size = 11;
+      size = 30;
       break;
     case 'gold':
-      size = 10;
+      size = 20;
       break;
     case 'silver':
-      size = 6;
+      size = 15;
       break;
     default:
-      size = 2;
+      size = 7;
       break;
   }
 
@@ -66,7 +71,11 @@ export default function Sponsors({ data, color, type, backgroundImage }) {
         {shuffle(
           data.map((sponsor) => (
             <SponsorGridItem>
-              {<LogoImg size={size} src={sponsor.img} alt={sponsor.name} /> || (
+              {(
+                <Link href={sponsor.url}>
+                  <LogoImg size={size} src={sponsor.img} alt={sponsor.name} />
+                </Link>
+              ) || (
                 <RoundedSkeleton
                   variant="rect"
                   animation="wave"
