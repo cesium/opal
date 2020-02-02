@@ -2,7 +2,7 @@ import React from 'react';
 import { styled } from '@material-ui/core/styles';
 import { Typography, Paper } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import theme from '../../static/theme';
+import theme from '../theme';
 import TopSection from '../TopSection';
 
 const StyledPaper = styled(Paper)({

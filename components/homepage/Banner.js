@@ -99,14 +99,14 @@ function Banner({ background, logo, date, location }) {
       </StyledGrid>
       <Hidden implementation="css" mdDown>
         <Circles
-          src="/static/img/circle_small.png"
+          src="/img/circle_small.png"
           rotation="157.85deg"
           scale="20%"
           bottom="-5vh"
           left="0px"
         />
         <Circles
-          src="/static/img/circle_small.png"
+          src="/img/circle_small.png"
           rotation="6.25deg"
           scale="20%"
           top="5vh"
@@ -115,14 +115,14 @@ function Banner({ background, logo, date, location }) {
       </Hidden>
       <Hidden implementation="css" lgUp>
         <Circles
-          src="/static/img/circle_small.png"
+          src="/img/circle_small.png"
           rotation="110deg"
           scale="25vh"
           bottom="-12vh"
           left="0px"
         />
         <Circles
-          src="/static/img/circle_small.png"
+          src="/img/circle_small.png"
           rotation="-70deg"
           scale="25vh"
           top="-12vh"

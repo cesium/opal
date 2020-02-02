@@ -4,7 +4,7 @@ import { styled } from '@material-ui/styles';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import Person from '../components/Person';
-import theme from '../static/theme';
+import theme from '../components/theme';
 import ambassadors from '../data/ambassadors.json';
 import Link from '../components/Link';
 

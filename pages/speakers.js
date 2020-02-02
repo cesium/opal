@@ -4,7 +4,7 @@ import { styled } from '@material-ui/styles';
 import TopSection from '../components/TopSection';
 import Layout from '../components/Layout';
 import Speaker from '../components/Speaker';
-import theme from '../static/theme';
+import theme from '../components/theme';
 import speakers from '../data/speakers.json';
 
 const StyledBox = styled(Box)({

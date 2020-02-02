@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 import { ExpandMore } from '@material-ui/icons';
 import PropTypes from 'prop-types';
-import theme from '../static/theme';
+import theme from './theme';
 import Underline from './Underline';
 import SocialIcons from './SocialIcons';
 

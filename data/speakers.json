@@ -1,7 +1,7 @@
 [
   {
     "name": "Nikiforos Botis",
-    "img": "/static/img/speakers/nikiforos_botis.jpeg",
+    "img": "/img/speakers/nikiforos_botis.jpeg",
     "github": "nikiforosbotis",
     "linkedin": "nikiforosbotis",
     "website": "https://nikiforosbotis.com/",
@@ -11,7 +11,7 @@
   },
   {
     "name": "David Sopas",
-    "img": "/static/img/speakers/david_sopas.jpg",
+    "img": "/img/speakers/david_sopas.jpg",
     "twitter": "dsopas",
     "github": "dsopas",
     "linkedin": "dsopas",
@@ -22,7 +22,7 @@
   },
   {
     "name": "João Pereira",
-    "img": "/static/img/speakers/joao_pereira.jpg",
+    "img": "/img/speakers/joao_pereira.jpg",
     "linkedin": "joaojesuspereira",
     "shortbio": "O João é Diretor de Investimento com enfoque em Digital da Portugal Ventures, considerada pela CB Insights a equipa venture capital mais ativa em Portugal. Obteve a Licenciatura e o Mestrado em Economia na Faculdade de Economia do Porto.",
     "title": "Diretor de Investimento",
@@ -30,7 +30,7 @@
   },
   {
     "name": "Rui Mendes",
-    "img": "/static/img/speakers/rui_mendes.jpg",
+    "img": "/img/speakers/rui_mendes.jpg",
     "twitter": "ruidamendes",
     "github": "rui-mendes",
     "linkedin": "ruidamendes",
@@ -40,7 +40,7 @@
   },
   {
     "name": "Helder Coelho",
-    "img": "/static/img/speakers/helder_coelho.jpg",
+    "img": "/img/speakers/helder_coelho.jpg",
     "website": "https://www.di.fc.ul.pt/~hcoelho/",
     "shortbio": "Helder Coelho is a retired and emeritus full professor of the University of Lisbon (UL) in the Department of Informatics of the Faculty of Sciences, from August 1995. He is a permanent and elected member of the National Academy of Engineering (1999).",
     "title": "Full Professor",
@@ -48,7 +48,7 @@
   },
   {
     "name": "André Barbosa",
-    "img": "/static/img/speakers/andre_barbosa.jpg",
+    "img": "/img/speakers/andre_barbosa.jpg",
     "twitter": "AndreBarbosa88",
     "github": "nata79",
     "linkedin": "andrebarbosaie",
@@ -59,7 +59,7 @@
   },
   {
     "name": "David Amador",
-    "img": "/static/img/speakers/david_amador.jpg",
+    "img": "/img/speakers/david_amador.jpg",
     "twitter": "DJ_Link",
     "github": "DJLink",
     "linkedin": "davidamador",

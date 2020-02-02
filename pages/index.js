@@ -6,7 +6,7 @@ import TextAbout from '../components/homepage/TextAbout';
 import TopSection from '../components/TopSection';
 import home from '../data/homepage.json';
 import global from '../data/global.json';
-import theme from '../static/theme';
+import theme from '../components/theme';
 import Countdown from '../components/homepage/Countdown';
 import Sponsors from '../components/homepage/sponsors/Sponsors';
 import sponsors from '../data/sponsors.json';
@@ -32,7 +32,7 @@ const Index = () => (
       type="exclusive"
       data={sponsors.exclusive}
       color={theme.palette.secondary.main}
-      backgroundImage="/static/img/random_bubbles_lines.svg"
+      backgroundImage="/img/random_bubbles_lines.svg"
       // color="#EEEBD3"
       // color="#fffdf0"
       // color="#dedede"
@@ -42,19 +42,19 @@ const Index = () => (
       type="gold"
       data={sponsors.gold}
       color={theme.palette.secondary.main}
-      backgroundImage="/static/img/bubbles.png"
+      backgroundImage="/img/bubbles.png"
     />
     <Sponsors
       type="silver"
       data={sponsors.silver}
       color={theme.palette.secondary.light}
-      backgroundImage="/static/img/random_bubbles_lines.svg"
+      backgroundImage="/img/random_bubbles_lines.svg"
     />
     <Sponsors
       type="bronze"
       data={sponsors.bronze}
       color={theme.palette.secondary.main}
-      backgroundImage="/static/img/bubbles.png"
+      backgroundImage="/img/bubbles.png"
     />
     {/* <FeaturedImages
       title={home.featuredSpeakers.title}

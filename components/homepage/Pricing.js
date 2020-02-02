@@ -14,7 +14,7 @@ import { styled } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import Link from '../Link';
 import TopSection from '../TopSection';
-import theme from '../../static/theme';
+import theme from '../theme';
 
 const StyledBox = styled(Box)({
   display: 'flex',

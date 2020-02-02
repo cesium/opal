@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Paper, Typography, Grid, Box } from '@material-ui/core';
 import { styled } from '@material-ui/styles';
 import Underline from './Underline';
-import theme from '../static/theme';
+import theme from './theme';
 
 const Canvas = styled(Paper)(({ color, topPadding, botPadding }) => ({
   width: '100%',
@@ -72,11 +72,11 @@ export default function TopSection({
       square="true"
       elevation={2}
       color={color}
-      image="/static/img/bubbles_20.png"
+      image="/img/bubbles_20.png"
       botPadding={botPadding}
       topPadding={topPadding}
     >
-      {!backgroundImage && <Background src="/static/img/bubbles_20.png" />}
+      {!backgroundImage && <Background src="/img/bubbles_20.png" />}
       <Background src={backgroundImage} />
       <TitleGrid
         container
