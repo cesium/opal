@@ -23,6 +23,7 @@ const Person = ({
   img,
   name,
   university,
+  company,
   facebook,
   twitter,
   linkedin,
@@ -35,9 +36,16 @@ const Person = ({
     <Grid item>
       <TextBox variant="h5">{name}</TextBox>
     </Grid>
-    <Grid item>
-      <TextBox variant="h6">{university}</TextBox>
-    </Grid>
+    {university && (
+      <Grid item>
+        <TextBox variant="h6">{university}</TextBox>
+      </Grid>
+    )}
+    {company && (
+      <Grid item>
+        <TextBox variant="h6">{company}</TextBox>
+      </Grid>
+    )}
     <Grid
       item
       container
@@ -60,7 +68,8 @@ const Person = ({
 Person.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  university: PropTypes.string.isRequired,
+  university: PropTypes.string,
+  company: PropTypes.string,
   linkedin: PropTypes.string,
   twitter: PropTypes.string,
   github: PropTypes.string,
