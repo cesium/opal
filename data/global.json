@@ -1,8 +1,20 @@
 {
   "event": {
     "title": "ENEI",
+    "name": "Encontro Nacional de Estudantes de Informática 2020",
     "description": "O Encontro Nacional de Estudantes de Informática regressa nos dias 23, 24, 25 e 26 de fevereiro e volta para marcar a diferença na cidade de Braga!",
-    "logo": "/img/eneiLogoWhite.png"
+    "logo": "/img/eneiLogoWhite.png",
+    "cover": "/img/hero.png",
+    "keywords": [
+      "Conferência",
+      "Tecnologia",
+      "Informática",
+      "ENEI",
+      "CeSIUM",
+      "Braga",
+      "UMinho"
+    ],
+    "url": "https://enei.pt"
   },
   "navbar": {
     "pages": [
