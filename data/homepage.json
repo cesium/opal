@@ -17,9 +17,9 @@
   },
   "ticketInfo": [
     {
-      "title": "EARLY BIRD",
+      "title": "REGULAR",
       "subtitle": "Sem Alojamento",
-      "price": 20,
+      "price": 25,
       "link": "https://www.eventbrite.pt/e/bilhetes-enei-encontro-nacional-de-estudantes-de-informatica-86743840161?aff=ebdssbdestsearch",
       "description": [
         "Bilhete Geral com acesso a todas as atividades;",
@@ -28,9 +28,9 @@
       ]
     },
     {
-      "title": "EARLY BIRD",
+      "title": "REGULAR",
       "subtitle": "Com Alojamento",
-      "price": 25,
+      "price": 30,
       "link": "https://www.eventbrite.pt/e/bilhetes-enei-encontro-nacional-de-estudantes-de-informatica-86743840161?aff=ebdssbdestsearch",
       "description": [
         "Bilhete Geral com acesso a todas as atividades;",
