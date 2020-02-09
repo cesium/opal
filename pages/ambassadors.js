@@ -24,6 +24,18 @@ const StyledButton = styled(Button)({
   color: theme.palette.secondary.main,
 });
 
+function sortBy(prop) {
+  return function compare(a, b) {
+    if (a[prop] > b[prop]) {
+      return 1;
+    }
+    if (a[prop] < b[prop]) {
+      return -1;
+    }
+    return 0;
+  };
+}
+
 const Ambassadors = () => (
   <Layout>
     <TopSection
@@ -51,17 +63,17 @@ const Ambassadors = () => (
         alignItems="flexitem-start"
         spacing={10}
       >
-        {ambassadors.map((elem) => {
-          return elem.elements.map((amb) => (
+        {ambassadors.sort(sortBy('university')).map((entry) => {
+          return entry.elements.sort(sortBy('name')).map((ambassador) => (
             <Grid item xs={11} sm={6} md={4} lg={3}>
               <Person
-                name={amb.name}
-                university={elem.university}
-                img={amb.img}
-                facebook={amb.facebook}
-                twitter={amb.twitter}
-                linkedin={amb.linkedin}
-                github={amb.github}
+                name={ambassador.name}
+                university={entry.university}
+                img={ambassador.img}
+                facebook={ambassador.facebook}
+                twitter={ambassador.twitter}
+                linkedin={ambassador.linkedin}
+                github={ambassador.github}
               />
             </Grid>
           ));

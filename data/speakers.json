@@ -7,7 +7,8 @@
     "website": "https://nikiforosbotis.com/",
     "shortbio": "Nikiforos was born in Athens. He holds a BSc from the Department of Management Science and Technology, Athens University of Economics and Business (AUEB). Having been in academia for five years in a row, Nikiforos decided to move to the industry and at 2018 he undertook the role of Solutions Architect in Amazon Web Services (AWS). In his free time, Nikiforos enjoys travelling, volunteering and playing basketball.",
     "title": "Solutions Architect",
-    "company": "Amazon Web Services"
+    "company": "Amazon Web Services",
+    "featured": true
   },
   {
     "name": "David Sopas",
@@ -67,5 +68,38 @@
     "shortbio": "David started to mod (and play) games as soon as he had access to a computer/console. After some time working professionally in the gaming industry he decided to go independent and make his own games back in 2010 and never stopped working on them, either part-time or full time. Among some of the titles he worked on are Vizati, Puwang and Quest of Dungeons.",
     "title": "¯\\_(ツ)_/¯",
     "company": "Upfall Studios"
+  },
+  {
+    "name": "Jorge Ferreiro",
+    "img": "/img/speakers/jorge_ferreiro.png",
+    "github": "ferreiro",
+    "twitter": "jgferreiro",
+    "linkedin": "jgferreiro",
+    "website": "https://www.ferreiro.me/",
+    "shortbio": "Jorge Ferreiro is a Software Engineer at Eventbrite, previously at Amazon. Jorge loves building products designed to improve people's lives, and he likes to be at the intersection of design, business, marketing, and engineering. Jorge has developed a core knowledge in Web Development. Jorge runs a Youtube show called 'Developers In Depth', has it's own blog (ferreiro.me/blog) and does international speaking.",
+    "title": "Frontend Software Engineer SDE",
+    "company": "Eventbrite",
+    "featured": true
+  },
+  {
+    "name": "Filipa Lacerda",
+    "img": "/img/speakers/filipa_lacerda.jpeg",
+    "github": "filipalacerda",
+    "twitter": "FilipaLacerda",
+    "linkedin": "filipalacerda",
+    "website": "https://filipa.gitlab.io/",
+    "shortbio": "Filipa is a Frontend Engineer at Zapier. She's a speaker and a mentor, based in sunny Portugal and passionate about the web & teaching.",
+    "title": "Frontend Engineer",
+    "company": "Zapier",
+    "featured": true
+  },
+  {
+    "name": "Nuno Brites",
+    "img": "/img/speakers/nuno_brites.jpeg",
+    "github": "nbrites",
+    "linkedin": "nbrites",
+    "shortbio": "I'm a software engineer working on software development for trucks at the MAN | Digital Hub. I'm currently working on a product that will enable the installation of software updates over the air into trucks.",
+    "title": "Senior Software Engineer @ MAN Digital Hub",
+    "company": "Volkswagen Digital Solutions"
   }
 ]

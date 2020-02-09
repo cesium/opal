@@ -2,94 +2,114 @@
   "exclusive": [
     {
       "name": "Accenture",
-      "img": "/img/sponsors/accenture_white.png",
+      "img": "/img/sponsors/exclusive/accenture.png",
       "url": "https://www.accenture.com/pt-pt"
     }
   ],
   "gold": [
     {
       "name": "NOS",
-      "img": "/img/sponsors/nos_white.png",
+      "img": "/img/sponsors/gold/nos.png",
       "url": "https://www.nos.pt/"
     },
     {
       "name": "KPMG",
-      "img": "/img/sponsors/kpmg_blue.png",
+      "img": "/img/sponsors/gold/kpmg.png",
       "url": "https://home.kpmg/pt/pt/home.html"
     }
   ],
   "silver": [
     {
       "name": "Glintt",
-      "img": "/img/sponsors/glintt.png",
+      "img": "/img/sponsors/silver/glintt.png",
       "url": "https://www.glintt.com/pt"
     },
     {
       "name": "Primavera",
-      "img": "/img/sponsors/primavera.png",
+      "img": "/img/sponsors/silver/primavera.png",
       "url": "https://pt.primaverabss.com/pt/"
     },
     {
       "name": "Checkmarx",
-      "img": "/img/sponsors/checkmarx.png",
+      "img": "/img/sponsors/silver/checkmarx.png",
       "url": "https://www.checkmarx.com/"
     },
     {
       "name": "Bosch",
-      "img": "/img/sponsors/bosch.png",
+      "img": "/img/sponsors/silver/bosch.png",
       "url": "https://www.bosch.pt/"
     },
     {
       "name": "Deloitte",
-      "img": "/img/sponsors/deloitte.png",
+      "img": "/img/sponsors/silver/deloitte.png",
       "url": "https://deloitte.com/pt/"
     },
     {
       "name": "Retail Consult",
-      "img": "/img/sponsors/retailconsult.png",
+      "img": "/img/sponsors/silver/retailconsult.png",
       "url": "https://www.retail-consult.com/"
     },
     {
       "name": "Hitachi Solutions",
-      "img": "/img/sponsors/hitachisolutions.png",
+      "img": "/img/sponsors/silver/hitachisolutions.png",
       "url": "https://www.hitachi.eu/pt-pt"
+    },
+    {
+      "name": "New Hotel Software",
+      "img": "/img/sponsors/silver/newhotel.png",
+      "url": "https://www.newhotel.com/pt/Global/Homepage.aspx"
     }
   ],
   "bronze": [
     {
       "name": "Seegno",
-      "img": "/img/sponsors/seegno_white.png",
+      "img": "/img/sponsors/bronze/seegno_white.png",
       "url": "https://seegno.com/"
     },
     {
       "name": "AlticeLabs/Inova-Ria",
-      "img": "/img/sponsors/inovaria.png",
+      "img": "/img/sponsors/bronze/inovaria.png",
       "url": "http://www.inova-ria.pt/pt"
     },
     {
       "name": "OutSystems",
-      "img": "/img/sponsors/outsystems.png",
+      "img": "/img/sponsors/bronze/outsystems.png",
       "url": "https://www.outsystems.com/"
     },
     {
       "name": "Apside",
-      "img": "/img/sponsors/apside_white.png",
+      "img": "/img/sponsors/bronze/apside_white.png",
       "url": "https://www.apside.com/en/"
     },
     {
       "name": "UbiWhere",
-      "img": "/img/sponsors/ubiwhere.png",
+      "img": "/img/sponsors/bronze/ubiwhere.png",
       "url": "https://www.ubiwhere.com/pt/inicio"
     },
     {
       "name": "Critical Software",
-      "img": "/img/sponsors/critical.png",
+      "img": "/img/sponsors/bronze/critical.png",
       "url": "https://criticalsoftware.com/"
     },
     {
       "name": "Nmbrs",
-      "img": "/img/sponsors/nmbrs_white.png",
+      "img": "/img/sponsors/bronze/nmbrs_white.png",
       "url": "https://www.nmbrs.com/"
+    },
+    {
+      "name": "Devexperts",
+      "img": "/img/sponsors/bronze/devexperts.png",
+      "url": "https://devexperts.com/"
+    },
+    {
+      "name": "BLIP",
+      "img": "/img/sponsors/bronze/blip.png",
+      "url": "https://blip.pt/"
+    },
+    {
+      "name": "Kelvin Inc",
+      "img": "/img/sponsors/bronze/kelvin.png",
+      "url": "https://www.kelvininc.com/"
     }
   ]
 }
