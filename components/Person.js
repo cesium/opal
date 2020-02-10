@@ -3,6 +3,7 @@ import { styled } from '@material-ui/core/styles';
 import { Typography, Avatar, Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import SocialIcons from './SocialIcons';
+import theme from './theme';
 
 const Image = styled(Avatar)({
   width: 200,
@@ -13,7 +14,7 @@ const Image = styled(Avatar)({
 });
 
 const TextBox = styled(Typography)({
-  color: 'white',
+  color: theme.palette.text.title,
   overflow: 'hidden',
   fontWeight: 'bold',
   textAlign: 'center',
@@ -59,7 +60,7 @@ const Person = ({
         twitter={twitter}
         github={github}
         linkedin={linkedin}
-        color="white"
+        color={theme.palette.icons}
       />
     </Grid>
   </Grid>

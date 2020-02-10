@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
 import Favorite from '@material-ui/icons/Favorite';
 import SocialIcons from './SocialIcons';
+import theme from './theme';
 import Link from './Link';
 
 const PaddingBox = styled(Box)({
@@ -20,20 +21,36 @@ const StyledAppBar = styled(AppBar)({
   bottom: 0,
 });
 
-const WithLove = () => (
+const ColoredTypography = styled(Typography)(({ color }) => ({
+  color,
+}));
+
+const WithLove = ({ color }) => (
   <Grid item xs={12}>
     <CenteredBox mb={1}>
-      <Typography>made with </Typography>
+      <ColoredTypography color={color || theme.palette.text.title}>
+        made with
+      </ColoredTypography>
       <Favorite color="error">Love</Favorite>
       <Link href="https://cesium.di.uminho.pt">
-        <Typography> by CeSIUM</Typography>
+        <ColoredTypography color={color || theme.palette.text.title}>
+          by CeSIUM
+        </ColoredTypography>
       </Link>
     </CenteredBox>
   </Grid>
 );
 
-const Footer = ({ facebook, twitter, instagram, github, medium }) => (
-  <StyledAppBar color="secondary" position="relative">
+const Footer = ({
+  facebook,
+  twitter,
+  instagram,
+  github,
+  medium,
+  backgroundColor,
+  iconColor,
+}) => (
+  <StyledAppBar color={backgroundColor || 'primary'} position="relative">
     <Grid container justify="center" alignItems="center">
       <SocialIcons
         facebook={facebook}
@@ -41,12 +58,16 @@ const Footer = ({ facebook, twitter, instagram, github, medium }) => (
         github={github}
         instagram={instagram}
         medium={medium}
-        color="white"
+        color={iconColor || theme.palette.icons}
       />
       <WithLove />
     </Grid>
   </StyledAppBar>
 );
+
+WithLove.propTypes = {
+  color: PropTypes.string,
+};
 
 Footer.propTypes = {
   facebook: PropTypes.string.isRequired,
@@ -54,6 +75,8 @@ Footer.propTypes = {
   instagram: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
   medium: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
+  iconColor: PropTypes.string,
 };
 
 export default Footer;

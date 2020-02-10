@@ -26,15 +26,15 @@ const Background = styled(Box)(({ src }) => ({
   backgroundRepeat: 'no-repeat',
 }));
 
-const Title = styled(Typography)({
+const Title = styled(Typography)(({ color }) => ({
   fontWeight: 'bold',
-  color: 'white',
+  color,
   textTransform: 'uppercase',
   textAlign: 'center',
   [theme.breakpoints.down('sm')]: {
     fontSize: theme.typography.h2.fontSize,
   },
-});
+}));
 
 const TitleGrid = styled(Grid)({
   marginBottom: theme.spacing(5),
@@ -47,6 +47,7 @@ export default function TopSection({
   backgroundImage,
   pageTitle,
   title,
+  titleColor,
   contentUnderneath,
 }) {
   let topPadding = 8;
@@ -86,7 +87,10 @@ export default function TopSection({
         spacing={2}
       >
         <Grid item>
-          <Title color={theme.palette.secondary.main} variant={variant}>
+          <Title
+            color={titleColor || theme.palette.text.title}
+            variant={variant}
+          >
             {text}
           </Title>
         </Grid>
@@ -104,5 +108,6 @@ TopSection.propTypes = {
   text: PropTypes.string.isRequired,
   pageTitle: PropTypes.bool,
   title: PropTypes.bool,
+  titleColor: PropTypes.string,
   contentUnderneath: PropTypes.bool,
 };

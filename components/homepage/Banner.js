@@ -2,6 +2,7 @@ import React from 'react';
 import { styled } from '@material-ui/core/styles';
 import { Typography, Grid, Box, Hidden } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import theme from '../theme';
 
 const Canvas = styled(Box)({
   position: 'relative',
@@ -41,7 +42,7 @@ const Logo = styled('img')({
 });
 
 const Text = styled(Typography)({
-  color: 'white',
+  color: theme.palette.text.title,
   fontWeight: 'medium',
   fontSize: '36px',
   textTransform: 'uppercase',

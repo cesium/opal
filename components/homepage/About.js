@@ -21,7 +21,7 @@ const StyledIconButton = styled(IconButton)(({ hover }) => ({
   position: 'absolute',
   bottom: '2%',
   right: '2%',
-  color: 'white',
+  color: 'black',
   '&:hover': {
     color: hover,
   },

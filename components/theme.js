@@ -6,28 +6,18 @@ const theme = responsiveFontSizes(
   createMuiTheme({
     palette: {
       primary: {
-        main: '#ffffff',
+        main: '#052C49', // dark blue
+        mainRGB: '5,44,73',
       },
       secondary: {
-        main: '#052c49',
-        light: '#437C90',
+        main: '#437C90', // aqua blue
+        mainRGB: '67,124,144',
       },
-      darkRGB: {
-        red: 5,
-        green: 44,
-        blue: 73,
+      text: {
+        title: 'white',
+        body: 'white',
       },
-      white: {
-        red: 255,
-        green: 255,
-        blue: 255,
-      },
-      orange: {
-        main: '#ED7A4E',
-      },
-      egg: {
-        main: '#EDEBD2',
-      },
+      icons: 'white',
       error: {
         main: red.A400,
       },
@@ -36,22 +26,22 @@ const theme = responsiveFontSizes(
       },
     },
     navbar: {
-      backgroundColor: '#052c49',
       entryBackgroundColor: 'rgba(255,255,255,0.3)',
       textColor: '#fff',
-      drawer: {
-        backgroundColor: '#052c49',
-        textColor: '#fff',
-      },
     },
   }),
 );
 
 // ENEI 2020 colors:
 // Orange: #CF6733
+//  207,103,51
 // Dark blue: #052C49
+//  5,44,73
 // Aqua blue: #437C90
+//  67,124,144
 // Green: #255957
+//  37,89,87
 // Egg: #EEEBD3
+//  238,235,211
 
 export default theme;

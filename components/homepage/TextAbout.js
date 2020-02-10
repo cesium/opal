@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import theme from '../theme';
 import TopSection from '../TopSection';
 
-const StyledPaper = styled(Paper)({
+const StyledPaper = styled(Paper)(({ color }) => ({
   marginLeft: theme.spacing(5),
   marginRight: theme.spacing(5),
   paddingTop: theme.spacing(3),
@@ -13,17 +13,17 @@ const StyledPaper = styled(Paper)({
   width: 'auto',
   textAlign: 'center',
   wordWrap: 'break-word',
-  backgroundColor: `rgba(${theme.palette.darkRGB.red}, ${theme.palette.darkRGB.green},${theme.palette.darkRGB.blue} , 0.8)`,
-});
+  backgroundColor: `rgba(${color}, 0.8)`,
+}));
 
-const NumberTypography = styled(Typography)({
+const MessageTypography = styled(Typography)(({ color }) => ({
   fontWeight: 'bold',
-  color: 'white',
+  color,
   paddingLeft: theme.spacing(2),
   paddingRight: theme.spacing(2),
-});
+}));
 
-function TextAbout({ messages }) {
+function TextAbout({ messages, messageColor, backgroundColor, paperColor }) {
   const [ticks, setTicks] = React.useState(0);
   const message = messages[ticks];
 
@@ -40,12 +40,21 @@ function TextAbout({ messages }) {
   return (
     <TopSection
       text="Sobre"
-      color={theme.palette.secondary.light}
+      color={backgroundColor || theme.palette.secondary.main}
       title
       contentUnderneath
     >
-      <StyledPaper justifyContent="center" display="flex">
-        <NumberTypography variant="h3">{message}</NumberTypography>
+      <StyledPaper
+        justifyContent="center"
+        display="flex"
+        color={paperColor || theme.palette.primary.mainRGB}
+      >
+        <MessageTypography
+          variant="h3"
+          color={messageColor || theme.palette.text.title}
+        >
+          {message}
+        </MessageTypography>
       </StyledPaper>
     </TopSection>
   );
@@ -53,6 +62,9 @@ function TextAbout({ messages }) {
 
 TextAbout.propTypes = {
   messages: PropTypes.arrayOf(String).isRequired,
+  messageColor: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  paperColor: PropTypes.string,
 };
 
 export default TextAbout;

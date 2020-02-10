@@ -31,7 +31,7 @@ export default function ButtonAppBar() {
   const NavBar = styled(AppBar)({
     position: 'fixed',
     zIndex: 1400,
-    background: trigger ? theme.navbar.backgroundColor : 'none',
+    background: trigger ? theme.palette.primary.main : 'none',
   });
 
   const Logo = styled(IconButton)({
@@ -39,7 +39,7 @@ export default function ButtonAppBar() {
   });
 
   const Entry = styled(Button)({
-    color: theme.navbar.textColor,
+    color: theme.palette.text.title,
     '&:hover': {
       backgroundColor: theme.navbar.entryBackgroundColor,
     },

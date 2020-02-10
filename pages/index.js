@@ -8,7 +8,6 @@ import home from '../data/homepage.json';
 import global from '../data/global.json';
 import theme from '../components/theme';
 import Countdown from '../components/homepage/Countdown';
-import FeaturedSpeakers from '../components/homepage/FeaturedSpeakers';
 import Sponsors from '../components/homepage/sponsors/Sponsors';
 import sponsors from '../data/sponsors.json';
 import speakers from '../data/speakers.json';
@@ -30,7 +29,7 @@ export default function Index() {
       />
       <TopSection
         text="faltam"
-        color={theme.palette.secondary.main}
+        color={theme.palette.primary.main}
         title
         contentUnderneath
       >
@@ -40,23 +39,14 @@ export default function Index() {
       <Sponsors
         type="exclusive"
         data={sponsors.exclusive}
-        color={theme.palette.secondary.main}
+        color={theme.palette.primary.main}
         backgroundImage="/img/random_bubbles_lines.svg"
-        // color="#EEEBD3"
-        // color="#fffdf0"
-        // color="#dedede"
       />
       <Pricing tiers={home.ticketInfo} />
       <Sponsors
         type="gold"
         data={sponsors.gold}
-        color={theme.palette.secondary.main}
-        backgroundImage="/img/bubbles.png"
-      />
-      <FeaturedSpeakers
-        title="Oradores"
-        featured={featuredSpeakers}
-        color={theme.palette.secondary.light}
+        color={theme.palette.primary.main}
         backgroundImage="/img/bubbles.png"
       />
       <Sponsors
@@ -68,7 +58,7 @@ export default function Index() {
       <Sponsors
         type="bronze"
         data={sponsors.bronze}
-        color={theme.palette.secondary.light}
+        color={theme.palette.primary.main}
         backgroundImage="/img/bubbles.png"
       />
     </Layout>

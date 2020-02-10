@@ -17,7 +17,7 @@ const Speakers = () => (
   <Layout>
     <TopSection
       text="Oradores"
-      color={theme.palette.secondary.main}
+      color={theme.palette.primary.main}
       title
       pageTitle
     />
