@@ -31,7 +31,9 @@ const WithLove = ({ color }) => (
       <ColoredTypography color={color || theme.palette.text.title}>
         made with
       </ColoredTypography>
-      <Favorite color="error">Love</Favorite>
+      <Favorite color="error" fontSize="small">
+        Love
+      </Favorite>
       <Link href="https://cesium.di.uminho.pt">
         <ColoredTypography color={color || theme.palette.text.title}>
           by CeSIUM
@@ -52,6 +54,7 @@ const Footer = ({
 }) => (
   <StyledAppBar color={backgroundColor || 'primary'} position="relative">
     <Grid container justify="center" alignItems="center">
+      <WithLove />
       <SocialIcons
         facebook={facebook}
         twitter={twitter}
@@ -60,7 +63,6 @@ const Footer = ({
         medium={medium}
         color={iconColor || theme.palette.icons}
       />
-      <WithLove />
     </Grid>
   </StyledAppBar>
 );
