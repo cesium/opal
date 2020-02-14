@@ -11,7 +11,7 @@ import Link from '../components/Link';
 const StyledBox = styled(Box)({
   paddingTop: '100px',
   paddingBottom: '100px',
-  backgroundColor: theme.palette.secondary.light,
+  backgroundColor: theme.palette.secondary.main,
   overflow: 'hidden',
 });
 
@@ -21,7 +21,7 @@ const StyledGrid = styled(Grid)({
 });
 
 const StyledButton = styled(Button)({
-  color: theme.palette.secondary.main,
+  color: theme.palette.primary.main,
 });
 
 function sortBy(prop) {
@@ -40,7 +40,7 @@ const Ambassadors = () => (
   <Layout>
     <TopSection
       text="embaixadores"
-      color={theme.palette.secondary.main}
+      color={theme.palette.primary.main}
       title
       pageTitle
       contentUnderneath
@@ -48,7 +48,7 @@ const Ambassadors = () => (
       <Grid container justify="center">
         <Grid item>
           <Link href="https://link.medium.com/VgDSweHUx2">
-            <StyledButton variant="contained" color="primary" size="large">
+            <StyledButton variant="contained" color="white" size="large">
               Torna-te embaixador
             </StyledButton>
           </Link>

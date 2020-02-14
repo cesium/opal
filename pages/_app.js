@@ -3,8 +3,9 @@ import App from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import SEO from '../components/SEO';
+import config from '../data/global.json';
 import theme from '../components/theme';
-import { event } from '../data/global.json';
 
 export default class MyApp extends App {
   componentDidMount() {
@@ -21,15 +22,7 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
-          <title>{event.title}</title>
-          <meta name="description" content={event.description} />
-          <meta property="og:type" content="website" />
-          <meta name="og:title" property="og:title" content={event.title} />
-          <meta
-            name="og:description"
-            property="og:description"
-            content={event.description}
-          />
+          <SEO event={config.event} social={config.social} />
           <link
             rel="apple-touch-icon"
             sizes="57x57"

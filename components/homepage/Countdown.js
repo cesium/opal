@@ -11,25 +11,29 @@ const StyledGrid = styled(Grid)({
   width: 'auto',
 });
 
-const NumberTypography = styled(Typography)({
+const NumberTypography = styled(Typography)(({ color }) => ({
   fontWeight: 'bold',
-  color: 'white',
-});
+  color,
+}));
 
-const UnitTypography = styled(Typography)({
+const UnitTypography = styled(Typography)(({ color }) => ({
   fontWeight: 'medium',
-  color: 'white',
+  color,
   // textShadow: '2px 2px 0 #000000',
   textTransform: 'uppercase',
-});
+}));
 
 const Unit = ({ value, unit }) => (
   <Grid container item direction="column" justify="center" alignItems="center">
     <Grid item>
-      <NumberTypography variant="h1">{value}</NumberTypography>
+      <NumberTypography variant="h1" color={theme.palette.text.title}>
+        {value}
+      </NumberTypography>
     </Grid>
     <Grid item>
-      <UnitTypography variant="h6">{unit}</UnitTypography>
+      <UnitTypography variant="h6" color={theme.palette.text.title}>
+        {unit}
+      </UnitTypography>
     </Grid>
   </Grid>
 );

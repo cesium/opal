@@ -65,7 +65,7 @@ function PricingCard({ title, subtitle, price, link, description }) {
       </StyledCardContent>
       <StyledCardActions>
         <Link href={link}>
-          <Button variant="contained" color="secondary">
+          <Button variant="contained" color="primary">
             Comprar
           </Button>
         </Link>
@@ -78,7 +78,7 @@ function Pricing({ tiers }) {
   return (
     <TopSection
       text="Bilhetes"
-      color={theme.palette.secondary.light}
+      color={theme.palette.secondary.main}
       title
       contentUnderneath
     >

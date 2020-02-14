@@ -17,14 +17,14 @@ import theme from '../theme';
 // this can't be changed to a styled component
 const useStyles = makeStyles({
   paper: {
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.main,
   },
 });
 
 const Spacer = styled('div')(theme.mixins.toolbar);
 
 const Item = styled(ListItemText)({
-  color: theme.navbar.drawer.textColor,
+  color: theme.palette.text.title,
   textAlign: 'right',
 });
 

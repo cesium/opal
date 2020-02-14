@@ -21,12 +21,12 @@ const SpeakerPicture = styled(CardMedia)({
 });
 
 const SpeakerCard = styled(Card)({
-  backgroundColor: theme.palette.secondary.main,
+  backgroundColor: theme.palette.primary.main,
   maxWidth: 310,
 });
 
 const ColoredTypography = styled(Typography)({
-  color: 'white',
+  color: theme.palette.text.title,
 });
 
 const Company = styled(ColoredTypography)({
@@ -35,11 +35,12 @@ const Company = styled(ColoredTypography)({
 
 const ShortBio = styled(ColoredTypography)({
   align: 'justify',
+  color: theme.palette.text.body,
 });
 
 const RightIconButton = styled(IconButton)({
   marginLeft: 'auto',
-  color: 'white',
+  color: theme.palette.text.title,
 });
 
 const SpeakerBasics = styled(CardContent)({
@@ -89,7 +90,7 @@ function Speaker({
           github={github}
           linkedin={linkedin}
           website={website}
-          color="white"
+          color={theme.palette.icons}
         />
         <RightIconButton onClick={handleExpandClick} aria-expanded={expanded}>
           {expanded ? <InvertedExpandMore /> : <ExpandMore />}
