@@ -6,6 +6,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import SEO from '../components/SEO';
 import config from '../data/global.json';
 import theme from '../components/theme';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default class MyApp extends App {
   componentDidMount() {

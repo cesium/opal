@@ -79,33 +79,39 @@ export default function TopSection({
     >
       {!backgroundImage && <Background src="/img/bubbles_20.png" />}
       <Background src={backgroundImage} />
-      <TitleGrid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-        spacing={2}
-      >
-        <Grid item>
-          <Title
-            color={titleColor || theme.palette.text.title}
-            variant={variant}
-          >
-            {text}
-          </Title>
-        </Grid>
-        <Underline thickness={thickness} length={length} diameter={diameter} />
-      </TitleGrid>
+      {title && (
+        <TitleGrid
+          container
+          direction="column"
+          justify="center"
+          alignItems="center"
+          spacing={2}
+        >
+          <Grid item>
+            <Title
+              color={titleColor || theme.palette.text.title}
+              variant={variant}
+            >
+              {text}
+            </Title>
+          </Grid>
+          <Underline
+            thickness={thickness}
+            length={length}
+            diameter={diameter}
+          />
+        </TitleGrid>
+      )}
       {children}
     </Canvas>
   );
 }
 
 TopSection.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.object,
   color: PropTypes.string.isRequired,
   backgroundImage: PropTypes.string,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   pageTitle: PropTypes.bool,
   title: PropTypes.bool,
   titleColor: PropTypes.string,
