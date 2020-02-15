@@ -25,12 +25,15 @@
     "@material-ui/lab": "^4.0.0-alpha.40",
     "@material-ui/styles": "^4.9.0",
     "clsx": "^1.0.4",
+    "jquery": "^3.4.1",
     "next": "^9.2.0",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-countdown-now": "^2.1.2",
     "react-dom": "16.9.0",
-    "react-player": "^1.13.0"
+    "react-player": "^1.13.0",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

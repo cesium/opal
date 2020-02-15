@@ -1,0 +1,419 @@
+[
+  {
+    "day": {
+      "day": 23,
+      "month": "Fevereiro",
+      "day_of_week": "Domingo"
+    },
+    "activities": [
+      {
+        "offset": true,
+        "duration": 6
+      },
+      {
+        "name": "Check-In",
+        "place": "Sala de Congressos",
+        "time": "15:00-18:00",
+        "duration": 3
+      },
+      {
+        "dinner": true,
+        "duration": 2
+      },
+      {
+        "offset": true,
+        "duration": 1
+      },
+      {
+        "name": "Sessão de Abertura",
+        "time": "21:00-22:00",
+        "place": "Grande Auditório",
+        "duration": 1
+      },
+      {
+        "name": "Festa Noturna",
+        "time": "22:00-02:00",
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 24,
+      "month": "Fevereiro",
+      "day_of_week": "Segunda"
+    },
+    "activities": [
+      {
+        "breakfast": true,
+        "duration": 1
+      },
+      {
+        "multiple": true,
+        "talk1": {
+          "name": "2 Décadas de Progresso da IA (2000-19): os Novos Desafios",
+          "speakersLeft": ["Helder Coelho"],
+          "place": "Grande Auditório",
+          "time": "10:00-11:00",
+          "duration": 1
+        },
+        "talk2": {
+          "name": "Let’s be Autonomous",
+          "speakersLeft": ["Pedro Girão"],
+          "place": "Pequeno Auditório",
+          "time": "10:00-11:00",
+          "duration": 1
+        },
+        "talk3": {
+          "name": "Gimme a job... I mean: How to get a tech internship?",
+          "speakersLeft": ["Jorge Ferreiro"],
+          "place": "Grande Auditório",
+          "time": "11:00-12:00",
+          "duration": 1
+        },
+        "talk4": {
+          "name": "magIA @PRIMAVERA",
+          "speakersLeft": ["Miguel Domingues", "André Gil Martins"],
+          "place": "Pequeno Auditório",
+          "time": "11:00-12:00",
+          "duration": 1
+        },
+        "workshop1": {
+          "name": "Workshop TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Sala de Congressos S4",
+          "time": "10:00-12:00",
+          "duration": 2
+        },
+        "workshop2": {
+          "name": "Workshop TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Sala de Congressos S5",
+          "time": "10:00-12:00",
+          "duration": 2
+        }
+      },
+      {
+        "lunch": true,
+        "duration": 2
+      },
+      {
+        "multiple": true,
+        "talk1": {
+          "name": "Machine Learning Lifecycle in the Cloud",
+          "speakersLeft": ["Nikiforos Botis"],
+          "place": "Grande Auditório",
+          "time": "14:00-15:00",
+          "duration": 1
+        },
+        "talk2": {
+          "name": "IOT at Ubiwhere",
+          "speakersLeft": ["André Duarte"],
+          "place": "Pequeno Auditório",
+          "time": "14:00-15:00",
+          "duration": 1
+        },
+        "talk3": {
+          "name": "That first game I thought would be a hit! Vizati Post-Mortem",
+          "speakersLeft": ["David Amador"],
+          "place": "Grande Auditório",
+          "speakersRight": [],
+          "time": "15:00-16:00",
+          "duration": 1
+        },
+        "talk4": {
+          "name": "Learning to Fly",
+          "speakersLeft": ["Paulo Novais"],
+          "place": "Pequeno Auditório",
+          "time": "15:00-16:00",
+          "duration": 1
+        },
+        "workshop1": {
+          "name": "Workshop TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Sala de Congressos S4",
+          "time": "14:00-16:00",
+          "duration": 2
+        },
+        "workshop2": {
+          "name": "Workshop TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Sala de Congressos S5",
+          "time": "14:00-16:00",
+          "duration": 2
+        }
+      },
+      {
+        "coffee": true,
+        "duration": 1
+      },
+      {
+        "name": "Tertúlia - Privacidade de Dados",
+        "place": "Grande Auditório",
+        "speakersLeft": ["Rui Mendes", "Filomena Vieira", "Ricardo Costa"],
+        "time": "17:00-18:15",
+        "duration": 1.25
+      },
+      {
+        "name": "Desafio de Programação",
+        "place": "Grande Auditório",
+        "time": "18:15-19:00",
+        "duration": 0.75
+      },
+      {
+        "double": true,
+        "activityLeft": {
+          "name": "Mega Febrada",
+          "place": "Parque da Ponte",
+          "time": "19:00-02:00",
+          "duration": 7
+        },
+        "activityRight": {
+          "name": "Jantar Empresarial",
+          "time": "19:00-23:00",
+          "duration": 4
+        }
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 25,
+      "month": "Fevereiro",
+      "day_of_week": "Terça"
+    },
+    "activities": [
+      {
+        "breakfast": true,
+        "duration": 1
+      },
+      {
+        "multiple": true,
+        "talk1": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Grande Auditório",
+          "time": "10:00-11:00",
+          "duration": 1
+        },
+        "talk2": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "10:00-11:00",
+          "duration": 1
+        },
+        "talk3": {
+          "name": "Remote work with Zapier",
+          "speakersLeft": ["Filipa Lacerda"],
+          "place": "Grande Auditório",
+          "time": "11:00-12:00",
+          "duration": 1
+        },
+        "talk4": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "11:00-12:00",
+          "duration": 1
+        },
+        "workshop1": {
+          "name": "Workshop TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Sala de Congressos S4",
+          "time": "10:00-12:00",
+          "duration": 2
+        },
+        "workshop2": {
+          "name": "Workshop TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Sala de Congressos S5",
+          "time": "10:00-12:00",
+          "duration": 2
+        }
+      },
+      {
+        "lunch": true,
+        "duration": 2
+      },
+      {
+        "multiple": true,
+        "talk1": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "place": "Grande Auditório",
+          "time": "14:00-15:00",
+          "duration": 1
+        },
+        "talk2": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "14:00-15:00",
+          "duration": 1
+        },
+        "talk3": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "place": "Grande Auditório",
+          "time": "15:00-16:00",
+          "duration": 1
+        },
+        "talk4": {
+          "name": "Cloud Delivery @KPMG",
+          "speakersLeft": ["Hugo Matos"],
+          "place": "Pequeno Auditório",
+          "time": "15:00-16:00",
+          "duration": 1
+        },
+        "workshop1": {
+          "name": "Know your Beer – Microsoft Power Platform",
+          "speakersLeft": ["João Bastos"],
+          "place": "Sala de Congressos S4",
+          "time": "14:00-16:00",
+          "duration": 2
+        },
+        "workshop2": {
+          "name": "Workshop TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Sala de Congressos S5",
+          "time": "14:00-16:00",
+          "duration": 2
+        }
+      },
+      {
+        "coffee": true,
+        "duration": 1
+      },
+      {
+        "name": "Tertúlia - Empreendedorismo",
+        "time": "17:00-18:15",
+        "speakersLeft": ["João Pereira", "André Forte", "Roberto Machado"],
+        "place": "Grande Auditório",
+        "duration": 1.25
+      },
+      {
+        "name": "Quiz",
+        "time": "18:15-19:00",
+        "place": "Grande Auditório",
+        "duration": 0.75
+      },
+      {
+        "dinner": true,
+        "duration": 2
+      },
+      {
+        "offset": true,
+        "duration": 1
+      },
+      {
+        "double": true,
+        "activityLeft": {
+          "name": "Rally Tascas",
+          "time": "22:00-02:00",
+          "duration": 4
+        },
+        "activityRight": {
+          "name": "Peddy Paper",
+          "time": "22:00-02:00",
+          "duration": 4
+        }
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 26,
+      "month": "Fevereiro",
+      "day_of_week": "Quarta"
+    },
+    "activities": [
+      {
+        "breakfast": true,
+        "duration": 1
+      },
+      {
+        "name": "Apresentação das Candidaturas",
+        "time": "10:00-11:00",
+        "place": "Grande Auditório",
+        "duration": 1
+      },
+      {
+        "double": true,
+        "activityLeft": {
+          "name": "Developing Software for Digital Trucks",
+          "speakersLeft": ["Nuno Brites"],
+          "place": "Grande Auditório",
+          "time": "11:00-12:00",
+          "duration": 1
+        },
+        "activityRight": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "11:00-12:00",
+          "duration": 1
+        }
+      },
+      {
+        "lunch": true,
+        "duration": 2
+      },
+      {
+        "double": true,
+        "activityLeft": {
+          "name": "Do I need a hoodie to hack a bank?",
+          "speakersLeft": ["David Sopas"],
+          "place": "Grande Auditório",
+          "time": "14:00-15:00",
+          "duration": 1
+        },
+        "activityRight": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "14:00-15:00",
+          "duration": 1
+        }
+      },
+      {
+        "double": true,
+        "activityLeft": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Grande Auditório",
+          "time": "15:00-16:00",
+          "duration": 1
+        },
+        "activityRight": {
+          "name": "Talk TBA",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "15:00-16:00",
+          "duration": 1
+        }
+      },
+      {
+        "name": "Sessão de Encerramento",
+        "time": "16:00-17:00",
+        "place": "Grande Auditório",
+        "duration": 1
+      }
+    ]
+  }
+]

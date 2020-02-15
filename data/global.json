@@ -18,8 +18,9 @@
   },
   "navbar": {
     "pages": [
-      { "name": "Embaixadores", "link": "/ambassadors" },
+      { "name": "Agenda", "link": "/agenda" },
       { "name": "Oradores", "link": "/speakers" },
+      { "name": "Embaixadores", "link": "/ambassadors" },
       { "name": "Candidaturas", "link": "/applications" },
       { "name": "Blog", "link": "https://medium.com/eneiconf" }
     ],
