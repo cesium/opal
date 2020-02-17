@@ -22,7 +22,7 @@ const SEO = ({ event, social }) => (
     <meta property="og:site_name" content={event.title} />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={event.name} />
+    <meta name="twitter:title" content={`${event.name} ${event.year}`} />
     <meta name="twitter:description" content={event.description} />
     <meta property="twitter:url" content={event.url} />
     <meta name="twitter:creator" content={`@{social.twitter}`} />
@@ -35,6 +35,7 @@ SEO.propTypes = {
   event: PropTypes.shape({
     title: PropTypes.string,
     name: PropTypes.string,
+    year: PropTypes.string,
     description: PropTypes.string,
     keywords: PropTypes.arrayOf(PropTypes.string),
     cover: PropTypes.string,

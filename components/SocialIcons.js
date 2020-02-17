@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
-import { IconButton, SvgIcon } from '@material-ui/core';
+import { IconButton, SvgIcon, Box } from '@material-ui/core';
 import {
   Facebook,
   GitHub,
@@ -9,12 +10,16 @@ import {
   Instagram,
   Language,
 } from '@material-ui/icons';
-import PropTypes from 'prop-types';
+import theme from './theme';
 import Link from './Link';
 
 const ColoredIconButton = styled(IconButton)(({ color }) => ({
   color: `${color}`,
 }));
+
+const Wrapper = styled(Box)({
+  padding: theme.spacing(1),
+});
 
 const SocialIcon = ({ href, label, color, children }) => (
   <Link href={href}>
@@ -40,7 +45,7 @@ const SocialIcons = ({
   medium,
   color,
 }) => (
-  <div>
+  <Wrapper>
     {website ? (
       <SocialIcon href={website} label="website" color={color}>
         <Language />
@@ -100,7 +105,7 @@ const SocialIcons = ({
         <Medium />
       </SocialIcon>
     ) : null}
-  </div>
+  </Wrapper>
 );
 
 SocialIcon.propTypes = {
