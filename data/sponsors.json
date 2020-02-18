@@ -58,6 +58,11 @@
       "name": "New Hotel Software",
       "img": "/img/sponsors/silver/newhotel.png",
       "url": "https://www.newhotel.com/pt/Global/Homepage.aspx"
+    },
+    {
+      "name": "Eurotux",
+      "img": "/img/sponsors/silver/eurotux.png",
+      "url": "https://eurotux.com/"
     }
   ],
   "bronze": [
@@ -110,6 +115,11 @@
       "name": "Kelvin Inc",
       "img": "/img/sponsors/bronze/kelvin.png",
       "url": "https://www.kelvininc.com/"
+    },
+    {
+      "name": "Farfetch",
+      "img": "/img/sponsors/bronze/farfetch.png",
+      "url": "https://www.farfetch.com/pt/"
     }
   ]
 }
