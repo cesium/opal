@@ -7,13 +7,9 @@
     },
     "activities": [
       {
-        "offset": true,
-        "duration": 6
-      },
-      {
         "name": "Check-In",
         "place": "Sala de Congressos",
-        "time": "15:00-18:00",
+        "time": "14:00-18:00",
         "duration": 3
       },
       {
@@ -21,19 +17,17 @@
         "duration": 2
       },
       {
-        "offset": true,
-        "duration": 1
-      },
-      {
         "name": "Sessão de Abertura",
         "time": "21:00-22:00",
         "place": "Grande Auditório",
-        "duration": 1
+        "duration": 1,
+        "type": "social"
       },
       {
         "name": "Festa Noturna",
         "time": "22:00-02:00",
-        "duration": 5
+        "duration": 5,
+        "type": "social"
       }
     ]
   },
@@ -55,28 +49,36 @@
           "speakersLeft": ["Helder Coelho"],
           "place": "Grande Auditório",
           "time": "10:00-11:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Os receios pelo mau uso da Inteligência Artificial (e da super inteligência) são hoje resolvidos com maior controlo, embora as promessas dos anos 70 estejam ainda longe de ter sido realizadas. No entanto, o maior poder de cálculo e de memória, melhores inteligências (algoritmos), e grande profundidade de procura e de aprendizagem permitem progressos sustentáveis nas áreas da saúde e da educação (muitos dados)."
         },
         "talk2": {
           "name": "Let’s be Autonomous",
           "speakersLeft": ["Pedro Girão"],
           "place": "Pequeno Auditório",
           "time": "10:00-11:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Which car will you drive in the future? In this talk, we will give you a tour of current trends, challenges and technologies in the field of autonomous driving and what the future of mobility might look like. We'll walk you through a practical example to show you how Machine Learning is bringing us closer to this dream. Here at Bosch, you can help shape the future of mobility."
         },
         "talk3": {
           "name": "Gimme a job... I mean: How to get a tech internship?",
           "speakersLeft": ["Jorge Ferreiro"],
           "place": "Grande Auditório",
           "time": "11:00-12:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Do you wanna work for the best tech companies or startups in the world? Well... Let me tell you something, getting your first job in technology is a pain and it's a hard thing! I interviewed with more than 10 companies before getting my job at Amazon. In this talk, I'm gonna share all the lessons I learned: From preparing your Resume, preparing the technical interviews (algorithms, problem solving), as well as sharing my own fun experiences doing on-site interviews. So if you wanna get your first internship or full-time job, this is your talk!"
         },
         "talk4": {
           "name": "magIA @PRIMAVERA",
           "speakersLeft": ["Miguel Domingues", "André Gil Martins"],
           "place": "Pequeno Auditório",
           "time": "11:00-12:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Software de Gestão + Inteligência Artificial = Gestão Inteligente"
         },
         "workshop1": {
           "name": "Workshop TBA",
@@ -84,7 +86,9 @@
           "speakersRight": [],
           "place": "Sala de Congressos S4",
           "time": "10:00-12:00",
-          "duration": 2
+          "duration": 2,
+          "tba": true,
+          "type": "workshop"
         },
         "workshop2": {
           "name": "Workshop TBA",
@@ -92,7 +96,9 @@
           "speakersRight": [],
           "place": "Sala de Congressos S5",
           "time": "10:00-12:00",
-          "duration": 2
+          "duration": 2,
+          "tba": true,
+          "type": "workshop"
         }
       },
       {
@@ -106,14 +112,18 @@
           "speakersLeft": ["Nikiforos Botis"],
           "place": "Grande Auditório",
           "time": "14:00-15:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "There's a lot of buzz around Artificial Intelligence (AI) and Machine Learning (ML) in the technology world right now and every developer/business wants to sprinkle AI and ML in their lives. However, the whole process might seem daunting and discourage people from getting their hands dirty, as there's an endless list of steps might need to be taken as well as a big amount of computational resources needed in order to build a Machine Learning solution. But is this true? In this talk, we'll be exploring how cloud computing and tools built on top of it can be leveraged to play around with ML without previous knowledge or owning any physical servers."
         },
         "talk2": {
           "name": "IOT at Ubiwhere",
           "speakersLeft": ["André Duarte"],
           "place": "Pequeno Auditório",
           "time": "14:00-15:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Nos dias que correm quase todos os sistemas são passíveis de serem digitalizados, utilizando sensores e plataformas de controlo remoto para o efeito. Isto é, com o advento das Smart Cities, Industria 4.0, Smart Homes and Buildings, tudo é passível de ser digitalizado. Durante a talk, apresenta-se a forma como a Ubiwhere tem trabalhado o IoT com cidades e outras empresas, passando pela definição dos conceitos base que dão suporte à mesma e pela aplicabilidade prática que o IoT tem no âmbito das Smart Cities. A talk termina com a visão da Ubiwhere para o futuro: \"The City Nervous System\"."
         },
         "talk3": {
           "name": "That first game I thought would be a hit! Vizati Post-Mortem",
@@ -121,14 +131,18 @@
           "place": "Grande Auditório",
           "speakersRight": [],
           "time": "15:00-16:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Jumping into game development and building that first game is always exciting, but what about the expectations? In this talk we'll talk about that first indie game I developed and had a bit of unrealistic expectations for a first project due to lack of experience and knowledge of how things actually worked."
         },
         "talk4": {
           "name": "Learning to Fly",
           "speakersLeft": ["Paulo Novais"],
           "place": "Pequeno Auditório",
           "time": "15:00-16:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "An introduction to Artificial Intelligence (AI), concepts, the most important paradigms, and the main areas of application. Machine learning: classical, reinforcement and deep (neuro).\n Why is AI fundamental to an organization?\n AI at ISlab @ ALGORITMI.\n The option of being relevant or irrelevant in the 21st century.\n Limitations, risks, trends, and expectations.\n An AI world."
         },
         "workshop1": {
           "name": "Workshop TBA",
@@ -136,7 +150,9 @@
           "speakersRight": [],
           "place": "Sala de Congressos S4",
           "time": "14:00-16:00",
-          "duration": 2
+          "duration": 2,
+          "tba": true,
+          "type": "workshop"
         },
         "workshop2": {
           "name": "Workshop TBA",
@@ -144,7 +160,9 @@
           "speakersRight": [],
           "place": "Sala de Congressos S5",
           "time": "14:00-16:00",
-          "duration": 2
+          "duration": 2,
+          "tba": true,
+          "type": "workshop"
         }
       },
       {
@@ -156,12 +174,14 @@
         "place": "Grande Auditório",
         "speakersLeft": ["Rui Mendes", "Filomena Vieira", "Ricardo Costa"],
         "time": "17:00-18:15",
+        "type": "tertúlia",
         "duration": 1.25
       },
       {
         "name": "Desafio de Programação",
         "place": "Grande Auditório",
         "time": "18:15-19:00",
+        "type": "Desafio",
         "duration": 0.75
       },
       {
@@ -170,12 +190,14 @@
           "name": "Mega Febrada",
           "place": "Parque da Ponte",
           "time": "19:00-02:00",
+          "type": "social",
           "duration": 7
         },
         "activityRight": {
           "name": "Jantar Empresarial",
           "time": "19:00-23:00",
-          "duration": 4
+          "duration": 4,
+          "type": "social"
         }
       }
     ]
@@ -199,7 +221,9 @@
           "speakersRight": [],
           "place": "Grande Auditório",
           "time": "10:00-11:00",
-          "duration": 1
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         },
         "talk2": {
           "name": "Talk TBA",
@@ -207,14 +231,18 @@
           "speakersRight": [],
           "place": "Pequeno Auditório",
           "time": "10:00-11:00",
-          "duration": 1
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         },
         "talk3": {
           "name": "Remote work with Zapier",
           "speakersLeft": ["Filipa Lacerda"],
           "place": "Grande Auditório",
           "time": "11:00-12:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Learn how Zapier works successfully as a remote-only company with more than 300 people all over the world."
         },
         "talk4": {
           "name": "Talk TBA",
@@ -222,7 +250,9 @@
           "speakersRight": [],
           "place": "Pequeno Auditório",
           "time": "11:00-12:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "tba": true
         },
         "workshop1": {
           "name": "Workshop TBA",
@@ -230,7 +260,9 @@
           "speakersRight": [],
           "place": "Sala de Congressos S4",
           "time": "10:00-12:00",
-          "duration": 2
+          "duration": 2,
+          "tba": true,
+          "type": "workshop"
         },
         "workshop2": {
           "name": "Workshop TBA",
@@ -238,7 +270,9 @@
           "speakersRight": [],
           "place": "Sala de Congressos S5",
           "time": "10:00-12:00",
-          "duration": 2
+          "duration": 2,
+          "tba": true,
+          "type": "workshop"
         }
       },
       {
@@ -248,11 +282,13 @@
       {
         "multiple": true,
         "talk1": {
-          "name": "Talk TBA",
-          "speakersLeft": [],
+          "name": "Design aberto e desenvolvimento iterativo na GitLab",
+          "speakersLeft": ["Pedro Moreira da Silva"],
           "place": "Grande Auditório",
           "time": "14:00-15:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Como trabalhamos na GitLab, concretamente na equipa de User Experience, através do caso de estudo do redesign da navegação do produto."
         },
         "talk2": {
           "name": "Talk TBA",
@@ -260,28 +296,36 @@
           "speakersRight": [],
           "place": "Pequeno Auditório",
           "time": "14:00-15:00",
-          "duration": 1
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         },
         "talk3": {
-          "name": "Talk TBA",
+          "name": "",
           "speakersLeft": [],
           "place": "Grande Auditório",
           "time": "15:00-16:00",
-          "duration": 1
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         },
         "talk4": {
           "name": "Cloud Delivery @KPMG",
           "speakersLeft": ["Hugo Matos"],
           "place": "Pequeno Auditório",
           "time": "15:00-16:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "The process of migrating on-prem solutions to the cloud."
         },
         "workshop1": {
           "name": "Know your Beer – Microsoft Power Platform",
           "speakersLeft": ["João Bastos"],
           "place": "Sala de Congressos S4",
           "time": "14:00-16:00",
-          "duration": 2
+          "duration": 2,
+          "type": "workshop",
+          "description": "Neste workshop, vamos demonstrar o potencial da Microsoft Power Platform para endereçar desafios do dia-a-dia em várias indústrias num cenário de negócio, ao explorar como a Power Platform permite a criação de poderosas Business Apps dotadas de Inteligência Artificial (IA) com as mais recentes e inovadoras tecnologias da Microsoft. Este será um hands-on workshop, com demonstração em tempo-real do desenho de uma Power App capaz de identificar diferentes marcas de cerveja dentro de um dado ambiente, e mostrando os resultados visivelmente na App. O workshop explorará os componentes técnicos necessários à construção da App e, adicionalmente, o mecanismo de IA responsável por treinar um modelo inteligente capaz de identificar objetos. Junta-te a nós!"
         },
         "workshop2": {
           "name": "Workshop TBA",
@@ -289,7 +333,9 @@
           "speakersRight": [],
           "place": "Sala de Congressos S5",
           "time": "14:00-16:00",
-          "duration": 2
+          "duration": 2,
+          "tba": true,
+          "type": "workshop"
         }
       },
       {
@@ -301,33 +347,33 @@
         "time": "17:00-18:15",
         "speakersLeft": ["João Pereira", "André Forte", "Roberto Machado"],
         "place": "Grande Auditório",
-        "duration": 1.25
+        "duration": 1.25,
+        "type": "tertúlia"
       },
       {
         "name": "Quiz",
         "time": "18:15-19:00",
         "place": "Grande Auditório",
-        "duration": 0.75
+        "duration": 0.75,
+        "type": "Desafio"
       },
       {
         "dinner": true,
         "duration": 2
       },
       {
-        "offset": true,
-        "duration": 1
-      },
-      {
         "double": true,
         "activityLeft": {
           "name": "Rally Tascas",
           "time": "22:00-02:00",
-          "duration": 4
+          "duration": 4,
+          "type": "social"
         },
         "activityRight": {
           "name": "Peddy Paper",
           "time": "22:00-02:00",
-          "duration": 4
+          "duration": 4,
+          "type": "social"
         }
       }
     ]
@@ -356,7 +402,9 @@
           "speakersLeft": ["Nuno Brites"],
           "place": "Grande Auditório",
           "time": "11:00-12:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "In a world where the logistics industry is getting more and more digital, the trucks need to keep up and digital services are now part of what we call a digital truck. To develop the software that gives life to the digital services cross functional teams are essential, from software engineers to UX/UI designers every single role is of the most importance to deliver a high quality product. I will talk about software development of a digital service, from the perspective of a software engineer inside an agile cross functional team working at the MAN | Digital Hub."
         },
         "activityRight": {
           "name": "Talk TBA",
@@ -364,7 +412,9 @@
           "speakersRight": [],
           "place": "Pequeno Auditório",
           "time": "11:00-12:00",
-          "duration": 1
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         }
       },
       {
@@ -378,7 +428,9 @@
           "speakersLeft": ["David Sopas"],
           "place": "Grande Auditório",
           "time": "14:00-15:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Nesta talk o autor baseia a apresentação num serviço de intrusão fisica a uma conhecida instituição financeira com diversas \"barreiras\" de segurança. Com um cenário cheio de ação e com diversas personagens (nenhuma delas veste um hoodie), como será o desfecho deste tema tão \"hollywoodesco\"?"
         },
         "activityRight": {
           "name": "Talk TBA",
@@ -386,7 +438,9 @@
           "speakersRight": [],
           "place": "Pequeno Auditório",
           "time": "14:00-15:00",
-          "duration": 1
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         }
       },
       {
@@ -397,22 +451,26 @@
           "speakersRight": [],
           "place": "Grande Auditório",
           "time": "15:00-16:00",
-          "duration": 1
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         },
         "activityRight": {
-          "name": "Talk TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
+          "name": "Olá!",
+          "speakersLeft": ["Diogo Cerqueira"],
           "place": "Pequeno Auditório",
           "time": "15:00-16:00",
-          "duration": 1
+          "duration": 1,
+          "type": "talk",
+          "description": "Apresentação da empresa."
         }
       },
       {
         "name": "Sessão de Encerramento",
         "time": "16:00-17:00",
         "place": "Grande Auditório",
-        "duration": 1
+        "duration": 1,
+        "type": "social"
       }
     ]
   }

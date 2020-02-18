@@ -20,6 +20,7 @@ function DoubleActivity({ activityLeft, activityRight, mobile }) {
           speakersLeft={activityLeft.speakersLeft}
           speakersRight={activityLeft.speakersRight}
           place={activityLeft.place}
+          tba={activityLeft.tba}
           mobile={mobile}
         />
       </Grid>
@@ -31,6 +32,7 @@ function DoubleActivity({ activityLeft, activityRight, mobile }) {
           speakersLeft={activityRight.speakersLeft}
           speakersRight={activityRight.speakersRight}
           place={activityRight.place}
+          tba={activityRight.tba}
           mobile={mobile}
         />
       </Grid>

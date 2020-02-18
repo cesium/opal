@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Box } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
+import { Link } from 'react-scroll';
 import Speakers from './Speakers';
 import theme from '../theme';
 
@@ -35,7 +36,7 @@ const activityHeight = (duration) => {
   return `${duration * 65}px`;
 };
 
-const ActivityBlock = styled(Box)(({ actHeight }) => ({
+const ActivityBlock = styled(Box)(({ actHeight, tba }) => ({
   position: 'relative',
   color: 'white',
   background: '#03191e',
@@ -43,8 +44,9 @@ const ActivityBlock = styled(Box)(({ actHeight }) => ({
   height: '100%',
   minHeight: actHeight,
   '&:hover': {
-    backgroundColor: '#03191e', // '#052d36'
+    backgroundColor: tba ? '#03191e' : '#052d36',
     opacity: 1,
+    cursor: tba ? 'initial' : 'pointer',
   },
 }));
 
@@ -68,24 +70,26 @@ function Activity({
   speakersRight,
   duration,
   place,
-  triple,
   multiple,
   mobile,
+  tba,
 }) {
+  const activityId = name.replace(/\s+/g, '-').toLowerCase();
   let height = '';
-  if (triple) height = '178px';
-  else if (multiple) height = '174px';
+  if (multiple) height = '174px';
   else if (mobile) height = '65px';
   // should not be a fixed value
   else height = activityHeight(duration);
   return (
     <AgendaActivity>
       <ActivityTime>{time}</ActivityTime>
-      <ActivityBlock actHeight={height}>
-        <ActivityBorder />
-        <ActivityName>{name}</ActivityName>
-        <Speakers speakersLeft={speakersLeft} speakersRight={speakersRight} />
-      </ActivityBlock>
+      <Link to={activityId} smooth offset={-85}>
+        <ActivityBlock actHeight={height} tba={tba}>
+          <ActivityBorder />
+          <ActivityName>{name}</ActivityName>
+          <Speakers speakersLeft={speakersLeft} speakersRight={speakersRight} />
+        </ActivityBlock>
+      </Link>
       <ActivityLocation>{place}</ActivityLocation>
     </AgendaActivity>
   );
@@ -98,9 +102,9 @@ Activity.propTypes = {
   speakersRight: PropTypes.array,
   duration: PropTypes.number.isRequired,
   place: PropTypes.string.isRequired,
-  triple: PropTypes.bool,
   multiple: PropTypes.bool,
   mobile: PropTypes.bool,
+  tba: PropTypes.bool,
 };
 
 export default Activity;

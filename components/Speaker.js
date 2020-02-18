@@ -80,8 +80,13 @@ function Speaker({
     setExpanded(!expanded);
   };
 
+  const speakerId = name
+    .replace(/\s+/g, '-')
+    .replace(/[\u{0080}-\u{FFFF}]/gu, '')
+    .toLowerCase();
+
   return (
-    <SpeakerCard>
+    <SpeakerCard id={speakerId}>
       <Header img={img} name={name} company={company} title={title} />
       <CardActions disableSpacing>
         <SocialIcons
@@ -92,9 +97,11 @@ function Speaker({
           website={website}
           color={theme.palette.icons}
         />
-        <RightIconButton onClick={handleExpandClick} aria-expanded={expanded}>
-          {expanded ? <InvertedExpandMore /> : <ExpandMore />}
-        </RightIconButton>
+        {shortbio && (
+          <RightIconButton onClick={handleExpandClick} aria-expanded={expanded}>
+            {expanded ? <InvertedExpandMore /> : <ExpandMore />}
+          </RightIconButton>
+        )}
       </CardActions>
       {expanded ? (
         <Underline thickness="0.3rem" length={100} diameter="2rem" />

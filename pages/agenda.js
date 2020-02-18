@@ -2,12 +2,44 @@ import React from 'react';
 import Slider from 'react-slick';
 import { Grid, withWidth } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import { styled } from '@material-ui/core/styles';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import theme from '../components/theme';
 import agenda from '../data/agenda.json';
 import Day from '../components/agenda/Day';
 import global from '../data/global.json';
+import ActivitiesInfo from '../components/agenda/ActivitiesInfo';
+
+function getActivities(agendaDay) {
+  const activities = [];
+
+  agendaDay.activities.forEach((activity) => {
+    if (activity.multiple) {
+      activities.push(activity.talk1);
+      activities.push(activity.talk2);
+      activities.push(activity.workshop1);
+      activities.push(activity.workshop2);
+      activities.push(activity.talk3);
+      activities.push(activity.talk4);
+    } else if (activity.double) {
+      activities.push(activity.activityLeft);
+      activities.push(activity.activityRight);
+    } else activities.push(activity);
+  });
+
+  const filteredActivities = activities.filter(
+    (activity) =>
+      !activity.offset &&
+      !activity.tba &&
+      !activity.breakfast &&
+      !activity.lunch &&
+      !activity.dinner &&
+      !activity.coffee,
+  );
+
+  return filteredActivities;
+}
 
 function daysBetween(date1, date2) {
   // The number of milliseconds in one day
@@ -16,6 +48,12 @@ function daysBetween(date1, date2) {
   const differenceMs = Math.abs(date1 - date2);
   return Math.round(differenceMs / ONE_DAY);
 }
+
+const StyledGrid = styled(Grid)({
+  paddingTop: '4rem',
+  paddingBottom: '2rem',
+  backgroundColor: theme.palette.primary.dark,
+});
 
 function NextArrow(props) {
   const { className, style, onClick, mobile } = props;
@@ -96,6 +134,19 @@ function Agenda({ width }) {
           </Grid>
         </Grid>
       </TopSection>
+      <StyledGrid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+      >
+        {agenda.map((agendaDay) => (
+          <ActivitiesInfo
+            day={agendaDay.day}
+            activities={getActivities(agendaDay)}
+          />
+        ))}
+      </StyledGrid>
     </Layout>
   );
 }
