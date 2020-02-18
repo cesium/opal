@@ -58,6 +58,11 @@
       "name": "New Hotel Software",
       "img": "/img/sponsors/silver/newhotel.png",
       "url": "https://www.newhotel.com/pt/Global/Homepage.aspx"
+    },
+    {
+      "name": "Eurotux",
+      "img": "/img/sponsors/silver/eurotux.png",
+      "url": "https://eurotux.com/"
     }
   ],
   "bronze": [
