@@ -1,22 +1,20 @@
 import React from 'react';
-import { Grid, AppBar, Box, Typography } from '@material-ui/core/';
 import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
+import { Grid, AppBar, Typography, Box } from '@material-ui/core/';
 import Favorite from '@material-ui/icons/Favorite';
 import SocialIcons from './SocialIcons';
-import theme from './theme';
 import Link from './Link';
+import theme from './theme';
+import { event } from '../data/global.json';
 
-const PaddingBox = styled(Box)({
-  padding: 3,
-});
-
-const CenteredBox = styled(PaddingBox)({
+const Wrapper = styled(Box)({
   display: 'flex',
   justifyContent: 'center',
 });
 
 const StyledAppBar = styled(AppBar)({
+  padding: theme.spacing(2),
   position: 'absolute',
   bottom: 0,
 });
@@ -25,22 +23,23 @@ const ColoredTypography = styled(Typography)(({ color }) => ({
   color,
 }));
 
-const WithLove = ({ color }) => (
-  <Grid item xs={12}>
-    <CenteredBox mb={1}>
-      <ColoredTypography color={color || theme.palette.text.title}>
-        made with
-      </ColoredTypography>
-      <Favorite color="error" fontSize="small">
-        Love
-      </Favorite>
-      <Link href="https://cesium.di.uminho.pt">
-        <ColoredTypography color={color || theme.palette.text.title}>
-          by CeSIUM
-        </ColoredTypography>
+const Copyright = () => (
+  <Wrapper>
+    <ColoredTypography variant="body2" color={theme.palette.text.title}>
+      &copy;
+      {` ${event.title} ${event.year}. Made with  `}
+    </ColoredTypography>
+    <Favorite color="error" fontSize="small">
+      Love
+    </Favorite>
+    <ColoredTypography variant="body2" color={theme.palette.text.title}>
+      {' by '}
+      <Link color={theme.palette.text.title} href="https://cesium.di.uminho.pt">
+        CeSIUM
       </Link>
-    </CenteredBox>
-  </Grid>
+      .
+    </ColoredTypography>
+  </Wrapper>
 );
 
 const Footer = ({
@@ -54,22 +53,33 @@ const Footer = ({
 }) => (
   <StyledAppBar color={backgroundColor || 'primary'} position="relative">
     <Grid container justify="center" alignItems="center">
-      <WithLove />
-      <SocialIcons
-        facebook={facebook}
-        twitter={twitter}
-        github={github}
-        instagram={instagram}
-        medium={medium}
-        color={iconColor || theme.palette.icons}
-      />
+      <Grid item xs={11} lg={4}>
+        <Copyright />
+      </Grid>
+      <Grid item xs={11} lg={4}>
+        <Wrapper>
+          <SocialIcons
+            facebook={facebook}
+            twitter={twitter}
+            github={github}
+            instagram={instagram}
+            medium={medium}
+            color={iconColor || theme.palette.icons}
+          />
+        </Wrapper>
+      </Grid>
+      <Grid item xs={11} lg={4}>
+        <Wrapper>
+          <Typography variant="body2">
+            <Link color={theme.palette.text.title} href="/codeofconduct">
+              Code of Conduct
+            </Link>
+          </Typography>
+        </Wrapper>
+      </Grid>
     </Grid>
   </StyledAppBar>
 );
-
-WithLove.propTypes = {
-  color: PropTypes.string,
-};
 
 Footer.propTypes = {
   facebook: PropTypes.string.isRequired,

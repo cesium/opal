@@ -5,7 +5,6 @@ import { styled } from '@material-ui/core/styles';
 import Activity from './Activity';
 import DoubleActivity from './DoubleActivity';
 import MultipleActivity from './MultipleActivity';
-import Offset from './Offset';
 import Meal from './Meal';
 import Date from './Date';
 
@@ -28,9 +27,6 @@ const ActivityType = (activity, mobile) => {
   if (activity.breakfast) return <Meal type="Pequeno-Almoço" />;
   if (activity.lunch) return <Meal type="Almoço" />;
   if (activity.dinner) return <Meal type="Jantar" />;
-  if (activity.offset && !mobile)
-    return <Offset duration={activity.duration} />;
-  if (activity.offset && mobile) return null;
 
   if (activity.double) {
     return (
@@ -64,6 +60,7 @@ const ActivityType = (activity, mobile) => {
       speakersLeft={activity.speakersLeft}
       speakersRight={activity.speakersRight}
       place={activity.place}
+      tba={activity.tba}
       mobile={mobile}
     />
   );
@@ -74,7 +71,7 @@ function Day({ day, activities, width }) {
 
   return (
     <AgendaDay mobile={mobile}>
-      <Date day={day} />
+      <Date day={day} multiline />
       {activities.map((activity) => ActivityType(activity, mobile))}
     </AgendaDay>
   );

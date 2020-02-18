@@ -67,6 +67,7 @@ function MultipleActivity({
           speakersLeft={workshop1.speakersLeft}
           speakersRight={workshop1.speakersRight}
           place={workshop1.place}
+          tba={workshop1.tba}
           multiple
         />
       </ActivityBox>
@@ -78,6 +79,7 @@ function MultipleActivity({
           speakersLeft={workshop2.speakersLeft}
           speakersRight={workshop2.speakersRight}
           place={workshop2.place}
+          tba={workshop2.tba}
           multiple
         />
       </ActivityBox>

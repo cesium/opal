@@ -30,7 +30,6 @@ function Speakers({ speakersLeft, speakersRight }) {
     speakersLeft && speakersLeft.length !== 0
       ? `${SpeakerLine(speakersLeft)}`
       : null;
-
   const rightLine =
     speakersRight && speakersRight.length !== 0
       ? `${SpeakerLine(speakersRight)}`

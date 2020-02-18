@@ -99,7 +99,93 @@
     "github": "nbrites",
     "linkedin": "nbrites",
     "shortbio": "I'm a software engineer working on software development for trucks at the MAN | Digital Hub. I'm currently working on a product that will enable the installation of software updates over the air into trucks.",
-    "title": "Senior Software Engineer @ MAN Digital Hub",
+    "title": "Senior Software Engineer",
     "company": "Volkswagen Digital Solutions"
+  },
+  {
+    "name": "Ricardo Costa",
+    "img": "/img/speakers/Ricardo Costa.JPG",
+    "linkedin": "rafcosta",
+    "shortbio": "Doutorado em Inteligência Artificial e Investigador sénior em áreas como Inteligência Artificial, privacidade, segurança e gestão de identidades, o Ricardo começou a sua atividade profissional em 2001 no setor financeiro, acumulando uma vasta experiência em empresas do setor de IT. Atualmente é Founder e CEO da LOQR e Professor no Politécnico de Felgueiras.",
+    "title": "Founder e CEO da LOQR e Professor no Politécnico de Felgueiras"
+  },
+  {
+    "name": "Paulo Novais",
+    "img": "/img/speakers/PauloNovais.jpg",
+    "linkedin": "paulo-novais-39b5282",
+    "shortbio": "Professor Catedrático do Departamento de Informática e investigador no centro ALGORITMI, na Escola de Engenharia da Universidade do Minho. A sua investigação centra-se na área científica da Inteligência Artificial e dos Sistemas Inteligentes. Mais recentemente, tem-se focado em conceitos ligados a Decisão, Inteligência Ambiente, Ambientes de Vida Assistida e Análise Comportamental. Diretor do Programa de Doutoramento em Informática e, cofundador e Diretor-Adjunto do Mestrado em Direito e Informática da Universidade do Minho. Presidente da APPIA (Associação Portuguesa para a Inteligência Artificial), entre 2016 e 2019. Chair of the Working Group on Intelligent Agent (WG12.3) da IFIP (International Federation for Information Processing), membro da comissão executiva da IBERAMIA (IberoAmerican Society of Artificial Intelligence) e senior member da IEEE (Institute of Electrical and Electronics Engineers). Coordenador da Comissão Científica do Programa de Bolsas Gulbenkian “Novos Talentos em Inteligência Artificial da Fundação Calouste Gulbenkian”.",
+    "title": "Professor Catedrático",
+    "company": "Universidade do Minho"
+  },
+  {
+    "name": "Pedro Moreira da Silva",
+    "img": "/img/speakers/PedroSilva.jpg",
+    "twitter": "PedroMScom",
+    "website": "https://pedroms.com",
+    "linkedin": "pedromoreiradasilva",
+    "shortbio": "Senior Product Designer na GitLab, uma app open source para o desenvolvimento de software, usada por organizações como Electronic Arts, NASA e Sony. Trabalhou em consultoras, startups e a solo. Apaixonado por trabalho remoto, design aberto e transparência.",
+    "title": "Senior Product Designer",
+    "company": "Gitlab"
+  },
+  {
+    "name": "Pedro Girão",
+    "img": "/img/speakers/pedrogirao_bosch.png",
+    "shortbio": "Pedro Girão is a Software Developer who has been working in an Innovation Project at Bosch in Braga. His main area of work has been related to point cloud data processing and visualization techniques, as well as data acquisition and synchronization from multiple sensors for autonomous driving. He took his Master's Degree in Electrical and Computer Engineering in University of Coimbra, where he also spent around two years as a researcher for Instituto de Sistemas e Robótica developing research under the same domains. Pedro enjoys listening to (a lot of) music, playing video games, trying new foods and travelling, as well as keeping up with all tech-related trends.",
+    "title": "Software Developer",
+    "company": "Bosch"
+  },
+  {
+    "name": "Miguel Domingues",
+    "img": "/img/speakers/Miguel_Domingues_PRIMAVERA.jpg",
+    "shortbio": "Mestre em Eng. Informática pela Universidade do Minho e com mais de 20 anos experiência em desenvolvimento, desenvolveu a maior parte da sua carreira na área de investigação e novas tecnologias, sendo o atual responsável pela área de AI na PRIMAVERA.",
+    "title": "Technical Senior Manager",
+    "company": "Primavera"
+  },
+  {
+    "name": "André Gil Martins",
+    "img": "/img/speakers/André_Martins_Primavera.jpg",
+    "shortbio": "Licenciado em Engenharia Informática e mestre em Sistemas Integrados de Apoio à Decisão pelo ISCTE, com especialização em Sistemas Preditivos em Escada de Séries Temporais. Conta com 20 anos de experiência no desenvolvimento e implementação de Software de Gestão Empresarial.",
+    "title": "Data Scientist",
+    "company": "Primavera"
+  },
+  {
+    "name": "André Duarte",
+    "img": "/img/speakers/André_Duarte_UBIWHERE.jpg",
+    "linkedin": "duarteandre",
+    "shortbio": "André Duarte, licenciado em Informática e Sistemas e mestre em Business Intelligence pelo Instituto Superior de Engenharia de Coimbra. Possui um vasto leque de competências técnicas ao nível da informática como: Data Mining, Business Intelligence, Machine Learning, Internet of Things, Java, SQL, Python, Data Warehousing and Analytics. Começou a trabalhar na Ubiwhere em 2014, desenhando e implementando um sistema de Complex Event Processing (requerendo experiência em analytics) para o Citibrain, uma Plataforma que visa aproximar as cidades dos seus cidadãos com o uso da tecnologia. Em 2015, prosseguiu o seu trabalho na Plataforma Citibrain, desenvolvendo a integração com a Plataforma UrbSense criada pela Universidade do Porto. Em 2016 começou a trabalhar no Projecto Europeu EMBERS, que visa criar um Mobility Backend as a Service para as cidades, concentrando todos os domínios relacionados com a mobilidade num único e centralizado backend, acessível através de Open Standards europeus. ",
+    "title": "Future Mobility Engineer & DevOps ",
+    "company": "Ubiwhere"
+  },
+  {
+    "name": "João Bastos",
+    "img": "/img/speakers/João_Bastos_Hitachi.jpg",
+    "twitter": "bastosj10",
+    "linkedin": "bastosj",
+    "shortbio": "",
+    "title": "Senior Consultant",
+    "company": "Hitachi Solutions"
+  },
+  {
+    "name": "Hugo Matos",
+    "img": "/img/speakers/Hugo Matos_KPMG.jpg",
+    "linkedin": "hugo-matos-7166b6107",
+    "shortbio": "After concluding his Master in Informatics and Computing Engineering at FEUP, Hugo started his career as an IT Consultant at KPMG in 2016. Early on, he contributed to projects of large dimension with various technologies, and right now he focuses on the delivery of simple solutions to complex problems, from the design phase up until the go-live.",
+    "title": "Senior Advisor",
+    "company": "KPMG Portugal"
+  },
+  {
+    "name": "André Forte",
+    "img": "/img/speakers/AndreForte.jpg",
+    "shortbio": "André Forte é o communications manager da Startup Portugal, cargo que desempenha desde dezembro de 2017. Ao longo dos últimos anos, o seu interesse por empreendedorismo e startups aguçou-se com a proximidade para com o ecossistema nacional, cujo crescimento tem acompanhado de muito perto. É um contador de histórias, que desenvolve conteúdo e procura o melhor a melhor forma de contar a experiência de escalar uma startup.",
+    "title": "Communications Manager",
+    "company": "Startup Portugal"
+  },
+  {
+    "name": "Diogo Cerqueira",
+    "img": "/img/speakers/Diogo_Cerqueira_Glintt.JPG",
+    "shortbio": "",
+    "title": "IT Recruiter",
+    "company": "Glintt",
+    "linkedin": "diogo-cerqueira-6bbaab77"
   }
 ]
