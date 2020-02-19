@@ -21,6 +21,7 @@
     "pages": [
       { "name": "Agenda", "link": "/agenda" },
       { "name": "Oradores", "link": "/speakers" },
+      { "name": "Desafios e Prémios", "link": "/challenges" },
       { "name": "Embaixadores", "link": "/ambassadors" },
       { "name": "Candidaturas", "link": "/applications" },
       { "name": "Blog", "link": "https://medium.com/eneiconf" }

@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Quiz",
+    "description": "Isto é uma descrição muito gira do quizz",
+    "prizes": [
+      {
+        "condition": "2 Vencedores",
+        "prize": "2 Google Home Mini"
+      }
+    ]
+  },
+  {
+    "title": "Desafio de Segurança",
+    "description": "Isto é a descrição do desafio de segurança",
+    "prizes": [
+      {
+        "condition": "Vencedor",
+        "prize": "To be announced"
+      }
+    ]
+  },
+  {
+    "title": "CVs",
+    "description": "Se mandares o teu CV, podes ganhar uma cena fixe",
+    "prizes": [
+      {
+        "condition": "Vencedor",
+        "prize": "Xbox One"
+      }
+    ]
+  },
+  {
+    "title": "Desafio de Programação",
+    "description": "Se não programares em Haskell, podes ganhar os seguintes prémios",
+    "prizes": [
+      {
+        "condition": "1º Lugar",
+        "prize": "Teclado muito espetacular"
+      },
+      {
+        "condition": "2º Lugar",
+        "prize": "Teclado não tanto espetacular mas espetacular à mesma"
+      }
+    ]
+  }
+]
