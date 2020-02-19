@@ -11,6 +11,49 @@
     "featured": true
   },
   {
+    "name": "Filipa Lacerda",
+    "img": "/img/speakers/filipa_lacerda.jpeg",
+    "github": "filipalacerda",
+    "twitter": "FilipaLacerda",
+    "linkedin": "filipalacerda",
+    "website": "https://filipa.gitlab.io/",
+    "shortbio": "Filipa is a Frontend Engineer at Zapier. She's a speaker and a mentor, based in sunny Portugal and passionate about the web & teaching.",
+    "title": "Frontend Engineer",
+    "company": "Zapier",
+    "featured": true
+  },
+  {
+    "name": "Jorge Ferreiro",
+    "img": "/img/speakers/jorge_ferreiro.png",
+    "github": "ferreiro",
+    "twitter": "jgferreiro",
+    "linkedin": "jgferreiro",
+    "website": "https://www.ferreiro.me/",
+    "shortbio": "Jorge Ferreiro is a Software Engineer at Eventbrite, previously at Amazon. Jorge loves building products designed to improve people's lives, and he likes to be at the intersection of design, business, marketing, and engineering. Jorge has developed a core knowledge in Web Development. Jorge runs a Youtube show called 'Developers In Depth', has it's own blog (ferreiro.me/blog) and does international speaking.",
+    "title": "Frontend Software Engineer SDE",
+    "company": "Eventbrite",
+    "featured": true
+  },
+  {
+    "name": "Roberto Machado",
+    "img": "/img/speakers/roberto_machado.png",
+    "shortbio": "With a background in Software Engineering, but with plenty of experience in management and entrepreneurship, Roberto has always been interested in creating new ventures.  Currently CEO at Subvisual where he has the opportunity to manage a fantastic group of professionals that have their hearts set in creating wonderful Web products. He is fully committed into improving the entrepreneurial scene in Braga, his hometown, being involved in several projects meant to boost the startup ecosystem.",
+    "title": "Founder and CEO",
+    "company": "Subvisual",
+    "twitter": "rmdgb",
+    "linkedin": "robertomachado"
+  },
+  {
+    "name": "Pedro Moreira da Silva",
+    "img": "/img/speakers/PedroSilva.jpg",
+    "twitter": "PedroMScom",
+    "website": "https://pedroms.com",
+    "linkedin": "pedromoreiradasilva",
+    "shortbio": "Senior Product Designer na GitLab, uma app open source para o desenvolvimento de software, usada por organizações como Electronic Arts, NASA e Sony. Trabalhou em consultoras, startups e a solo. Apaixonado por trabalho remoto, design aberto e transparência.",
+    "title": "Senior Product Designer",
+    "company": "Gitlab"
+  },
+  {
     "name": "David Sopas",
     "img": "/img/speakers/david_sopas.jpg",
     "twitter": "dsopas",
@@ -20,14 +63,6 @@
     "shortbio": "David Sopas lidera uma equipa de researchers na Checkmarx e ao mesmo tempo gere a sua empresa de segurança – Char49. Parte do seu trabalho já foi apresentado em conferências como a Defcon, hack.lu, BSides Lisbon, OWASP AppSec EU e muitas outras.",
     "title": "Application Security Research Team Leader",
     "company": "Checkmarx"
-  },
-  {
-    "name": "João Pereira",
-    "img": "/img/speakers/joao_pereira.jpg",
-    "linkedin": "joaojesuspereira",
-    "shortbio": "O João é Diretor de Investimento com enfoque em Digital da Portugal Ventures, considerada pela CB Insights a equipa venture capital mais ativa em Portugal. Obteve a Licenciatura e o Mestrado em Economia na Faculdade de Economia do Porto.",
-    "title": "Diretor de Investimento",
-    "company": "Portugal Ventures"
   },
   {
     "name": "Rui Mendes",
@@ -70,28 +105,12 @@
     "company": "Upfall Studios"
   },
   {
-    "name": "Jorge Ferreiro",
-    "img": "/img/speakers/jorge_ferreiro.png",
-    "github": "ferreiro",
-    "twitter": "jgferreiro",
-    "linkedin": "jgferreiro",
-    "website": "https://www.ferreiro.me/",
-    "shortbio": "Jorge Ferreiro is a Software Engineer at Eventbrite, previously at Amazon. Jorge loves building products designed to improve people's lives, and he likes to be at the intersection of design, business, marketing, and engineering. Jorge has developed a core knowledge in Web Development. Jorge runs a Youtube show called 'Developers In Depth', has it's own blog (ferreiro.me/blog) and does international speaking.",
-    "title": "Frontend Software Engineer SDE",
-    "company": "Eventbrite",
-    "featured": true
-  },
-  {
-    "name": "Filipa Lacerda",
-    "img": "/img/speakers/filipa_lacerda.jpeg",
-    "github": "filipalacerda",
-    "twitter": "FilipaLacerda",
-    "linkedin": "filipalacerda",
-    "website": "https://filipa.gitlab.io/",
-    "shortbio": "Filipa is a Frontend Engineer at Zapier. She's a speaker and a mentor, based in sunny Portugal and passionate about the web & teaching.",
-    "title": "Frontend Engineer",
-    "company": "Zapier",
-    "featured": true
+    "name": "João Pereira",
+    "img": "/img/speakers/joao_pereira.jpg",
+    "linkedin": "joaojesuspereira",
+    "shortbio": "O João é Diretor de Investimento com enfoque em Digital da Portugal Ventures, considerada pela CB Insights a equipa venture capital mais ativa em Portugal. Obteve a Licenciatura e o Mestrado em Economia na Faculdade de Economia do Porto.",
+    "title": "Diretor de Investimento",
+    "company": "Portugal Ventures"
   },
   {
     "name": "Nuno Brites",
@@ -116,16 +135,6 @@
     "shortbio": "Professor Catedrático do Departamento de Informática e investigador no centro ALGORITMI, na Escola de Engenharia da Universidade do Minho. A sua investigação centra-se na área científica da Inteligência Artificial e dos Sistemas Inteligentes. Mais recentemente, tem-se focado em conceitos ligados a Decisão, Inteligência Ambiente, Ambientes de Vida Assistida e Análise Comportamental. Diretor do Programa de Doutoramento em Informática e, cofundador e Diretor-Adjunto do Mestrado em Direito e Informática da Universidade do Minho. Presidente da APPIA (Associação Portuguesa para a Inteligência Artificial), entre 2016 e 2019. Chair of the Working Group on Intelligent Agent (WG12.3) da IFIP (International Federation for Information Processing), membro da comissão executiva da IBERAMIA (IberoAmerican Society of Artificial Intelligence) e senior member da IEEE (Institute of Electrical and Electronics Engineers). Coordenador da Comissão Científica do Programa de Bolsas Gulbenkian “Novos Talentos em Inteligência Artificial da Fundação Calouste Gulbenkian”.",
     "title": "Professor Catedrático",
     "company": "Universidade do Minho"
-  },
-  {
-    "name": "Pedro Moreira da Silva",
-    "img": "/img/speakers/PedroSilva.jpg",
-    "twitter": "PedroMScom",
-    "website": "https://pedroms.com",
-    "linkedin": "pedromoreiradasilva",
-    "shortbio": "Senior Product Designer na GitLab, uma app open source para o desenvolvimento de software, usada por organizações como Electronic Arts, NASA e Sony. Trabalhou em consultoras, startups e a solo. Apaixonado por trabalho remoto, design aberto e transparência.",
-    "title": "Senior Product Designer",
-    "company": "Gitlab"
   },
   {
     "name": "Pedro Girão",
