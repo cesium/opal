@@ -19,7 +19,7 @@ const theme = responsiveFontSizes(
       },
       icons: 'white',
       error: {
-        main: red.A400,
+        main: red[900],
       },
       background: {
         default: '#fff',
