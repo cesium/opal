@@ -6,6 +6,7 @@ import TopSection from '../components/TopSection';
 import Person from '../components/Person';
 import theme from '../components/theme';
 import ambassadors from '../data/ambassadors.json';
+import global from '../data/global.json';
 import Link from '../components/Link';
 
 const StyledBox = styled(Box)({
@@ -43,24 +44,26 @@ const Ambassadors = () => (
       color={theme.palette.primary.main}
       title
       pageTitle
-      contentUnderneath
+      contentUnderneath={global.ambassadors.allowingApplications}
     >
-      <Grid container justify="center">
-        <Grid item>
-          <Link href="https://link.medium.com/VgDSweHUx2">
-            <StyledButton variant="contained" color="white" size="large">
-              Torna-te embaixador
-            </StyledButton>
-          </Link>
+      {global.ambassadors.allowingApplications ? (
+        <Grid container justify="center">
+          <Grid item>
+            <Link href={global.ambassadors.applicationsLink}>
+              <StyledButton variant="contained" color="white" size="large">
+                Torna-te embaixador
+              </StyledButton>
+            </Link>
+          </Grid>
         </Grid>
-      </Grid>
+      ) : null}
     </TopSection>
     <StyledBox>
       <StyledGrid
         container
         direction="row"
         justify="center"
-        alignItems="flexitem-start"
+        alignItems="flex-start"
         spacing={10}
       >
         {ambassadors.sort(sortBy('university')).map((entry) => {

@@ -92,8 +92,8 @@ export default function Sponsors({ data, color, type, backgroundImage }) {
 }
 
 Sponsors.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired,
   color: PropTypes.string.isRequired,
   backgroundImage: PropTypes.string,
-  type: PropTypes.oneOf(['gold', 'silver', 'bronze']),
+  type: PropTypes.oneOf(['exclusive', 'gold', 'silver', 'bronze']),
 };

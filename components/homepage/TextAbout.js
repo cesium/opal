@@ -44,11 +44,7 @@ function TextAbout({ messages, messageColor, backgroundColor, paperColor }) {
       title
       contentUnderneath
     >
-      <StyledPaper
-        justifyContent="center"
-        display="flex"
-        color={paperColor || theme.palette.primary.mainRGB}
-      >
+      <StyledPaper color={paperColor || theme.palette.primary.mainRGB}>
         <MessageTypography
           variant="h3"
           color={messageColor || theme.palette.text.title}

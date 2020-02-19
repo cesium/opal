@@ -26,9 +26,9 @@ const Background = styled(Box)(({ src }) => ({
   backgroundRepeat: 'no-repeat',
 }));
 
-const Title = styled(Typography)(({ color }) => ({
+const Title = styled(Typography)(({ customColor }) => ({
   fontWeight: 'bold',
-  color,
+  color: customColor,
   textTransform: 'uppercase',
   textAlign: 'center',
   [theme.breakpoints.down('sm')]: {
@@ -70,7 +70,7 @@ export default function TopSection({
   }
   return (
     <Canvas
-      square="true"
+      square
       elevation={2}
       color={color}
       image="/img/bubbles_20.png"
@@ -87,9 +87,9 @@ export default function TopSection({
           alignItems="center"
           spacing={2}
         >
-          <Grid item>
+          <Grid item xs={11}>
             <Title
-              color={titleColor || theme.palette.text.title}
+              customColor={titleColor || theme.palette.text.title}
               variant={variant}
             >
               {text}

@@ -27,7 +27,6 @@ const CodeOfConduct = () => (
       color={theme.palette.primary.main}
       title
       pageTitle
-      contentUnderneath
     />
     <Document>
       <Text>

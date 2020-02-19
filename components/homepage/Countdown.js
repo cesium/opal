@@ -73,16 +73,16 @@ export default function Countdown({ date }) {
 }
 
 Unit.propTypes = {
-  value: PropTypes.object.isRequired,
+  value: PropTypes.number.isRequired,
   unit: PropTypes.string.isRequired,
 };
 
 renderer.propTypes = {
-  days: PropTypes.object.isRequired,
-  hours: PropTypes.object.isRequired,
-  minutes: PropTypes.object.isRequired,
-  seconds: PropTypes.object.isRequired,
-  completed: PropTypes.object.isRequired,
+  days: PropTypes.number.isRequired,
+  hours: PropTypes.number.isRequired,
+  minutes: PropTypes.number.isRequired,
+  seconds: PropTypes.number.isRequired,
+  completed: PropTypes.number.isRequired,
 };
 
 Countdown.propTypes = {
