@@ -43,7 +43,7 @@ function BurgerButton() {
   return (
     <Box>
       <IconButton onClick={handleClick}>
-        <img width="25‰" src={global.navbar.mobileMenuIcon} alt="" />
+        <img width="25‰" src="/img/burger.svg" alt="" />
       </IconButton>
       <Drawer classes={{ paper: classes.paper }} anchor="top" open={open}>
         <div className={classes.list} role="presentation">

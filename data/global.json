@@ -21,12 +21,12 @@
     "pages": [
       { "name": "Agenda", "link": "/agenda" },
       { "name": "Oradores", "link": "/speakers" },
+      { "name": "Desafios e Prémios", "link": "/challenges" },
       { "name": "Embaixadores", "link": "/ambassadors" },
       { "name": "Candidaturas", "link": "/applications" },
       { "name": "Blog", "link": "https://medium.com/eneiconf" }
     ],
-    "logo": "/img/eneiLogoWhite.png",
-    "mobileMenuIcon": "/img/burger.png"
+    "logo": "/img/eneiLogoWhite.png"
   },
   "social": {
     "facebook": "ENEIConf",
@@ -34,5 +34,9 @@
     "instagram": "eneiconf",
     "github": "eneiconf",
     "medium": "eneiconf"
+  },
+  "ambassadors": {
+    "allowingApplications": false,
+    "applicationsLink": "https://link.medium.com/VgDSweHUx2"
   }
 }

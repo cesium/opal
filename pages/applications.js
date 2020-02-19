@@ -48,7 +48,6 @@ const CodeOfConduct = () => (
       color={theme.palette.primary.main}
       title
       pageTitle
-      contentUnderneath
     />
     <Document>
       <Title variant="h4">Considerações Gerais</Title>

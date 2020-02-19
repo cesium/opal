@@ -8,7 +8,7 @@ import theme from '../components/theme';
 import speakers from '../data/speakers.json';
 
 const StyledBox = styled(Box)({
-  backgroundColor: theme.palette.secondary.light,
+  backgroundColor: theme.palette.secondary.main,
   overflow: 'hidden',
   padding: '6em 6em',
 });

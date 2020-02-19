@@ -18,8 +18,8 @@ const PaddedBox = styled('div')({
   paddingRight: '3vw',
 });
 
-const SponsorGridContainer = ({ children, color }) => (
-  <StyledBox color={color}>
+const SponsorGridContainer = ({ children }) => (
+  <StyledBox>
     <StyledGrid
       container
       direction="row"
@@ -41,10 +41,9 @@ const SponsorGridItem = ({ children }) => (
 export { SponsorGridContainer, SponsorGridItem };
 
 SponsorGridContainer.propTypes = {
-  color: PropTypes.string.isRequired,
-  children: PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 SponsorGridItem.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired,
 };
