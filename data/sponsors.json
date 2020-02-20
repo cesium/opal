@@ -20,6 +20,16 @@
   ],
   "silver": [
     {
+      "name": "Imprensa Nacional-Casa da Moeda",
+      "img": "/img/sponsors/silver/INCM.png",
+      "url": "https://www.incm.pt/"
+    },
+    {
+      "name": "SONAE BIT",
+      "img": "/img/sponsors/silver/BITbySONAE_MC.png",
+      "url": "https://sonaemc.com/"
+    },
+    {
       "name": "Glintt",
       "img": "/img/sponsors/silver/glintt.png",
       "url": "https://www.glintt.com/pt"

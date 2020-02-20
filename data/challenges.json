@@ -1,45 +1,25 @@
 [
   {
-    "title": "Quiz",
-    "description": "Isto é uma descrição muito gira do quizz",
+    "title": "Quem Quer Ser Informático?",
+    "description": "Este quiz sobre cultura informática será composto por duas rondas e contará com várias equipas de dois elementos. A partir do momento em que a questão for colocada, é iniciado um temporizador e a equipa que clicar em primeiro lugar no buzzer poderá responder. Caso ninguém pressione o buzzer até o temporizador terminar, aparecerão 4 opções e todas as equipas terão de responder. Como é natural, as equipas que responderem às questões antes do temporizador expirar obterão mais pontos.",
     "prizes": [
       {
-        "condition": "2 Vencedores",
+        "condition": "Equipa Vencedora",
         "prize": "2 Google Home Mini"
       }
     ]
   },
   {
-    "title": "Desafio de Segurança",
-    "description": "Isto é a descrição do desafio de segurança",
-    "prizes": [
-      {
-        "condition": "Vencedor",
-        "prize": "To be announced"
-      }
-    ]
-  },
-  {
-    "title": "CVs",
-    "description": "Se mandares o teu CV, podes ganhar uma cena fixe",
-    "prizes": [
-      {
-        "condition": "Vencedor",
-        "prize": "Xbox One"
-      }
-    ]
-  },
-  {
     "title": "Desafio de Programação",
-    "description": "Se não programares em Haskell, podes ganhar os seguintes prémios",
+    "description": "Este desafio vai ser constituído por várias fases eliminatórias até chegar a grande final. Em cada fase, dois participantes irão competir frente a frente, ganhando aquele que terminar um simples problema proposto, como inverter uma lista, no menor tempo possível. Mas não é tudo, temos uma pequena surpresa... Neste desafio os participantes estarão vestidos de lutadores de Sumo!",
     "prizes": [
       {
         "condition": "1º Lugar",
-        "prize": "Teclado muito espetacular"
+        "prize": "Teclado Corsair K63"
       },
       {
         "condition": "2º Lugar",
-        "prize": "Teclado não tanto espetacular mas espetacular à mesma"
+        "prize": "Teclado Corsair Strafe"
       }
     ]
   }

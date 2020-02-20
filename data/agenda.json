@@ -81,14 +81,13 @@
           "description": "Software de Gestão + Inteligência Artificial = Gestão Inteligente"
         },
         "workshop1": {
-          "name": "Workshop TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
+          "name": "Hands-on workshop: Angular for frontend developers",
+          "speakersLeft": ["Diana Rodrigues"],
           "place": "Sala de Congressos S4",
           "time": "10:00-12:00",
           "duration": 2,
-          "tba": true,
-          "type": "workshop"
+          "type": "workshop",
+          "description": "Exemplo prático da utilização do Angular no desenvolvimento de Web Applications."
         },
         "workshop2": {
           "name": "Workshop TBA",
@@ -145,14 +144,13 @@
           "description": "An introduction to Artificial Intelligence (AI), concepts, the most important paradigms, and the main areas of application. Machine learning: classical, reinforcement and deep (neuro).\n Why is AI fundamental to an organization?\n AI at ISlab @ ALGORITMI.\n The option of being relevant or irrelevant in the 21st century.\n Limitations, risks, trends, and expectations.\n An AI world."
         },
         "workshop1": {
-          "name": "Workshop TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
+          "name": "Rxjs on Quakes (Hands-On)",
+          "speakersLeft": ["João Ribeiro"],
           "place": "Sala de Congressos S4",
           "time": "14:00-16:00",
           "duration": 2,
-          "tba": true,
-          "type": "workshop"
+          "type": "talk",
+          "description": "RxJS is a library for reactive programming using Observables, making easier the composition of asynchronous and callback-based code.In this workshop, we will dive into the uses of this highly used library, and create a world earthquake map application demo."
         },
         "workshop2": {
           "name": "Workshop TBA",
@@ -216,14 +214,13 @@
       {
         "multiple": true,
         "talk1": {
-          "name": "Talk TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
+          "name": "Continuous Stuff",
+          "speakersLeft": ["Miguel Palhas"],
           "place": "Grande Auditório",
           "time": "10:00-11:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "Continuous delivery is hard. At Utrust, we had various problems with lack of automations and proper UIs that non-technical team members could follow. With the release of Github Actions, a new CI powered by Github, we took the chance to revamp our whole flow. This is the story of how we now manage continuous deliveries, and of how awesome Github Actions can be to automate all kinds of tasks."
         },
         "talk2": {
           "name": "Talk TBA",
@@ -301,8 +298,9 @@
           "type": "talk"
         },
         "talk3": {
-          "name": "",
+          "name": "Talk TBA",
           "speakersLeft": [],
+          "speakersRight": [],
           "place": "Grande Auditório",
           "time": "15:00-16:00",
           "duration": 1,
@@ -407,14 +405,13 @@
           "description": "In a world where the logistics industry is getting more and more digital, the trucks need to keep up and digital services are now part of what we call a digital truck. To develop the software that gives life to the digital services cross functional teams are essential, from software engineers to UX/UI designers every single role is of the most importance to deliver a high quality product. I will talk about software development of a digital service, from the perspective of a software engineer inside an agile cross functional team working at the MAN | Digital Hub."
         },
         "activityRight": {
-          "name": "Talk TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
+          "name": "Let’s be a DevOps Engineer",
+          "speakersLeft": ["Daniela Costa", "Diogo Machado"],
           "place": "Pequeno Auditório",
           "time": "11:00-12:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "O que é DevOps e o que faz um DevOps Engineer? Quais os principais desafios quando se integra o mundo do trabalho? Que opções tens e como fazer a melhor escolha? Estas são algumas das questões que irão ser abordadas nesta talk sobre como se preparar para o primeiro emprego em informática e como iniciar uma carreira como DevOps Engineer."
         }
       },
       {
