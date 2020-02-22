@@ -1,6 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Grid, Typography, Card, CardContent } from '@material-ui/core';
+import {
+  Box,
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  Button,
+} from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 import { Element } from 'react-scroll';
 import { LocationOn, Person, Schedule, Business } from '@material-ui/icons';
@@ -31,6 +38,10 @@ const ActivityInfoGrid = styled(Grid)({
   paddingTop: '0.75rem',
 });
 
+const SignupButton = styled(Button)({
+  marginTop: '2em',
+});
+
 const ActivityDescription = ({
   name,
   description,
@@ -41,6 +52,7 @@ const ActivityDescription = ({
   companyName,
   companyLink,
   type,
+  signup,
 }) => {
   return (
     <Box color="#fff">
@@ -82,6 +94,15 @@ const ActivityDescription = ({
             <DescriptionTypography variant="body2">
               {description}
             </DescriptionTypography>
+          </Grid>
+        )}
+        {signup && (
+          <Grid item xs={mobile ? 12 : 10}>
+            <Link href={signup}>
+              <SignupButton variant="contained" color="secondary">
+                Inscrições
+              </SignupButton>
+            </Link>
           </Grid>
         )}
       </Grid>
@@ -174,6 +195,7 @@ function DetailedActiviy({
   companyLink,
   type,
   mobile,
+  signup,
 }) {
   const activityId = slugify(name);
   return (
@@ -190,6 +212,7 @@ function DetailedActiviy({
             companyLink={companyLink}
             type={type}
             mobile={mobile}
+            signup={signup}
           />
         </CardContent>
       </ActivityCard>
@@ -207,6 +230,7 @@ DetailedActiviy.propTypes = {
   companyLink: PropTypes.string,
   type: PropTypes.string,
   mobile: PropTypes.bool,
+  signup: PropTypes.string,
 };
 
 ActivityDescription.propTypes = {
@@ -219,6 +243,7 @@ ActivityDescription.propTypes = {
   companyName: PropTypes.string,
   companyLink: PropTypes.string,
   type: PropTypes.string,
+  signup: PropTypes.string,
 };
 
 ActivityInfo.propTypes = {

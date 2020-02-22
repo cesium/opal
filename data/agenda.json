@@ -96,7 +96,8 @@
           "type": "workshop",
           "description": "Exemplo prático da utilização do Angular no desenvolvimento de Web Applications.",
           "companyName": "Newhotel",
-          "companyLink": "https://www.newhotel.com/"
+          "companyLink": "https://www.newhotel.com/",
+          "signupLink": "https://www.eventbrite.pt/e/bilhetes-workshop-newhotel-hands-on-workshop-angular-for-frontend-developers-enei-2020-96087031899"
         }
       },
       {
@@ -153,7 +154,8 @@
           "type": "talk",
           "description": "RxJS is a library for reactive programming using Observables, making easier the composition of asynchronous and callback-based code.In this workshop, we will dive into the uses of this highly used library, and create a world earthquake map application demo.",
           "companyName": "Kelvin Inc",
-          "companyLink": "https://www.kelvininc.com/"
+          "companyLink": "https://www.kelvininc.com/",
+          "signupLink": "https://www.eventbrite.pt/e/bilhetes-workshop-kelvin-inc-rxjs-on-quakes-hands-on-enei-2020-96119739729"
         },
         "workshop2": {
           "name": "eID & ePassport: Hands on",
@@ -164,7 +166,8 @@
           "type": "workshop",
           "description": "Sabes o que está dentro do teu Cartão de Cidadão? E no passaporte? Vem descobrir connosco",
           "companyName": "INCM",
-          "companyLink": "https://www.incm.pt/"
+          "companyLink": "https://www.incm.pt/",
+          "signupLink": "https://www.eventbrite.pt/e/bilhetes-workshop-incm-eid-epassport-hands-on-enei-2020-96149027329"
         }
       },
       {
@@ -341,7 +344,8 @@
           "type": "workshop",
           "description": "Neste workshop, vamos demonstrar o potencial da Microsoft Power Platform para endereçar desafios do dia-a-dia em várias indústrias num cenário de negócio, ao explorar como a Power Platform permite a criação de poderosas Business Apps dotadas de Inteligência Artificial (IA) com as mais recentes e inovadoras tecnologias da Microsoft. Este será um hands-on workshop, com demonstração em tempo-real do desenho de uma Power App capaz de identificar diferentes marcas de cerveja dentro de um dado ambiente, e mostrando os resultados visivelmente na App. O workshop explorará os componentes técnicos necessários à construção da App e, adicionalmente, o mecanismo de IA responsável por treinar um modelo inteligente capaz de identificar objetos. Junta-te a nós!",
           "companyName": "Hitachi",
-          "companyLink": "https://www.hitachi.eu"
+          "companyLink": "https://www.hitachi.eu",
+          "signupLink": "https://www.eventbrite.pt/e/bilhetes-workshop-hitachi-solutions-know-your-beer-microsoft-power-platform-enei-2020-96150557907"
         },
         "workshop2": {
           "name": "Monitorização de infraestruturas e aplicações - Azure Monitor e Azure Application Insight",
@@ -350,7 +354,8 @@
           "time": "14:00-16:00",
           "duration": 2,
           "type": "workshop",
-          "description": "Gostavas de analisar o desempenho das aplicações que desenvolves? Ou compreender como a tua infraestrutura de servidores e equipamentos de rede se comporta diariamente? Este workshop é para ti!\nNeste workshop, vamos abordar a importância da monitorização de infraestruturas e aplicações, de modo a responder aos desafios presentes no dia-a-dia das várias organizações. A resposta a esses desafios será alcançada com a exploração das tecnologias Azure Monitor, Azure Application Insight e Microsoft Power BI da Microsoft.\nO workshop contará com exemplos de cenários de monitorização em cloud que respondem a desafios atuais, demonstrações técnicas das tecnologias e conceitos relevantes de monitorização que te ajudaram a compreender de forma simples o tema. Contamos contigo!"
+          "description": "Gostavas de analisar o desempenho das aplicações que desenvolves? Ou compreender como a tua infraestrutura de servidores e equipamentos de rede se comporta diariamente? Este workshop é para ti!\nNeste workshop, vamos abordar a importância da monitorização de infraestruturas e aplicações, de modo a responder aos desafios presentes no dia-a-dia das várias organizações. A resposta a esses desafios será alcançada com a exploração das tecnologias Azure Monitor, Azure Application Insight e Microsoft Power BI da Microsoft.\nO workshop contará com exemplos de cenários de monitorização em cloud que respondem a desafios atuais, demonstrações técnicas das tecnologias e conceitos relevantes de monitorização que te ajudaram a compreender de forma simples o tema. Contamos contigo!",
+          "signupLink": "https://www.eventbrite.pt/e/bilhetes-workshop-carolina-dias-monitorizacao-de-infraestruturas-e-aplicacoes-azure-monitor-e-azure-96199203407"
         }
       },
       {
@@ -446,7 +451,8 @@
           "type": "workshop",
           "description": "Descobre como impulsionamos, todos os dias, o negócio da Sonae, recorrendo à utilização da plataforma low-code da OutSystems! Neste workshop vamos partilhar contigo um pouco do nosso dia-a-dia na BIT (https://www.linkedin.com/showcase/10218457/admin/), e dar-te a conhecer como a nossa equipa é altamente capaz na gestão de soluções RAD e na entrega de soluções em OutSystems. Deixa-te fascinar com o impacto do nosso trabalho no maior grupo de retalho do país e percebe como podes iniciar o teu percurso connosco!",
           "companyName": "Sonae Bit",
-          "companyLink": "https://sonaemc.com/"
+          "companyLink": "https://sonaemc.com/",
+          "signupLink": "https://www.eventbrite.pt/e/bilhetes-workshop-sonae-bit-outsystems-101-bit-by-sonae-mc-enei-2020-96155155659"
         }
       },
       {
