@@ -36,6 +36,7 @@ const Company = styled(ColoredTypography)({
 
 const ShortBio = styled(ColoredTypography)({
   align: 'justify',
+  whiteSpace: 'pre-wrap',
   color: theme.palette.text.body,
 });
 

@@ -24,7 +24,7 @@
   },
   {
     "name": "Jorge Ferreiro",
-    "img": "/img/speakers/jorge_ferreiro.png",
+    "img": "/img/speakers/jorge_ferreiro.jpg",
     "github": "ferreiro",
     "twitter": "jgferreiro",
     "linkedin": "jgferreiro",
@@ -51,7 +51,8 @@
     "linkedin": "pedromoreiradasilva",
     "shortbio": "Senior Product Designer na GitLab, uma app open source para o desenvolvimento de software, usada por organizações como Electronic Arts, NASA e Sony. Trabalhou em consultoras, startups e a solo. Apaixonado por trabalho remoto, design aberto e transparência.",
     "title": "Senior Product Designer",
-    "company": "GitLab"
+    "company": "GitLab",
+    "featured": true
   },
   {
     "name": "Nuno Brites",
@@ -60,7 +61,8 @@
     "linkedin": "nbrites",
     "shortbio": "I'm a software engineer working on software development for trucks at the MAN | Digital Hub. I'm currently working on a product that will enable the installation of software updates over the air into trucks.",
     "title": "Senior Software Engineer",
-    "company": "Volkswagen Digital Solutions"
+    "company": "Volkswagen Digital Solutions",
+    "featured": true
   },
   {
     "name": "David Sopas",
@@ -308,5 +310,52 @@
     "title": "IT Recruiter",
     "company": "Glintt",
     "linkedin": "diogo-cerqueira-6bbaab77"
+  },
+  {
+    "name": "João Vilaça",
+    "img": "/img/speakers/Joao_Vilaca.jpg",
+    "github": "machadovilaca",
+    "linkedin": "machadovilaca",
+    "shortbio": "João Vilaça tem 21 anos e é entusiasta da engenharia de software, mas, acima de tudo, é um louco por estar sempre ocupado e por ter sempre trabalho para fazer. Estudante do 4º ano do Mestrado Integrado em Engenharia Informática na Univerisdade do Minho, ele é em simultâneo DevOps Engineer na Seegno, Tesoureiro do @Cesium - Centro de Estudantes de Engenharia Informática da Universidade do Minho e do @ENEI. Para além do seu emprego atual, desde que entrou na universidade, conta também com 2 estágios de verão na área da administração de sistemas, e 1 ano de experiência como developer.",
+    "title": "Estudante, UMinho & DevOps Engineer",
+    "company": "Seegno"
+  },
+  {
+    "name": "Eduardo Jorge",
+    "img": "/img/speakers/Eduardo_Jorge.jpg",
+    "github": "herulume",
+    "linkedin": "herulume",
+    "twitter": "herulume",
+    "shortbio": "Entusiasta de Teoria das Categorias e métodos formais, mestre na arte da procastinação.",
+    "title": "Diretor do CAOS"
+  },
+  {
+    "name": "José Ferrão",
+    "img": "/img/speakers/Jose_Ferrao.jpg",
+    "shortbio": "My name is José Ferrão. I am a software engineer, graduated from the University of Aveiro in Computer and Telematics Engineering, started programming because i wanted to make games currently i occupy most of my time in open source project mainly in robotics, computer graphics and computer vision.",
+    "title": "Engenheiro de Software",
+    "company": "UNO Digital"
+  },
+  {
+    "name": "Carolina Dias",
+    "img": "/img/speakers/Carolina_Dias.jpg",
+    "shortbio": "Consultora na Unipartner IT Services, à cerca de um ano e meio, desempenho funções na área de monitorização de infraestruturas e aplicações em Datacenter e Cloud, análise e visualização de dados e modelos de governação.",
+    "title": "Consultora",
+    "company": "Unipartner IT Services"
+  },
+  {
+    "name": "Pedro Correia",
+    "img": "/img/speakers/Pedro_Correia.png",
+    "shortbio": "Pedro holds a MSc in Informatics Engineering from the University of Coimbra and he is pursuing a PhD in the same institution. He was an Invited Assistant in Coimbra for some time, but since 2017 he joined an investment bank where he has been working in helping the development and deployment of highly performant sets of pricing analytics to be used by the trading desk.",
+    "title": "Quantitative Research Analyst",
+    "company": "BNP Paribas"
+  },
+  {
+    "name": "José Pedro Resende",
+    "img": "/img/speakers/Jose_Resende.jpg",
+    "github": "ZePedroResende",
+    "shortbio": "Finishing a Distributed Systems and High performance computing master's degree, obsessed with rust and elixir.\nHobbist musician and audiophile, Thinkpad lover, Star Wars enthusiast.\nI spend my days building stuff at Finiam or hacking away in my thesis.",
+    "title": "Software Engineer",
+    "company": "Finiam"
   }
 ]
