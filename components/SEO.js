@@ -5,7 +5,7 @@ const SEO = ({ event, social }) => (
   <>
     <title>{event.title}</title>
 
-    <meta name="title" content={event.title} />
+    <meta name="title" content={event.name} />
     <meta name="description" content={event.description} />
     {event.keywords.length > 0 ? (
       <meta name="keywords" content={event.keywords.join(`, `)} />
@@ -18,7 +18,6 @@ const SEO = ({ event, social }) => (
     <meta property="og:image" content={event.cover} />
     <meta property="og:image:secure_url" content={event.cover} />
 
-    <link rel="canonical" href="https://enei.pt" />
     <meta property="og:site_name" content={event.title} />
 
     <meta name="twitter:card" content="summary_large_image" />
