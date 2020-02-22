@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Delta Cafés",
+    "img": "/img/sponsors/partners/delta.png",
+    "url": "https://www.deltacafes.pt"
+  },
+  {
+    "name": "Startup Braga",
+    "img": "/img/sponsors/partners/startup_braga.png",
+    "url": "https://www.startupbraga.com"
+  },
+  {
+    "name": "InvestBraga",
+    "img": "/img/sponsors/partners/invest_braga.png",
+    "url": "https://www.investbraga.com"
+  },
+  {
+    "name": "MCostas",
+    "img": "/img/sponsors/partners/mcostas.png",
+    "url": "https://www.mcostas.pt"
+  },
+  {
+    "name": "ACESAS",
+    "img": "/img/sponsors/partners/acesas.png"
+  }
+]

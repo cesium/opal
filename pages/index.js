@@ -8,10 +8,12 @@ import home from '../data/homepage.json';
 import global from '../data/global.json';
 import theme from '../components/theme';
 import Countdown from '../components/homepage/Countdown';
+import Partners from '../components/homepage/Partners';
 import FeaturedSpeakers from '../components/homepage/FeaturedSpeakers';
 import Sponsors from '../components/homepage/sponsors/Sponsors';
 import sponsors from '../data/sponsors.json';
 import speakers from '../data/speakers.json';
+import partners from '../data/partners.json';
 
 export default function Index() {
   const featuredSpeakers = [];
@@ -67,6 +69,12 @@ export default function Index() {
         data={sponsors.bronze}
         color={theme.palette.secondary.main}
         backgroundImage="/img/bubbles.png"
+      />
+      <Partners
+        title="parceiros"
+        data={partners}
+        color={theme.palette.primary.main}
+        backgroundImage="/img/random_bubbles_lines.svg"
       />
     </Layout>
   );
