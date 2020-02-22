@@ -57,6 +57,7 @@ function ActivitiesInfo({ day, activities, width }) {
               description={activity.description}
               type={activity.type}
               mobile={mobile}
+              signup={activity.signupLink}
             />
           </Grid>
         );
