@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core';
 import { ExpandMore } from '@material-ui/icons';
 import PropTypes from 'prop-types';
+import slugify from 'react-slugify';
 import theme from './theme';
 import Underline from './Underline';
 import SocialIcons from './SocialIcons';
@@ -80,10 +81,7 @@ function Speaker({
     setExpanded(!expanded);
   };
 
-  const speakerId = name
-    .replace(/\s+/g, '-')
-    .replace(/[\u{0080}-\u{FFFF}]/gu, '')
-    .toLowerCase();
+  const speakerId = slugify(name);
 
   return (
     <SpeakerCard id={speakerId}>

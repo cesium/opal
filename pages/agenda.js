@@ -16,14 +16,28 @@ function getActivities(agendaDay) {
 
   agendaDay.activities.forEach((activity) => {
     if (activity.multiple) {
-      activities.push(activity.talk1);
-      activities.push(activity.talk2);
-      activities.push(activity.workshop1);
-      activities.push(activity.workshop2);
-      activities.push(activity.talk3);
-      activities.push(activity.talk4);
+      if (activity.triple) {
+        activities.push(activity.talk1);
+        activities.push(activity.talk2);
+        activities.push(activity.talk3);
+        activities.push(activity.workshop1);
+        activities.push(activity.talk4);
+        activities.push(activity.talk5);
+        activities.push(activity.talk6);
+      } else {
+        activities.push(activity.talk1);
+        if (activity.talk2) activities.push(activity.talk2);
+        activities.push(activity.workshop1);
+        if (activity.workshop2) activities.push(activity.workshop2);
+        activities.push(activity.talk3);
+        activities.push(activity.talk4);
+      }
     } else if (activity.double) {
       activities.push(activity.activityLeft);
+      activities.push(activity.activityRight);
+    } else if (activity.triple) {
+      activities.push(activity.activityLeft);
+      activities.push(activity.activityCenter);
       activities.push(activity.activityRight);
     } else activities.push(activity);
   });

@@ -22,5 +22,87 @@
         "prize": "Teclado Corsair Strafe"
       }
     ]
+  },
+  {
+    "title": "Jantar Empresarial",
+    "description": "Para poderes participar no Jantar Empresarial, envia o teu CV para cv@enei.pt com o assunto \"[ENEI'20] Curriculum vitae\". Mesmo que não sejas escolhido para o Jantar, participarás na mesma no sorteio de 1 Xbox One, desde que estejas presente na sessão de encerramento!",
+    "prizes": [
+      {
+        "condition": "1 Vencedor",
+        "prize": "Xbox One"
+      },
+      {
+        "condition": "60 Participantes",
+        "prize": "Participação no Jantar Empresarial"
+      }
+    ]
+  },
+  {
+    "title": "Badges de Empresas",
+    "description": "Fala com o maior número de empresas que conseguires! A cada 6, 12, 18 e 27 badges de empresas que colecionares, ganhas um prémio! Para os levantares basta ires até ao Balcão de Acreditação e mostrares a tua credencial!",
+    "prizes": [
+      {
+        "condition": "6 empresas",
+        "prize": "Stickers do ENEI"
+      },
+      {
+        "condition": "12 empresas",
+        "prize": "Caneta do ENEI"
+      },
+      {
+        "condition": "18 empresas",
+        "prize": "Suporte para telemóvel do ENEI"
+      },
+      {
+        "condition": "27 empresas",
+        "prize": "Bloco do ENEI"
+      }
+    ]
+  },
+  {
+    "title": "Badges",
+    "description": "Ao longo do ENEI vais poder colecionar imensos badges de várias formas: participando em talks, em workshops, falando com empresas (e o resto tens de ser tu a descobrir...). No fim do evento, os participantes que colecionarem o maior número de badges serão premiados!",
+    "prizes": [
+      {
+        "condition": "1º Lugar",
+        "prize": "Xiaomi Scooter Mi 365"
+      },
+      {
+        "condition": "2º Lugar",
+        "prize": "Nintendo Switch"
+      },
+      {
+        "condition": "3º Lugar",
+        "prize": "Headphones Sony"
+      },
+      {
+        "condition": "4º Lugar",
+        "prize": "Chromecast 3"
+      },
+      {
+        "condition": "5º Lugar",
+        "prize": "Xiaomi Mi Band 4"
+      }
+    ]
+  },
+  {
+    "title": "Concurso de Fotografia",
+    "description": "Para participares no Concurso de Fotografia, basta tirares uma fotografia no evento com algo alusivo ao ENEI (uma t-shirt, uma caneta, um suporte de telemóvel, ...). Depois, só tens de fazer uma publicação pública no Facebook ou no Instagram com as hashtags #eneiphotochallenge, #enei2020, #eneiconf e identificar a nossa página. Se cumprires todos os passos, estarás automaticamente habilitado a ganhar uma GoPro Hero 7. A nossa equipa de comunicação, juntamente com a equipa de imagem e um elemento da coordenação geral irá depois escolher o vencedor.",
+    "prizes": [
+      {
+        "condition": "Vencedor",
+        "prize": "Go Pro Hero 7 White"
+      }
+    ]
+  },
+  {
+    "title": "Capture the Flag",
+    "description": "Para participares neste CTF, terás de te inscrever em equipas de 2 através de um bot do Slack. Estás à altura do desafio?",
+    "prizes": [
+      {
+        "condition": "Equipa Vencedora",
+        "prize": "2 Raspberry Pi 4"
+      }
+    ]
   }
 ]

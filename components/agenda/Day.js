@@ -3,10 +3,11 @@ import PropTypes, { object } from 'prop-types';
 import { Box, withWidth } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 import Activity from './Activity';
-import DoubleActivity from './DoubleActivity';
+import ParallelTalks from './ParallelTalks';
 import MultipleActivity from './MultipleActivity';
 import Meal from './Meal';
 import Date from './Date';
+import TripleActivity from './TripleActivity';
 
 const agendaPagging = (mobile) => (mobile ? '0.5rem' : '3rem');
 
@@ -30,8 +31,19 @@ const ActivityType = (activity, mobile) => {
 
   if (activity.double) {
     return (
-      <DoubleActivity
+      <ParallelTalks
+        talk1={activity.activityLeft}
+        talk2={activity.activityRight}
+        mobile={mobile}
+      />
+    );
+  }
+
+  if (activity.triple) {
+    return (
+      <TripleActivity
         activityLeft={activity.activityLeft}
+        activityCenter={activity.activityCenter}
         activityRight={activity.activityRight}
         mobile={mobile}
       />
@@ -45,6 +57,8 @@ const ActivityType = (activity, mobile) => {
         talk2={activity.talk2}
         talk3={activity.talk3}
         talk4={activity.talk4}
+        talk5={activity.talk5}
+        talk6={activity.talk6}
         workshop1={activity.workshop1}
         workshop2={activity.workshop2}
         mobile={mobile}
@@ -57,6 +71,7 @@ const ActivityType = (activity, mobile) => {
       name={activity.name}
       time={activity.time}
       duration={activity.duration}
+      moderator={activity.moderator}
       speakersLeft={activity.speakersLeft}
       speakersRight={activity.speakersRight}
       place={activity.place}

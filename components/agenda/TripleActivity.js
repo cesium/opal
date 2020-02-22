@@ -9,10 +9,15 @@ const AgendaDoubleActivity = styled(Grid)({
   justify: 'center',
 });
 
-function DoubleActivity({ activityLeft, activityRight, mobile }) {
+function TripleActivity({
+  activityLeft,
+  activityCenter,
+  activityRight,
+  mobile,
+}) {
   return (
     <AgendaDoubleActivity container spacing={1}>
-      <Grid item xs={6}>
+      <Grid item xs={4}>
         <Activity
           name={activityLeft.name}
           time={activityLeft.time}
@@ -24,7 +29,19 @@ function DoubleActivity({ activityLeft, activityRight, mobile }) {
           mobile={mobile}
         />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={4}>
+        <Activity
+          name={activityCenter.name}
+          time={activityCenter.time}
+          duration={activityCenter.duration}
+          speakersLeft={activityCenter.speakersLeft}
+          speakersRight={activityCenter.speakersRight}
+          place={activityCenter.place}
+          tba={activityCenter.tba}
+          mobile={mobile}
+        />
+      </Grid>
+      <Grid item xs={4}>
         <Activity
           name={activityRight.name}
           time={activityRight.time}
@@ -40,10 +57,11 @@ function DoubleActivity({ activityLeft, activityRight, mobile }) {
   );
 }
 
-DoubleActivity.propTypes = {
+TripleActivity.propTypes = {
   activityLeft: PropTypes.object.isRequired,
+  activityCenter: PropTypes.object.isRequired,
   activityRight: PropTypes.object.isRequired,
   mobile: PropTypes.bool,
 };
 
-export default DoubleActivity;
+export default TripleActivity;

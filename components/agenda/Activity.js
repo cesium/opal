@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Box } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 import { Link } from 'react-scroll';
+import slugify from 'react-slugify';
 import Speakers from './Speakers';
 import theme from '../theme';
 
@@ -66,6 +67,7 @@ const AgendaActivity = styled(Box)({
 function Activity({
   name,
   time,
+  moderator,
   speakersLeft,
   speakersRight,
   duration,
@@ -74,7 +76,7 @@ function Activity({
   mobile,
   tba,
 }) {
-  const activityId = name.replace(/\s+/g, '-').toLowerCase();
+  const activityId = slugify(name);
   let height = '';
   if (multiple) height = '174px';
   else if (mobile) height = '65px';
@@ -87,7 +89,11 @@ function Activity({
         <ActivityBlock actHeight={height} tba={tba}>
           <ActivityBorder />
           <ActivityName>{name}</ActivityName>
-          <Speakers speakersLeft={speakersLeft} speakersRight={speakersRight} />
+          <Speakers
+            moderator={moderator}
+            speakersLeft={speakersLeft}
+            speakersRight={speakersRight}
+          />
         </ActivityBlock>
       </Link>
       <ActivityLocation>{place}</ActivityLocation>
@@ -98,6 +104,7 @@ function Activity({
 Activity.propTypes = {
   name: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
+  moderator: PropTypes.string,
   speakersLeft: PropTypes.array,
   speakersRight: PropTypes.array,
   duration: PropTypes.number.isRequired,
