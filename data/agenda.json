@@ -10,7 +10,8 @@
         "name": "Check-In",
         "place": "Sala de Congressos",
         "time": "14:00-18:00",
-        "duration": 3
+        "duration": 3,
+        "description": "No check-in irás receber o teu kit de participante, com uma t-shirt e um sticker do ENEI, e a tua credencial do evento, que te dará acesso a todas as atividades pedagógicas, de entretenimento e de networking."
       },
       {
         "dinner": true,
@@ -21,13 +22,15 @@
         "time": "21:00-22:00",
         "place": "Grande Auditório",
         "duration": 1,
-        "type": "social"
+        "type": "social",
+        "description": "Sessão inaugural da 14.ª edição do Encontro Nacional de Estudantes de Informática, onde será apresentado o calendário, o sistema de badges e os parceiros do ENEI. E, possivelmente, algumas surpresas."
       },
       {
         "name": "Festa Noturna",
         "time": "22:00-02:00",
         "duration": 5,
-        "type": "social"
+        "type": "social",
+        "description": "Esta festa vai ter lugar no Bar Académico a partir das 22h e, para que possas entrar gratuitamente, terás de apresentar a tua credencial.\n\nDurante esta festa não só te poderás divertir ao som da música que irá ser passada por um DJ, como também poderás aproveitar para conhecer novas pessoas da tua área e expandir a tua rede de contactos!\n\nSe fores um dos primeiros 150 participantes a chegar terás direito a um fino grátis."
       }
     ]
   },
@@ -94,16 +97,6 @@
           "description": "Exemplo prático da utilização do Angular no desenvolvimento de Web Applications.",
           "companyName": "Newhotel",
           "companyLink": "https://www.newhotel.com/"
-        },
-        "workshop2": {
-          "name": "Workshop NOS",
-          "speakersLeft": [],
-          "speakersRight": [],
-          "place": "Sala de Congressos S5",
-          "time": "10:00-12:00",
-          "duration": 2,
-          "tba": true,
-          "type": "workshop"
         }
       },
       {
@@ -181,7 +174,7 @@
       {
         "name": "Tertúlia - Privacidade de Dados",
         "place": "Grande Auditório",
-        "moderator": "",
+        "moderator": "Ricardo Oliveira",
         "speakersLeft": ["Rui Mendes", "Filomena Vieira", "Ricardo Costa"],
         "time": "17:00-18:15",
         "type": "tertúlia",
@@ -192,22 +185,26 @@
         "place": "Grande Auditório",
         "time": "18:15-19:00",
         "type": "Desafio",
-        "duration": 0.75
+        "duration": 0.75,
+        "description": "Este desafio vai ser constituído por várias fases eliminatórias até chegar a grande final.\n\nEm cada fase, dois participantes irão competir frente a frente, ganhando aquele que terminar um simples problema proposto, como inverter uma lista, no menor tempo possível. Mas não é tudo, temos uma pequena surpresa... Neste desafio os participantes estarão vestidos de lutadores de Sumo!\n\nO primeiro e segundo grandes vencedores irão receber um teclado Corsair K63 e um teclado Corsair Strafe, respetivamente.\n\nLinguagens de programação: Python, JavaScript, C++ ou Java.\n\n Para te inscreveres, acede a https://desafio-de-programacao-enei2020.eventbrite.pt."
       },
       {
         "double": true,
         "activityLeft": {
           "name": "Mega Febrada",
-          "place": "Parque da Ponte",
+          "place": "Jardim do Parque da Ponte",
           "time": "19:00-02:00",
           "type": "social",
-          "duration": 7
+          "duration": 7,
+          "description": "Na Mega Febrada a equipa do ENEI oferecer-te-á 2 febras e 1 fino, mas poderás adquirir mais, se assim desejares. Para além disso, ainda poderás assistir às atuações das tunas Gatuna e Tun’Obebes e ao concerto da banda The Silent Box. No final, vibrarás ao som do DJ Luís Marinho!"
         },
         "activityRight": {
           "name": "Jantar Empresarial",
+          "place": "Museu D. Diogo de Sousa",
           "time": "19:00-23:00",
           "duration": 4,
-          "type": "social"
+          "type": "social",
+          "description": "Para poderes estar presente no Jantar Empresarial basta enviares o teu Curriculum Vitae para o endereço de e-mail cv@enei.pt e acrescentar com que empresa gostarias de jantar (Accenture, KPMG, NOS ou Subvisual). Feito isto, apenas terás de esperar que sejas um dos 80 participantes selecionados.\nO jantar será no Museu D. Diogo de Sousa."
         }
       }
     ]
@@ -244,14 +241,13 @@
           "description": "A Deloitte Portugal conta com mais de 3.000 profissionais, dos quais 1.300 trabalha em tecnologia. Nesta talk, vamos mostrar-te como é que os nossos profissionais dedicados à Tecnologia têm a oportunidade de gerir uma carreira aliciante e enriquecedora, bem como as tecnologias que utilizamos todos os dias, como Microsoft, Oracle, Salesforce, IBM, SAP, Feedzai. Temos um mundo de desafios à tua medida desde data science, big data, UX e UI, ciber segurança, blockchain e IoT."
         },
         "talk3": {
-          "name": "Call For Speakers",
-          "speakersLeft": [],
-          "speakersRight": [],
-          "place": "Pequeno Auditório",
+          "name": "Living inside Emacs",
+          "speakersLeft": ["Eduardo Jorge"],
+          "place": "Sala de Congressos S1",
           "time": "11:00-12:00",
           "duration": 1,
           "type": "talk",
-          "tba": true
+          "description": "Ao contrário do conhecimento comum o Emacs vai muito além de um simples editor de texto. Nesta palestra vamos demonstar como o Emacs  se pode tornar a ferramenta digital principal que qualquer pessoa necessite. Uma configuração, um software, os mesmos atalhos para tudo."
         },
         "talk4": {
           "name": "Remote work with Zapier",
@@ -263,26 +259,25 @@
           "description": "Learn how Zapier works successfully as a remote-only company with more than 300 people all over the world."
         },
         "talk5": {
-          "name": "Call For Speakers",
-          "speakersLeft": [],
+          "name": "DevOps: Pipelining a microservices infrastructure",
+          "speakersLeft": ["João Vilaça"],
           "place": "Pequeno Auditório",
           "time": "11:00-12:00",
           "duration": 1,
           "type": "talk",
-          "tba": true
+          "description": "Ainda olhas para DevOps como um área que não compreendes ou na qual não te consegues ambientar? Nesta sessão terás a oportunidade de ver passo a passo como foi contruído um caso real de um projeto baseado numa arquitetura de microserviços, desde a conceção e criação da infraestrutura em cloud providers, a instalação e configuração de Kubernetes para gestão de aplicações em containers e o processo de Continuous Integration and Delivery. A automatização de todo este processo 'esconde' grande parte das ferramentas e configurações usadas, iremos, por isso, ver e discutir em detalhe toda a sua implementação e decisões, de modo a poder entender o que acontece 'under the hood' e poderem utilizar as mesmas metodologias nos vossos projetos de desenvolvimento."
         },
         "talk6": {
-          "name": "Call For Speakers",
-          "speakersLeft": [],
-          "speakersRight": [],
-          "place": "Pequeno Auditório",
+          "name": "Delivering over 300GB of 3D data to the web in real-time",
+          "speakersLeft": ["José Ferrão"],
+          "place": "Sala de Congressos S1",
           "time": "11:00-12:00",
           "duration": 1,
           "type": "talk",
-          "tba": true
+          "description": "At UNO Digital we develop a web based world scale 3D visualization platform for point-cloud and CAD data, used to view and manage large industrial production plants around the globe, in this talk we will explore all the challenges that we found during the development of our platform, our costumized WebGL based solution to draw everything on screen, paralelism in the browser using web worker, how we organized our data structures and how we implemented a compression pipeline to deliver huge chunks of data in real time."
         },
         "workshop1": {
-          "name": "Workshop Accenture",
+          "name": "Workshop Accenture TBA",
           "speakersLeft": [],
           "place": "Sala de Congressos S4",
           "time": "10:00-12:00",
@@ -307,13 +302,15 @@
           "description": "Como trabalhamos na GitLab, concretamente na equipa de User Experience, através do caso de estudo do redesign da navegação do produto."
         },
         "talk2": {
-          "name": "Talk Checkmarx",
-          "speakersLeft": [],
-          "place": "Grande Auditório",
+          "name": "Why you should care about Application Security",
+          "speakersLeft": ["Fu Xu"],
+          "place": "Pequeno Auditório",
           "time": "15:00-16:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "Have you ever questioned the safety of your code? Or maybe you have thought about it but have no idea how vulnerable code looks like?\nIn this talk, I will discuss application security, common vulnerabilities as some general recommendations to help you look at your code with a security posture",
+          "companyName": "Checkmarx",
+          "companyLink": "https://www.checkmarx.com/"
         },
         "talk3": {
           "name": "Machine Learning in Production",
@@ -347,13 +344,13 @@
           "companyLink": "https://www.hitachi.eu"
         },
         "workshop2": {
-          "name": "Workshop Call For Speakers",
-          "speakersLeft": [],
+          "name": "Monitorização de infraestruturas e aplicações - Azure Monitor e Azure Application Insight",
+          "speakersLeft": ["Carolina Dias"],
           "place": "Sala de Congressos S5",
           "time": "14:00-16:00",
           "duration": 2,
-          "tba": true,
-          "type": "workshop"
+          "type": "workshop",
+          "description": "Gostavas de analisar o desempenho das aplicações que desenvolves? Ou compreender como a tua infraestrutura de servidores e equipamentos de rede se comporta diariamente? Este workshop é para ti!\nNeste workshop, vamos abordar a importância da monitorização de infraestruturas e aplicações, de modo a responder aos desafios presentes no dia-a-dia das várias organizações. A resposta a esses desafios será alcançada com a exploração das tecnologias Azure Monitor, Azure Application Insight e Microsoft Power BI da Microsoft.\nO workshop contará com exemplos de cenários de monitorização em cloud que respondem a desafios atuais, demonstrações técnicas das tecnologias e conceitos relevantes de monitorização que te ajudaram a compreender de forma simples o tema. Contamos contigo!"
         }
       },
       {
@@ -367,14 +364,16 @@
         "speakersLeft": ["João Pereira", "André Forte", "Roberto Machado"],
         "place": "Grande Auditório",
         "duration": 1.25,
-        "type": "tertúlia"
+        "type": "tertúlia",
+        "description": "Tertúlia sobre Empreendedorismo que, como o próprio nome indica, irá abordar as iniciativas de implementar novos negócios ou mudanças em empresas já existentes em Portugal."
       },
       {
-        "name": "Quiz",
+        "name": "Quiz: Quem Quer Ser Informático?",
         "time": "18:15-19:00",
         "place": "Grande Auditório",
         "duration": 0.75,
-        "type": "Desafio"
+        "type": "Desafio",
+        "description": "Este quiz sobre cultura informática será composto por duas rondas e contará com várias equipas de dois elementos. A partir do momento em que a questão for colocada, é iniciado um temporizador e a equipa que clicar em primeiro lugar no buzzer poderá responder. Caso ninguém pressione o buzzer até o temporizador terminar, aparecerão 4 opções e todas as equipas terão de responder. Como é natural, as equipas que responderem às questões antes do temporizador expirar obterão mais pontos.\n\nComo se este jogo já não fosse divertido o suficiente, a equipa vencedora ainda irá receber 2 Google Home Mini\n\n Inscreve-te já em https://quem-quer-ser-informatico-enei2020.eventbrite.pt."
       },
       {
         "dinner": true,
@@ -386,13 +385,15 @@
           "name": "Rally Tascas",
           "time": "22:00-02:00",
           "duration": 4,
-          "type": "social"
+          "type": "social",
+          "description": "Para participares no Rally das Tascas, terás de juntar um grupo de 3 elementos e pagar uma quantia de 5€ por pessoa para se inscreverem. O objetivo desta atividade é percorrer as 10 tascas e beber um shot ou um fino em cada uma delas, de modo a fazer o maior número de pontos! Os vencedores, para além de receberem um badge de participação como os restantes participantes, receberão um badge de vencedor e uma garrafa de bebida branca!\n\nAs inscrições no Rally das Tascas serão feitas presencialmente, no zona da acreditação do evento."
         },
         "activityRight": {
           "name": "Peddy Paper",
           "time": "22:00-02:00",
           "duration": 4,
-          "type": "social"
+          "type": "social",
+          "description": "Se preferires participar no Peddy Paper, terás de o fazer juntamente com mais 9 pessoas, mas alertamos que só haverá vaga para 20 equipas! O objetivo desta atividade é passar por todos os locais do percurso e responder corretamente ao enigma colocado nesse local, de modo a fazer mais pontos. A equipa vencedora, para além de receber um badge de participação como os restantes participantes, receberá um badge de vencedor e um cabaz de produtos típicos de Braga!\n\n as inscrições no Peddy Paper terão de ser feitas através deste link https://enei2020-peddypaper.eventbrite.pt e basta que seja um elemento por equipa a fazê-lo."
         }
       }
     ]
@@ -464,28 +465,28 @@
           "description": "Nesta talk o autor baseia a apresentação num serviço de intrusão fisica a uma conhecida instituição financeira com diversas \"barreiras\" de segurança. Com um cenário cheio de ação e com diversas personagens (nenhuma delas veste um hoodie), como será o desfecho deste tema tão \"hollywoodesco\"?"
         },
         "activityCenter": {
-          "name": "Talk Globalvia",
-          "speakersLeft": [],
+          "name": "A transformação digital da mobilidade",
+          "speakersLeft": ["Duarte Ramos", "Diamantino Abobeleira"],
           "place": "Pequeno Auditório",
           "time": "14:00-15:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "Na era de infraestruturas inteligentes, a Globalvia desenvolve soluções digitais, simplificando processos de mobilidade e promovendo projetos inovadores.\nNesta Palestra, apresentaremos as soluções digitais que desenvolvemos, que consistem numa mudança de paradigma totalmente disruptiva no setor das infraestruturas rodoviárias, as ferramentas que criamos, as tecnologias que utilizamos e as metodologias que implementamos, que resultam numa alteração de cultura e mindset para toda a nossa equipa, e permitem criar novas dinâmicas para o negócio atual e desenvolver novos modelos de negócio na área da mobilidade e smart cities."
         },
         "activityRight": {
-          "name": "Call For Speakers",
-          "speakersLeft": [],
-          "place": "Pequeno Auditório",
+          "name": "Quantitative Research Analyst – BNP Paribas",
+          "speakersLeft": ["Pedro Correia"],
+          "place": "Sala de Congressos S1",
           "time": "14:00-15:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "In this talk we will what exactly is an investment bank, what is a quant, what are options, derivatives of financial products and how prices are calculated, and we will understand why are banks increasing the amount of Computer Scientists, Mathematicians and Engineers in the trading floor."
         }
       },
       {
         "triple": true,
         "activityLeft": {
-          "name": "Talk Accenture",
+          "name": "Talk Accenture TBA",
           "speakersLeft": [],
           "speakersRight": [],
           "place": "Grande Auditório",
@@ -506,21 +507,22 @@
           "companyLink": "https://www.glintt.com/"
         },
         "activityRight": {
-          "name": "Call For Speakers",
-          "speakersLeft": [],
-          "place": "Pequeno Auditório",
+          "name": "Saving the bees with IoT and Elixir",
+          "speakersLeft": ["José Pedro Resende"],
+          "place": "Sala de Congressos S1",
           "time": "14:00-15:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "Bees are dying at an incredible speed and if we don't find a solution we are going to die with them.   This talk documents the design and creation of a plataform to help beekeepers get funding, metrics, health warnings and tips for their hives.  This will include the techonology behind it, elixir, and how it helped us build an mvp with minimal fuss.   Long live the bees 🐝"
         }
       },
       {
-        "name": "Sessão de Encerramento",
+        "name": "Sessão de Encerramento & Entrega de Prémios",
         "time": "16:00-17:00",
         "place": "Grande Auditório",
         "duration": 1,
-        "type": "social"
+        "type": "social",
+        "description": "Cerimónia de encerramento do ENEI, com a entrega de prémios relativos aos concursos decorridos ao longo dos 4 dias."
       }
     ]
   }
