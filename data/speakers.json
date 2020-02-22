@@ -137,25 +137,36 @@
     "company": "Universidade do Minho"
   },
   {
+    "name": "Luís Rodrigues",
+    "img": "/img/speakers/Luís_Rodrigues.jpg",
+    "linkedin": "luismfsrodrigues",
+    "shortbio": "Licenciado e Pós-Graduado em Ciências da Comunicação pela Universidade do Minho, com especialização no ramo de Informação e Jornalismo. No universo do Marketing e da Comunicação, concluiu ainda o Programa Avançado em Marketing Digital da UMinho Exec e o programa de Estratégia de Marketing Digital, na Columbia Business School.  Foi dirigente associativo da Associação Académica da Universidade do Minho, instituição da qual foi Presidente entre 2010 e 2012. Colaborou também com o Jornal Académico, a Rádio Universitária do Minho e foi jornalista do programa Sociedade Civil da RTP2.  Entre 2013 e 2017, integrou os Serviços de Apoio ao Reitor da UMinho, tendo coordenado o Gabinete de Desenvolvimento, estrutura a partir da qual se desenvolveram diferentes dimensões como o fundraising, a relação com a comunidade alumni e a empregabilidade. Entre 2017 e 2019, foi Diretor de Comunicação e Relações Institucionais da Casa de Investimentos - Gestão de Patrimónios, S.A.  Atualmente, é Diretor da Startup Braga, o hub de inovação da InvestBraga, equipa que integra desde abril de 2019.",
+    "title": "Diretor",
+    "company": "Startup Braga"
+  },
+  {
     "name": "Pedro Girão",
     "img": "/img/speakers/pedrogirao_bosch.png",
     "shortbio": "Pedro Girão is a Software Developer who has been working in an Innovation Project at Bosch in Braga. His main area of work has been related to point cloud data processing and visualization techniques, as well as data acquisition and synchronization from multiple sensors for autonomous driving. He took his Master's Degree in Electrical and Computer Engineering in University of Coimbra, where he also spent around two years as a researcher for Instituto de Sistemas e Robótica developing research under the same domains. Pedro enjoys listening to (a lot of) music, playing video games, trying new foods and travelling, as well as keeping up with all tech-related trends.",
     "title": "Software Developer",
-    "company": "Bosch"
+    "company": "Bosch",
+    "github": "pmogirao"
   },
   {
     "name": "Miguel Domingues",
     "img": "/img/speakers/Miguel_Domingues_PRIMAVERA.jpg",
     "shortbio": "Mestre em Eng. Informática pela Universidade do Minho e com mais de 20 anos experiência em desenvolvimento, desenvolveu a maior parte da sua carreira na área de investigação e novas tecnologias, sendo o atual responsável pela área de AI na PRIMAVERA.",
     "title": "Technical Senior Manager",
-    "company": "Primavera"
+    "company": "Primavera",
+    "github": "migueldomingues"
   },
   {
     "name": "André Gil Martins",
     "img": "/img/speakers/André_Martins_Primavera.jpg",
     "shortbio": "Licenciado em Engenharia Informática e mestre em Sistemas Integrados de Apoio à Decisão pelo ISCTE, com especialização em Sistemas Preditivos em Escada de Séries Temporais. Conta com 20 anos de experiência no desenvolvimento e implementação de Software de Gestão Empresarial.",
     "title": "Data Scientist",
-    "company": "Primavera"
+    "company": "Primavera",
+    "github": "andregilmartins"
   },
   {
     "name": "André Duarte",
@@ -187,7 +198,108 @@
     "img": "/img/speakers/AndreForte.jpg",
     "shortbio": "André Forte é o communications manager da Startup Portugal, cargo que desempenha desde dezembro de 2017. Ao longo dos últimos anos, o seu interesse por empreendedorismo e startups aguçou-se com a proximidade para com o ecossistema nacional, cujo crescimento tem acompanhado de muito perto. É um contador de histórias, que desenvolve conteúdo e procura o melhor a melhor forma de contar a experiência de escalar uma startup.",
     "title": "Communications Manager",
-    "company": "Startup Portugal"
+    "company": "Startup Portugal",
+    "github": "andré-forte-035354134"
+  },
+  {
+    "name": "Diana Rodrigues",
+    "img": "/img/speakers/Diana_Rodrigues_NEWHOTEL.jfif",
+    "shortbio": "A Diana Rodrigues é Frontend Developer @ Newhotel Software, software house nacional especializada em software para hotelaria e que conta com clientes como os grupos Hoti Hotéis, IberoStar, Bahia Príncipe, DouroAzul,…",
+    "title": "Frontend Developer",
+    "company": "Newhotel Software",
+    "linkedin": "dianafrodrigues"
+  },
+  {
+    "name": "João Ribeiro",
+    "img": "/img/speakers/João_Ribeiro_KELVIN_INC.jpeg",
+    "shortbio": "I'm a Software Engineer at Kelvin Inc. and an Assistant Professor at ESTG. I have a deep passion for all that concerns the Web, especially evolution of JS.",
+    "title": "Software Engineer",
+    "company": "Kelvin Inc",
+    "linkedin": "joão-luis-ribeiro-71b66634"
+  },
+  {
+    "name": "Miguel Pinto",
+    "img": "/img/speakers/Miguel_Pinto_Kelvin.jpeg",
+    "shortbio": "Miguel is a Software Engineer at Kelvin Inc who has been working on Front-end. Passion for tech, likes to play board games when he has free time.",
+    "title": "Software Engineer",
+    "company": "Kelvin Inc",
+    "github": "miguelpinto98"
+  },
+  {
+    "name": "Ricardo Ferreira",
+    "img": "/img/speakers/Ricardo_Ferreira_INCM.jfif",
+    "shortbio": "",
+    "title": "Senior Security and PKI analyst",
+    "company": "INCM",
+    "linkedin": "ricardo-ferreira-9722821"
+  },
+  {
+    "name": "João Alves",
+    "img": "/img/speakers/Joao_Alves_INCM.jpg",
+    "shortbio": "",
+    "title": "Security and PKI analyst",
+    "company": "INCM",
+    "linkedin": "joão-paulo-ribeiro-alves-8b1391166"
+  },
+  {
+    "name": "Filomena Vieira",
+    "img": "/img/speakers/Filomena_Vieira.jpg",
+    "shortbio": "Filomena is a Public Law legal adviser with more than 25 years of experience, focused on IT and I&D public procurement procedures and contracting, as well as on GDPR implementation. She is an enthusiast about legal design thinking and works with her clients as legal project manager, being part of interdisciplinary teams. Filomena is used to build the contracting strategy for the implementation of projects financed by European Structural and Investment Funds. She is a firm believer in the importance of interdisciplinary work and implements her vision in the teams she works with in order to achieve more efficient results. She teached Administrative Law at the Lisbon University and currently she lectures post-graduate classes and conducts on the job training. She is the author of the 1st GDPR MOOC called “GDPR for attentive citizens”.",
+    "title": "Vice-Presidente",
+    "company": "Associação Nacional de DPOs",
+    "linkedin": "filomena-vieira"
+  },
+  {
+    "name": "Miguel Palhas",
+    "img": "/img/speakers/miguel_palhas.jpg",
+    "shortbio": "Professional over-engineer at Subvisual / Owner of weird keyboards / Above-average chess player.",
+    "title": "Software Engineer",
+    "company": "Subvisual",
+    "website": "https://naps62.github.io/",
+    "github": "naps62",
+    "linkedin": "mpalhas",
+    "twitter": "naps62"
+  },
+  {
+    "name": "Rita Pedras",
+    "img": "/img/speakers/Rita_Pedras_deloitte.jfif",
+    "shortbio": "",
+    "title": "Talent Acquisition",
+    "company": "Deloitte",
+    "linkedin": "ritapedras"
+  },
+  {
+    "name": "Filipe Esteves",
+    "img": "/img/speakers/Filipe_Esteves_deloitte.jfif",
+    "shortbio": "",
+    "title": "HR Business Partner",
+    "company": "Deloitte",
+    "linkedin": "filipe-esteves"
+  },
+  {
+    "name": "Rui Fonseca",
+    "img": "/img/speakers/Rui_Fonseca_BITSONAE.jpg",
+    "shortbio": "Rui Fonseca é o Area Coordinator da equipa RAD. Para além de ser responsável pela monitorização e entrega de projetos tecnologicamente avançados na BIT, é aquele que identifica as soluções que mantém o grupo na vanguarda da tecnologia.",
+    "title": "Area Coordinator",
+    "company": "Sonae Bit",
+    "linkedin": "ruinfonseca"
+  },
+  {
+    "name": "Daniela Costa",
+    "img": "/img/speakers/Daniela_Costa_Eurotux.jpg",
+    "shortbio": "Daniela Costa concluiu o Mestrado em Inovação e Empreendedorismo Tecnológico em 2009, após terminar a licenciatura em Engenharia Informática. Iniciou a sua carreira como Web Developer em 2005, especializou-se em Gestão de Projetos e hoje ocupa cargos de diretora na Eurotux e na empresa de desenvolvimento web do mesmo Grupo, a Dipcode. Tem uma vasta experiência com desenvolvimento à medida em projetos de média/grande dimensão na área web, assim como gestão de equipas e definição de processos. Define-se como entusiasta de tecnologia, artes e desporto, onde ter muitos interesses em simultâneo nunca foi um obstáculo ao se dedicar com empenho a cada um deles. Integra a comunidade Geek Girls Portugal que dá visibilidade às mulheres no mundo da tecnologia e ainda colabora com a comunidade WordPress Portugal fazendo parte da organização do evento WordCamp Europa a decorrer este ano em Portugal.",
+    "title": "Head of DGI",
+    "company": "Eurotux",
+    "linkedin": "danidc"
+  },
+  {
+    "name": "Diogo Machado",
+    "img": "/img/speakers/Diogo_Machado_Eurotux.jpeg",
+    "shortbio": "Diogo Machado concluiu o Mestrado Integrado em Engenharia Informática na Universidade do Minho em 2018. Integrou a equipa de Investigação e Desenvolvimento da Eurotux em 2018 para realizar a sua dissertação de mestrado em contexto empresarial. Em 2019 transitou para a equipa de DevOps da Eurotux onde permanece até hoje. Desde cedo demonstrou interesse por várias áreas tecnológicas, participando em diversos eventos como o DevOps Braga. Ao longo da sua formação académica realizou alguns estágios e participou em diferentes projetos dos quais se destaca o de mobilidade urbana ligado aos Transportes Urbanos Braga (TUB).",
+    "title": "",
+    "company": "Eurotux",
+    "github": "",
+    "linkedin": ""
   },
   {
     "name": "Diogo Cerqueira",

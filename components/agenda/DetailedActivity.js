@@ -4,6 +4,7 @@ import { Box, Grid, Typography, Card, CardContent } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 import { Element } from 'react-scroll';
 import { LocationOn, Person, Schedule, Business } from '@material-ui/icons';
+import slugify from 'react-slugify';
 import theme from '../theme';
 import Underline from '../Underline';
 import Link from '../Link';
@@ -36,7 +37,8 @@ const ActivityDescription = ({
   place,
   time,
   speakers,
-  company,
+  companyName,
+  companyLink,
   type,
 }) => {
   return (
@@ -69,7 +71,8 @@ const ActivityDescription = ({
           place={place}
           time={time}
           speakers={speakers}
-          company={company}
+          companyName={companyName}
+          companyLink={companyLink}
           type={type}
           mobile={mobile}
         />
@@ -85,7 +88,14 @@ const ActivityDescription = ({
   );
 };
 
-const ActivityInfo = ({ place, time, speakers, company, mobile }) => {
+const ActivityInfo = ({
+  place,
+  time,
+  speakers,
+  companyName,
+  companyLink,
+  mobile,
+}) => {
   return (
     <ActivityInfoGrid
       container
@@ -110,36 +120,43 @@ const ActivityInfo = ({ place, time, speakers, company, mobile }) => {
             <SpeakerName name={speaker} />
           </Grid>
         ))}
-      {company && (
+      {companyName && companyLink && (
         <Grid item>
-          <InfoLine company text="Empresa" />
+          <CompanyLink name={companyName} url={companyLink} />
         </Grid>
       )}
     </ActivityInfoGrid>
   );
 };
 
-const InfoLine = ({ location, time, company, text }) => {
+const InfoLine = ({ location, time, text }) => {
   return (
     <StyledBox>
       {location && <LocationOn fontSize="Small" />}
       {time && <Schedule fontSize="Small" />}
-      {company && <Business fontSize="Small" />}
       <Typography variant="subtitle2">{text}</Typography>
     </StyledBox>
   );
 };
 
 const SpeakerName = ({ name }) => {
-  const speakerId = name
-    .replace(/\s+/g, '-')
-    .replace(/[\u{0080}-\u{FFFF}]/gu, '')
-    .toLowerCase();
+  const speakerId = slugify(name);
 
   return (
     <Link href={`/speakers#${speakerId}`}>
       <StyledBox>
         <Person fontSize="Small" />
+        <Typography variant="subtitle2">{name}</Typography>
+      </StyledBox>
+    </Link>
+  );
+};
+
+const CompanyLink = ({ name, url }) => {
+  return (
+    <Link href={url}>
+      <StyledBox>
+        <Business fontSize="Small" />
         <Typography variant="subtitle2">{name}</Typography>
       </StyledBox>
     </Link>
@@ -152,11 +169,12 @@ function DetailedActiviy({
   place,
   time,
   speakers,
-  company,
+  companyName,
+  companyLink,
   type,
   mobile,
 }) {
-  const activityId = name.replace(/\s+/g, '-').toLowerCase();
+  const activityId = slugify(name);
   return (
     <Element id={activityId} name={activityId}>
       <ActivityCard>
@@ -167,7 +185,8 @@ function DetailedActiviy({
             place={place}
             time={time}
             speakers={speakers}
-            company={company}
+            companyName={companyName}
+            companyLink={companyLink}
             type={type}
             mobile={mobile}
           />
@@ -183,7 +202,8 @@ DetailedActiviy.propTypes = {
   time: PropTypes.string.isRequired,
   speakers: PropTypes.array,
   place: PropTypes.string.isRequired,
-  company: PropTypes.string,
+  companyName: PropTypes.string,
+  companyLink: PropTypes.string,
   type: PropTypes.string,
   mobile: PropTypes.bool,
 };
@@ -195,7 +215,8 @@ ActivityDescription.propTypes = {
   time: PropTypes.string.isRequired,
   speakers: PropTypes.array,
   place: PropTypes.string.isRequired,
-  company: PropTypes.string,
+  companyName: PropTypes.string,
+  companyLink: PropTypes.string,
   type: PropTypes.string,
 };
 
@@ -203,19 +224,24 @@ ActivityInfo.propTypes = {
   time: PropTypes.string.isRequired,
   speakers: PropTypes.array,
   place: PropTypes.string.isRequired,
-  company: PropTypes.string,
+  companyName: PropTypes.string,
+  companyLink: PropTypes.string,
   mobile: PropTypes.bool,
 };
 
 InfoLine.propTypes = {
   location: PropTypes.bool,
   time: PropTypes.bool,
-  company: PropTypes.bool,
   text: PropTypes.string.isRequired,
 };
 
 SpeakerName.propTypes = {
-  name: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+};
+
+CompanyLink.propTypes = {
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string,
 };
 
 export default DetailedActiviy;

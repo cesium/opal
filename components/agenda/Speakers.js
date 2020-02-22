@@ -25,11 +25,15 @@ const SpeakerLine = (speakers) => {
   return line;
 };
 
-function Speakers({ speakersLeft, speakersRight }) {
-  const leftLine =
-    speakersLeft && speakersLeft.length !== 0
-      ? `${SpeakerLine(speakersLeft)}`
-      : null;
+function Speakers({ moderator, speakersLeft, speakersRight }) {
+  let leftLine;
+
+  if (speakersLeft && speakersLeft.length !== 0) {
+    leftLine = moderator
+      ? `${moderator} | ${SpeakerLine(speakersLeft)}`
+      : `${SpeakerLine(speakersLeft)}`;
+  }
+
   const rightLine =
     speakersRight && speakersRight.length !== 0
       ? `${SpeakerLine(speakersRight)}`
@@ -52,6 +56,7 @@ function Speakers({ speakersLeft, speakersRight }) {
 }
 
 Speakers.propTypes = {
+  moderator: PropTypes.string,
   speakersLeft: PropTypes.array.isRequired,
   speakersRight: PropTypes.array,
 };

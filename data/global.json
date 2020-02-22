@@ -24,7 +24,6 @@
       { "name": "Desafios e Prémios", "link": "/challenges" },
       { "name": "Embaixadores", "link": "/ambassadors" },
       { "name": "Candidaturas", "link": "/applications" },
-      { "name": "FAQs", "link": "/faqs" },
       { "name": "Blog", "link": "https://medium.com/eneiconf" }
     ],
     "logo": "/img/eneiLogoWhite.png"

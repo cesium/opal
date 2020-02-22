@@ -60,7 +60,9 @@
           "time": "10:00-11:00",
           "duration": 1,
           "type": "talk",
-          "description": "Which car will you drive in the future? In this talk, we will give you a tour of current trends, challenges and technologies in the field of autonomous driving and what the future of mobility might look like. We'll walk you through a practical example to show you how Machine Learning is bringing us closer to this dream. Here at Bosch, you can help shape the future of mobility."
+          "description": "Which car will you drive in the future? In this talk, we will give you a tour of current trends, challenges and technologies in the field of autonomous driving and what the future of mobility might look like. We'll walk you through a practical example to show you how Machine Learning is bringing us closer to this dream. Here at Bosch, you can help shape the future of mobility.",
+          "companyName": "Bosch",
+          "companyLink": "https://www.bosch.pt/"
         },
         "talk3": {
           "name": "Gimme a job... I mean: How to get a tech internship?",
@@ -78,7 +80,9 @@
           "time": "11:00-12:00",
           "duration": 1,
           "type": "talk",
-          "description": "Software de Gestão + Inteligência Artificial = Gestão Inteligente"
+          "description": "Software de Gestão + Inteligência Artificial = Gestão Inteligente",
+          "companyName": "Primavera",
+          "companyLink": "https://pt.primaverabss.com/"
         },
         "workshop1": {
           "name": "Hands-on workshop: Angular for frontend developers",
@@ -87,10 +91,12 @@
           "time": "10:00-12:00",
           "duration": 2,
           "type": "workshop",
-          "description": "Exemplo prático da utilização do Angular no desenvolvimento de Web Applications."
+          "description": "Exemplo prático da utilização do Angular no desenvolvimento de Web Applications.",
+          "companyName": "Newhotel",
+          "companyLink": "https://www.newhotel.com/"
         },
         "workshop2": {
-          "name": "Workshop TBA",
+          "name": "Workshop NOS",
           "speakersLeft": [],
           "speakersRight": [],
           "place": "Sala de Congressos S5",
@@ -122,7 +128,9 @@
           "time": "14:00-15:00",
           "duration": 1,
           "type": "talk",
-          "description": "Nos dias que correm quase todos os sistemas são passíveis de serem digitalizados, utilizando sensores e plataformas de controlo remoto para o efeito. Isto é, com o advento das Smart Cities, Industria 4.0, Smart Homes and Buildings, tudo é passível de ser digitalizado. Durante a talk, apresenta-se a forma como a Ubiwhere tem trabalhado o IoT com cidades e outras empresas, passando pela definição dos conceitos base que dão suporte à mesma e pela aplicabilidade prática que o IoT tem no âmbito das Smart Cities. A talk termina com a visão da Ubiwhere para o futuro: \"The City Nervous System\"."
+          "description": "Nos dias que correm quase todos os sistemas são passíveis de serem digitalizados, utilizando sensores e plataformas de controlo remoto para o efeito. Isto é, com o advento das Smart Cities, Industria 4.0, Smart Homes and Buildings, tudo é passível de ser digitalizado. Durante a talk, apresenta-se a forma como a Ubiwhere tem trabalhado o IoT com cidades e outras empresas, passando pela definição dos conceitos base que dão suporte à mesma e pela aplicabilidade prática que o IoT tem no âmbito das Smart Cities. A talk termina com a visão da Ubiwhere para o futuro: \"The City Nervous System\".",
+          "companyName": "Ubiwhere",
+          "companyLink": "https://www.ubiwhere.com/"
         },
         "talk3": {
           "name": "That first game I thought would be a hit! Vizati Post-Mortem",
@@ -150,17 +158,20 @@
           "time": "14:00-16:00",
           "duration": 2,
           "type": "talk",
-          "description": "RxJS is a library for reactive programming using Observables, making easier the composition of asynchronous and callback-based code.In this workshop, we will dive into the uses of this highly used library, and create a world earthquake map application demo."
+          "description": "RxJS is a library for reactive programming using Observables, making easier the composition of asynchronous and callback-based code.In this workshop, we will dive into the uses of this highly used library, and create a world earthquake map application demo.",
+          "companyName": "Kelvin Inc",
+          "companyLink": "https://www.kelvininc.com/"
         },
         "workshop2": {
-          "name": "Workshop TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
+          "name": "eID & ePassport: Hands on",
+          "speakersLeft": ["Ricardo Ferreira", "João Alves"],
           "place": "Sala de Congressos S5",
           "time": "14:00-16:00",
           "duration": 2,
-          "tba": true,
-          "type": "workshop"
+          "type": "workshop",
+          "description": "Sabes o que está dentro do teu Cartão de Cidadão? E no passaporte? Vem descobrir connosco",
+          "companyName": "INCM",
+          "companyLink": "https://www.incm.pt/"
         }
       },
       {
@@ -170,6 +181,7 @@
       {
         "name": "Tertúlia - Privacidade de Dados",
         "place": "Grande Auditório",
+        "moderator": "",
         "speakersLeft": ["Rui Mendes", "Filomena Vieira", "Ricardo Costa"],
         "time": "17:00-18:15",
         "type": "tertúlia",
@@ -223,16 +235,25 @@
           "description": "Continuous delivery is hard. At Utrust, we had various problems with lack of automations and proper UIs that non-technical team members could follow. With the release of Github Actions, a new CI powered by Github, we took the chance to revamp our whole flow. This is the story of how we now manage continuous deliveries, and of how awesome Github Actions can be to automate all kinds of tasks."
         },
         "talk2": {
-          "name": "Talk TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
+          "name": "How to reveal your impact? Deloitte explains",
+          "speakersLeft": ["Rita Pedras", "Filipe Esteves"],
           "place": "Pequeno Auditório",
           "time": "10:00-11:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "A Deloitte Portugal conta com mais de 3.000 profissionais, dos quais 1.300 trabalha em tecnologia. Nesta talk, vamos mostrar-te como é que os nossos profissionais dedicados à Tecnologia têm a oportunidade de gerir uma carreira aliciante e enriquecedora, bem como as tecnologias que utilizamos todos os dias, como Microsoft, Oracle, Salesforce, IBM, SAP, Feedzai. Temos um mundo de desafios à tua medida desde data science, big data, UX e UI, ciber segurança, blockchain e IoT."
         },
         "talk3": {
+          "name": "Call For Speakers",
+          "speakersLeft": [],
+          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "11:00-12:00",
+          "duration": 1,
+          "type": "talk",
+          "tba": true
+        },
+        "talk4": {
           "name": "Remote work with Zapier",
           "speakersLeft": ["Filipa Lacerda"],
           "place": "Grande Auditório",
@@ -241,8 +262,17 @@
           "type": "talk",
           "description": "Learn how Zapier works successfully as a remote-only company with more than 300 people all over the world."
         },
-        "talk4": {
-          "name": "Talk TBA",
+        "talk5": {
+          "name": "Call For Speakers",
+          "speakersLeft": [],
+          "place": "Pequeno Auditório",
+          "time": "11:00-12:00",
+          "duration": 1,
+          "type": "talk",
+          "tba": true
+        },
+        "talk6": {
+          "name": "Call For Speakers",
           "speakersLeft": [],
           "speakersRight": [],
           "place": "Pequeno Auditório",
@@ -252,20 +282,9 @@
           "tba": true
         },
         "workshop1": {
-          "name": "Workshop TBA",
+          "name": "Workshop Accenture",
           "speakersLeft": [],
-          "speakersRight": [],
           "place": "Sala de Congressos S4",
-          "time": "10:00-12:00",
-          "duration": 2,
-          "tba": true,
-          "type": "workshop"
-        },
-        "workshop2": {
-          "name": "Workshop TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
-          "place": "Sala de Congressos S5",
           "time": "10:00-12:00",
           "duration": 2,
           "tba": true,
@@ -288,24 +307,22 @@
           "description": "Como trabalhamos na GitLab, concretamente na equipa de User Experience, através do caso de estudo do redesign da navegação do produto."
         },
         "talk2": {
-          "name": "Talk TBA",
+          "name": "Talk Checkmarx",
           "speakersLeft": [],
-          "speakersRight": [],
-          "place": "Pequeno Auditório",
-          "time": "14:00-15:00",
-          "duration": 1,
-          "tba": true,
-          "type": "talk"
-        },
-        "talk3": {
-          "name": "Talk TBA",
-          "speakersLeft": [],
-          "speakersRight": [],
           "place": "Grande Auditório",
           "time": "15:00-16:00",
           "duration": 1,
           "tba": true,
           "type": "talk"
+        },
+        "talk3": {
+          "name": "Machine Learning in Production",
+          "speakersLeft": ["André Barbosa"],
+          "place": "Grande Auditório",
+          "time": "15:00-16:00",
+          "duration": 1,
+          "type": "talk",
+          "description": "Machine Learning is a hot topic in the industry nowadays. We’ll look at a few examples of how different companies are taking advantage of this technology to build better products and some architectures and tools that have been employed by successful data driven organizations"
         },
         "talk4": {
           "name": "Cloud Delivery @KPMG",
@@ -314,7 +331,9 @@
           "time": "15:00-16:00",
           "duration": 1,
           "type": "talk",
-          "description": "The process of migrating on-prem solutions to the cloud."
+          "description": "The process of migrating on-prem solutions to the cloud.",
+          "companyName": "KPMG",
+          "companyLink": "https://home.kpmg/"
         },
         "workshop1": {
           "name": "Know your Beer – Microsoft Power Platform",
@@ -323,12 +342,13 @@
           "time": "14:00-16:00",
           "duration": 2,
           "type": "workshop",
-          "description": "Neste workshop, vamos demonstrar o potencial da Microsoft Power Platform para endereçar desafios do dia-a-dia em várias indústrias num cenário de negócio, ao explorar como a Power Platform permite a criação de poderosas Business Apps dotadas de Inteligência Artificial (IA) com as mais recentes e inovadoras tecnologias da Microsoft. Este será um hands-on workshop, com demonstração em tempo-real do desenho de uma Power App capaz de identificar diferentes marcas de cerveja dentro de um dado ambiente, e mostrando os resultados visivelmente na App. O workshop explorará os componentes técnicos necessários à construção da App e, adicionalmente, o mecanismo de IA responsável por treinar um modelo inteligente capaz de identificar objetos. Junta-te a nós!"
+          "description": "Neste workshop, vamos demonstrar o potencial da Microsoft Power Platform para endereçar desafios do dia-a-dia em várias indústrias num cenário de negócio, ao explorar como a Power Platform permite a criação de poderosas Business Apps dotadas de Inteligência Artificial (IA) com as mais recentes e inovadoras tecnologias da Microsoft. Este será um hands-on workshop, com demonstração em tempo-real do desenho de uma Power App capaz de identificar diferentes marcas de cerveja dentro de um dado ambiente, e mostrando os resultados visivelmente na App. O workshop explorará os componentes técnicos necessários à construção da App e, adicionalmente, o mecanismo de IA responsável por treinar um modelo inteligente capaz de identificar objetos. Junta-te a nós!",
+          "companyName": "Hitachi",
+          "companyLink": "https://www.hitachi.eu"
         },
         "workshop2": {
-          "name": "Workshop TBA",
+          "name": "Workshop Call For Speakers",
           "speakersLeft": [],
-          "speakersRight": [],
           "place": "Sala de Congressos S5",
           "time": "14:00-16:00",
           "duration": 2,
@@ -343,6 +363,7 @@
       {
         "name": "Tertúlia - Empreendedorismo",
         "time": "17:00-18:15",
+        "moderator": "Luís Rodrigues",
         "speakersLeft": ["João Pereira", "André Forte", "Roberto Machado"],
         "place": "Grande Auditório",
         "duration": 1.25,
@@ -388,14 +409,14 @@
         "duration": 1
       },
       {
-        "name": "Apresentação das Candidaturas",
-        "time": "10:00-11:00",
-        "place": "Grande Auditório",
-        "duration": 1
-      },
-      {
-        "double": true,
-        "activityLeft": {
+        "multiple": true,
+        "talk1": {
+          "name": "Apresentação das Candidaturas",
+          "time": "10:00-11:00",
+          "place": "Grande Auditório",
+          "duration": 1
+        },
+        "talk3": {
           "name": "Developing Software for Digital Trucks",
           "speakersLeft": ["Nuno Brites"],
           "place": "Grande Auditório",
@@ -404,14 +425,27 @@
           "type": "talk",
           "description": "In a world where the logistics industry is getting more and more digital, the trucks need to keep up and digital services are now part of what we call a digital truck. To develop the software that gives life to the digital services cross functional teams are essential, from software engineers to UX/UI designers every single role is of the most importance to deliver a high quality product. I will talk about software development of a digital service, from the perspective of a software engineer inside an agile cross functional team working at the MAN | Digital Hub."
         },
-        "activityRight": {
+        "talk4": {
           "name": "Let’s be a DevOps Engineer",
           "speakersLeft": ["Daniela Costa", "Diogo Machado"],
           "place": "Pequeno Auditório",
           "time": "11:00-12:00",
           "duration": 1,
           "type": "talk",
-          "description": "O que é DevOps e o que faz um DevOps Engineer? Quais os principais desafios quando se integra o mundo do trabalho? Que opções tens e como fazer a melhor escolha? Estas são algumas das questões que irão ser abordadas nesta talk sobre como se preparar para o primeiro emprego em informática e como iniciar uma carreira como DevOps Engineer."
+          "description": "O que é DevOps e o que faz um DevOps Engineer? Quais os principais desafios quando se integra o mundo do trabalho? Que opções tens e como fazer a melhor escolha? Estas são algumas das questões que irão ser abordadas nesta talk sobre como se preparar para o primeiro emprego em informática e como iniciar uma carreira como DevOps Engineer.",
+          "companyName": "Eurotux",
+          "companyLink": "https://eurotux.com/"
+        },
+        "workshop1": {
+          "name": "OutSystems 101 - BIT by Sonae MC",
+          "speakersLeft": ["Rui Fonseca"],
+          "place": "Sala de Congressos S4",
+          "time": "10:00-12:00",
+          "duration": 2,
+          "type": "workshop",
+          "description": "Descobre como impulsionamos, todos os dias, o negócio da Sonae, recorrendo à utilização da plataforma low-code da OutSystems! Neste workshop vamos partilhar contigo um pouco do nosso dia-a-dia na BIT (https://www.linkedin.com/showcase/10218457/admin/), e dar-te a conhecer como a nossa equipa é altamente capaz na gestão de soluções RAD e na entrega de soluções em OutSystems. Deixa-te fascinar com o impacto do nosso trabalho no maior grupo de retalho do país e percebe como podes iniciar o teu percurso connosco!",
+          "companyName": "Sonae Bit",
+          "companyLink": "https://sonaemc.com/"
         }
       },
       {
@@ -419,7 +453,7 @@
         "duration": 2
       },
       {
-        "double": true,
+        "triple": true,
         "activityLeft": {
           "name": "Do I need a hoodie to hack a bank?",
           "speakersLeft": ["David Sopas"],
@@ -429,10 +463,18 @@
           "type": "talk",
           "description": "Nesta talk o autor baseia a apresentação num serviço de intrusão fisica a uma conhecida instituição financeira com diversas \"barreiras\" de segurança. Com um cenário cheio de ação e com diversas personagens (nenhuma delas veste um hoodie), como será o desfecho deste tema tão \"hollywoodesco\"?"
         },
-        "activityRight": {
-          "name": "Talk TBA",
+        "activityCenter": {
+          "name": "Talk Globalvia",
           "speakersLeft": [],
-          "speakersRight": [],
+          "place": "Pequeno Auditório",
+          "time": "14:00-15:00",
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
+        },
+        "activityRight": {
+          "name": "Call For Speakers",
+          "speakersLeft": [],
           "place": "Pequeno Auditório",
           "time": "14:00-15:00",
           "duration": 1,
@@ -441,9 +483,9 @@
         }
       },
       {
-        "double": true,
+        "triple": true,
         "activityLeft": {
-          "name": "Talk TBA",
+          "name": "Talk Accenture",
           "speakersLeft": [],
           "speakersRight": [],
           "place": "Grande Auditório",
@@ -452,14 +494,25 @@
           "tba": true,
           "type": "talk"
         },
-        "activityRight": {
+        "activityCenter": {
           "name": "Olá!",
           "speakersLeft": ["Diogo Cerqueira"],
           "place": "Pequeno Auditório",
           "time": "15:00-16:00",
           "duration": 1,
           "type": "talk",
-          "description": "Apresentação da empresa."
+          "description": "Apresentação da empresa.",
+          "companyName": "Glintt",
+          "companyLink": "https://www.glintt.com/"
+        },
+        "activityRight": {
+          "name": "Call For Speakers",
+          "speakersLeft": [],
+          "place": "Pequeno Auditório",
+          "time": "14:00-15:00",
+          "duration": 1,
+          "tba": true,
+          "type": "talk"
         }
       },
       {

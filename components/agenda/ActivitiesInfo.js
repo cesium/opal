@@ -13,6 +13,7 @@ const StyledGrid = styled(Grid)({
 
 const activitySpeakers = (activity) => {
   let speakers = [];
+  if (activity.moderator) speakers = speakers.concat(activity.moderator);
   if (activity.speakersLeft) speakers = speakers.concat(activity.speakersLeft);
   if (activity.speakersRight)
     speakers = speakers.concat(activity.speakersRight);
@@ -51,7 +52,8 @@ function ActivitiesInfo({ day, activities, width }) {
               place={activity.place}
               time={activity.time}
               speakers={speakers}
-              company={activity.company}
+              companyName={activity.companyName}
+              companyLink={activity.companyLink}
               description={activity.description}
               type={activity.type}
               mobile={mobile}
