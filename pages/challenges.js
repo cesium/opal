@@ -36,6 +36,7 @@ const Challenges = () => (
               title={ch.title}
               desc={ch.description}
               prizes={ch.prizes}
+              signup={ch.link ? ch.link : undefined}
             />
           </Grid>
         ))}
