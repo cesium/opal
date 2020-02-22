@@ -49,5 +49,26 @@
         "Inclui alojamento em pavilhão."
       ]
     }
-  ]
+  ],
+  "where": {
+    "location": "Como chegar",
+    "means": [
+      {
+        "title": "Avião",
+        "description": "O aeroporto mais próximo da cidade de Braga é o Aeroporto Francisco Sá Carneiro, que se encontra a cerca de 50 km de distância. A partir deste tens à disposição diversas possibilidades para chegar ao Altice Forum Braga: de táxi a viagem demora cerca de 40 minutos e custa, aproximadamente, 60 euros; poderás também utilizar o metro para te deslocares até à estação de Campanhã (linha violeta, Aeroporto - Estádio do Dragão), onde poderás apanhar o comboio para Braga."
+      },
+      {
+        "title": "Autocarro",
+        "description": "Poderás viajar desde o centro e arredores de Braga até ao Altice Forum Braga recorrendo aos diversos autocarros dos Transportes Urbanos de Braga (TUB). As paragens mais próximas são a Paragem Monsenhor Airosa, que fica a 550m a pé e a Paragem Liberdade (Ponte), que fica a 400m a pé."
+      },
+      {
+        "title": "Comboio",
+        "description": "Recorrendo ao portal da CP poderás consultar todos os horários e as linhas disponíveis para chegar a Braga. O autocarro 95 da TUB passa de 20 em 20 minutos e, saindo na Paragem Devesa, ficas a apenas 500m do Forum."
+      },
+      {
+        "title": "Carro",
+        "description": "Para chegares ao Forum de carro, deverás introduzir como ponto de chegada a seguinte morada: Av. Dr. Francisco Pires Gonçalves, Braga, Portugal (ou as coordenadas GPS 41.541687 N, -8.421851 W). No entanto, terás de arranjar estacionamento por tua conta, havendo apenas estacionamento público nas vias envolventes."
+      }
+    ]
+  }
 }

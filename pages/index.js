@@ -11,6 +11,7 @@ import Countdown from '../components/homepage/Countdown';
 import Partners from '../components/homepage/Partners';
 import FeaturedSpeakers from '../components/homepage/FeaturedSpeakers';
 import Sponsors from '../components/homepage/sponsors/Sponsors';
+import HowToGetHere from '../components/homepage/HowToGetHere';
 import sponsors from '../data/sponsors.json';
 import speakers from '../data/speakers.json';
 import partners from '../data/partners.json';
@@ -46,34 +47,39 @@ export default function Index() {
         backgroundImage="/img/random_bubbles_lines.svg"
       />
       <Pricing tiers={home.ticketInfo} />
+      <HowToGetHere
+        location={home.where.location}
+        means={home.where.means}
+        color={theme.palette.primary.main}
+      />
       <Sponsors
         type="gold"
         data={sponsors.gold}
-        color={theme.palette.primary.main}
+        color={theme.palette.secondary.main}
         backgroundImage="/img/bubbles.png"
       />
       <FeaturedSpeakers
         title="Oradores"
         backgroundImage="/img/bubbles.png"
-        color={theme.palette.secondary.main}
+        color={theme.palette.primary.main}
         speakers={featuredSpeakers}
       />
       <Sponsors
         type="silver"
         data={sponsors.silver}
-        color={theme.palette.primary.main}
+        color={theme.palette.secondary.main}
         backgroundImage="/img/random_bubbles_lines.svg"
       />
       <Sponsors
         type="bronze"
         data={sponsors.bronze}
-        color={theme.palette.secondary.main}
+        color={theme.palette.primary.main}
         backgroundImage="/img/bubbles.png"
       />
       <Partners
         title="parceiros"
         data={partners}
-        color={theme.palette.primary.main}
+        color={theme.palette.secondary.main}
         backgroundImage="/img/random_bubbles_lines.svg"
       />
     </Layout>

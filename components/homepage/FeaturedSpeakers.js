@@ -53,7 +53,7 @@ export default function FeaturedSpeakers({
       <Grid container justify="center">
         <Grid item>
           <Link href="/speakers">
-            <StyledButton variant="contained" color="primary" size="large">
+            <StyledButton variant="contained" color="secondary" size="large">
               Ver todos
             </StyledButton>
           </Link>
