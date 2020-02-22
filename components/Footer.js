@@ -71,6 +71,15 @@ const Footer = ({
       <Grid item xs={11} lg={4}>
         <Wrapper>
           <Typography variant="body2">
+            <Link
+              color={theme.palette.text.title}
+              href="/docs/survival-guide.pdf"
+            >
+              Survival Guide
+            </Link>
+          </Typography>
+          <span>&#160;&#160;&#160;&#160;</span>
+          <Typography variant="body2">
             <Link color={theme.palette.text.title} href="/codeofconduct">
               Code of Conduct
             </Link>
