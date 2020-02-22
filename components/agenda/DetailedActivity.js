@@ -24,6 +24,7 @@ const TypeTypography = styled(Typography)({
 
 const DescriptionTypography = styled(Typography)({
   paddingTop: '1.8rem',
+  whiteSpace: 'pre-wrap',
 });
 
 const ActivityInfoGrid = styled(Grid)({

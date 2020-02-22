@@ -54,6 +54,15 @@
     "company": "GitLab"
   },
   {
+    "name": "Nuno Brites",
+    "img": "/img/speakers/nuno_brites.jpeg",
+    "github": "nbrites",
+    "linkedin": "nbrites",
+    "shortbio": "I'm a software engineer working on software development for trucks at the MAN | Digital Hub. I'm currently working on a product that will enable the installation of software updates over the air into trucks.",
+    "title": "Senior Software Engineer",
+    "company": "Volkswagen Digital Solutions"
+  },
+  {
     "name": "David Sopas",
     "img": "/img/speakers/david_sopas.jpg",
     "twitter": "dsopas",
@@ -81,6 +90,14 @@
     "shortbio": "Helder Coelho is a retired and emeritus full professor of the University of Lisbon (UL) in the Department of Informatics of the Faculty of Sciences, from August 1995. He is a permanent and elected member of the National Academy of Engineering (1999).",
     "title": "Full Professor",
     "company": "University of Lisbon"
+  },
+  {
+    "name": "Filomena Vieira",
+    "img": "/img/speakers/Filomena_Vieira.jpg",
+    "shortbio": "Filomena is a Public Law legal adviser with more than 25 years of experience, focused on IT and I&D public procurement procedures and contracting, as well as on GDPR implementation. She is an enthusiast about legal design thinking and works with her clients as legal project manager, being part of interdisciplinary teams. Filomena is used to build the contracting strategy for the implementation of projects financed by European Structural and Investment Funds. She is a firm believer in the importance of interdisciplinary work and implements her vision in the teams she works with in order to achieve more efficient results. She teached Administrative Law at the Lisbon University and currently she lectures post-graduate classes and conducts on the job training. She is the author of the 1st GDPR MOOC called “GDPR for attentive citizens”.",
+    "title": "Vice-Presidente",
+    "company": "Associação Nacional de DPOs",
+    "linkedin": "filomena-vieira"
   },
   {
     "name": "André Barbosa",
@@ -111,15 +128,6 @@
     "shortbio": "O João é Diretor de Investimento com enfoque em Digital da Portugal Ventures, considerada pela CB Insights a equipa venture capital mais ativa em Portugal. Obteve a Licenciatura e o Mestrado em Economia na Faculdade de Economia do Porto.",
     "title": "Diretor de Investimento",
     "company": "Portugal Ventures"
-  },
-  {
-    "name": "Nuno Brites",
-    "img": "/img/speakers/nuno_brites.jpeg",
-    "github": "nbrites",
-    "linkedin": "nbrites",
-    "shortbio": "I'm a software engineer working on software development for trucks at the MAN | Digital Hub. I'm currently working on a product that will enable the installation of software updates over the air into trucks.",
-    "title": "Senior Software Engineer",
-    "company": "Volkswagen Digital Solutions"
   },
   {
     "name": "Ricardo Costa",
@@ -153,6 +161,14 @@
     "github": "pmogirao"
   },
   {
+    "name": "Diana Rodrigues",
+    "img": "/img/speakers/Diana_Rodrigues_NEWHOTEL.jfif",
+    "shortbio": "A Diana Rodrigues é Frontend Developer @ Newhotel Software, software house nacional especializada em software para hotelaria e que conta com clientes como os grupos Hoti Hotéis, IberoStar, Bahia Príncipe, DouroAzul,…",
+    "title": "Frontend Developer",
+    "company": "Newhotel Software",
+    "linkedin": "dianafrodrigues"
+  },
+  {
     "name": "Miguel Domingues",
     "img": "/img/speakers/Miguel_Domingues_PRIMAVERA.jpg",
     "shortbio": "Mestre em Eng. Informática pela Universidade do Minho e com mais de 20 anos experiência em desenvolvimento, desenvolveu a maior parte da sua carreira na área de investigação e novas tecnologias, sendo o atual responsável pela área de AI na PRIMAVERA.",
@@ -177,11 +193,28 @@
     "company": "Ubiwhere"
   },
   {
+    "name": "Daniela Costa",
+    "img": "/img/speakers/Daniela_Costa_Eurotux.jpg",
+    "shortbio": "Daniela Costa concluiu o Mestrado em Inovação e Empreendedorismo Tecnológico em 2009, após terminar a licenciatura em Engenharia Informática. Iniciou a sua carreira como Web Developer em 2005, especializou-se em Gestão de Projetos e hoje ocupa cargos de diretora na Eurotux e na empresa de desenvolvimento web do mesmo Grupo, a Dipcode. Tem uma vasta experiência com desenvolvimento à medida em projetos de média/grande dimensão na área web, assim como gestão de equipas e definição de processos. Define-se como entusiasta de tecnologia, artes e desporto, onde ter muitos interesses em simultâneo nunca foi um obstáculo ao se dedicar com empenho a cada um deles. Integra a comunidade Geek Girls Portugal que dá visibilidade às mulheres no mundo da tecnologia e ainda colabora com a comunidade WordPress Portugal fazendo parte da organização do evento WordCamp Europa a decorrer este ano em Portugal.",
+    "title": "Head of DGI",
+    "company": "Eurotux",
+    "linkedin": "danidc"
+  },
+  {
+    "name": "Diogo Machado",
+    "img": "/img/speakers/Diogo_Machado_Eurotux.jpeg",
+    "shortbio": "Diogo Machado concluiu o Mestrado Integrado em Engenharia Informática na Universidade do Minho em 2018. Integrou a equipa de Investigação e Desenvolvimento da Eurotux em 2018 para realizar a sua dissertação de mestrado em contexto empresarial. Em 2019 transitou para a equipa de DevOps da Eurotux onde permanece até hoje. Desde cedo demonstrou interesse por várias áreas tecnológicas, participando em diversos eventos como o DevOps Braga. Ao longo da sua formação académica realizou alguns estágios e participou em diferentes projetos dos quais se destaca o de mobilidade urbana ligado aos Transportes Urbanos Braga (TUB).",
+    "title": "",
+    "company": "Eurotux",
+    "github": "",
+    "linkedin": ""
+  },
+  {
     "name": "João Bastos",
     "img": "/img/speakers/João_Bastos_Hitachi.jpg",
     "twitter": "bastosj10",
     "linkedin": "bastosj",
-    "shortbio": "",
+    "shortbio": "João is a technology and innovation enthusiast with an empathy-oriented mindset, focused on detail and enhancement of capability through a get-it-done approach.",
     "title": "Senior Consultant",
     "company": "Hitachi Solutions"
   },
@@ -200,14 +233,6 @@
     "title": "Communications Manager",
     "company": "Startup Portugal",
     "github": "andré-forte-035354134"
-  },
-  {
-    "name": "Diana Rodrigues",
-    "img": "/img/speakers/Diana_Rodrigues_NEWHOTEL.jfif",
-    "shortbio": "A Diana Rodrigues é Frontend Developer @ Newhotel Software, software house nacional especializada em software para hotelaria e que conta com clientes como os grupos Hoti Hotéis, IberoStar, Bahia Príncipe, DouroAzul,…",
-    "title": "Frontend Developer",
-    "company": "Newhotel Software",
-    "linkedin": "dianafrodrigues"
   },
   {
     "name": "João Ribeiro",
@@ -240,14 +265,6 @@
     "title": "Security and PKI analyst",
     "company": "INCM",
     "linkedin": "joão-paulo-ribeiro-alves-8b1391166"
-  },
-  {
-    "name": "Filomena Vieira",
-    "img": "/img/speakers/Filomena_Vieira.jpg",
-    "shortbio": "Filomena is a Public Law legal adviser with more than 25 years of experience, focused on IT and I&D public procurement procedures and contracting, as well as on GDPR implementation. She is an enthusiast about legal design thinking and works with her clients as legal project manager, being part of interdisciplinary teams. Filomena is used to build the contracting strategy for the implementation of projects financed by European Structural and Investment Funds. She is a firm believer in the importance of interdisciplinary work and implements her vision in the teams she works with in order to achieve more efficient results. She teached Administrative Law at the Lisbon University and currently she lectures post-graduate classes and conducts on the job training. She is the author of the 1st GDPR MOOC called “GDPR for attentive citizens”.",
-    "title": "Vice-Presidente",
-    "company": "Associação Nacional de DPOs",
-    "linkedin": "filomena-vieira"
   },
   {
     "name": "Miguel Palhas",
@@ -283,23 +300,6 @@
     "title": "Area Coordinator",
     "company": "Sonae Bit",
     "linkedin": "ruinfonseca"
-  },
-  {
-    "name": "Daniela Costa",
-    "img": "/img/speakers/Daniela_Costa_Eurotux.jpg",
-    "shortbio": "Daniela Costa concluiu o Mestrado em Inovação e Empreendedorismo Tecnológico em 2009, após terminar a licenciatura em Engenharia Informática. Iniciou a sua carreira como Web Developer em 2005, especializou-se em Gestão de Projetos e hoje ocupa cargos de diretora na Eurotux e na empresa de desenvolvimento web do mesmo Grupo, a Dipcode. Tem uma vasta experiência com desenvolvimento à medida em projetos de média/grande dimensão na área web, assim como gestão de equipas e definição de processos. Define-se como entusiasta de tecnologia, artes e desporto, onde ter muitos interesses em simultâneo nunca foi um obstáculo ao se dedicar com empenho a cada um deles. Integra a comunidade Geek Girls Portugal que dá visibilidade às mulheres no mundo da tecnologia e ainda colabora com a comunidade WordPress Portugal fazendo parte da organização do evento WordCamp Europa a decorrer este ano em Portugal.",
-    "title": "Head of DGI",
-    "company": "Eurotux",
-    "linkedin": "danidc"
-  },
-  {
-    "name": "Diogo Machado",
-    "img": "/img/speakers/Diogo_Machado_Eurotux.jpeg",
-    "shortbio": "Diogo Machado concluiu o Mestrado Integrado em Engenharia Informática na Universidade do Minho em 2018. Integrou a equipa de Investigação e Desenvolvimento da Eurotux em 2018 para realizar a sua dissertação de mestrado em contexto empresarial. Em 2019 transitou para a equipa de DevOps da Eurotux onde permanece até hoje. Desde cedo demonstrou interesse por várias áreas tecnológicas, participando em diversos eventos como o DevOps Braga. Ao longo da sua formação académica realizou alguns estágios e participou em diferentes projetos dos quais se destaca o de mobilidade urbana ligado aos Transportes Urbanos Braga (TUB).",
-    "title": "",
-    "company": "Eurotux",
-    "github": "",
-    "linkedin": ""
   },
   {
     "name": "Diogo Cerqueira",
