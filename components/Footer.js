@@ -78,6 +78,7 @@ const Footer = ({
               Survival Guide
             </Link>
           </Typography>
+          <span>&#160;&#160;&#160;&#160;</span>
           <Typography variant="body2">
             <Link color={theme.palette.text.title} href="/codeofconduct">
               Code of Conduct
