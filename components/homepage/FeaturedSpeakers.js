@@ -17,7 +17,7 @@ const StyledButton = styled(Button)({
 
 export default function FeaturedSpeakers({
   title,
-  featured,
+  speakers,
   color,
   backgroundImage,
 }) {
@@ -36,7 +36,7 @@ export default function FeaturedSpeakers({
         alignItems="flexitem-start"
         spacing={10}
       >
-        {featured.map((speaker) => (
+        {speakers.map((speaker) => (
           <Grid item xs={11} sm={6} md={4} lg={3}>
             <Person
               name={speaker.name}
@@ -65,7 +65,7 @@ export default function FeaturedSpeakers({
 
 FeaturedSpeakers.propTypes = {
   title: PropTypes.string.isRequired,
-  featured: PropTypes.arrayOf(
+  speakers: PropTypes.arrayOf(
     PropTypes.shape({
       src: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,

@@ -27,15 +27,20 @@ const ColoredExpandMore = styled(ExpandMore)({
   color: theme.palette.text.title,
 });
 
+const Panel = styled(ExpansionPanel)({
+  width: 600,
+  maxWidth: '85vw',
+});
+
 const FAQ = ({ question, answer }) => (
-  <ExpansionPanel>
+  <Panel>
     <Summary expandIcon={<ColoredExpandMore />}>
       <Text variant="h6">{question}</Text>
     </Summary>
     <Details>
       <Text variant="body1">{answer}</Text>
     </Details>
-  </ExpansionPanel>
+  </Panel>
 );
 
 FAQ.propTypes = {

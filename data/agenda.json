@@ -189,7 +189,8 @@
         "time": "18:15-19:00",
         "type": "Desafio",
         "duration": 0.75,
-        "description": "Este desafio vai ser constituído por várias fases eliminatórias até chegar a grande final.\n\nEm cada fase, dois participantes irão competir frente a frente, ganhando aquele que terminar um simples problema proposto, como inverter uma lista, no menor tempo possível. Mas não é tudo, temos uma pequena surpresa... Neste desafio os participantes estarão vestidos de lutadores de Sumo!\n\nO primeiro e segundo grandes vencedores irão receber um teclado Corsair K63 e um teclado Corsair Strafe, respetivamente.\n\nLinguagens de programação: Python, JavaScript, C++ ou Java.\n\n Para te inscreveres, acede a https://desafio-de-programacao-enei2020.eventbrite.pt."
+        "description": "Este desafio vai ser constituído por várias fases eliminatórias até chegar a grande final.\n\nEm cada fase, dois participantes irão competir frente a frente, ganhando aquele que terminar um simples problema proposto, como inverter uma lista, no menor tempo possível. Mas não é tudo, temos uma pequena surpresa... Neste desafio os participantes estarão vestidos de lutadores de Sumo!\n\nO primeiro e segundo grandes vencedores irão receber um teclado Corsair K63 e um teclado Corsair Strafe, respetivamente.\n\nLinguagens de programação: Python, JavaScript, C++ ou Java.",
+        "signupLink": "https://desafio-de-programacao-enei2020.eventbrite.pt"
       },
       {
         "double": true,
@@ -378,7 +379,8 @@
         "place": "Grande Auditório",
         "duration": 0.75,
         "type": "Desafio",
-        "description": "Este quiz sobre cultura informática será composto por duas rondas e contará com várias equipas de dois elementos. A partir do momento em que a questão for colocada, é iniciado um temporizador e a equipa que clicar em primeiro lugar no buzzer poderá responder. Caso ninguém pressione o buzzer até o temporizador terminar, aparecerão 4 opções e todas as equipas terão de responder. Como é natural, as equipas que responderem às questões antes do temporizador expirar obterão mais pontos.\n\nComo se este jogo já não fosse divertido o suficiente, a equipa vencedora ainda irá receber 2 Google Home Mini\n\n Inscreve-te já em https://quem-quer-ser-informatico-enei2020.eventbrite.pt."
+        "description": "Este quiz sobre cultura informática será composto por duas rondas e contará com várias equipas de dois elementos. A partir do momento em que a questão for colocada, é iniciado um temporizador e a equipa que clicar em primeiro lugar no buzzer poderá responder. Caso ninguém pressione o buzzer até o temporizador terminar, aparecerão 4 opções e todas as equipas terão de responder. Como é natural, as equipas que responderem às questões antes do temporizador expirar obterão mais pontos.\n\nComo se este jogo já não fosse divertido o suficiente, a equipa vencedora ainda irá receber 2 Google Home Mini.",
+        "signupLink": "https://quem-quer-ser-informatico-enei2020.eventbrite.pt"
       },
       {
         "dinner": true,
@@ -398,7 +400,8 @@
           "time": "22:00-02:00",
           "duration": 4,
           "type": "social",
-          "description": "Se preferires participar no Peddy Paper, terás de o fazer juntamente com mais 9 pessoas, mas alertamos que só haverá vaga para 20 equipas! O objetivo desta atividade é passar por todos os locais do percurso e responder corretamente ao enigma colocado nesse local, de modo a fazer mais pontos. A equipa vencedora, para além de receber um badge de participação como os restantes participantes, receberá um badge de vencedor e um cabaz de produtos típicos de Braga!\n\n as inscrições no Peddy Paper terão de ser feitas através deste link https://enei2020-peddypaper.eventbrite.pt e basta que seja um elemento por equipa a fazê-lo."
+          "description": "Se preferires participar no Peddy Paper, terás de o fazer juntamente com mais 9 pessoas, mas alertamos que só haverá vaga para 20 equipas! O objetivo desta atividade é passar por todos os locais do percurso e responder corretamente ao enigma colocado nesse local, de modo a fazer mais pontos. A equipa vencedora, para além de receber um badge de participação como os restantes participantes, receberá um badge de vencedor e um cabaz de produtos típicos de Braga!",
+          "signupLink": "https://enei2020-peddypaper.eventbrite.pt"
         }
       }
     ]

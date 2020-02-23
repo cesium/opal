@@ -12,8 +12,7 @@ const StyledBox = styled(Box)({
   backgroundColor: theme.palette.secondary.main,
   paddingTop: theme.spacing(4),
   paddingBottom: theme.spacing(10),
-  paddingLeft: theme.spacing(10),
-  paddingRight: theme.spacing(10),
+  overflow: 'hidden',
 });
 
 const StyledButton = styled(Button)({
@@ -44,7 +43,13 @@ const FAQs = () => (
       </Grid>
     </TopSection>
     <StyledBox>
-      <Grid container direction="column" justify="center" spacing={3}>
+      <Grid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        spacing={3}
+      >
         {faqs.map((faq) => (
           <Grid item>
             <FAQ question={faq.question} answer={faq.answer} />

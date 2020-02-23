@@ -16,9 +16,19 @@
       "name": "KPMG",
       "img": "/img/sponsors/gold/kpmg.png",
       "url": "https://home.kpmg/pt/pt/home.html"
+    },
+    {
+      "name": "Subvisual",
+      "img": "/img/sponsors/gold/subvisual.png",
+      "url": "https://subvisual.com/"
     }
   ],
   "silver": [
+    {
+      "name": "Globalvia",
+      "img": "/img/sponsors/silver/globalvia.png",
+      "url": "https://www.portvias.pt/"
+    },
     {
       "name": "Imprensa Nacional-Casa da Moeda",
       "img": "/img/sponsors/silver/INCM.png",

@@ -1,9 +1,10 @@
 import React from 'react';
 import { styled } from '@material-ui/core/styles';
-import { Paper, Typography, Grid } from '@material-ui/core';
+import { Paper, Typography, Grid, Button } from '@material-ui/core';
 import { EmojiEvents } from '@material-ui/icons';
 import PropTypes from 'prop-types';
 import Underline from './Underline';
+import Link from './Link';
 import theme from './theme';
 
 const PrizePaper = styled(Paper)({
@@ -63,7 +64,11 @@ const ChallengePaper = styled(Paper)({
   overflow: 'hidden',
 });
 
-const Challenge = ({ title, desc, prizes }) => (
+const SignupButton = styled(Button)({
+  marginTop: theme.spacing(3),
+});
+
+const Challenge = ({ title, desc, prizes, signup }) => (
   <ChallengePaper elevation={3}>
     <ChallengeTitle variant="h3">{title}</ChallengeTitle>
     <Underline thickness="0.3rem" length="10vw" diameter="2rem" />
@@ -83,6 +88,17 @@ const Challenge = ({ title, desc, prizes }) => (
         </Grid>
       ))}
     </Grid>
+    {signup ? (
+      <Grid container justify="center">
+        <Grid item>
+          <Link href={signup}>
+            <SignupButton variant="contained" size="large">
+              Inscrições
+            </SignupButton>
+          </Link>
+        </Grid>
+      </Grid>
+    ) : null}
   </ChallengePaper>
 );
 
@@ -100,6 +116,7 @@ Challenge.propTypes = {
       prize: PropTypes.string.isRequired,
     }),
   ),
+  signup: PropTypes.string,
 };
 
 export default Challenge;
