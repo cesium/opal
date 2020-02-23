@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
   },
+  plugins: ['react-hooks'],
   parser: 'babel-eslint',
   rules: {
     indent: 0,
@@ -15,5 +16,7 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'react/forbid-prop-types': 0,
     'react/require-default-props': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
 };

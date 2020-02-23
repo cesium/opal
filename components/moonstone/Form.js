@@ -9,30 +9,45 @@ import {
 import PropTypes from 'prop-types';
 import theme from '../theme';
 
-const Content = styled(Box)({
-  paddingTop: theme.spacing(10),
-  margin: 'auto',
+const Content = styled(Box)(({ noPadding, noMargin, fullWidth, signup }) => ({
+  paddingTop: noPadding ? 'none' : theme.spacing(10),
+  margin: noMargin ? 'none' : 'auto',
+  height: signup ? '670px' : 'initial',
   [theme.breakpoints.up('xs')]: {
-    width: '90%',
+    width: fullWidth ? '100%' : '90%',
   },
   [theme.breakpoints.up('sm')]: {
-    width: '70%',
+    width: fullWidth ? '100%' : '70%',
   },
   [theme.breakpoints.up('md')]: {
-    width: '50%',
+    width: fullWidth ? '100%' : '50%',
   },
   [theme.breakpoints.up('lg')]: {
-    width: '35%',
+    width: fullWidth ? '100%' : '35%',
   },
   [theme.breakpoints.up('xl')]: {
-    width: '30%',
+    width: fullWidth ? '100%' : '30%',
   },
-});
+}));
 
-export function FormGrid({ children, isLoading, errorMessage, handleSubmit }) {
+export function FormGrid({
+  children,
+  isLoading,
+  errorMessage,
+  handleSubmit,
+  noPadding,
+  noMargin,
+  fullWidth,
+  signup,
+}) {
   return (
-    <Content>
-      <form noValidate onSubmit={handleSubmit}>
+    <Content
+      signup={signup}
+      noPadding={noPadding}
+      noMargin={noMargin}
+      fullWidth={fullWidth}
+    >
+      <form noValidate onSubmit={handleSubmit} autoComplete>
         <Grid
           container
           direction="column"
@@ -50,7 +65,11 @@ export function FormGrid({ children, isLoading, errorMessage, handleSubmit }) {
           alignItems="center"
           spacing={4}
         >
-          <Grid item>{isLoading ? <CircularProgress /> : null}</Grid>
+          {isLoading ? (
+            <Grid item>
+              <CircularProgress />
+            </Grid>
+          ) : null}
           <Grid item>
             <Typography component="h1" variant="subtitle2" color="error">
               {errorMessage}
@@ -71,6 +90,10 @@ FormGrid.propTypes = {
   isLoading: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string.isRequired,
   handleSubmit: PropTypes.func.isRequired,
+  noPadding: PropTypes.bool,
+  signup: PropTypes.bool,
+  noMargin: PropTypes.bool,
+  fullWidth: PropTypes.bool,
 };
 
 FormItem.propTypes = {

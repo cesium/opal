@@ -14,6 +14,7 @@ const MinimumHeightPageBox = styled(Box)({
 });
 
 const PaddedForFooterBox = styled(Box)({
+  minHeight: '750px',
   paddingBottom: '5.1rem',
 });
 

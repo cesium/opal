@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Box,
   Drawer,
+  Avatar,
   List,
   ListItem,
   ListItemText,
@@ -27,6 +28,35 @@ const Item = styled(ListItemText)({
   color: theme.palette.text.title,
   textAlign: 'right',
 });
+
+const StyledAvatar = styled(Avatar)({
+  marginLeft: 'auto',
+});
+
+const MoonstoneOptions = () => {
+  if (
+    typeof Storage !== 'undefined' &&
+    localStorage.name &&
+    localStorage.avatar
+  ) {
+    return (
+      <Link href="/profile">
+        <ListItem button>
+          <StyledAvatar alt={localStorage.name} src={localStorage.avatar}>
+            {localStorage.name.charAt(0).toUpperCase()}
+          </StyledAvatar>
+        </ListItem>
+      </Link>
+    );
+  }
+  return (
+    <Link href="/login">
+      <ListItem button>
+        <Item primary="Log In" />
+      </ListItem>
+    </Link>
+  );
+};
 
 function BurgerButton() {
   const classes = useStyles();
@@ -56,6 +86,7 @@ function BurgerButton() {
                 </ListItem>
               </Link>
             ))}
+            <MoonstoneOptions />
           </List>
         </div>
       </Drawer>
