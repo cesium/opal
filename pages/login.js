@@ -122,6 +122,7 @@ const Login = () => {
                 type="email"
                 variant="outlined"
                 fullWidth
+                autoComplete="email"
                 onChange={handleEmailChange}
               />
             </FormItem>
@@ -132,6 +133,7 @@ const Login = () => {
                 type="password"
                 variant="outlined"
                 fullWidth
+                autoComplete="current-password"
                 onChange={handlePasswordChange}
               />
             </FormItem>

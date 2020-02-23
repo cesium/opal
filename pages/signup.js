@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
 import React, { useEffect, useState } from 'react';
-import { Button, TextField, Typography } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
 import { useRouter } from 'next/router';
 import Layout from '../components/Layout';
@@ -10,7 +10,6 @@ import { FormGrid, FormItem } from '../components/moonstone/Form';
 import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
 import CustomTextField from '../components/CustomTextField';
-
 
 export default function SignUp() {
   const router = useRouter();
@@ -205,6 +204,7 @@ export default function SignUp() {
                 id="nickname"
                 name="nickname"
                 label="Nickname"
+                autoComplete="nickname"
                 type="text"
                 onChange={handleAttendeeChange}
                 value={attendee.nickname}
@@ -245,6 +245,7 @@ export default function SignUp() {
                 name="password"
                 label="Password"
                 type="password"
+                autoComplete="current-password"
                 onChange={handleInputChange}
                 value={inputs.password}
                 variant="outlined"
@@ -264,6 +265,7 @@ export default function SignUp() {
                 name="password_confirmation"
                 label="Re-enter password"
                 type="password"
+                autoComplete="current-password"
                 onChange={handleInputChange}
                 value={inputs.password_confirmation}
                 error={!doPasswordsMatch}
