@@ -112,7 +112,7 @@ export default function AttendeeInfo({ data, allowEdits, handleUpdateData }) {
                 Nickname:
               </StyledTypography>
               <StyledTypography color={theme.palette.primary.main} variant="h6">
-                {data.nickname}
+                {data.nickname || 'Não definido'}
               </StyledTypography>
             </Grid>
             {allowEdits && (

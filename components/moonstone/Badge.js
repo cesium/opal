@@ -140,7 +140,7 @@ function Badge({ found, id, avatar }) {
                               primary={
                                 // eslint-disable-next-line react/jsx-wrap-multilines
                                 <StyledTypography variant="body1">
-                                  {attendee.nickname}
+                                  {attendee.nickname || attendee.name}
                                 </StyledTypography>
                               }
                             />
