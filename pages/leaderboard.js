@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 import {
   Grid,
@@ -15,39 +16,7 @@ import Router from 'next/router';
 import PropTypes from 'prop-types';
 import MoonstoneLayout from '../components/moonstone/MoonstoneLayout';
 import theme from '../components/theme';
-
-function checkStatus(response) {
-  if (response.ok) {
-    return response;
-  }
-  const error = new Error(response);
-  error.response = response;
-  return Promise.reject(error);
-}
-
-const limitLeaderboardSize = (users, userId, maxUsers) => {
-  const attendeesRanking = users.filter((user) => !user.volunteer);
-  const userRank = attendeesRanking.map((user) => user.id).indexOf(userId) + 1;
-
-  const topUsers = attendeesRanking
-    .slice(0, maxUsers)
-    .map((user, i) => ({ userInfo: user, rank: i + 1 }));
-
-  if (userRank > maxUsers)
-    topUsers[topUsers.length - 1] = {
-      userInfo: attendeesRanking[userRank - 1],
-      rank: userRank,
-    };
-
-  return topUsers;
-};
-
-const split = (users, chunkSize) => {
-  const response = [];
-  for (let i = 0; i < users.length; i += chunkSize)
-    response.push(users.slice(i, i + chunkSize));
-  return response;
-};
+import CenteredCircularProgress from '../components/CenteredCircularProgress';
 
 const StyledGridItem = styled(Grid)({
   paddingTop: '0.5rem',
@@ -76,6 +45,49 @@ const AvatarGridItem = styled(Grid)(({ mobile }) => ({
 const StyledGrid = styled(Grid)({
   margin: 'auto',
 });
+
+const StyledButtonGroup = styled(ButtonGroup)({
+  paddingBottom: '2rem',
+});
+
+function checkStatus(response) {
+  if (response.ok) {
+    return response;
+  }
+  const error = new Error(response);
+  error.response = response;
+  return Promise.reject(error);
+}
+
+const limitLeaderboardSize = (users, userId, maxUsers) => {
+  const attendeesRanking = users.filter((user) => !user.volunteer);
+  const userRank = attendeesRanking.map((user) => user.id).indexOf(userId) + 1;
+
+  const topUsers = attendeesRanking
+    .slice(0, maxUsers)
+    .map((user, i) => ({ userInfo: user, rank: i + 1 }));
+
+  if (userRank > maxUsers)
+    topUsers[topUsers.length - 1] = {
+      userInfo: attendeesRanking[userRank - 1],
+      rank: userRank,
+    };
+
+  return topUsers;
+};
+
+const staffLeaderboard = (users) => {
+  const staffUsers = users.filter((user) => user.volunteer);
+
+  return staffUsers.map((user, i) => ({ userInfo: user, rank: i + 1 }));
+};
+
+const split = (users, chunkSize) => {
+  const response = [];
+  for (let i = 0; i < users.length; i += chunkSize)
+    response.push(users.slice(i, i + chunkSize));
+  return response;
+};
 
 function StyledUpArrow(props) {
   const { className, style, onClick, mobile } = props;
@@ -214,19 +226,60 @@ const LeaderboardLine = ({ position, attendee, currentUser, mobile }) => {
   );
 };
 
+const userSlide = (users, userId, pageSize) => {
+  const ids = users.map((user) => user.userInfo.id);
+  let slide = Math.floor(ids.indexOf(userId) / pageSize);
+  if (slide < 0 || slide > Math.floor(users.length / pageSize)) slide = 0;
+  return slide;
+};
+
+const LeaderboardTable = ({ users, userId, pageSize, mobile }) => {
+  return (
+    <Grid item>
+      <Slider
+        speed={500}
+        infinite={false}
+        vertical
+        dots
+        verticalSwiping
+        initialSlide={userSlide(users, userId, pageSize)}
+        nextArrow={<StyledDownArrow mobile={mobile} />}
+        prevArrow={<StyledUpArrow mobile={mobile} />}
+      >
+        {split(users, pageSize).map((chunk) => (
+          <Grid>
+            {chunk.map((user) => (
+              <Grid item>
+                <LeaderboardLine
+                  position={user.rank}
+                  attendee={user.userInfo}
+                  currentUser={user.userInfo.id === userId}
+                  mobile={mobile}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        ))}
+      </Slider>
+    </Grid>
+  );
+};
+
 class Leaderboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       users: [],
+      attendeesRanking: [],
+      staffRanking: [],
       id: '',
       error: '',
       chunkSize: 10,
       maxUsers: 20,
       mobile: props.width === 'xs',
       board: 0,
+      isVolunteer: false,
     };
-    // this.filterBadges = debounce(this.filterBadges, 500);
   }
 
   componentDidMount() {
@@ -241,22 +294,37 @@ class Leaderboard extends React.Component {
       .then(checkStatus)
       .then((res) => res.json())
       .then((res) => {
-        this.handleLeaderBoard(res);
+        this.handleRanking(res);
       })
       .catch((error) => this.handleError(error));
   }
 
-  handleLeaderBoard(users) {
+  handleRanking(users) {
     const { maxUsers } = this.state;
 
     if (users.data) {
-      const limitedUsers = limitLeaderboardSize(
+      const attendeesRanking = limitLeaderboardSize(
         users.data,
         localStorage.UUID,
         maxUsers,
       );
 
-      this.setState({ users: limitedUsers, error: '', id: localStorage.UUID });
+      const currUser = users.data.filter(
+        (user) => user.id === localStorage.UUID,
+      );
+
+      const isVolunteer = currUser[0].volunteer;
+
+      const staffRanking = staffLeaderboard(users.data);
+
+      this.setState({
+        users: users.data,
+        attendeesRanking,
+        staffRanking,
+        error: '',
+        id: localStorage.UUID,
+        isVolunteer,
+      });
     }
   }
 
@@ -273,22 +341,26 @@ class Leaderboard extends React.Component {
     }
   }
 
-  userSlide() {
-    const { users, id, chunkSize } = this.state;
-    const ids = users.map((user) => user.userInfo.id);
-    const slide = Math.floor(ids.indexOf(id) / chunkSize);
-    return slide;
+  displayAttendeesBoard() {
+    this.setState({ board: 0 });
   }
 
-  changeBoard() {
-    const { board } = this.state;
-    const newBoard = (board + 1) % 2;
-    console.log(newBoard);
-    this.setState({ board: newBoard });
+  displayStaffBoard() {
+    this.setState({ board: 1 });
   }
 
   render() {
-    const { users, error, id, chunkSize, board,mobile } = this.state;
+    const {
+      users,
+      attendeesRanking,
+      staffRanking,
+      error,
+      id,
+      chunkSize,
+      board,
+      mobile,
+      isVolunteer,
+    } = this.state;
 
     return (
       <MoonstoneLayout title="leaderboard">
@@ -303,48 +375,50 @@ class Leaderboard extends React.Component {
           lg={5}
           spacing={mobile ? '1' : '0'}
         >
-          <Grid item>
-            <ButtonGroup size="small" aria-label="small outlined button group">
-              <Button onClick={() => this.changeBoard()}>Participantes</Button>
-              <Button width="50px">
-                Staff
-                <span />
-                <span />
-              </Button>
-            </ButtonGroup>
-          </Grid>
+          {isVolunteer && (
+            <Grid item>
+              <StyledButtonGroup
+                fullWidth
+                size="medium"
+                aria-label="medium outlined button group"
+              >
+                <Button
+                  variant={board === 0 ? 'contained' : 'outlined'}
+                  color="primary"
+                  onClick={() => this.displayAttendeesBoard()}
+                >
+                  Participantes
+                </Button>
+                <Button
+                  variant={board === 1 ? 'contained' : 'outlined'}
+                  color="primary"
+                  onClick={() => this.displayStaffBoard()}
+                >
+                  Staff
+                </Button>
+              </StyledButtonGroup>
+            </Grid>
+          )}
           <Grid item>
             <TableHeader />
           </Grid>
-          <Grid item>
-            {users.length !== 0 && (
-              <Slider
-                speed={500}
-                infinite={false}
-                vertical
-                dots
-                verticalSwiping
-                initialSlide={this.userSlide()}
-                nextArrow={<StyledDownArrow mobile={mobile} />}
-                prevArrow={<StyledUpArrow mobile={mobile} />}
-              >
-                {split(users, chunkSize).map((chunk) => (
-                  <Grid>
-                    {chunk.map((user) => (
-                      <Grid item>
-                        <LeaderboardLine
-                          position={user.rank}
-                          attendee={user.userInfo}
-                          currentUser={user.userInfo.id === id}
-                          mobile={mobile}
-                        />
-                      </Grid>
-                    ))}
-                  </Grid>
-                ))}
-              </Slider>
-            )}
-          </Grid>
+          {users.length !== 0 ? (
+            board === 0 ? (
+              <LeaderboardTable
+                users={attendeesRanking}
+                userId={id}
+                pageSize={chunkSize}
+              />
+            ) : (
+              <LeaderboardTable
+                users={staffRanking}
+                userId={id}
+                pageSize={chunkSize}
+              />
+            )
+          ) : (
+            <CenteredCircularProgress />
+          )}
         </StyledGrid>
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item>
@@ -357,6 +431,10 @@ class Leaderboard extends React.Component {
 }
 
 export default withWidth()(Leaderboard);
+
+Leaderboard.propTypes = {
+  width: PropTypes.string,
+};
 
 LeaderboardLine.propTypes = {
   position: PropTypes.number,
@@ -377,4 +455,11 @@ StyledDownArrow.propTypes = {
   style: PropTypes.object,
   onClick: PropTypes.func,
   mobile: PropTypes.bool,
+};
+
+LeaderboardTable.propTypes = {
+  users: PropTypes.object.isRequired,
+  userId: PropTypes.number.isRequired,
+  pageSize: PropTypes.number.isRequired,
+  mobile: PropTypes.bool.isRequired,
 };
