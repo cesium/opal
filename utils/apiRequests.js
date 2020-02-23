@@ -120,9 +120,9 @@ const attendeeUpdateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
     });
 };
 
-const updateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
+async function updateLocalStorage(jwt, setIsLoading, setErrorMsg) {
   const apiEndpoint = process.env.ENDPOINT + process.env.API_USER_INFO;
-  fetch(apiEndpoint, {
+  const yo = await fetch(apiEndpoint, {
     method: 'GET',
     headers: {
       Authorization: `Bearer ${jwt}`,
@@ -149,7 +149,9 @@ const updateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
       setIsLoading(false);
       pushErrorPage('Promise', 'error: login_update');
     });
-};
+
+  return yo;
+}
 
 async function checkUserType(jwt) {
   const apiEndpoint = process.env.ENDPOINT + process.env.API_USER_INFO;

@@ -70,11 +70,6 @@ export default function SignUp() {
     };
   };
 
-  function finishLogin(jwt, _callback) {
-    updateLocalStorage(jwt, setIsLoading, setErrorMsg);
-    _callback();
-  }
-
   const signup = () => {
     // eslint-disable-next-line no-use-before-define
     setIsLoading(true);
@@ -98,7 +93,11 @@ export default function SignUp() {
         if (res.jwt) {
           localStorage.clear();
           setErrorMsg('');
-          finishLogin(res.jwt, () => router.push('/profile'));
+          updateLocalStorage(res.jwt, setIsLoading, setErrorMsg).then(
+            () => null,
+          );
+          setIsLoading(false);
+          router.push('/profile');
         } else if (res.error) {
           setErrorMsg(res.error);
           setIsLoading(false);

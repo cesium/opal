@@ -55,11 +55,6 @@ const Login = () => {
     };
   };
 
-  function finishLogin(jwt, _callback) {
-    updateLocalStorage(jwt, setIsLoading, setErrorMsg);
-    _callback();
-  }
-
   const login = () => {
     setIsLoading(true);
     setErrorMsg('');
@@ -85,8 +80,11 @@ const Login = () => {
         (res) => {
           if (res.jwt) {
             setErrorMsg('');
+            updateLocalStorage(res.jwt, setIsLoading, setErrorMsg).then(
+              () => null,
+            );
             setIsLoading(false);
-            finishLogin(res.jwt, () => Router.push('/profile'));
+            Router.push('/profile');
           } else if (res.error) {
             setIsLoading(false);
             setErrorMsg('Invalid email or password');
