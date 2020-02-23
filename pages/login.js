@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, TextField } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
 import Router from 'next/router';
 import theme from '../components/theme';
@@ -8,6 +8,7 @@ import TopSection from '../components/TopSection';
 import { FormGrid, FormItem } from '../components/moonstone/Form';
 import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import CustomTextField from '../components/CustomTextField';
 
 const Login = () => {
   const [errorMsg, setErrorMsg] = useState('');
@@ -115,24 +116,22 @@ const Login = () => {
             handleSubmit={handleSubmit}
           >
             <FormItem>
-              <TextField
+              <CustomTextField
                 required
                 label="Email Address"
                 type="email"
                 variant="outlined"
                 fullWidth
-                autoComplete="email"
                 onChange={handleEmailChange}
               />
             </FormItem>
             <FormItem>
-              <TextField
+              <CustomTextField
                 required
                 label="Password"
                 type="password"
                 variant="outlined"
                 fullWidth
-                autoComplete="current-password"
                 onChange={handlePasswordChange}
               />
             </FormItem>
