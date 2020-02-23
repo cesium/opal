@@ -290,6 +290,8 @@ class Leaderboard extends React.Component {
   }
 
   componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions);
+
     const endpoint = process.env.ENDPOINT + process.env.API_LEADERBOARD;
 
     fetch(endpoint, {
@@ -305,6 +307,16 @@ class Leaderboard extends React.Component {
       })
       .catch((error) => this.handleError(error));
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
+  }
+
+  updateDimensions = () => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 600) this.setState({ mobile: true });
+    else this.setState({ mobile: false });
+  };
 
   handleRanking(users) {
     const { maxUsers } = this.state;
