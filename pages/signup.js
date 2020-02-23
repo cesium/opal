@@ -97,7 +97,6 @@ export default function SignUp() {
             () => null,
           );
           setIsLoading(false);
-          router.push('/profile');
         } else if (res.error) {
           setErrorMsg(res.error);
           setIsLoading(false);

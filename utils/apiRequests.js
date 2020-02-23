@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-unfetch';
+import Router from 'next/router';
 import { pushErrorPage } from './errorManagement';
 
 async function isJWTValid(jwt) {
@@ -56,6 +57,7 @@ const companyUpdateAvatar = (jwt, badgeId, setIsLoading, setErrorMsg) => {
         setIsLoading(false);
       } else {
         localStorage.avatar = res.data.avatar;
+        Router.push('/profile');
       }
     })
     .catch(() => {
@@ -107,6 +109,7 @@ const attendeeUpdateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
         localStorage.email = res.email;
         localStorage.UUID = res.id;
         localStorage.avatar = res.avatar;
+        Router.push('/profile');
       } else {
         setErrorMsg(res.error);
         setIsLoading(false);

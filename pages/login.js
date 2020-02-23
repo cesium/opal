@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Typography, styled } from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
-import Router from 'next/router';
 import theme from '../components/theme';
 import Link from '../components/Link';
 import Layout from '../components/Layout';
@@ -84,7 +83,6 @@ const Login = () => {
               () => null,
             );
             setIsLoading(false);
-            Router.push('/profile');
           } else if (res.error) {
             setIsLoading(false);
             setErrorMsg('Invalid email or password');
