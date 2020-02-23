@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const styles = {
   input: {
@@ -13,37 +13,36 @@ const styles = {
 
 const CustomTextField = ({
   classes,
-  variant,
-  fullWidth,
-  type,
+  id,
+  name,
   label,
   autoComplete,
+  type,
   onChange,
+  value,
+  variant,
   required,
+  fullWidth,
+  autoFocus,
+  error,
 }) => {
   return (
     <TextField
-      variant={variant}
-      fullWidth={fullWidth}
-      type={type}
-      inputProps={{ className: classes.input }}
+      classes={classes}
+      id={id}
+      name={name}
       label={label}
       autoComplete={autoComplete}
+      type={type}
       onChange={onChange}
+      value={value}
+      variant={variant}
       required={required}
+      fullWidth={fullWidth}
+      autoFocus={autoFocus}
+      error={error}
     />
   );
 };
 
 export default withStyles(styles)(CustomTextField);
-
-CustomTextField.propTypes = {
-  classes: PropTypes.object,
-  type: PropTypes.string,
-  label: PropTypes.string,
-  autoComplete: PropTypes.string,
-  onChange: PropTypes.func,
-  required: PropTypes.bool,
-  fullWidth: PropTypes.bool,
-  variant: PropTypes.string,
-};

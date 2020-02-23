@@ -192,7 +192,6 @@ export default function SignUp() {
                 variant="outlined"
                 required
                 fullWidth
-                autoFocus
                 error={!isNicknameValid}
               />
               {isNameValid(attendee.lastName) ? null : (
@@ -214,7 +213,6 @@ export default function SignUp() {
                 variant="outlined"
                 required
                 fullWidth
-                autoFocus
                 error={!isNicknameValid}
               />
               {isNicknameValid ? null : (
