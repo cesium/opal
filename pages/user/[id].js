@@ -44,7 +44,7 @@ export default function Profile() {
       },
       () => router.push('/404'),
     );
-  }, []);
+  }, [router]);
 
   return (
     <>
