@@ -65,11 +65,13 @@ class BadgeDex extends React.Component {
       existingTypes: 6,
       selectedButtons: [],
       searchExpression: '',
-      screenSize: props.width,
+      largeScreen: props.width === 'md' || props.width === 'lg',
     };
   }
 
   componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions);
+
     const endpoint = `${process.env.ENDPOINT}${process.env.API_BADGES}`;
 
     fetch(endpoint, {
@@ -85,6 +87,16 @@ class BadgeDex extends React.Component {
       })
       .catch((error) => this.handleError(error));
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
+  }
+
+  updateDimensions = () => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth > 960) this.setState({ largeScreen: true });
+    else this.setState({ largeScreen: false });
+  };
 
   FilterSection = () => {
     return (
@@ -257,11 +269,10 @@ class BadgeDex extends React.Component {
       badges,
       collectedBadges,
       badgesToDisplay,
-      screenSize,
+      largeScreen,
       error,
     } = this.state;
 
-    const largeScreen = screenSize === 'md' || screenSize === 'lg';
     const collected = collectedBadges.map((b) => b.id);
 
     return (
