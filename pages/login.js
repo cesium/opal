@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Button, TextField } from '@material-ui/core';
+import { Button, TextField, Typography, styled } from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
 import Router from 'next/router';
 import theme from '../components/theme';
+import Link from '../components/Link';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import { FormGrid, FormItem } from '../components/moonstone/Form';
 import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
+
+const StyledTypography = styled(Typography)({
+  textAlign: 'center',
+});
 
 const Login = () => {
   const [errorMsg, setErrorMsg] = useState('');
@@ -145,6 +150,13 @@ const Login = () => {
               >
                 Sign In
               </Button>
+            </FormItem>
+            <FormItem>
+              <Link href="/password_recovery">
+                <StyledTypography variant="body1">
+                  Esqueci-me da palavra-passe
+                </StyledTypography>
+              </Link>
             </FormItem>
           </FormGrid>
         </>
