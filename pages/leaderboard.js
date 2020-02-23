@@ -370,7 +370,7 @@ class Leaderboard extends React.Component {
     } = this.state;
 
     return (
-      <MoonstoneLayout title="leaderboard">
+      <MoonstoneLayout showMenu title="leaderboard">
         <StyledGrid
           container
           direction="column"
@@ -415,12 +415,14 @@ class Leaderboard extends React.Component {
                 users={attendeesRanking}
                 userId={id}
                 pageSize={chunkSize}
+                mobile={mobile}
               />
             ) : (
               <LeaderboardTable
                 users={staffRanking}
                 userId={id}
                 pageSize={chunkSize}
+                mobile={mobile}
               />
             )
           ) : (
