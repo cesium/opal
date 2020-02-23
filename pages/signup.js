@@ -12,7 +12,6 @@ import CenteredCircularProgress from '../components/CenteredCircularProgress';
 
 export default function SignUp() {
   const router = useRouter();
-  const UUID = router.query.id;
 
   const [errorMsg, setErrorMsg] = React.useState('');
   const [isLoading, setIsLoading] = React.useState(false);
@@ -28,7 +27,7 @@ export default function SignUp() {
 
   const useSignUpForm = (callback) => {
     const [attendee, setAttendee] = React.useState({
-      id: UUID,
+      id: router.query.id,
       nickname: '',
       firstName: '',
       lastName: '',
@@ -76,7 +75,7 @@ export default function SignUp() {
     const attendeeData = {
       id: attendee.id,
       nickname: attendee.nickname,
-      name: attendee.firstName + attendee.lastName,
+      name: [attendee.firstName, attendee.lastName].join(' '),
     };
     const signupData = { user: { ...inputs, attendee: attendeeData } };
     const apiEndpoint = process.env.ENDPOINT + process.env.API_AUTH_SIGN_UP;
