@@ -1,10 +1,34 @@
 import React from 'react';
-import { Grid, Typography, TextField, Button } from '@material-ui/core';
+import {
+  Grid,
+  Typography,
+  TextField,
+  Button,
+  withWidth,
+} from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
 import Router from 'next/router';
 import { styled } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 import MoonstoneLayout from '../components/moonstone/MoonstoneLayout';
 import Badge from '../components/moonstone/Badge';
+import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import theme from '../components/theme';
+
+const BadgesGrid = styled(Grid)({
+  paddingBottom: '3rem',
+  paddingTop: '3rem',
+  margin: 'auto',
+  [theme.breakpoints.up('sm')]: {
+    width: '80%',
+  },
+  [theme.breakpoints.up('md')]: {
+    width: '75%',
+  },
+  [theme.breakpoints.up('lg')]: {
+    width: '75%',
+  },
+});
 
 const StyledGrid = styled(Grid)({
   margin: 'auto',
@@ -41,6 +65,7 @@ class BadgeDex extends React.Component {
       existingTypes: 6,
       selectedButtons: [],
       searchExpression: '',
+      screenSize: props.width,
     };
   }
 
@@ -228,24 +253,30 @@ class BadgeDex extends React.Component {
   }
 
   render() {
-    const { badges, collectedBadges, badgesToDisplay, error } = this.state;
+    const {
+      badges,
+      collectedBadges,
+      badgesToDisplay,
+      screenSize,
+      error,
+    } = this.state;
 
+    const largeScreen = screenSize === 'md' || screenSize === 'lg';
     const collected = collectedBadges.map((b) => b.id);
 
     return (
-      <MoonstoneLayout title="badgedex">
+      <MoonstoneLayout showMenu title="badgedex">
         <this.FilterSection />
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="flex-start"
-          spacing={1}
-          style={{ padding: '3rem' }}
-        >
-          {badges.length !== 0 &&
-            badgesToDisplay.map((b) => (
-              <Grid item xs={6} sm={4} md={3} lg={2}>
+        {badges.length !== 0 ? (
+          <BadgesGrid
+            container
+            direction="row"
+            justify="center"
+            alignItems="flex-start"
+            spacing={largeScreen ? 4 : 1}
+          >
+            {badgesToDisplay.map((b) => (
+              <Grid item>
                 <Badge
                   avatar={b.avatar}
                   found={collected.indexOf(b.id) !== -1}
@@ -253,7 +284,10 @@ class BadgeDex extends React.Component {
                 />
               </Grid>
             ))}
-        </Grid>
+          </BadgesGrid>
+        ) : (
+          <CenteredCircularProgress />
+        )}
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item>
             <Typography color="error">{error}</Typography>
@@ -264,4 +298,8 @@ class BadgeDex extends React.Component {
   }
 }
 
-export default BadgeDex;
+export default withWidth()(BadgeDex);
+
+BadgeDex.propTypes = {
+  width: PropTypes.string,
+};
