@@ -13,6 +13,7 @@ import {
 import PropTypes from 'prop-types';
 import Modal from './Modal';
 import theme from '../theme';
+import Link from '../Link';
 
 function Badge({ found, id, avatar }) {
   const [data, setData] = useState({});
@@ -133,19 +134,21 @@ function Badge({ found, id, avatar }) {
                   <ListBox>
                     <ScrollableList dense>
                       {data.attendees.map((attendee) => (
-                        <ListItem divider alignItems="center">
-                          <ListItemText
-                            primary={
-                              // eslint-disable-next-line react/jsx-wrap-multilines
-                              <StyledTypography variant="body1">
-                                {attendee.nickname}
-                              </StyledTypography>
-                            }
-                          />
-                          <ListItemAvatar>
-                            <Avatar src={attendee.avatar} />
-                          </ListItemAvatar>
-                        </ListItem>
+                        <Link href={`/user/${attendee.id}`}>
+                          <ListItem divider alignItems="center">
+                            <ListItemText
+                              primary={
+                                // eslint-disable-next-line react/jsx-wrap-multilines
+                                <StyledTypography variant="body1">
+                                  {attendee.nickname}
+                                </StyledTypography>
+                              }
+                            />
+                            <ListItemAvatar>
+                              <Avatar src={attendee.avatar} />
+                            </ListItemAvatar>
+                          </ListItem>
+                        </Link>
                       ))}
                     </ScrollableList>
                   </ListBox>
