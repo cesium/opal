@@ -12,12 +12,14 @@ import {
 import { styled } from '@material-ui/styles';
 import fetch from 'isomorphic-unfetch';
 import Slider from 'react-slick';
-import Router from 'next/router';
+// import Router from 'next/router';
 import PropTypes from 'prop-types';
 import MoonstoneLayout from '../components/moonstone/MoonstoneLayout';
 import theme from '../components/theme';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
 import Link from '../components/Link';
+import { isJWTValid, checkUserType } from '../utils/apiRequests';
+import { pushErrorPage } from '../utils/errorManagement';
 
 const StyledGridItem = styled(Grid)({
   paddingTop: '0.5rem',
@@ -276,6 +278,7 @@ class Leaderboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      isAllowed: false,
       users: [],
       attendeesRanking: [],
       staffRanking: [],
@@ -290,6 +293,23 @@ class Leaderboard extends React.Component {
   }
 
   componentDidMount() {
+    isJWTValid(localStorage.jwt).then((valid) => {
+      if (!valid) {
+        pushErrorPage('Unauthorized', 'check_leaderboard');
+      } else {
+        checkUserType(localStorage.jwt).then((userType) => {
+          switch (userType) {
+            case 'company':
+              pushErrorPage('Unauthorized', 'no_leaderboard_company');
+              break;
+            default:
+              this.setState({ isAllowed: true });
+              break;
+          }
+        });
+      }
+    });
+
     window.addEventListener('resize', this.updateDimensions);
 
     const endpoint = process.env.ENDPOINT + process.env.API_LEADERBOARD;
@@ -305,7 +325,7 @@ class Leaderboard extends React.Component {
       .then((res) => {
         this.handleRanking(res);
       })
-      .catch((error) => this.handleError(error));
+      .catch(() => null /* this.handleError(error) */);
   }
 
   componentWillUnmount() {
@@ -347,18 +367,18 @@ class Leaderboard extends React.Component {
     }
   }
 
-  handleError(error) {
-    if (
-      error.response &&
-      error.response.statusText &&
-      (error.response.statusText === 'Unauthorized' ||
-        error.response.statusText === 'invalid_token') // provavelmente nao é assim
-    ) {
-      Router.push('/login');
-    } else {
-      this.setState({ error: 'Network Error' });
-    }
-  }
+  // handleError(error) {
+  //   if (
+  //     error.response &&
+  //     error.response.statusText &&
+  //     (error.response.statusText === 'Unauthorized' ||
+  //       error.response.statusText === 'invalid_token') // provavelmente nao é assim
+  //   ) {
+  //     Router.push('/login');
+  //   } else {
+  //     this.setState({ error: 'Network Error' });
+  //   }
+  // }
 
   displayAttendeesBoard() {
     this.setState({ board: 0 });
@@ -370,6 +390,7 @@ class Leaderboard extends React.Component {
 
   render() {
     const {
+      isAllowed,
       users,
       attendeesRanking,
       staffRanking,
@@ -383,69 +404,80 @@ class Leaderboard extends React.Component {
 
     return (
       <MoonstoneLayout showMenu title="leaderboard">
-        <StyledGrid
-          container
-          direction="column"
-          justify="center"
-          align="center"
-          xs={9}
-          sm={7}
-          md={6}
-          lg={5}
-          spacing={mobile ? '1' : '0'}
-        >
-          {isVolunteer && (
-            <Grid item>
-              <StyledButtonGroup
-                fullWidth
-                size="medium"
-                aria-label="medium outlined button group"
-              >
-                <Button
-                  variant={board === 0 ? 'contained' : 'outlined'}
-                  color="primary"
-                  onClick={() => this.displayAttendeesBoard()}
-                >
-                  Participantes
-                </Button>
-                <Button
-                  variant={board === 1 ? 'contained' : 'outlined'}
-                  color="primary"
-                  onClick={() => this.displayStaffBoard()}
-                >
-                  Staff
-                </Button>
-              </StyledButtonGroup>
+        {isAllowed ? (
+          <>
+            <StyledGrid
+              container
+              direction="column"
+              justify="center"
+              align="center"
+              xs={9}
+              sm={7}
+              md={6}
+              lg={5}
+              spacing={mobile ? '1' : '0'}
+            >
+              {isVolunteer && (
+                <Grid item>
+                  <StyledButtonGroup
+                    fullWidth
+                    size="medium"
+                    aria-label="medium outlined button group"
+                  >
+                    <Button
+                      variant={board === 0 ? 'contained' : 'outlined'}
+                      color="primary"
+                      onClick={() => this.displayAttendeesBoard()}
+                    >
+                      Participantes
+                    </Button>
+                    <Button
+                      variant={board === 1 ? 'contained' : 'outlined'}
+                      color="primary"
+                      onClick={() => this.displayStaffBoard()}
+                    >
+                      Staff
+                    </Button>
+                  </StyledButtonGroup>
+                </Grid>
+              )}
+              <Grid item>
+                <TableHeader />
+              </Grid>
+              {users.length !== 0 ? (
+                board === 0 ? (
+                  <LeaderboardTable
+                    users={attendeesRanking}
+                    userId={id}
+                    pageSize={chunkSize}
+                    mobile={mobile}
+                  />
+                ) : (
+                  <LeaderboardTable
+                    users={staffRanking}
+                    userId={id}
+                    pageSize={chunkSize}
+                    mobile={mobile}
+                  />
+                )
+              ) : (
+                <CenteredCircularProgress />
+              )}
+            </StyledGrid>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+              <Grid item>
+                <Typography color="error">{error}</Typography>
+              </Grid>
             </Grid>
-          )}
-          <Grid item>
-            <TableHeader />
-          </Grid>
-          {users.length !== 0 ? (
-            board === 0 ? (
-              <LeaderboardTable
-                users={attendeesRanking}
-                userId={id}
-                pageSize={chunkSize}
-                mobile={mobile}
-              />
-            ) : (
-              <LeaderboardTable
-                users={staffRanking}
-                userId={id}
-                pageSize={chunkSize}
-                mobile={mobile}
-              />
-            )
-          ) : (
-            <CenteredCircularProgress />
-          )}
-        </StyledGrid>
-        <Grid container direction="row" justify="center" alignItems="center">
-          <Grid item>
-            <Typography color="error">{error}</Typography>
-          </Grid>
-        </Grid>
+          </>
+        ) : (
+          <CenteredCircularProgress />
+        )}
       </MoonstoneLayout>
     );
   }

@@ -163,7 +163,7 @@ async function checkUserType(jwt) {
     .catch(() => {
       pushErrorPage('Promise', 'error: check_user_type');
     });
-  return result;
+  return result.type;
 }
 
 export {

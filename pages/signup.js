@@ -9,6 +9,7 @@ import theme from '../components/theme';
 import { FormGrid, FormItem } from '../components/moonstone/Form';
 import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import { pushErrorPage } from '../utils/errorManagement';
 
 export default function SignUp() {
   const router = useRouter();
@@ -21,7 +22,7 @@ export default function SignUp() {
   useEffect(() => {
     isJWTValid(localStorage.jwt).then((userValid) => {
       setIsUserValid(userValid);
-      if (userValid) router.push('/404');
+      if (userValid) pushErrorPage('Unauthorized');
     });
   }, []);
 

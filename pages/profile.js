@@ -22,7 +22,7 @@ export default function Page() {
         setJwt(localStorage.jwt);
         isUserValid = res && localStorage.avatar && localStorage.name;
         setUUID(localStorage.UUID);
-        checkUserType(localStorage.jwt).then((data) => setType(data.type));
+        checkUserType(localStorage.jwt).then((typeRes) => setType(typeRes));
         if (!isUserValid) router.push('/404');
       },
       () => router.push('/404'),

@@ -10,12 +10,12 @@ function pushErrorPage(errorType, details) {
     case 'Promise':
       localStorage.errorType = 'Erro';
       localStorage.errorMessage =
-        'Ocorreu um erro desconhecido.\nPor favor, tente novamente.\nSe continuar a ocorrer, contacte a organização.';
+        'Ocorreu um erro.\nPode não estar autorizado a aceder à página sem estar autenticado.\n';
       break;
     case 'Login':
       localStorage.errorType = 'Erro';
       localStorage.errorMessage =
-        'Ocorreu um erro durante o login.\nPor favor, tente novamente.\nSe continuar a ocorrer, contacte a organização.';
+        'Ocorreu um erro.\nPode não estar autorizado a aceder à página sem estar autenticado.\n';
       break;
     default:
       break;

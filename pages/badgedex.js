@@ -7,13 +7,15 @@ import {
   withWidth,
 } from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
-import Router from 'next/router';
+// import Router from 'next/router';
 import { styled } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import MoonstoneLayout from '../components/moonstone/MoonstoneLayout';
 import Badge from '../components/moonstone/Badge';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
 import theme from '../components/theme';
+import { isJWTValid, checkUserType } from '../utils/apiRequests';
+import { pushErrorPage } from '../utils/errorManagement';
 
 const BadgesGrid = styled(Grid)({
   paddingBottom: '3rem',
@@ -57,6 +59,7 @@ class BadgeDex extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      isAllowed: false,
       badges: [],
       collectedBadges: [],
       filteredByType: [],
@@ -70,6 +73,23 @@ class BadgeDex extends React.Component {
   }
 
   componentDidMount() {
+    isJWTValid(localStorage.jwt).then((valid) => {
+      if (!valid) {
+        pushErrorPage('Unauthorized', 'check_badgedex');
+      } else {
+        checkUserType(localStorage.jwt).then((userType) => {
+          switch (userType) {
+            case 'company':
+              pushErrorPage('Unauthorized', 'no_badgedex_company');
+              break;
+            default:
+              this.setState({ isAllowed: true });
+              break;
+          }
+        });
+      }
+    });
+
     window.addEventListener('resize', this.updateDimensions);
 
     const endpoint = `${process.env.ENDPOINT}${process.env.API_BADGES}`;
@@ -85,7 +105,7 @@ class BadgeDex extends React.Component {
       .then((res) => {
         this.handleBadges(res);
       })
-      .catch((error) => this.handleError(error));
+      .catch(() => null /* this.handleError(error) */);
   }
 
   componentWillUnmount() {
@@ -174,18 +194,18 @@ class BadgeDex extends React.Component {
     }
   }
 
-  handleError(error) {
-    if (
-      error.response &&
-      error.response.statusText &&
-      (error.response.statusText === 'Unauthorized' ||
-        error.response.statusText === 'invalid_token') // provavelmente nao é assim
-    ) {
-      Router.push('/login');
-    } else {
-      this.setState({ error: 'Network Error' });
-    }
-  }
+  // handleError(error) {
+  //   if (
+  //     error.response &&
+  //     error.response.statusText &&
+  //     (error.response.statusText === 'Unauthorized' ||
+  //       error.response.statusText === 'invalid_token') // provavelmente nao é assim
+  //   ) {
+  //     Router.push('/login');
+  //   } else {
+  //     this.setState({ error: 'Network Error' });
+  //   }
+  // }
 
   handleButtonClick(type) {
     const { selectedButtons, existingTypes } = this.state;
@@ -266,6 +286,7 @@ class BadgeDex extends React.Component {
 
   render() {
     const {
+      isAllowed,
       badges,
       collectedBadges,
       badgesToDisplay,
@@ -277,33 +298,44 @@ class BadgeDex extends React.Component {
 
     return (
       <MoonstoneLayout showMenu title="badgedex">
-        <this.FilterSection />
-        {badges.length !== 0 ? (
-          <BadgesGrid
-            container
-            direction="row"
-            justify="center"
-            alignItems="flex-start"
-            spacing={largeScreen ? 4 : 1}
-          >
-            {badgesToDisplay.map((b) => (
+        {isAllowed ? (
+          <>
+            <this.FilterSection />
+            {badges.length !== 0 ? (
+              <BadgesGrid
+                container
+                direction="row"
+                justify="center"
+                alignItems="flex-start"
+                spacing={largeScreen ? 4 : 1}
+              >
+                {badgesToDisplay.map((b) => (
+                  <Grid item>
+                    <Badge
+                      avatar={b.avatar}
+                      found={collected.indexOf(b.id) !== -1}
+                      id={b.id}
+                    />
+                  </Grid>
+                ))}
+              </BadgesGrid>
+            ) : (
+              <CenteredCircularProgress />
+            )}
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
               <Grid item>
-                <Badge
-                  avatar={b.avatar}
-                  found={collected.indexOf(b.id) !== -1}
-                  id={b.id}
-                />
+                <Typography color="error">{error}</Typography>
               </Grid>
-            ))}
-          </BadgesGrid>
+            </Grid>
+          </>
         ) : (
           <CenteredCircularProgress />
         )}
-        <Grid container direction="row" justify="center" alignItems="center">
-          <Grid item>
-            <Typography color="error">{error}</Typography>
-          </Grid>
-        </Grid>
       </MoonstoneLayout>
     );
   }
