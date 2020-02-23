@@ -13,6 +13,7 @@ export default function RecoverPassword() {
   const router = useRouter();
 
   const [errorMsg, setErrorMsg] = useState('');
+  const [successMsg, setSuccessMsg] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const [isUserValid, setIsUserValid] = useState(true);
@@ -60,7 +61,7 @@ export default function RecoverPassword() {
         if (res.errors) {
           setErrorMsg(res.errors.detail);
         } else {
-          setErrorMsg(res.data.attributes.info);
+          setSuccessMsg(res.data.attributes.info);
         }
         setIsLoading(false);
       });
@@ -79,6 +80,7 @@ export default function RecoverPassword() {
             pageTitle
           />
           <FormGrid
+            successMessage={successMsg}
             errorMessage={errorMsg}
             isLoading={isLoading}
             handleSubmit={handleSubmit}

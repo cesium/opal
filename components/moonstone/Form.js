@@ -34,6 +34,7 @@ export function FormGrid({
   children,
   isLoading,
   errorMessage,
+  successMessage,
   handleSubmit,
   noPadding,
   noMargin,
@@ -74,6 +75,9 @@ export function FormGrid({
             <Typography component="h1" variant="subtitle2" color="error">
               {errorMessage}
             </Typography>
+            <Typography component="h1" variant="subtitle2" color="body1">
+              {successMessage}
+            </Typography>
           </Grid>
         </Grid>
       </form>
@@ -89,6 +93,7 @@ FormGrid.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string.isRequired,
+  successMessage: PropTypes.string.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   noPadding: PropTypes.bool,
   signup: PropTypes.bool,

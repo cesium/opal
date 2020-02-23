@@ -258,7 +258,6 @@ const LeaderboardTable = ({ users, userId, pageSize, mobile }) => {
             {chunk.map((user) => (
               <Grid item>
                 <Link href={`/user/${user.id}`}>
-                  {console.log(user.userInfo)}
                   <LeaderboardLine
                     position={user.rank}
                     attendee={user.userInfo}
