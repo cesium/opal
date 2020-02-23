@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, TextField, Typography, styled } from '@material-ui/core';
+import { Button, Typography, styled } from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
 import Router from 'next/router';
 import theme from '../components/theme';
@@ -7,8 +7,9 @@ import Link from '../components/Link';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import { FormGrid, FormItem } from '../components/moonstone/Form';
-import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
+import CustomTextField from '../components/CustomTextField';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import { pushErrorPage } from '../utils/errorManagement';
 
 const StyledTypography = styled(Typography)({
@@ -119,7 +120,7 @@ const Login = () => {
             handleSubmit={handleSubmit}
           >
             <FormItem>
-              <TextField
+              <CustomTextField
                 required
                 label="Email Address"
                 type="email"
@@ -130,7 +131,7 @@ const Login = () => {
               />
             </FormItem>
             <FormItem>
-              <TextField
+              <CustomTextField
                 required
                 label="Password"
                 type="password"

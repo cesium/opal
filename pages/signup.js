@@ -1,14 +1,15 @@
 /* eslint-disable no-use-before-define */
 import React, { useEffect, useState } from 'react';
-import { Button, TextField, Typography } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import fetch from 'isomorphic-unfetch';
 import { useRouter } from 'next/router';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import theme from '../components/theme';
 import { FormGrid, FormItem } from '../components/moonstone/Form';
-import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import CustomTextField from '../components/CustomTextField';
+import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import { pushErrorPage } from '../utils/errorManagement';
 
 export default function SignUp() {
@@ -162,7 +163,7 @@ export default function SignUp() {
             handleSubmit={handleSubmit}
           >
             <FormItem>
-              <TextField
+              <CustomTextField
                 id="firstName"
                 name="firstName"
                 label="Nome"
@@ -183,7 +184,7 @@ export default function SignUp() {
               )}
             </FormItem>
             <FormItem>
-              <TextField
+              <CustomTextField
                 id="lastName"
                 name="lastName"
                 label="Apelido"
@@ -204,7 +205,7 @@ export default function SignUp() {
               )}
             </FormItem>
             <FormItem>
-              <TextField
+              <CustomTextField
                 id="nickname"
                 name="nickname"
                 label="Nickname"
@@ -225,7 +226,7 @@ export default function SignUp() {
               )}
             </FormItem>
             <FormItem>
-              <TextField
+              <CustomTextField
                 id="email"
                 name="email"
                 label="Email Address"
@@ -244,7 +245,7 @@ export default function SignUp() {
               )}
             </FormItem>
             <FormItem>
-              <TextField
+              <CustomTextField
                 id="password"
                 name="password"
                 label="Password"
@@ -264,7 +265,7 @@ export default function SignUp() {
               )}
             </FormItem>
             <FormItem>
-              <TextField
+              <CustomTextField
                 id="password_confirmation"
                 name="password_confirmation"
                 label="Re-enter password"
