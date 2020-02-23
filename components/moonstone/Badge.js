@@ -96,9 +96,6 @@ function Badge({ found, id, avatar }) {
     fontWeight: bold ? 'bold' : 'normal',
   }));
 
-  if (data.type == 0)
-    return (null)
-
   return (
     <>
       <StyledBox taken={found}>
