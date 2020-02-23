@@ -22,7 +22,7 @@ export default function SignUp() {
   useEffect(() => {
     isJWTValid(localStorage.jwt).then((userValid) => {
       setIsUserValid(userValid);
-      if (userValid) pushErrorPage('Unauthorized');
+      if (userValid) pushErrorPage('Unauthorized', 'signup_user_valid');
     });
   }, []);
 
@@ -69,6 +69,11 @@ export default function SignUp() {
     };
   };
 
+  function finishLogin(jwt, _callback) {
+    updateLocalStorage(jwt, setIsLoading, setErrorMsg);
+    _callback();
+  }
+
   const signup = () => {
     // eslint-disable-next-line no-use-before-define
     setIsLoading(true);
@@ -92,8 +97,7 @@ export default function SignUp() {
         if (res.jwt) {
           localStorage.clear();
           setErrorMsg('');
-          updateLocalStorage(res.jwt, setIsLoading, setErrorMsg);
-          router.push('/');
+          finishLogin(res.jwt, () => router.push('/profile'));
         } else if (res.error) {
           setErrorMsg(res.error);
           setIsLoading(false);

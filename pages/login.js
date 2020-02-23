@@ -9,6 +9,7 @@ import TopSection from '../components/TopSection';
 import { FormGrid, FormItem } from '../components/moonstone/Form';
 import { isJWTValid, updateLocalStorage } from '../utils/apiRequests';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import { pushErrorPage } from '../utils/errorManagement';
 
 const StyledTypography = styled(Typography)({
   textAlign: 'center',
@@ -23,7 +24,7 @@ const Login = () => {
   useEffect(() => {
     isJWTValid(localStorage.jwt).then((userValid) => {
       setIsUserValid(userValid);
-      if (userValid) Router.push('/404');
+      if (userValid) pushErrorPage('Unauthorized', 'login_user_valid');
     });
   }, []);
 
@@ -53,6 +54,11 @@ const Login = () => {
     };
   };
 
+  function finishLogin(jwt, _callback) {
+    updateLocalStorage(jwt, setIsLoading, setErrorMsg);
+    _callback();
+  }
+
   const login = () => {
     setIsLoading(true);
     setErrorMsg('');
@@ -72,27 +78,20 @@ const Login = () => {
     })
       .then(
         (res) => res.json(),
-        () => {
-          localStorage.clear();
-          Router.push('/');
-        },
+        () => pushErrorPage('Unauthorized', 'signup_user_valid'),
       )
       .then(
         (res) => {
           if (res.jwt) {
             setErrorMsg('');
-            updateLocalStorage(res.jwt, setIsLoading, setErrorMsg);
             setIsLoading(false);
-            Router.push('/');
+            finishLogin(res.jwt, () => Router.push('/profile'));
           } else if (res.error) {
             setIsLoading(false);
             setErrorMsg('Invalid email or password');
           }
         },
-        () => {
-          localStorage.clear();
-          Router.push('/');
-        },
+        () => pushErrorPage('Unauthorized', 'signup_user_valid'),
       );
   };
 
@@ -148,7 +147,7 @@ const Login = () => {
                 color="primary"
                 fullWidth
               >
-                Sign In
+                LOGIN
               </Button>
             </FormItem>
             <FormItem>
