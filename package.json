@@ -12,7 +12,7 @@
     "build": "next build",
     "export": "next export",
     "deploy": "npm-run-all build export",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "husky": {
     "hooks": {

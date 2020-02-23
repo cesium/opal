@@ -1,12 +1,10 @@
 [safira]: https://github.com/cesium/safira
 [nativemoon]: https://github.com/cesium/nativemoon
-[travis]: https://travis-ci.org/cesium/opal
-[netlify]: https://app.netlify.com/sites/enei-2020/deploys
+[travis]: https://travis-ci.org/cesium/opal-node
 
 # Opal
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/92063f4b-5b41-49a5-b5cf-4defb8fc0473/deploy-status)][netlify]
-[![Travis](https://img.shields.io/travis/cesium/opal?style=flat-square)][travis]
+[![Build Status](https://travis-ci.org/cesium/opal-node.svg?branch=master)](https://travis-ci.org/cesium/opal-node)
 
 NextJS Web App for the Badge Platform for CeSIUM's Computer Engineering Week
 event.
