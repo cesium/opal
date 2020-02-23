@@ -34,13 +34,14 @@ export default function Profile() {
         .then((registered) => {
           if (!registered) {
             router.push(`/signup?id=${UUID}`);
+          } else {
+            isJWTValid(localStorage.jwt).then((valid) => {
+              if (valid) {
+                if (localStorage.type === 'company') attributeBadge(UUID);
+                setIsDone(true);
+              } else pushErrorPage('Unauthorized');
+            });
           }
-          isJWTValid(localStorage.jwt).then((valid) => {
-            if (valid) {
-              if (localStorage.type === 'company') attributeBadge(UUID);
-              setIsDone(true);
-            } else pushErrorPage('Unauthorized');
-          });
         })
         .catch(() => pushErrorPage('Promise'));
     }
