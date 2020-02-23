@@ -9,9 +9,10 @@ export default function Page() {
   const [jwt, setJwt] = useState('');
   const [UUID, setUUID] = useState('');
   const [type, setType] = useState('');
-  let isUserValid = false;
+
 
   useEffect(() => {
+    let isUserValid = false;
     const result = isJWTValid(localStorage.jwt);
     result.then(
       (res) => {

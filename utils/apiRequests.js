@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-unfetch';
+import { pushErrorPage } from './errorManagement';
 
 async function isJWTValid(jwt) {
   const endpoint = `${process.env.ENDPOINT}${process.env.API_USER_INFO}`;
@@ -7,36 +8,22 @@ async function isJWTValid(jwt) {
     headers: {
       Authorization: `Bearer ${jwt}`,
     },
-  }).then(
-    (res) => res.json(),
-    (error) => {
-      return {
-        error,
-      };
-    },
-  );
+  })
+    .then((res) => res.json())
+    .catch(() => pushErrorPage('Promise', 'error: is_jwt_valid'));
   if (response.error) return false;
   return true;
 }
 
-// function isRegistered(UUID) {
-//   const endpoint = `${process.env.ENDPOINT}${process.env.API_IS_REGISTERED}/${UUID}`;
-//   const response = fetch(endpoint, {
-//     method: 'GET',
-//     headers: {
-//       Authorization: `Bearer ${jwt}`,
-//     },
-//   }).then(
-//     (res) => res.json(),
-//     (error) => {
-//       return {
-//         error,
-//       };
-//     },
-//   );
-//   if (response.error) return false;
-//   return true;
-// }
+async function isRegistered(UUID) {
+  const endpoint = `${process.env.ENDPOINT}${process.env.API_IS_REGISTERED}/${UUID}`;
+  const response = await fetch(endpoint, {
+    method: 'GET',
+  })
+    .then((res) => res.json())
+    .catch(() => pushErrorPage('Promise', 'error: is_registered'));
+  return response.is_registered;
+}
 
 function changeNickname(nickname, jwt, UUID) {
   const endpoint = `${process.env.ENDPOINT}${process.env.API_ATTENDEES}/${UUID}`;
@@ -47,10 +34,9 @@ function changeNickname(nickname, jwt, UUID) {
       Authorization: `Bearer ${jwt}`,
     },
     body: JSON.stringify({ attendee: { nickname } }),
-  }).then(
-    (res) => res.json(),
-    (error) => console.log(error),
-  );
+  })
+    .then((res) => res.json())
+    .catch(() => pushErrorPage('Promise', 'error: change_nickname'));
   return response;
 }
 
@@ -62,20 +48,21 @@ const companyUpdateAvatar = (jwt, badgeId, setIsLoading, setErrorMsg) => {
       Authorization: `Bearer ${jwt}`,
     },
   })
-    .then(
-      (res) => res.json(),
-      (err) => {
+    .then((res) => res.json())
+    .then((res) => {
+      if (res.errors) {
+        setErrorMsg(res.errors.details);
         localStorage.clear();
         setIsLoading(false);
-        setErrorMsg(err);
-      },
-    )
-    .then(
-      (res) => {
+      } else {
         localStorage.avatar = res.data.avatar;
-      },
-      () => localStorage.clear(),
-    );
+      }
+    })
+    .catch(() => {
+      localStorage.clear();
+      setIsLoading(false);
+      pushErrorPage('Promise', 'error: company_update_avatar');
+    });
 };
 
 const companyUpdateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
@@ -87,24 +74,19 @@ const companyUpdateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
       Authorization: `Bearer ${jwt}`,
     },
   })
-    .then(
-      (res) => res.json(),
-      (err) => {
-        localStorage.clear();
-        setIsLoading(false);
-        setErrorMsg(err);
-      },
-    )
-    .then(
-      (res) => {
-        localStorage.jwt = jwt;
-        localStorage.email = res.email;
-        localStorage.name = res.name;
-        localStorage.sponsorship = res.sponsorship;
-        companyUpdateAvatar(jwt, res.badge_id, setIsLoading, setErrorMsg);
-      },
-      () => localStorage.clear(),
-    );
+    .then((res) => res.json())
+    .then((res) => {
+      localStorage.jwt = jwt;
+      localStorage.email = res.email;
+      localStorage.name = res.name;
+      localStorage.sponsorship = res.sponsorship;
+      companyUpdateAvatar(jwt, res.badge_id, setIsLoading, setErrorMsg);
+    })
+    .catch(() => {
+      localStorage.clear();
+      setIsLoading(false);
+      pushErrorPage('Promise', 'error: company_update');
+    });
 };
 
 const attendeeUpdateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
@@ -116,29 +98,26 @@ const attendeeUpdateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
       Authorization: `Bearer ${jwt}`,
     },
   })
-    .then(
-      (res) => res.json(),
-      (err) => {
-        localStorage.clear();
+    .then((res) => res.json())
+    .then((res) => {
+      if (!res.error) {
+        localStorage.jwt = jwt;
+        localStorage.nickname = res.nickname;
+        localStorage.name = res.name;
+        localStorage.email = res.email;
+        localStorage.UUID = res.id;
+        localStorage.avatar = res.avatar;
+      } else {
+        setErrorMsg(res.error);
         setIsLoading(false);
-        setErrorMsg(err);
-      },
-    )
-    .then(
-      (res) => {
-        if (!res.error) {
-          localStorage.jwt = jwt;
-          localStorage.nickname = res.nickname;
-          localStorage.name = res.name;
-          localStorage.email = res.email;
-          localStorage.UUID = res.id;
-          localStorage.avatar = res.avatar;
-        } else {
-          localStorage.clear();
-        }
-      },
-      () => localStorage.clear(),
-    );
+        localStorage.clear();
+      }
+    })
+    .catch(() => {
+      localStorage.clear();
+      setIsLoading(false);
+      pushErrorPage('Promise', 'error: attendee_update');
+    });
 };
 
 const updateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
@@ -149,30 +128,27 @@ const updateLocalStorage = (jwt, setIsLoading, setErrorMsg) => {
       Authorization: `Bearer ${jwt}`,
     },
   })
-    .then(
-      (res) => res.json(),
-      (err) => {
-        localStorage.clear();
-        setIsLoading(false);
-        setErrorMsg(err);
-      },
-    )
-    .then(
-      (res) => {
-        switch (res.type) {
-          case 'company':
-            companyUpdateLocalStorage(jwt, setIsLoading, setErrorMsg);
-            break;
-          case 'attendee':
-            attendeeUpdateLocalStorage(jwt, setIsLoading, setErrorMsg);
-            break;
-          default:
-            localStorage.clear();
-            break;
-        }
-      },
-      () => localStorage.clear(),
-    );
+    .then((res) => res.json())
+    .then((res) => {
+      if (res.error) setErrorMsg(res.error);
+      switch (res.type) {
+        case 'company':
+          companyUpdateLocalStorage(jwt, setIsLoading, setErrorMsg);
+          break;
+        case 'attendee':
+          attendeeUpdateLocalStorage(jwt, setIsLoading, setErrorMsg);
+          break;
+        default:
+          localStorage.clear();
+          setIsLoading(false);
+          break;
+      }
+    })
+    .catch(() => {
+      localStorage.clear();
+      setIsLoading(false);
+      pushErrorPage('Promise', 'error: login_update');
+    });
 };
 
 async function checkUserType(jwt) {
@@ -182,13 +158,18 @@ async function checkUserType(jwt) {
     headers: {
       Authorization: `Bearer ${jwt}`,
     },
-  }).then(
-    (res) => res.json(),
-    (err) => {
-      console.log(err);
-    },
-  );
+  })
+    .then((res) => res.json())
+    .catch(() => {
+      pushErrorPage('Promise', 'error: check_user_type');
+    });
   return result;
 }
 
-export { isJWTValid, changeNickname, updateLocalStorage, checkUserType };
+export {
+  isJWTValid,
+  changeNickname,
+  updateLocalStorage,
+  checkUserType,
+  isRegistered,
+};

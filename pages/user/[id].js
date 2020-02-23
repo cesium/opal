@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import AttendeeProfile from '../../components/moonstone/AttendeeProfile';
 import MoonstoneLayout from '../../components/moonstone/MoonstoneLayout';
-import { isJWTValid } from '../../utils/apiRequests';
+import { isJWTValid, isRegistered } from '../../utils/apiRequests';
+import { pushErrorPage } from '../../utils/errorManagement';
+import CenteredCircularProgress from '../../components/CenteredCircularProgress';
 
 function attributeBadge(UUID) {
   const endpoint = `${process.env.ENDPOINT}${process.env.API_REDEEMS}`;
@@ -18,13 +20,7 @@ function attributeBadge(UUID) {
         attendee_id: UUID,
       },
     }),
-  })
-    .then((res) => res.json())
-    .then((res) => {
-      if (res.errors) {
-        // ADD ERROR BEHAVIOR
-      }
-    });
+  });
 }
 
 export default function Profile() {
@@ -32,29 +28,36 @@ export default function Profile() {
   const [isDone, setIsDone] = useState(false);
 
   useEffect(() => {
-    let isUserValid = false;
-    const result = isJWTValid(localStorage.jwt);
-    result.then(
-      (res) => {
-        if (!res) router.push('/login');
-        isUserValid = res;
-        if (!isUserValid) router.push('/404');
-        if (localStorage.type === 'company') attributeBadge(router.query.id);
-        setIsDone(true);
-      },
-      () => router.push('/404'),
-    );
-  }, []);
+    if (router.query.id !== undefined) {
+      const UUID = router.query.id;
+      isRegistered(UUID)
+        .then((registered) => {
+          if (!registered) {
+            router.push(`/signup?id=${UUID}`);
+          } else {
+            isJWTValid(localStorage.jwt).then((valid) => {
+              if (valid) {
+                if (localStorage.type === 'company') attributeBadge(UUID);
+                setIsDone(true);
+              } else pushErrorPage('Unauthorized');
+            });
+          }
+        })
+        .catch(() => pushErrorPage('Promise'));
+    }
+  }, [router]);
 
   return (
     <>
-      {isDone && router.query.id ? (
+      {isDone && router.query.id !== undefined ? (
         <AttendeeProfile
           UUID={router.query.id}
           badgeSectionTitle="Badges Conquistados"
         />
       ) : (
-        <MoonstoneLayout />
+        <MoonstoneLayout>
+          <CenteredCircularProgress />
+        </MoonstoneLayout>
       )}
     </>
   );
