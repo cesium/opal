@@ -31,7 +31,7 @@
   API_REDEEMS="/api/v1/redeems"
 
 [context.master.environment]
-  ENDPOINT="https://safira20-prod.herokuapp.com/"
+  ENDPOINT="https://safira.enei.pt"
   API_AUTH_SIGN_IN="/api/auth/sign_in"
   API_AUTH_SIGN_UP="/api/auth/sign_up"
   API_AUTH_RESET_PASSWORD="/api/auth/passwords"
