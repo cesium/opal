@@ -1,15 +1,21 @@
 import Router from 'next/router';
 
-function pushErrorPage(errorType) {
-  localStorage.clear();
+function pushErrorPage(errorType, details) {
+  localStorage.errorDetails = details;
   switch (errorType) {
     case 'Unauthorized':
       localStorage.errorType = 'Unauthorized';
-      localStorage.error = 'Não é permitido aceder a esta página';
+      localStorage.errorMessage = 'Não é permitido aceder a esta página';
       break;
-    case '':
-      localStorage.errorType = 'Unauthorized';
-      localStorage.error = 'Não é permitido aceder a esta página';
+    case 'Promise':
+      localStorage.errorType = 'Erro';
+      localStorage.errorMessage =
+        'Ocorreu um erro desconhecido.\nPor favor, tente novamente.\nSe continuar a ocorrer, contacte a organização.';
+      break;
+    case 'Login':
+      localStorage.errorType = 'Erro';
+      localStorage.errorMessage =
+        'Ocorreu um erro durante o login.\nPor favor, tente novamente.\nSe continuar a ocorrer, contacte a organização.';
       break;
     default:
       break;
