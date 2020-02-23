@@ -65,7 +65,7 @@ function Badge({ found, id, avatar }) {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex',
-    filter: `opacity(${taken ? 100 : 70}%)`,
+    filter: `opacity(${taken ? 100 : 25}%)`,
   }));
 
   const TextBox = styled(Typography)(({ bold }) => ({
