@@ -24,7 +24,7 @@ const StyledTypography = styled(Typography)(({ color }) => ({
 }));
 
 export default function Title({ text, titleColor }) {
-  const topPadding = 8;
+  const topPadding = 5;
   const botPadding = 0;
   const variant = 'h4';
   const thickness = '0.4rem';

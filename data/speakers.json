@@ -65,15 +65,6 @@
     "featured": true
   },
   {
-    "name": "Nuno Brites",
-    "img": "/img/speakers/nuno_brites.jpeg",
-    "github": "nbrites",
-    "linkedin": "nbrites",
-    "shortbio": "I'm a software engineer working on software development for trucks at the MAN | Digital Hub. I'm currently working on a product that will enable the installation of software updates over the air into trucks.",
-    "title": "Senior Software Engineer",
-    "company": "Volkswagen Digital Solutions"
-  },
-  {
     "name": "David Sopas",
     "img": "/img/speakers/david_sopas.jpg",
     "twitter": "dsopas",

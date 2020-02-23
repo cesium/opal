@@ -7,6 +7,7 @@ import {
   Toolbar,
   Button,
   IconButton,
+  Avatar,
   Grid,
   useMediaQuery,
 } from '@material-ui/core';
@@ -45,6 +46,33 @@ export default function ButtonAppBar() {
     },
   });
 
+  const MoonstoneOptions = () => {
+    if (
+      typeof Storage !== 'undefined' &&
+      localStorage.jwt &&
+      localStorage.name &&
+      localStorage.avatar
+    ) {
+      return (
+        <Grid item>
+          <Link href="/profile">
+            <Avatar alt={localStorage.name} src={localStorage.avatar}>
+              {localStorage.name.charAt(0).toUpperCase()}
+            </Avatar>
+          </Link>
+        </Grid>
+      );
+    }
+
+    return (
+      <Grid item>
+        <Link href="/login">
+          <Entry color="inherit">Login</Entry>
+        </Link>
+      </Grid>
+    );
+  };
+
   return (
     <Div>
       <NavBar elevation={trigger ? 3 : 0}>
@@ -64,6 +92,7 @@ export default function ButtonAppBar() {
               alignItems="center"
               spacing={2}
             >
+              <MoonstoneOptions />
               {global.navbar.pages
                 .map((page) => (
                   <Grid item>
