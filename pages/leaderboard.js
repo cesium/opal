@@ -285,7 +285,7 @@ class Leaderboard extends React.Component {
       id: '',
       error: '',
       chunkSize: 10,
-      maxUsers: 20,
+      maxUsers: 50,
       mobile: props.width === 'xs',
       board: 0,
       isVolunteer: false,
