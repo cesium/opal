@@ -17,6 +17,7 @@ import PropTypes from 'prop-types';
 import MoonstoneLayout from '../components/moonstone/MoonstoneLayout';
 import theme from '../components/theme';
 import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import Link from '../components/Link';
 
 const StyledGridItem = styled(Grid)({
   paddingTop: '0.5rem',
@@ -65,7 +66,7 @@ const limitLeaderboardSize = (users, userId, maxUsers) => {
 
   const topUsers = attendeesRanking
     .slice(0, maxUsers)
-    .map((user, i) => ({ userInfo: user, rank: i + 1 }));
+    .map((user, i) => ({ userInfo: user, rank: i + 1, id: user.id }));
 
   if (userRank > maxUsers)
     topUsers[topUsers.length - 1] = {
@@ -79,7 +80,11 @@ const limitLeaderboardSize = (users, userId, maxUsers) => {
 const staffLeaderboard = (users) => {
   const staffUsers = users.filter((user) => user.volunteer);
 
-  return staffUsers.map((user, i) => ({ userInfo: user, rank: i + 1 }));
+  return staffUsers.map((user, i) => ({
+    userInfo: user,
+    rank: i + 1,
+    id: user.id,
+  }));
 };
 
 const split = (users, chunkSize) => {
@@ -250,12 +255,14 @@ const LeaderboardTable = ({ users, userId, pageSize, mobile }) => {
           <Grid>
             {chunk.map((user) => (
               <Grid item>
-                <LeaderboardLine
-                  position={user.rank}
-                  attendee={user.userInfo}
-                  currentUser={user.userInfo.id === userId}
-                  mobile={mobile}
-                />
+                <Link href={`/user/${user.id}`}>
+                  <LeaderboardLine
+                    position={user.rank}
+                    attendee={user.userInfo}
+                    currentUser={user.userInfo.id === userId}
+                    mobile={mobile}
+                  />
+                </Link>
               </Grid>
             ))}
           </Grid>
