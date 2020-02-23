@@ -34,18 +34,14 @@ export default function Badges({ sectionTitle, data }) {
         <Title text={sectionTitle} />
       </Grid>
       {data.badges ? (
-        data.badges.map((badge) => 
-          {
-            if (badge.type === 0)
-              return (null);
-            else
-              return (
-                <Grid item>
-                  <Badge found id={badge.id} avatar={badge.avatar} />
-                </Grid>
-              );
-          }
-        )
+        data.badges.map((badge) => {
+          if (badge.type === 0) return null;
+          return (
+            <Grid item>
+              <Badge found id={badge.id} avatar={badge.avatar} />
+            </Grid>
+          );
+        })
       ) : (
         <Grid item>
           <CircularProgress size="100px" />
