@@ -17,7 +17,7 @@
   },
   {
     "question": "Onde fica o Balcão de Acreditação?",
-    "answer": "Fica no piso 1!"
+    "answer": "Fica no piso 0, ao pé do bar!"
   },
   {
     "question": "Onde é que vão ser os almoços e os jantares?",
@@ -37,7 +37,11 @@
   },
   {
     "question": "Onde decorrem os workshops?",
-    "answer": "Os workshops são na Sala de Congressos S4 ou na Sala de Congressos S5. Ambas são no piso 1."
+    "answer": "Os workshops são nas Salas de Congressos. Ambas são no piso 1."
+  },
+  {
+    "question": "Onde é o bubble soccer?",
+    "answer": "É atrás da exposição dos dinossauros, ao pé do parque de estacionamento!"
   },
   {
     "question": "Onde posso esclarecer qualquer outra dúvida que tenha?",

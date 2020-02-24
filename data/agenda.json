@@ -90,7 +90,7 @@
         "workshop1": {
           "name": "Hands-on workshop: Angular for frontend developers",
           "speakersLeft": ["Diana Rodrigues"],
-          "place": "Sala de Congressos S4",
+          "place": "Sala de Congressos S1",
           "time": "10:00-12:00",
           "duration": 2,
           "type": "workshop",
@@ -148,7 +148,7 @@
         "workshop1": {
           "name": "Rxjs on Quakes (Hands-On)",
           "speakersLeft": ["João Ribeiro"],
-          "place": "Sala de Congressos S4",
+          "place": "Sala de Congressos S1",
           "time": "14:00-16:00",
           "duration": 2,
           "type": "talk",
@@ -160,7 +160,7 @@
         "workshop2": {
           "name": "eID & ePassport: Hands on",
           "speakersLeft": ["Ricardo Ferreira", "João Alves"],
-          "place": "Sala de Congressos S5",
+          "place": "Sala de Congressos S2",
           "time": "14:00-16:00",
           "duration": 2,
           "type": "workshop",
@@ -247,7 +247,7 @@
         "talk3": {
           "name": "Living inside Emacs",
           "speakersLeft": ["Eduardo Jorge"],
-          "place": "Sala de Congressos S1",
+          "place": "Sala de Congressos S4",
           "time": "11:00-12:00",
           "duration": 1,
           "type": "talk",
@@ -274,7 +274,7 @@
         "talk6": {
           "name": "Delivering over 300GB of 3D data to the web in real-time",
           "speakersLeft": ["José Ferrão"],
-          "place": "Sala de Congressos S1",
+          "place": "Sala de Congressos S4",
           "time": "11:00-12:00",
           "duration": 1,
           "type": "talk",
@@ -283,7 +283,7 @@
         "workshop1": {
           "name": "Scrum Lego with Agile",
           "speakersLeft": ["Carlos Jesus"],
-          "place": "Sala de Congressos S4",
+          "place": "Sala de Congressos S1",
           "time": "10:00-12:00",
           "duration": 2,
           "type": "workshop",
@@ -340,7 +340,7 @@
         "workshop1": {
           "name": "Know your Beer – Microsoft Power Platform",
           "speakersLeft": ["João Bastos"],
-          "place": "Sala de Congressos S4",
+          "place": "Sala de Congressos S1",
           "time": "14:00-16:00",
           "duration": 2,
           "type": "workshop",
@@ -352,7 +352,7 @@
         "workshop2": {
           "name": "Monitorização de infraestruturas e aplicações - Azure Monitor e Azure Application Insight",
           "speakersLeft": ["Carolina Dias"],
-          "place": "Sala de Congressos S5",
+          "place": "Sala de Congressos S2",
           "time": "14:00-16:00",
           "duration": 2,
           "type": "workshop",
@@ -449,7 +449,7 @@
         "workshop1": {
           "name": "OutSystems 101 - BIT by Sonae MC",
           "speakersLeft": ["Rui Fonseca"],
-          "place": "Sala de Congressos S4",
+          "place": "Sala de Congressos S1",
           "time": "10:00-12:00",
           "duration": 2,
           "type": "workshop",
@@ -486,7 +486,7 @@
         "activityRight": {
           "name": "Why did the computer science cross the trading floor?",
           "speakersLeft": ["Pedro Correia"],
-          "place": "Sala de Congressos S1",
+          "place": "Sala de Congressos S4",
           "time": "14:00-15:00",
           "duration": 1,
           "type": "talk",
@@ -519,7 +519,7 @@
         "activityRight": {
           "name": "Saving the bees with IoT and Elixir",
           "speakersLeft": ["José Pedro Resende"],
-          "place": "Sala de Congressos S1",
+          "place": "Sala de Congressos S4",
           "time": "15:00-16:00",
           "duration": 1,
           "type": "talk",
