@@ -22,10 +22,14 @@ const Login = () => {
   const [isUserValid, setIsUserValid] = useState(true);
 
   useEffect(() => {
-    isJWTValid(localStorage.jwt).then((userValid) => {
-      setIsUserValid(userValid);
-      if (userValid) pushErrorPage('Unauthorized', 'login_user_valid');
-    });
+    if (localStorage.jwt) {
+      isJWTValid(localStorage.jwt).then((userValid) => {
+        setIsUserValid(userValid);
+        if (userValid) pushErrorPage('Unauthorized', 'login_user_valid');
+      });
+    } else {
+      setIsUserValid(false);
+    }
   }, []);
 
   const useSignInForm = (callback) => {
