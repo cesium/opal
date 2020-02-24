@@ -496,14 +496,14 @@
       {
         "triple": true,
         "activityLeft": {
-          "name": "Talk Accenture TBA",
-          "speakersLeft": [],
+          "name": "Data diet: data frugal ML algorithms when you have only small data",
+          "speakersLeft": ["Alexandre Pinto"],
           "speakersRight": [],
           "place": "Grande Auditório",
           "time": "15:00-16:00",
           "duration": 1,
-          "tba": true,
-          "type": "talk"
+          "type": "talk",
+          "description": "Deep Learning has revolutionzed ML and indeed the entire AI field. However, most DL algorithms are data hungry, requiring millions of data points in training sets in order for the generated models to achieve the desired performance. On the one hand, humans learn equally, and more, complex tasks with far less data samples; on the other, in some practical use cases in industry there is simply not enough data available for such data hungry approaches — there has to be a better, more data frugal, way!"
         },
         "activityCenter": {
           "name": "Olá!",
