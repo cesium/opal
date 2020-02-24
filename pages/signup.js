@@ -21,10 +21,14 @@ export default function SignUp() {
   const [isUserValid, setIsUserValid] = useState(true);
 
   useEffect(() => {
-    isJWTValid(localStorage.jwt).then((userValid) => {
-      setIsUserValid(userValid);
-      if (userValid) pushErrorPage('Unauthorized', 'signup_user_valid');
-    });
+    if (localStorage.jwt) {
+      isJWTValid(localStorage.jwt).then((userValid) => {
+        setIsUserValid(userValid);
+        if (userValid) pushErrorPage('Unauthorized', 'signup_user_valid');
+      });
+    } else {
+      setIsUserValid(false);
+    }
   }, []);
 
   const useSignUpForm = (callback) => {
