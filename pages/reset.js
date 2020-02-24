@@ -19,10 +19,14 @@ export default function Reset() {
   const [isUserValid, setIsUserValid] = useState(true);
 
   useEffect(() => {
-    isJWTValid(localStorage.jwt).then((userValid) => {
-      setIsUserValid(userValid);
-      if (userValid) router.push('/404');
-    });
+    if (localStorage.jwt) {
+      isJWTValid(localStorage.jwt).then((userValid) => {
+        setIsUserValid(userValid);
+        if (userValid) router.push('/404');
+      });
+    } else {
+      setIsUserValid(false);
+    }
   }, []);
 
   const useResetForm = (callback) => {

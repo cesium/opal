@@ -22,10 +22,14 @@ const Login = () => {
   const [isUserValid, setIsUserValid] = useState(true);
 
   useEffect(() => {
-    isJWTValid(localStorage.jwt).then((userValid) => {
-      setIsUserValid(userValid);
-      if (userValid) pushErrorPage('Unauthorized', 'login_user_valid');
-    });
+    if (localStorage.jwt) {
+      isJWTValid(localStorage.jwt).then((userValid) => {
+        setIsUserValid(userValid);
+        if (userValid) pushErrorPage('Unauthorized', 'login_user_valid_jwt');
+      });
+    } else {
+      setIsUserValid(false);
+    }
   }, []);
 
   const useSignInForm = (callback) => {
@@ -73,7 +77,10 @@ const Login = () => {
     })
       .then(
         (res) => res.json(),
-        () => pushErrorPage('Unauthorized', 'signup_user_valid'),
+        (err) => {
+          console.log(err);
+          pushErrorPage('Unauthorized', 'login_user_valid');
+        },
       )
       .then(
         (res) => {
@@ -88,7 +95,10 @@ const Login = () => {
             setErrorMsg('Invalid email or password');
           }
         },
-        () => pushErrorPage('Unauthorized', 'signup_user_valid'),
+        (err) => {
+          console.log(err);
+          pushErrorPage('Unauthorized', 'login_user_valid_2');
+        },
       );
   };
 
