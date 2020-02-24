@@ -310,7 +310,7 @@
           "name": "Why you should care about Application Security",
           "speakersLeft": ["Fu Xu"],
           "place": "Pequeno Auditório",
-          "time": "15:00-16:00",
+          "time": "14:00-15:00",
           "duration": 1,
           "type": "talk",
           "description": "Have you ever questioned the safety of your code? Or maybe you have thought about it but have no idea how vulnerable code looks like?\nIn this talk, I will discuss application security, common vulnerabilities as some general recommendations to help you look at your code with a security posture",
@@ -520,7 +520,7 @@
           "name": "Saving the bees with IoT and Elixir",
           "speakersLeft": ["José Pedro Resende"],
           "place": "Sala de Congressos S1",
-          "time": "14:00-15:00",
+          "time": "15:00-16:00",
           "duration": 1,
           "type": "talk",
           "description": "Bees are dying at an incredible speed and if we don't find a solution we are going to die with them.   This talk documents the design and creation of a plataform to help beekeepers get funding, metrics, health warnings and tips for their hives.  This will include the techonology behind it, elixir, and how it helped us build an mvp with minimal fuss.   Long live the bees 🐝"
