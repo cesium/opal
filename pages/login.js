@@ -25,7 +25,7 @@ const Login = () => {
     if (localStorage.jwt) {
       isJWTValid(localStorage.jwt).then((userValid) => {
         setIsUserValid(userValid);
-        if (userValid) pushErrorPage('Unauthorized', 'login_user_valid');
+        if (userValid) pushErrorPage('Unauthorized', 'login_user_valid_jwt');
       });
     } else {
       setIsUserValid(false);
