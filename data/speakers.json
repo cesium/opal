@@ -11,6 +11,15 @@
     "featured": true
   },
   {
+    "name": "Alexandre Pinto",
+    "img": "/img/speakers/alexandre_pinto.jpeg",
+    "shortbio": "After a 13 years academic career as Researcher in Artificial Intelligence and Assistant Professor in several Portuguese Universities, Alexandre joined Accenture Technology Portugal as the Lead of the Artificial Intelligence practice. Alexandre got his PhD degree in Artificial Intelligence in 2011, his MSc in Applied AI in 2005, and his Licenciatura in Computer Science and Software Engineering in 2000",
+    "company": "Accenture",
+    "title": "Artificial Intelligence Lead",
+    "featured": true,
+    "linkedin": "alexandrempinto"
+  },
+  {
     "name": "Filipa Lacerda",
     "img": "/img/speakers/filipa_lacerda.jpeg",
     "github": "filipalacerda",
