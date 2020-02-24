@@ -1,46 +1,46 @@
 [
   {
     "question": "O que inclui o kit de participante?",
-    "answer": "As he crossed toward the pharmacy at the corner he involuntarily turned his head because of a burst of light that had ricocheted from his temple, and saw, with that quick smile with which we greet a rainbow or a rose, a blindingly white parallelogram of sky being unloaded from the van—a dresser with mirrors across which, as across a cinema screen, passed a flawlessly clear reflection of boughs sliding and swaying not arboreally, but with a human vacillation, produced by the nature of those who were carrying this sky, these boughs, this gliding façade."
+    "answer": "O kit de participante inclui uma t-shirt, um copo reutilizável, um sticker, um suporte para o copo e a credencial que te deve acompanhar por todo o lado!"
   },
   {
     "question": "O que são os badges? Para que servem?",
-    "answer": "Resposta a esta questão"
+    "answer": "Os badges são uma coleção de tokens virtuais que podem colecionar durante todo o ENEI. Eles são dados nos finais de atividades e palestras (pelo staff), quando falam com empresas (dados pelos representantes as empresas), quando realizam certas atividades e quando atingem certos objetivos, como falar com 6 empresas. Quando colecionam os badges, estão-se automaticamente a habilitar a ganhar prémios, que podem ver em detalhe em https://enei.pt/challenges"
   },
   {
     "question": "Onde posso consultar os meus badges?",
-    "answer": "Resposta a esta questão"
-  },
-  {
-    "question": "Como é que ganho novos badges?",
-    "answer": "Resposta a esta questão"
+    "answer": "Faz login no site (enei.pt) e no teu perfil terás acesso a todos os badges que já colecionaste!"
   },
   {
     "question": "Onde posso levantar os prémios relativos aos badges de empresas?",
-    "answer": "Resposta a esta questão"
+    "answer": "No Balcão de Acreditação."
+  },
+  {
+    "question": "Onde fica o Balcão de Acreditação?",
+    "answer": "Fica no piso 1!"
   },
   {
     "question": "Onde é que vão ser os almoços e os jantares?",
-    "answer": "Resposta a esta questão"
-  },
-  {
-    "question": "O que é o processo de acreditação? Como o faço?",
-    "answer": "Resposta a esta questão"
+    "answer": "Irão ser na Cantina da Universidade do Minho, em Gualtar. No entanto, o jantar de segunda-feira será no Jardim do Parque da Ponte (Mega Febrada)."
   },
   {
     "question": "Quem está a organizar a edição deste ano do ENEI?",
-    "answer": "Resposta a esta questão"
-  },
-  {
-    "question": "O que preciso de levar no caso de ter comprado o bilhete com alojamento?",
-    "answer": "Resposta a esta questão"
+    "answer": "O ENEI 2020 está a ser organizado pelo Cesium (Centro de Estudandes de Engenharia Informática da Universidade do Minho)."
   },
   {
     "question": "Que prémios posso ganhar?",
-    "answer": "Resposta a esta questão"
+    "answer": "Podes consultar essa informação na página Desafios e Prémios! (https://enei.pt/challenges)"
+  },
+  {
+    "question": "Onde fica o grande e o pequeno auditório?",
+    "answer": "O grande auditório fica no piso 0, mesmo em frente à entrada e ao pé das empresas. O pequeno auditório fica no piso 1, bastando subires pelas escadas que se encontram à direita depois de entrares na zona das empresas."
+  },
+  {
+    "question": "Onde decorrem os workshops?",
+    "answer": "Os workshops são na Sala de Congressos S4 ou na Sala de Congressos S5. Ambas são no piso 1."
   },
   {
     "question": "Onde posso esclarecer qualquer outra dúvida que tenha?",
-    "answer": "Resposta a esta questão"
+    "answer": "Manda mensagem no Slack, de certeza que algum membro do Staff te poderá ajudar!"
   }
 ]
