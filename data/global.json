@@ -6,6 +6,8 @@
     "description": "O Encontro Nacional de Estudantes de Informática regressa nos dias 23, 24, 25 e 26 de fevereiro e volta para marcar a diferença na cidade de Braga!",
     "logo": "/img/eneiLogoWhite.png",
     "cover": "/img/hero.png",
+    "startingDate": "Feburary 23, 2020 14:00:00",
+    "endingDate": "Feburary 26, 2020 17:00:00",
     "keywords": [
       "Conferência",
       "Tecnologia",

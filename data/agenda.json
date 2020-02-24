@@ -281,13 +281,14 @@
           "description": "At UNO Digital we develop a web based world scale 3D visualization platform for point-cloud and CAD data, used to view and manage large industrial production plants around the globe, in this talk we will explore all the challenges that we found during the development of our platform, our costumized WebGL based solution to draw everything on screen, paralelism in the browser using web worker, how we organized our data structures and how we implemented a compression pipeline to deliver huge chunks of data in real time."
         },
         "workshop1": {
-          "name": "Workshop Accenture TBA",
-          "speakersLeft": [],
+          "name": "Scrum Lego with Agile",
+          "speakersLeft": ["Carlos Jesus"],
           "place": "Sala de Congressos S4",
           "time": "10:00-12:00",
           "duration": 2,
-          "tba": true,
-          "type": "workshop"
+          "type": "workshop",
+          "description": "To experience Scrum, it is important to deliver a product, work together as a team, and do several iterations. To simulate this, the attendees will build a city with Lego bricks. There will be user stories, planning sessions, sprints, review sessions, retrospectives, etc. The goal of the workshop is to have the attendees experiencing Scrum by really using it.",
+          "signupLink": "https://www.eventbrite.pt/e/bilhetes-workshop-accenture-scrum-lego-with-agile-96358588131"
         }
       },
       {
