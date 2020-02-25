@@ -30,7 +30,7 @@ const FAQs = () => (
     >
       <Grid container justify="center">
         <Grid item>
-          <Link href="/docs/enei2020-survival-guide.pdf">
+          <Link href="/docs/survival-guide.pdf">
             <StyledButton
               variant="contained"
               size="large"
