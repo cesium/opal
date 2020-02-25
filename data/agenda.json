@@ -248,7 +248,7 @@
           "name": "Living inside Emacs",
           "speakersLeft": ["Eduardo Jorge"],
           "place": "Sala de Congressos S4",
-          "time": "11:00-12:00",
+          "time": "10:00-11:00",
           "duration": 1,
           "type": "talk",
           "description": "Ao contrário do conhecimento comum o Emacs vai muito além de um simples editor de texto. Nesta palestra vamos demonstar como o Emacs  se pode tornar a ferramenta digital principal que qualquer pessoa necessite. Uma configuração, um software, os mesmos atalhos para tudo."
