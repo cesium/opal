@@ -402,7 +402,8 @@
           "duration": 4,
           "type": "social",
           "description": "Se preferires participar no Peddy Paper, terás de o fazer juntamente com mais 9 pessoas, mas alertamos que só haverá vaga para 20 equipas! O objetivo desta atividade é passar por todos os locais do percurso e responder corretamente ao enigma colocado nesse local, de modo a fazer mais pontos. A equipa vencedora, para além de receber um badge de participação como os restantes participantes, receberá um badge de vencedor e um cabaz de produtos típicos de Braga!",
-          "signupLink": "https://enei2020-peddypaper.eventbrite.pt"
+          "signupLink": "https://enei2020-peddypaper.eventbrite.pt",
+          "rules": "/docs/regulamento-peddy-paper.pdf"
         }
       }
     ]
