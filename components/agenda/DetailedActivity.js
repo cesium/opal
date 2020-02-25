@@ -53,6 +53,7 @@ const ActivityDescription = ({
   companyLink,
   type,
   signup,
+  rules,
 }) => {
   return (
     <Box color="#fff">
@@ -101,6 +102,15 @@ const ActivityDescription = ({
             <Link href={signup}>
               <SignupButton variant="contained" color="secondary">
                 Inscrições
+              </SignupButton>
+            </Link>
+          </Grid>
+        )}
+        {rules && (
+          <Grid item xs={mobile ? 12 : 10}>
+            <Link href={rules}>
+              <SignupButton variant="contained" color="default">
+                Regulamento
               </SignupButton>
             </Link>
           </Grid>
@@ -196,6 +206,7 @@ function DetailedActiviy({
   type,
   mobile,
   signup,
+  rules,
 }) {
   const activityId = slugify(name);
   return (
@@ -213,6 +224,7 @@ function DetailedActiviy({
             type={type}
             mobile={mobile}
             signup={signup}
+            rules={rules}
           />
         </CardContent>
       </ActivityCard>
@@ -231,6 +243,7 @@ DetailedActiviy.propTypes = {
   type: PropTypes.string,
   mobile: PropTypes.bool,
   signup: PropTypes.string,
+  rules: PropTypes.string,
 };
 
 ActivityDescription.propTypes = {
@@ -244,6 +257,7 @@ ActivityDescription.propTypes = {
   companyLink: PropTypes.string,
   type: PropTypes.string,
   signup: PropTypes.string,
+  rules: PropTypes.string,
 };
 
 ActivityInfo.propTypes = {
