@@ -16,8 +16,13 @@ async function isJWTValid(jwt) {
   })
     .then((res) => res.json())
     .catch(() => pushErrorPage('Promise', 'error: is_jwt_valid'));
-  if (response.error) return false;
-  return true;
+  if (response) {
+    if (response.error) {
+      return false;
+    }
+    return true;
+  }
+  return false;
 }
 
 async function isRegistered(UUID) {
