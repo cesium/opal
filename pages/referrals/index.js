@@ -79,6 +79,7 @@ export default function Referrals() {
   const CenteredImage = styled('img')({
     width: '100%',
     margin: 'auto',
+    marginBottom: '100px',
   });
 
   return (
