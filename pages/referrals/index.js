@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import fetch from 'isomorphic-unfetch';
-import { TextField, Button, Typography, styled } from '@material-ui/core';
-import TopSection from '../components/TopSection';
-import Layout from '../components/Layout';
-import { FormGrid, FormItem } from '../components/moonstone/Form';
-import Modal from '../components/moonstone/Modal';
-import theme from '../components/theme';
-import { isJWTValid, checkUserType } from '../utils/apiRequests';
-import { pushErrorPage } from '../utils/errorManagement';
-import CenteredCircularProgress from '../components/CenteredCircularProgress';
+import { TextField, Button, styled } from '@material-ui/core';
+import TopSection from '../../components/TopSection';
+import Layout from '../../components/Layout';
+import { FormGrid, FormItem } from '../../components/moonstone/Form';
+import theme from '../../components/theme';
+import { isJWTValid, checkUserType } from '../../utils/apiRequests';
+import { pushErrorPage } from '../../utils/errorManagement';
+import CenteredCircularProgress from '../../components/CenteredCircularProgress';
 
 export default function Referrals() {
   const [error, setError] = useState('');
   const [isLoading, setLoading] = useState(false);
   const [success, setSuccess] = useState('');
-  const [modal, setModal] = useState(false);
   const [isAllowed, setIsAllowed] = useState(false);
   let badgeID = '';
 
@@ -37,26 +35,39 @@ export default function Referrals() {
     });
   }, []);
 
-  const redeemBadge = () => {
+  const redeemBadge = (event) => {
+    if (event) {
+      event.preventDefault();
+    }
     setLoading(true);
-    const endpoint = `${process.env.ENDPOINT}${process.env.API_REFERRALS}/${badgeID}`;
+    setError('');
+    setSuccess('');
+    const endpoint = `${process.env.ENDPOINT}${process.env.API_REFERRALS}`;
     fetch(endpoint, {
-      method: 'GET',
+      method: 'POST',
       headers: {
+        'Content-Type': 'application/json',
         Authorization: `Bearer ${localStorage.jwt}`,
       },
+      body: JSON.stringify({
+        id: badgeID,
+      }),
     })
       .then((res) => res.json())
       .then((res) => {
-        if (res.errors.unique_attendee_badge) {
-          setError(res.errors.unique_attendee_badge);
+        if (res.errors) {
+          if (res.errors.unique_attendee_badge)
+            setError(res.errors.unique_attendee_badge);
         } else if (res.referral) {
-          setSuccess(res.redeem);
-          setModal(true);
+          setSuccess(res.referral);
         } else {
           setError('Código não disponível');
         }
         setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
+        setError('Erro: Check the bottom of the sea');
       });
   };
 
@@ -65,17 +76,15 @@ export default function Referrals() {
     badgeID = event.target.value;
   };
 
-  const StyledTypography = styled(Typography)({
-    color: theme.palette.text.body,
+  const CenteredImage = styled('img')({
+    width: '100%',
+    margin: 'auto',
   });
 
   return (
     <Layout>
       {isAllowed ? (
         <>
-          <Modal open={modal} onClose={() => setModal(false)} noPadding>
-            <StyledTypography variant="body">{success}</StyledTypography>
-          </Modal>
           <TopSection
             text="Redimir badge"
             color={theme.palette.primary.main}
@@ -84,6 +93,7 @@ export default function Referrals() {
           />
           <FormGrid
             errorMessage={error}
+            successMessage={success}
             isLoading={isLoading}
             handleSubmit={redeemBadge}
           >
@@ -106,6 +116,9 @@ export default function Referrals() {
               >
                 Enviar
               </Button>
+            </FormItem>
+            <FormItem>
+              <CenteredImage src="/img/referral_example.png" alt="" />
             </FormItem>
           </FormGrid>
         </>

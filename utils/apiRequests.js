@@ -3,10 +3,14 @@ import Router from 'next/router';
 import { pushErrorPage } from './errorManagement';
 
 async function isJWTValid(jwt) {
+  if (!jwt || jwt === undefined || jwt === null) {
+    return false;
+  }
   const endpoint = `${process.env.ENDPOINT}${process.env.API_USER_INFO}`;
   const response = await fetch(endpoint, {
     method: 'GET',
     headers: {
+      'Content-Type': 'application/json',
       Authorization: `Bearer ${jwt}`,
     },
   })

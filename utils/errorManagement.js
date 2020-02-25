@@ -17,6 +17,15 @@ function pushErrorPage(errorType, details) {
       localStorage.errorMessage =
         'Ocorreu um erro.\nPode não estar autorizado a aceder à página sem estar autenticado.\n';
       break;
+    case 'Unexpected':
+      localStorage.errorType = 'Erro inesperado';
+      localStorage.errorMessage =
+        'Ocorreu um error inesperado. Tenta novamente';
+      break;
+    case 'Bad request':
+      localStorage.errorType = 'Erro';
+      localStorage.errorMessage = 'Ocorreu um erro. Tenta novamente.';
+      break;
     default:
       break;
   }
