@@ -50,7 +50,7 @@ const badgeTypes = [
   { typeNumber: 4, text: 'Empresas' },
   { typeNumber: 6, text: 'Talks' },
   { typeNumber: 7, text: 'Workshops' },
-  { typeNumber: 9, text: 'Oradores' },
+  { typeNumber: 2, text: 'Desafios' },
   { typeNumber: 3, text: 'Dias' },
   { typeNumber: 8, text: 'Outros' },
 ];
