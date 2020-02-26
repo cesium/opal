@@ -248,7 +248,7 @@
           "name": "Living inside Emacs",
           "speakersLeft": ["Eduardo Jorge"],
           "place": "Sala de Congressos S4",
-          "time": "11:00-12:00",
+          "time": "10:00-11:00",
           "duration": 1,
           "type": "talk",
           "description": "Ao contrário do conhecimento comum o Emacs vai muito além de um simples editor de texto. Nesta palestra vamos demonstar como o Emacs  se pode tornar a ferramenta digital principal que qualquer pessoa necessite. Uma configuração, um software, os mesmos atalhos para tudo."
@@ -402,7 +402,8 @@
           "duration": 4,
           "type": "social",
           "description": "Se preferires participar no Peddy Paper, terás de o fazer juntamente com mais 9 pessoas, mas alertamos que só haverá vaga para 20 equipas! O objetivo desta atividade é passar por todos os locais do percurso e responder corretamente ao enigma colocado nesse local, de modo a fazer mais pontos. A equipa vencedora, para além de receber um badge de participação como os restantes participantes, receberá um badge de vencedor e um cabaz de produtos típicos de Braga!",
-          "signupLink": "https://enei2020-peddypaper.eventbrite.pt"
+          "signupLink": "https://enei2020-peddypaper.eventbrite.pt",
+          "rules": "/docs/regulamento-peddy-paper.pdf"
         }
       }
     ]

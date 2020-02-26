@@ -70,6 +70,11 @@ export default function MoonstoneLayout({
                       <Entry color="primary">Leaderboard</Entry>
                     </Link>
                   </Grid>
+                  <Grid item>
+                    <Link href="/referrals">
+                      <Entry color="primary">Redimir badge</Entry>
+                    </Link>
+                  </Grid>
                 </>
               )}
               <Grid item>
