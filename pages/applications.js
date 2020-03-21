@@ -50,12 +50,36 @@ const CodeOfConduct = () => (
       pageTitle
     />
     <Document>
+      <Title variant="h2">
+        <span role="img" aria-label="Atenção">
+          ⚠️
+        </span>
+        ATENÇÃO
+        <span role="img" aria-label="Atenção">
+          ⚠
+        </span>
+      </Title>
+
+      <Title variant="h4">
+        A data de entrega de candidaturas está adiada por tempo indeterminado
+        devido ao estado de emergência nacional causado pela pandemia COVID-19.
+      </Title>
+
+      <Text variant="h5">
+        A todos os interessados, entrem em contacto através do email
+        geral@enei.pt.
+      </Text>
+
       <Title variant="h4">Considerações Gerais</Title>
 
       <Text>
         As candidaturas à organização do Encontro Nacional de Estudantes de
-        Informática 2021 estão abertas até dia 15 de março de 2020. Depois desta
-        data não serão aceites mais candidaturas à organização do evento.
+        Informática 2021 estão abertas
+        <span style={{ textDecoration: 'line-through' }}>
+          até dia 15 de março de 2020
+        </span>
+        . Depois desta data não serão aceites mais candidaturas à organização do
+        evento.
       </Text>
 
       <Text>
