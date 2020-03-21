@@ -6,6 +6,7 @@
     "dev": "next dev",
     "lint": "eslint --fix --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write './**/*.{css,js,json,md}'",
+    "fmt": "npm-run-all format",
     "test": "npm-run-all test:*",
     "test:lint": "eslint --ignore-path .gitignore .",
     "test:format": "prettier --ignore-path .gitignore --check './**/*.{css,js,json,md}'",
