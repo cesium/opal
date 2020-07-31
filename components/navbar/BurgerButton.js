@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Box,
   Drawer,
@@ -60,7 +60,7 @@ const MoonstoneOptions = () => {
 
 function BurgerButton() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClick = () => {
     if (open) {
@@ -80,7 +80,7 @@ function BurgerButton() {
           <Spacer />
           <List>
             {global.navbar.pages.map((page) => (
-              <Link href={page.link}>
+              <Link href={page.link} key={page.name}>
                 <ListItem button key={page.name}>
                   <Item primary={page.name} />
                 </ListItem>

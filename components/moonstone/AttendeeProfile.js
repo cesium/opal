@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Router from 'next/router';
 import fetch from 'isomorphic-unfetch';
@@ -7,7 +7,7 @@ import AttendeeInfo from './profile/AttendeeInfo';
 import Badges from './profile/Badges';
 import CenteredCircularProgress from '../CenteredCircularProgress';
 
-class AttendeeProfile extends React.Component {
+class AttendeeProfile extends Component {
   constructor(props) {
     super(props);
     this.updateState = this.updateState.bind(this);

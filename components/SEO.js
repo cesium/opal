@@ -24,7 +24,7 @@ const SEO = ({ event, social }) => (
     <meta name="twitter:title" content={`${event.name} ${event.year}`} />
     <meta name="twitter:description" content={event.description} />
     <meta property="twitter:url" content={event.url} />
-    <meta name="twitter:creator" content={`@{social.twitter}`} />
+    <meta name="twitter:creator" content={`@${social.twitter}`} />
     <meta name="twitter:site" content={`@${social.twitter}`} />
     <meta property="twitter:image" content={event.cover} />
   </>

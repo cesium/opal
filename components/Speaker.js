@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { styled } from '@material-ui/core/styles';
 import {
   Card,
@@ -76,7 +76,7 @@ function Speaker({
   title,
   shortbio,
 }) {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);

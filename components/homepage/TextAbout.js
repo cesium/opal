@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { styled } from '@material-ui/core/styles';
 import { Typography, Paper } from '@material-ui/core';
 import PropTypes from 'prop-types';
@@ -24,10 +24,10 @@ const MessageTypography = styled(Typography)(({ color }) => ({
 }));
 
 function TextAbout({ messages, messageColor, backgroundColor, paperColor }) {
-  const [ticks, setTicks] = React.useState(0);
+  const [ticks, setTicks] = useState(0);
   const message = messages[ticks];
 
-  React.useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       setTicks((t) => (t + 1) % messages.length);
     }, 2000);
@@ -35,7 +35,7 @@ function TextAbout({ messages, messageColor, backgroundColor, paperColor }) {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [messages.length]);
 
   return (
     <TopSection

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Grid,
   Typography,
@@ -55,7 +55,7 @@ const badgeTypes = [
   { typeNumber: 8, text: 'Outros' },
 ];
 
-class BadgeDex extends React.Component {
+class BadgeDex extends Component {
   constructor(props) {
     super(props);
     this.state = {

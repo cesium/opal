@@ -23,10 +23,10 @@ export default function RecoverPassword() {
       setIsUserValid(userValid);
       if (userValid) router.push('/404');
     });
-  }, []);
+  }, [router]);
 
   const useResetForm = (callback) => {
-    const [email, setEmail] = React.useState('');
+    const [email, setEmail] = useState('');
     const handleSubmit = (event) => {
       if (event) {
         event.preventDefault();

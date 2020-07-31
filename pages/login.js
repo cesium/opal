@@ -17,7 +17,7 @@ const StyledTypography = styled(Typography)({
 
 const Login = () => {
   const [errorMsg, setErrorMsg] = useState('');
-  const [isLoading, setIsLoading] = React.useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const [isUserValid, setIsUserValid] = useState(true);
 
@@ -33,7 +33,7 @@ const Login = () => {
   }, []);
 
   const useSignInForm = (callback) => {
-    const [email, setEmail] = React.useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const handleSubmit = (event) => {
       if (event) {
@@ -77,8 +77,7 @@ const Login = () => {
     })
       .then(
         (res) => res.json(),
-        (err) => {
-          console.log(err);
+        () => {
           pushErrorPage('Unauthorized', 'login_user_valid');
         },
       )
@@ -95,8 +94,7 @@ const Login = () => {
             setErrorMsg('Invalid email or password');
           }
         },
-        (err) => {
-          console.log(err);
+        () => {
           pushErrorPage('Unauthorized', 'login_user_valid_2');
         },
       );

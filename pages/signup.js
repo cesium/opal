@@ -15,8 +15,8 @@ import { pushErrorPage } from '../utils/errorManagement';
 export default function SignUp() {
   const router = useRouter();
 
-  const [errorMsg, setErrorMsg] = React.useState('');
-  const [isLoading, setIsLoading] = React.useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const [isUserValid, setIsUserValid] = useState(true);
 
@@ -32,13 +32,13 @@ export default function SignUp() {
   }, []);
 
   const useSignUpForm = (callback) => {
-    const [attendee, setAttendee] = React.useState({
+    const [attendee, setAttendee] = useState({
       id: router.query.id,
       nickname: '',
       firstName: '',
       lastName: '',
     });
-    const [inputs, setInputs] = React.useState({
+    const [inputs, setInputs] = useState({
       email: '',
       password: '',
       // eslint-disable-next-line camelcase

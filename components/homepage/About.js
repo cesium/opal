@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { styled } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import VolumeOffRoundedIcon from '@material-ui/icons/VolumeOffRounded';
@@ -29,7 +29,7 @@ const StyledIconButton = styled(IconButton)(({ hover }) => ({
 }));
 
 function About({ url, thumbnail }) {
-  const [muted, setMuted] = React.useState(true);
+  const [muted, setMuted] = useState(true);
   const handleButton = () => {
     if (muted) setMuted(false);
     else setMuted(true);

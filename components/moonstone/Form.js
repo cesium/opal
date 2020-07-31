@@ -93,7 +93,7 @@ FormGrid.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string.isRequired,
-  successMessage: PropTypes.string.isRequired,
+  successMessage: PropTypes.string,
   handleSubmit: PropTypes.func.isRequired,
   noPadding: PropTypes.bool,
   signup: PropTypes.bool,
