@@ -78,7 +78,7 @@ export default function AttendeeInfo({ data, allowEdits, handleUpdateData }) {
 
   const handleNicknameClose = useCallback(() => {
     setModalNickname(false);
-  });
+  }, []);
 
   return (
     <>

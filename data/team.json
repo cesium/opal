@@ -1,0 +1,320 @@
+[
+  {
+    "team": "Coordenação Geral",
+    "elements": [
+      {
+        "name": "Catarina Machado",
+        "facebook": "catarinaamachado",
+        "twitter": "",
+        "github": "catarinamachado",
+        "linkedin": "catarinaamachado",
+        "img": "catarina_machado.jpg"
+      },
+      {
+        "name": "Francisco Lira",
+        "facebook": "",
+        "twitter": "",
+        "github": "FranciscoLira",
+        "linkedin": "",
+        "img": "francisco_lira.jpg"
+      },
+      {
+        "name": "Nelson Estevão",
+        "facebook": "",
+        "twitter": "nelsonmestevao",
+        "github": "nelsonmestevao",
+        "linkedin": "nelsonmestevao",
+        "img": "nelson_estevao.jpg"
+      },
+      {
+        "name": "Sérgio Costa",
+        "facebook": "",
+        "twitter": "",
+        "github": "a-sac",
+        "linkedin": "",
+        "img": "sergio_costa.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Tesouraria",
+    "elements": [
+      {
+        "name": "João Vilaça",
+        "facebook": "",
+        "twitter": "",
+        "github": "machadovilaca",
+        "linkedin": "machadovilaca",
+        "img": "joao_vilaca.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Marketing e Comunicação",
+    "elements": [
+      {
+        "name": "Beatriz Rocha",
+        "facebook": "beatrizfr.rocha",
+        "twitter": "",
+        "github": "beatrizfrocha",
+        "linkedin": "beatriz-rocha-33005a159",
+        "img": "beatriz_rocha.jpg"
+      },
+      {
+        "name": "Rafaela Rodrigues",
+        "facebook": "",
+        "twitter": "",
+        "github": "rafaelacrr",
+        "linkedin": "rafaelacrr",
+        "img": "rafaela_rodrigues.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Tecnologia",
+    "elements": [
+      {
+        "name": "Miguel Brandão",
+        "facebook": "mickael.a.brandao",
+        "twitter": "",
+        "github": "miguelbrandao",
+        "linkedin": "miguel-a-brandao",
+        "img": "miguel_brandao.jpg"
+      },
+      {
+        "name": "Pedro Ferreira",
+        "facebook": "",
+        "twitter": "",
+        "github": "PedroFerr101",
+        "linkedin": "pedrom-ferreira",
+        "img": "pedro_ferreira.jpg"
+      },
+      {
+        "name": "Luís Alves",
+        "facebook": "",
+        "twitter": "",
+        "github": "alves-luis",
+        "linkedin": "alves-luis",
+        "img": "luis_alves.jpg"
+      },
+      {
+        "name": "Bruno Martins",
+        "facebook": "",
+        "twitter": "",
+        "github": "brunomartins11",
+        "linkedin": "",
+        "img": "bruno_martins.jpg"
+      },
+      {
+        "name": "Daniel Tinoco",
+        "facebook": "",
+        "twitter": "",
+        "github": "0urobor0s",
+        "linkedin": "",
+        "img": "daniel_tinoco.jpg"
+      },
+      {
+        "name": "Henrique Pereira",
+        "facebook": "",
+        "twitter": "",
+        "github": "hpereira98",
+        "linkedin": "",
+        "img": "henrique_pereira.jpg"
+      },
+      {
+        "name": "João Silva",
+        "facebook": "joaosilva9898",
+        "twitter": "",
+        "github": "joaop21",
+        "linkedin": "joãopedro-silva",
+        "img": "joao_silva.jpg"
+      },
+      {
+        "name": "José Resende",
+        "facebook": "",
+        "twitter": "",
+        "github": "ZePedroResende",
+        "linkedin": "",
+        "img": "jose_resende.jpg"
+      },
+      {
+        "name": "Rui Costa",
+        "facebook": "",
+        "twitter": "",
+        "github": "RuidsCosta",
+        "linkedin": "",
+        "img": "rui_costa.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Imagem",
+    "elements": [
+      {
+        "name": "José Ferreira",
+        "facebook": "",
+        "twitter": "",
+        "github": "JoseFilipeFerreira",
+        "linkedin": "",
+        "img": "jose_ferreira.jpg"
+      },
+      {
+        "name": "Luis Araújo",
+        "facebook": "",
+        "instagram": "luis_araujo_966",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "img": "luis_araujo.jpg"
+      },
+      {
+        "name": "Maria Pires",
+        "facebook": "",
+        "twitter": "",
+        "github": "mariajbp",
+        "linkedin": "mariajbp",
+        "img": "maria_pires.jpg"
+      },
+      {
+        "name": "Miguel Solino",
+        "facebook": "",
+        "twitter": "",
+        "github": "manilator",
+        "linkedin": "",
+        "img": "miguel_solino.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Apoios e Patrocínios",
+    "elements": [
+      {
+        "name": "Inês Alves",
+        "facebook": "ines.amorim.alves",
+        "twitter": "",
+        "github": "ineesalvees",
+        "linkedin": "ineesalvees",
+        "img": "ines_alves.jpg"
+      },
+      {
+        "name": "Joel Gama",
+        "facebook": "joel.gama.37",
+        "twitter": "",
+        "github": "JoelGama",
+        "linkedin": "joelgama",
+        "img": "joel_gama.jpg"
+      },
+      {
+        "name": "Rafaela Pinho",
+        "facebook": "rafaela.pinho.566",
+        "twitter": "",
+        "github": "",
+        "linkedin": "rafaela-pinto-de-pinho-5649a5195",
+        "img": "rafaela_pinho.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Animação",
+    "elements": [
+      {
+        "name": "Nuno Silva",
+        "facebook": "25mineiro",
+        "twitter": "",
+        "github": "mineiro25",
+        "linkedin": "",
+        "img": "nuno_silva.jpg"
+      },
+      {
+        "name": "Pedro Pinto",
+        "facebook": "pedro.pinto.packman",
+        "twitter": "",
+        "github": "pedromendespinto",
+        "linkedin": "pedromendespinto",
+        "img": "pedro_pinto_packman.jpg"
+      },
+      {
+        "name": "Tânia Rocha",
+        "facebook": "",
+        "twitter": "",
+        "github": "taniafilipa33",
+        "linkedin": "",
+        "img": "tania_rocha.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Logística",
+    "elements": [
+      {
+        "name": "Bárbara Cardoso",
+        "facebook": "",
+        "twitter": "",
+        "github": "barbara29",
+        "linkedin": "",
+        "img": "barbara_cardoso.jpg"
+      },
+      {
+        "name": "António Barbosa",
+        "facebook": "",
+        "twitter": "",
+        "github": "apedrob",
+        "linkedin": "",
+        "img": "antonio_barbosa.jpg"
+      },
+      {
+        "name": "Francisco Costa",
+        "facebook": "",
+        "twitter": "",
+        "github": "xicon73",
+        "linkedin": "",
+        "img": "francisco_costa.jpg"
+      },
+      {
+        "name": "Pedro Lima",
+        "facebook": "",
+        "twitter": "",
+        "github": "Eddy32",
+        "linkedin": "",
+        "img": "pedro_lima.jpg"
+      },
+      {
+        "name": "Sofia Pereira",
+        "facebook": "",
+        "twitter": "",
+        "github": "sofiapereiraGIT",
+        "linkedin": "",
+        "img": "sofia_pereira.jpg"
+      }
+    ]
+  },
+  {
+    "team": "Programa",
+    "elements": [
+      {
+        "name": "Henrique Faria",
+        "facebook": "",
+        "twitter": "",
+        "github": "henriquejosefaria",
+        "linkedin": "",
+        "img": "henrique_faria.jpg"
+      },
+      {
+        "name": "Mariana Fernandes",
+        "facebook": "",
+        "twitter": "",
+        "github": "mariana-kikloki",
+        "linkedin": "",
+        "img": "mariana_fernandes.jpg"
+      },
+      {
+        "name": "Paulo Barbosa",
+        "facebook": "",
+        "twitter": "",
+        "github": "pbarbosa-gh",
+        "linkedin": "",
+        "img": "paulo_barbosa.jpg"
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Router from 'next/router';
 import fetch from 'isomorphic-unfetch';
@@ -6,7 +6,7 @@ import MoonstoneLayout from './MoonstoneLayout';
 import CompanyInfo from './profile/CompanyInfo';
 import CenteredCircularProgress from '../CenteredCircularProgress';
 
-class CompanyProfile extends React.Component {
+class CompanyProfile extends Component {
   constructor(props) {
     super(props);
     this.state = {

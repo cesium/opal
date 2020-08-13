@@ -27,10 +27,10 @@ export default function Reset() {
     } else {
       setIsUserValid(false);
     }
-  }, []);
+  }, [router]);
 
   const useResetForm = (callback) => {
-    const [inputs, setInputs] = React.useState({
+    const [inputs, setInputs] = useState({
       password: '',
       // eslint-disable-next-line camelcase
       password_confirmation: '',

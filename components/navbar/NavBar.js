@@ -95,7 +95,7 @@ export default function ButtonAppBar() {
               <MoonstoneOptions />
               {global.navbar.pages
                 .map((page) => (
-                  <Grid item>
+                  <Grid item key={page.name}>
                     <Link href={page.link}>
                       <Entry color="inherit">{page.name}</Entry>
                     </Link>

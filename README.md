@@ -4,7 +4,7 @@
 
 # Opal
 
-[![Build Status](https://travis-ci.org/cesium/opal-node.svg?branch=master)](https://travis-ci.org/cesium/opal-node)
+[![Build Status](https://travis-ci.org/cesium/opal.svg?branch=master)](https://travis-ci.org/cesium/opal)
 
 NextJS Web App for the Badge Platform for CeSIUM's Computer Engineering Week
 event.

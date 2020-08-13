@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Grid,
   Avatar,
@@ -12,7 +12,6 @@ import {
 import { styled } from '@material-ui/styles';
 import fetch from 'isomorphic-unfetch';
 import Slider from 'react-slick';
-// import Router from 'next/router';
 import PropTypes from 'prop-types';
 import MoonstoneLayout from '../components/moonstone/MoonstoneLayout';
 import theme from '../components/theme';
@@ -274,7 +273,7 @@ const LeaderboardTable = ({ users, userId, pageSize, mobile }) => {
   );
 };
 
-class Leaderboard extends React.Component {
+class Leaderboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
