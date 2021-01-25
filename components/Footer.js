@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
 import { Grid, AppBar, Typography, Box } from '@material-ui/core/';
 import Favorite from '@material-ui/icons/Favorite';
+import CopyrightIcon from '@material-ui/icons/Copyright';
 import SocialIcons from './SocialIcons';
 import Link from './Link';
 import theme from './theme';
@@ -23,22 +24,27 @@ const ColoredTypography = styled(Typography)(({ color }) => ({
   color,
 }));
 
+const CopyrightTypography = styled(ColoredTypography)({
+  display: 'flex',
+  alignItems: 'center',
+  flexWrap: 'wrap',
+  padding: '5px',
+});
+
 const Copyright = () => (
   <Wrapper>
-    <ColoredTypography variant="body2" color={theme.palette.text.title}>
-      &copy;
-      {` ${event.title} ${event.year}. Made with  `}
-    </ColoredTypography>
-    <Favorite color="error" fontSize="small">
-      Love
-    </Favorite>
-    <ColoredTypography variant="body2" color={theme.palette.text.title}>
-      {' by '}
+    <CopyrightTypography variant="body2" color={theme.palette.text.title}>
+      <CopyrightIcon
+        style={{ margin: '0 2px', padding: '0 0 2px', fontSize: '20px' }}
+      />
+      {` ${event.title} ${event.year}. Made with   `}
+      <Favorite style={{ margin: '0 2px', fontSize: '16px' }}>Love</Favorite>
+      {' by'}&nbsp;
       <Link color={theme.palette.text.title} href="https://cesium.di.uminho.pt">
         <>CeSIUM</>
       </Link>
       .
-    </ColoredTypography>
+    </CopyrightTypography>
   </Wrapper>
 );
 
