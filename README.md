@@ -1,6 +1,7 @@
 [safira]: https://github.com/cesium/safira
 [nativemoon]: https://github.com/cesium/nativemoon
 [travis]: https://travis-ci.org/cesium/opal-node
+[license]: LICENSE.txt
 
 # Opal
 
@@ -76,5 +77,10 @@ the process for submitting pull requests to us.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt)
+<img src=".github/brand/cesium-DARK.svg#gh-light-mode-only" width="300">
+<img src=".github/brand/cesium-LIGHT.svg#gh-dark-mode-only" width="300">
+
+Copyright (c) 2019-2022, CeSIUM.
+
+This project is licensed under the MIT License - see the [LICENSE][license]
 file for details.
