@@ -11,10 +11,9 @@
     "test:lint": "eslint --ignore-path .gitignore .",
     "test:format": "prettier --ignore-path .gitignore --check './**/*.{css,js,json,md}'",
     "build": "next build",
+    "start": "next start",
     "export": "next export",
-    "deploy": "npm-run-all build export",
-    "start-local": "next start -p 3000",
-    "start": "next start -p $PORT"
+    "deploy": "npm-run-all build export"
   },
   "husky": {
     "hooks": {
@@ -29,7 +28,7 @@
     "clsx": "^1.1.1",
     "dotenv": "^8.2.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^10.0.5",
+    "next": "^12.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-countdown-now": "^2.1.2",
@@ -39,11 +38,11 @@
     "react-slick": "^0.25.2",
     "react-slugify": "^2.0.1",
     "slick-carousel": "^1.8.1",
-    "webpack": "^4.44.1"
+    "webpack": "^5.70.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
+    "eslint": "^8.10.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-babel": "^5.3.1",

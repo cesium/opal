@@ -1,5 +1,5 @@
 import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Head, Main, NextScript, Html } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/styles';
 import SEO from '../components/SEO';
 import config from '../data/global.json';
@@ -8,16 +8,8 @@ import theme from '../components/theme';
 class MyDocument extends Document {
   render() {
     return (
-      <html lang="pt">
+      <Html lang="pt">
         <Head>
-          <meta charSet="utf-8" />
-          {/* Use minimum-scale=1 to enable GPU rasterization */}
-          <meta
-            name="viewport"
-            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-          />
-          {/* PWA primary color */}
-          <meta name="theme-color" content={theme.palette.primary.main} />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -93,15 +85,12 @@ class MyDocument extends Document {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/manifest.json" />
-          <meta name="msapplication-TileColor" content="#ffffff" />
-          <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-          <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

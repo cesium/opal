@@ -81,13 +81,13 @@ const Footer = ({
               color={theme.palette.text.title}
               href="/docs/survival-guide.pdf"
             >
-              <>Survival Guide</>
+              <span>Survival Guide</span>
             </Link>
           </Typography>
           <span>&#160;&#160;&#160;&#160;</span>
           <Typography variant="body2">
             <Link color={theme.palette.text.title} href="/codeofconduct">
-              <>Code of Conduct</>
+              <span>Code of Conduct</span>
             </Link>
           </Typography>
         </Wrapper>
