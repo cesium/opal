@@ -215,7 +215,7 @@ function DetailedActiviy({
 }) {
   const activityId = slugify(name);
   return (
-    <Element id={activityId} name={activityId} style={{ width: '900px' }}>
+    <Element id={activityId} name={activityId} style={{ maxWidth: '900px' }}>
       <ActivityCard>
         <CardContent>
           <ActivityDescription

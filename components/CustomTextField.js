@@ -1,18 +1,15 @@
 /* eslint-disable react/prop-types */
-import { withStyles } from '@mui/system';
+import { styled } from '@mui/system';
 import TextField from '@mui/material/TextField';
 import React from 'react';
 
-const styles = {
-  input: {
-    '&:-webkit-autofill': {
-      WebkitBoxShadow: '0 0 0 1000px #437C90 inset',
-    },
+const StyledTextField = styled(TextField)(({ theme }) => ({
+  '&:-webkit-autofill': {
+    WebkitBoxShadow: '0 0 0 1000px #437C90 inset',
   },
-};
+}));
 
 const CustomTextField = ({
-  classes,
   id,
   name,
   label,
@@ -27,8 +24,7 @@ const CustomTextField = ({
   error,
 }) => {
   return (
-    <TextField
-      classes={classes}
+    <StyledTextField
       id={id}
       name={name}
       label={label}
@@ -45,4 +41,4 @@ const CustomTextField = ({
   );
 };
 
-export default withStyles(styles)(CustomTextField);
+export default CustomTextField;
