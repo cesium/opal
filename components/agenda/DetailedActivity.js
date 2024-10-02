@@ -7,10 +7,10 @@ import {
   Card,
   CardContent,
   Button,
-} from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+} from '@mui/material';
+import { styled } from '@mui/system';
 import { Element } from 'react-scroll';
-import { LocationOn, Person, Schedule, Business } from '@material-ui/icons';
+import { LocationOn, Person, Schedule, Business } from '@mui/icons-material';
 import slugify from 'react-slugify';
 import theme from '../theme';
 import Underline from '../Underline';
@@ -57,7 +57,12 @@ const ActivityDescription = ({
 }) => {
   return (
     <Box color="#fff">
-      <Grid container direction="column" justify="center" alignItems="center">
+      <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Grid item>
           <Box
             fontWeight="bold"
@@ -109,7 +114,7 @@ const ActivityDescription = ({
         {rules && (
           <Grid item xs={mobile ? 12 : 10}>
             <Link href={rules}>
-              <SignupButton variant="contained" color="default">
+              <SignupButton variant="contained" color="primary">
                 Regulamento
               </SignupButton>
             </Link>
@@ -134,7 +139,7 @@ const ActivityInfo = ({
       item
       xs={mobile ? 11 : 8}
       direction="row"
-      justify="center"
+      justifyContent="center"
       alignItems="flex-start"
       spacing={1}
     >
@@ -210,7 +215,7 @@ function DetailedActiviy({
 }) {
   const activityId = slugify(name);
   return (
-    <Element id={activityId} name={activityId}>
+    <Element id={activityId} name={activityId} style={{ width: '900px' }}>
       <ActivityCard>
         <CardContent>
           <ActivityDescription

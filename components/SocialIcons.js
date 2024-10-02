@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/core/styles';
-import { IconButton, SvgIcon, Box } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { IconButton, SvgIcon, Box } from '@mui/material';
 import {
   Facebook,
   GitHub,
@@ -9,7 +9,7 @@ import {
   Twitter,
   Instagram,
   Language,
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import theme from './theme';
 import Link from './Link';
 

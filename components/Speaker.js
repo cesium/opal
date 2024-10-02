@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 import {
   Card,
   CardMedia,
@@ -8,8 +8,8 @@ import {
   Typography,
   IconButton,
   Collapse,
-} from '@material-ui/core';
-import { ExpandMore } from '@material-ui/icons';
+} from '@mui/material';
+import { ExpandMore } from '@mui/icons-material';
 import PropTypes from 'prop-types';
 import slugify from 'react-slugify';
 import theme from './theme';

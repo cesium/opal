@@ -1,9 +1,9 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
-import { red } from '@material-ui/core/colors';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { red } from '@mui/material/colors';
 
 // Create a theme instance.
 const theme = responsiveFontSizes(
-  createMuiTheme({
+  createTheme({
     palette: {
       primary: {
         main: '#052C49', // dark blue
@@ -14,15 +14,24 @@ const theme = responsiveFontSizes(
         mainRGB: '67,124,144',
       },
       text: {
-        title: 'white',
-        body: 'white',
+        title: '#FFFFFF',
+        body: '#FFFFFF',
       },
-      icons: 'white',
+      icons: '#FFFFFF',
       error: {
         main: red[900],
       },
       background: {
         default: '#fff',
+      },
+    },
+    components: {
+      MuiAppBar: {
+        styleOverrides: {
+          root: {
+            backgroundColor: '#052C49', // custom navbar color
+          },
+        },
       },
     },
     navbar: {

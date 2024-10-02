@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled, CircularProgress } from '@material-ui/core';
+import { styled, CircularProgress } from '@mui/material';
 
 const CenterBox = styled('div')({
   display: 'flex',

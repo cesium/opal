@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { withStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
+import { withStyles } from '@mui/system';
+import TextField from '@mui/material/TextField';
 import React from 'react';
 
 const styles = {

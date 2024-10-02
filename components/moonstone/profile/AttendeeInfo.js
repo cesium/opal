@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
-import { Grid, CircularProgress, Typography, Button } from '@material-ui/core';
+import { Grid, CircularProgress, Typography, Button } from '@mui/material';
 import fetch from 'isomorphic-unfetch';
-import { styled } from '@material-ui/styles';
+import { styled } from '@mui/system';
 import PropTypes from 'prop-types';
 import theme from '../../theme';
 import ModalEditNickname from './ModalEditNickname';
@@ -95,7 +95,12 @@ export default function AttendeeInfo({ data, allowEdits, handleUpdateData }) {
           />
         </>
       )}
-      <StyledGrid container justify="center" alignItems="center" spacing={5}>
+      <StyledGrid
+        container
+        justifyContent="center"
+        alignItems="center"
+        spacing={5}
+      >
         {data.avatar && data.name ? (
           <>
             <Grid item>

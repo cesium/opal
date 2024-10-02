@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, CircularProgress } from '@material-ui/core';
+import { Grid, CircularProgress } from '@mui/material';
 import PropTypes from 'prop-types';
 import theme from '../../theme';
 import { StyledGrid, StyledAvatar, StyledTypography } from './StyledComponents';
@@ -13,7 +13,12 @@ export default function CompanyInfo({ data }) {
 
   return (
     <>
-      <StyledGrid container justify="center" alignItems="center" spacing={5}>
+      <StyledGrid
+        container
+        justifyContent="center"
+        alignItems="center"
+        spacing={5}
+      >
         {avatar ? (
           <>
             <Grid item>

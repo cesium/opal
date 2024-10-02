@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Box } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, Box } from '@mui/material';
+import { styled } from '@mui/system';
 
 const StyledBox = styled(Box)({
   paddingTop: '20px',
@@ -23,7 +23,7 @@ const SponsorGridContainer = ({ children }) => (
     <StyledGrid
       container
       direction="row"
-      justify="center"
+      justifyContent="center"
       alignItems="center"
       spacing={10}
     >

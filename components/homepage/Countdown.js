@@ -1,7 +1,7 @@
 import React from 'react';
 import CountdownComponent from 'react-countdown-now';
-import { Typography, Grid } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Typography, Grid } from '@mui/material';
+import { styled } from '@mui/system';
 import PropTypes from 'prop-types';
 import theme from '../theme';
 
@@ -24,7 +24,13 @@ const UnitTypography = styled(Typography)(({ color }) => ({
 }));
 
 const Unit = ({ value, unit }) => (
-  <Grid container item direction="column" justify="center" alignItems="center">
+  <Grid
+    container
+    item
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+  >
     <Grid item>
       <NumberTypography variant="h1" color={theme.palette.text.title}>
         {value}
@@ -48,7 +54,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     <StyledGrid
       container
       direction="row"
-      justify="center"
+      justifyContent="center"
       alignItems="center"
       spacing={5}
     >

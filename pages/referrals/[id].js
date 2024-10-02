@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { Paper, styled, Grid, Typography, Button } from '@material-ui/core';
+import { Paper, styled, Grid, Typography, Button } from '@mui/material';
 import fetch from 'isomorphic-unfetch';
 import theme from '../../components/theme';
 import Layout from '../../components/Layout';

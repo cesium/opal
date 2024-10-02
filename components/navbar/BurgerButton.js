@@ -6,10 +6,10 @@ import {
   List,
   ListItem,
   ListItemText,
-  makeStyles,
   IconButton,
-} from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+} from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import { styled } from '@mui/system';
 import global from '../../data/global.json';
 import Link from '../Link';
 import theme from '../theme';
@@ -86,7 +86,7 @@ function BurgerButton() {
                 </ListItem>
               </Link>
             ))}
-            <MoonstoneOptions />
+            {/*<MoonstoneOptions />*/}
           </List>
         </div>
       </Drawer>

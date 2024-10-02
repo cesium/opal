@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Typography, Grid } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Typography, Grid } from '@mui/material';
+import { styled } from '@mui/system';
 import Underline from './Underline';
 import theme from './theme';
 
@@ -33,7 +33,12 @@ export default function Title({ text, titleColor }) {
 
   return (
     <Canvas botPadding={botPadding} topPadding={topPadding}>
-      <Grid container direction="column" justify="center" alignItems="center">
+      <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Grid item>
           <StyledTypography
             color={titleColor || theme.palette.text.title}

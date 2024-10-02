@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
-import { Typography, Avatar, Grid } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Typography, Avatar, Grid } from '@mui/material';
 import PropTypes from 'prop-types';
 import SocialIcons from './SocialIcons';
 import theme from './theme';
@@ -30,7 +30,12 @@ const Person = ({
   linkedin,
   github,
 }) => (
-  <Grid container direction="column" justify="center" alignItems="center">
+  <Grid
+    container
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+  >
     <Grid item>
       <Image src={img} />
     </Grid>
@@ -51,7 +56,7 @@ const Person = ({
       item
       container
       direction="row"
-      justify="center"
+      justifyContent="center"
       alignItems="center"
       spacing={1}
     >

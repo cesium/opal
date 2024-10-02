@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Typography, styled } from '@material-ui/core';
+import { Button, Typography, styled } from '@mui/material';
 import fetch from 'isomorphic-unfetch';
 import theme from '../components/theme';
 import Link from '../components/Link';

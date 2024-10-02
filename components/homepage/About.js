@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { styled } from '@material-ui/core/styles';
-import IconButton from '@material-ui/core/IconButton';
-import VolumeOffRoundedIcon from '@material-ui/icons/VolumeOffRounded';
-import VolumeUpRoundedIcon from '@material-ui/icons/VolumeUpRounded';
+import { styled } from '@mui/system';
+import IconButton from '@mui/material/IconButton';
+import VolumeOffRoundedIcon from '@mui/icons-material/VolumeOffRounded';
+import VolumeUpRoundedIcon from '@mui/icons-material/VolumeUpRounded';
 import PropTypes from 'prop-types';
 import ReactPlayer from 'react-player';
 

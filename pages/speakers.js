@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Box } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, Box } from '@mui/material';
+import { styled } from '@mui/system';
 import TopSection from '../components/TopSection';
 import Layout from '../components/Layout';
 import Speaker from '../components/Speaker';
@@ -22,7 +22,7 @@ const Speakers = () => (
       pageTitle
     />
     <StyledBox>
-      <Grid container direction="row" justify="center" spacing={8}>
+      <Grid container direction="row" justifyContent="center" spacing={8}>
         {speakers.map((sp) => (
           <Grid item>
             <Speaker

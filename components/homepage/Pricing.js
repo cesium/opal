@@ -9,8 +9,8 @@ import {
   Typography,
   Container,
   Box,
-} from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+} from '@mui/material';
+import { styled } from '@mui/system';
 import PropTypes from 'prop-types';
 import Link from '../Link';
 import TopSection from '../TopSection';
@@ -86,7 +86,7 @@ function Pricing({ tiers }) {
         <Grid
           container
           direction="row"
-          justify="center"
+          justifyContent="center"
           alignItems="stretch"
           spacing={5}
         >

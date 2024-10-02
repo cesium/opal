@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, CircularProgress } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, CircularProgress } from '@mui/material';
+import { styled } from '@mui/system';
 import PropTypes from 'prop-types';
 import Badge from '../Badge';
 import Title from '../../Title';
@@ -26,7 +26,7 @@ export default function Badges({ sectionTitle, data }) {
   return (
     <StyledGrid
       container
-      justify="center"
+      justifyContent="center"
       alignItems="flexitem-start"
       spacing={5}
     >

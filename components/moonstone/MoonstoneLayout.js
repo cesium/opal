@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Box, Button, AppBar, Toolbar } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, Box, Button, AppBar, Toolbar } from '@mui/material';
+import { styled } from '@mui/system';
 import PropTypes from 'prop-types';
 import Router from 'next/router';
 import Layout from '../Layout';
@@ -52,7 +52,7 @@ export default function MoonstoneLayout({
       {showMenu && (
         <AppBar color="default" position="relative">
           <StyledToolbar>
-            <Grid container justify="center" alignItems="center">
+            <Grid container justifyContent="center" alignItems="center">
               <Grid item>
                 <Link href="/profile">
                   <Entry color="primary">Perfil</Entry>

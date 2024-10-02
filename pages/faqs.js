@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Box, Button } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, Box, Button } from '@mui/material';
+import { styled } from '@mui/system';
 import TopSection from '../components/TopSection';
 import Layout from '../components/Layout';
 import FAQ from '../components/FAQ';
@@ -28,13 +28,14 @@ const FAQs = () => (
       pageTitle
       contentUnderneath
     >
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Grid item>
           <Link href="/docs/survival-guide.pdf">
             <StyledButton
               variant="contained"
               size="large"
-              color={theme.palette.text.title}
+              color="secondary"
+              style={{ background: 'white' }}
             >
               Survival Guide
             </StyledButton>
@@ -46,7 +47,7 @@ const FAQs = () => (
       <Grid
         container
         direction="column"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         spacing={3}
       >

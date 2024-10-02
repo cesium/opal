@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/styles';
-import Box from '@material-ui/core/Box';
+import { styled } from '@mui/system';
+import Box from '@mui/material/Box';
 import Footer from './Footer';
 import NavBar from './navbar/NavBar';
 import { social } from '../data/global.json';

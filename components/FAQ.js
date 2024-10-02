@@ -1,37 +1,39 @@
 import React from 'react';
 import {
   Typography,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
-} from '@material-ui/core';
-import { ExpandMore } from '@material-ui/icons';
-import { styled } from '@material-ui/styles';
+  Accordion, // Use Accordion instead of ExpansionPanel
+  AccordionSummary, // Use AccordionSummary instead of ExpansionPanelSummary
+  AccordionDetails, // Use AccordionDetails instead of ExpansionPanelDetails
+} from '@mui/material';
+import { ExpandMore } from '@mui/icons-material';
+import { styled } from '@mui/material/styles'; // Import styled from MUI styles
 import PropTypes from 'prop-types';
 import theme from './theme';
 
-const Summary = styled(ExpansionPanelSummary)({
+// Styled components
+const Summary = styled(AccordionSummary)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
-});
+}));
 
-const Details = styled(ExpansionPanelDetails)({
+const Details = styled(AccordionDetails)(({ theme }) => ({
   backgroundColor: theme.palette.primary.light,
   paddingTop: '1rem',
-});
+}));
 
-const Text = styled(Typography)({
+const Text = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.title,
-});
+}));
 
-const ColoredExpandMore = styled(ExpandMore)({
+const ColoredExpandMore = styled(ExpandMore)(({ theme }) => ({
   color: theme.palette.text.title,
-});
+}));
 
-const Panel = styled(ExpansionPanel)({
+const Panel = styled(Accordion)({
   width: 600,
   maxWidth: '85vw',
 });
 
+// FAQ component
 const FAQ = ({ question, answer }) => (
   <Panel>
     <Summary expandIcon={<ColoredExpandMore />}>
@@ -43,6 +45,7 @@ const FAQ = ({ question, answer }) => (
   </Panel>
 );
 
+// PropTypes for FAQ
 FAQ.propTypes = {
   question: PropTypes.string.isRequired,
   answer: PropTypes.string.isRequired,

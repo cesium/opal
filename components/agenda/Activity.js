@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import { Box } from '@mui/material';
+import { styled } from '@mui/system';
 import { Link } from 'react-scroll';
 import slugify from 'react-slugify';
 import Speakers from './Speakers';

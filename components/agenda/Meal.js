@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Typography, Grid } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import { Box, Typography, Grid } from '@mui/material';
+import { styled } from '@mui/system';
 
 const StyledBox = styled(Box)({
   width: '100%',

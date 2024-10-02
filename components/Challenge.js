@@ -1,7 +1,7 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
-import { Paper, Typography, Grid, Button } from '@material-ui/core';
-import { EmojiEvents } from '@material-ui/icons';
+import { styled } from '@mui/system';
+import { Paper, Typography, Grid, Button } from '@mui/material';
+import { EmojiEvents } from '@mui/icons-material';
 import PropTypes from 'prop-types';
 import Underline from './Underline';
 import Link from './Link';
@@ -23,7 +23,7 @@ const Prize = ({ condition, desc }) => (
     <Grid
       container
       direction="column"
-      justify="center"
+      justifyContent="center"
       alignItems="center"
       spacing={0}
     >
@@ -78,7 +78,7 @@ const Challenge = ({ title, desc, prizes, signup }) => (
     <Grid
       container
       direction="row"
-      justify="center"
+      justifyContent="center"
       alignItems="stretch"
       spacing={3}
     >
@@ -89,7 +89,7 @@ const Challenge = ({ title, desc, prizes, signup }) => (
       ))}
     </Grid>
     {signup ? (
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Grid item>
           <Link href={signup}>
             <SignupButton variant="contained" size="large">

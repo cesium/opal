@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, TextField, Typography } from '@material-ui/core';
+import { Button, TextField, Typography } from '@mui/material';
 import fetch from 'isomorphic-unfetch';
 import { useRouter } from 'next/router';
 import Layout from '../components/Layout';

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, withWidth } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import { Grid, useMediaQuery, useTheme } from '@mui/material';
+import { styled } from '@mui/system';
 import DetailedActivity from './DetailedActivity';
 import Date from './Date';
 import theme from '../theme';
@@ -9,6 +9,7 @@ import theme from '../theme';
 const StyledGrid = styled(Grid)({
   paddingBottom: '2rem',
   paddingTop: '2rem',
+  backgroundColor: '#031e33',
 });
 
 const activitySpeakers = (activity) => {
@@ -20,15 +21,17 @@ const activitySpeakers = (activity) => {
   return speakers;
 };
 
-function ActivitiesInfo({ day, activities, width }) {
-  const mobile = width === 'xs' || width === 'sm';
-  const multineDate = width === 'xs';
+function ActivitiesInfo({ day, activities }) {
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('sm')); // Check if screen is small or extra small
+  const multineDate = useMediaQuery(theme.breakpoints.only('xs')); // Check if screen is exactly extra small
+
   return (
     <StyledGrid
       item
       container
       direction="column"
-      justify="center"
+      justifyContent="center"
       spacing={4}
       wrap="nowrap"
       xs={12}
@@ -43,10 +46,10 @@ function ActivitiesInfo({ day, activities, width }) {
           multiline={multineDate}
         />
       </Grid>
-      {activities.map((activity) => {
+      {activities.map((activity, index) => {
         const speakers = activitySpeakers(activity);
         return (
-          <Grid item xs={12}>
+          <Grid item xs={12} key={index} style={{ alignSelf: 'center' }}>
             <DetailedActivity
               name={activity.name}
               place={activity.place}
@@ -70,7 +73,6 @@ function ActivitiesInfo({ day, activities, width }) {
 ActivitiesInfo.propTypes = {
   day: PropTypes.string.isRequired,
   activities: PropTypes.array.isRequired,
-  width: PropTypes.string,
 };
 
-export default withWidth()(ActivitiesInfo);
+export default ActivitiesInfo;

@@ -1,7 +1,7 @@
 import React from 'react';
-import { styled } from '@material-ui/styles';
+import { styled } from '@mui/system';
 import PropTypes from 'prop-types';
-import { Grid } from '@material-ui/core';
+import { Grid } from '@mui/material';
 import theme from './theme';
 
 const CircleUnderline = styled('div')(({ diameter, thickness, color }) => ({
@@ -33,7 +33,13 @@ const DashRight = styled(Dash)({
 });
 
 const Underline = ({ thickness, length, diameter, color }) => (
-  <Grid item container direction="row" justify="center" alignItems="center">
+  <Grid
+    item
+    container
+    direction="row"
+    justifyContent="center"
+    alignItems="center"
+  >
     <Grid item>
       <DashLeft
         thickness={thickness}

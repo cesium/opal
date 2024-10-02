@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Typography } from '@mui/material';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import Document from '../components/Document';

@@ -1,9 +1,9 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 import Slider from 'react-slick';
 import PropTypes from 'prop-types';
-import { Grid } from '@material-ui/core';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Grid } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import TopSection from '../TopSection';
 import theme from '../theme';
 import Link from '../Link';
@@ -32,7 +32,7 @@ function Partners({ title, data, color, backgroundImage }) {
       <PaddedGrid
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
       >
         <Grid item xs={10} md={6} lg={4}>

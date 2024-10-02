@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-import {
-  Grid,
-  Typography,
-  TextField,
-  Button,
-  withWidth,
-} from '@material-ui/core';
+import { Grid, Typography, TextField, Button, withWidth } from '@mui/material';
 import fetch from 'isomorphic-unfetch';
 // import Router from 'next/router';
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 import PropTypes from 'prop-types';
 import MoonstoneLayout from '../components/moonstone/MoonstoneLayout';
 import Badge from '../components/moonstone/Badge';
@@ -123,7 +117,7 @@ class BadgeDex extends Component {
       <StyledGrid
         container
         direction="column"
-        justify="center"
+        justifyContent="center"
         alignItems="stretch"
         spacing={2}
         xs={10}
@@ -137,7 +131,13 @@ class BadgeDex extends Component {
             onChange={(e) => this.handleSearchBarInput(e.target.value)}
           />
         </Grid>
-        <Grid container item spacing={1} justify="center" alignItems="center">
+        <Grid
+          container
+          item
+          spacing={1}
+          justifyContent="center"
+          alignItems="center"
+        >
           {badgeTypes.map((badgeType) => (
             <Grid item>
               <this.FilterButton
@@ -305,7 +305,7 @@ class BadgeDex extends Component {
               <BadgesGrid
                 container
                 direction="row"
-                justify="center"
+                justifyContent="center"
                 alignItems="flex-start"
                 spacing={largeScreen ? 4 : 1}
               >
@@ -325,7 +325,7 @@ class BadgeDex extends Component {
             <Grid
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
             >
               <Grid item>

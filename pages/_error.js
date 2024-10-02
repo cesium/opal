@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { styled, Typography, Button } from '@material-ui/core';
+import { styled, Typography, Button } from '@mui/material';
 import Link from '../components/Link';
 
 const CenterBox = styled('div')({

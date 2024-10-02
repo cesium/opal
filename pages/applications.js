@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/core/styles';
-import { Grid, Button, Typography } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Grid, Button, Typography } from '@mui/material';
 import Link from '../components/Link';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
@@ -72,7 +72,7 @@ const Applications = () => (
         das candidaturas.
       </Text>
 
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Attachment
           text="Ver Regulamento"
           url="/docs/regulamento-candidaturas.pdf"

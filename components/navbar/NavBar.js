@@ -10,7 +10,7 @@ import {
   Avatar,
   Grid,
   useMediaQuery,
-} from '@material-ui/core';
+} from '@mui/material';
 import { useRouter } from 'next/router';
 import global from '../../data/global.json';
 import BurgerButton from './BurgerButton';
@@ -88,11 +88,11 @@ export default function ButtonAppBar() {
             <Grid
               container
               direction="row-reverse"
-              justify="flex-start"
+              justifyContent="flex-start"
               alignItems="center"
               spacing={2}
             >
-              <MoonstoneOptions />
+              {/*<MoonstoneOptions />*/}
               {global.navbar.pages
                 .map((page) => (
                   <Grid item key={page.name}>
@@ -107,7 +107,7 @@ export default function ButtonAppBar() {
             <Grid
               container
               direction="row"
-              justify="flex-end"
+              justifyContent="flex-end"
               alignItems="center"
               spacing={2}
             >

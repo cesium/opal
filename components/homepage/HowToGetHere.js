@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 import {
   Grid,
   IconButton,
@@ -7,14 +7,14 @@ import {
   CardContent,
   Typography,
   Collapse,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   Train,
   DriveEta,
   AirplanemodeActive,
   DirectionsBus,
   ExpandMore,
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import PropTypes from 'prop-types';
 import theme from '../theme';
 import TopSection from '../TopSection';
@@ -72,7 +72,7 @@ function Mean({ title, desc }) {
       <MeanHeader
         container
         direction="row"
-        justify="flex-start"
+        justifyContent="flex-start"
         alignItems="center"
       >
         <Grid item xs={2}>
@@ -101,7 +101,7 @@ function Mean({ title, desc }) {
 
 const HowToGetHere = ({ location, means, color }) => (
   <TopSection text={location} color={color} title>
-    <PaddedGrid container direction="row" justify="center" spacing={8}>
+    <PaddedGrid container direction="row" justifyContent="center" spacing={8}>
       {means.map((mean) => (
         <Grid item>
           <Mean title={mean.title} desc={mean.description} />

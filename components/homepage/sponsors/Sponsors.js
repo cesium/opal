@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/styles';
-import { Skeleton } from '@material-ui/lab';
+import { styled } from '@mui/system';
+import { Skeleton } from '@mui/material';
 import Link from '../../Link';
 import TopSection from '../../TopSection';
 import { SponsorGridContainer, SponsorGridItem } from './SponsorsGrid';

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/core/styles';
-import { Grid, AppBar, Typography, Box } from '@material-ui/core/';
-import Favorite from '@material-ui/icons/Favorite';
-import CopyrightIcon from '@material-ui/icons/Copyright';
+import { styled } from '@mui/system';
+import { Grid, AppBar, Typography, Box } from '@mui/material/';
+import Favorite from '@mui/icons-material/Favorite';
+import CopyrightIcon from '@mui/icons-material/Copyright';
 import SocialIcons from './SocialIcons';
 import Link from './Link';
 import theme from './theme';
@@ -58,7 +58,7 @@ const Footer = ({
   iconColor,
 }) => (
   <StyledAppBar color={backgroundColor || 'primary'} position="relative">
-    <Grid container justify="center" alignItems="center">
+    <Grid container justifyContent="center" alignItems="center">
       <Grid item xs={11} lg={4}>
         <Copyright />
       </Grid>

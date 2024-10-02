@@ -4,17 +4,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { useRouter } from 'next/router';
-import NextLink from 'next/link';
-import MuiLink from '@material-ui/core/Link';
+import MuiLink from '@mui/material/Link';
+import Link from 'next/link';
 
 const NextComposed = React.forwardRef(function NextComposed(props, ref) {
   const { as, href, prefetch, ...other } = props;
 
-  return (
-    <NextLink href={href} prefetch={prefetch} as={as}>
-      <a ref={ref} {...other} />
-    </NextLink>
-  );
+  return <Link href={href} prefetch={prefetch} as={as} ref={ref} {...other} />;
 });
 
 NextComposed.propTypes = {
@@ -25,7 +21,7 @@ NextComposed.propTypes = {
 
 // A styled version of the Next.js Link component:
 // https://nextjs.org/docs/#with-link
-function Link(props) {
+function InternalLink(props) {
   const {
     activeClassName = 'active',
     className: classNameProps,
@@ -54,7 +50,7 @@ function Link(props) {
   );
 }
 
-Link.propTypes = {
+InternalLink.propTypes = {
   activeClassName: PropTypes.string,
   as: PropTypes.string,
   className: PropTypes.string,
@@ -66,5 +62,5 @@ Link.propTypes = {
 };
 
 export default React.forwardRef((props, ref) => (
-  <Link {...props} innerRef={ref} />
+  <InternalLink {...props} innerRef={ref} />
 ));

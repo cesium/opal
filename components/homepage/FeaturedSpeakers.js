@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
-import { Grid, Button } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Grid, Button } from '@mui/material';
 import PropTypes from 'prop-types';
 import Person from '../Person';
 import Link from '../Link';
@@ -32,7 +32,7 @@ export default function FeaturedSpeakers({
       <StyledGrid
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="flexitem-start"
         spacing={10}
       >
@@ -50,7 +50,7 @@ export default function FeaturedSpeakers({
           </Grid>
         ))}
       </StyledGrid>
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Grid item>
           <Link href="/speakers">
             <StyledButton variant="contained" color="secondary" size="large">

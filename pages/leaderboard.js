@@ -8,8 +8,8 @@ import {
   withWidth,
   Button,
   ButtonGroup,
-} from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+} from '@mui/material';
+import { styled } from '@mui/system';
 import fetch from 'isomorphic-unfetch';
 import Slider from 'react-slick';
 import PropTypes from 'prop-types';
@@ -137,7 +137,7 @@ function StyledDownArrow(props) {
 
 const TableHeader = () => {
   return (
-    <Grid container justify="flex-start" alignItems="center" xs={12}>
+    <Grid container justifyContent="flex-start" alignItems="center" xs={12}>
       <Grid item xs>
         <StyledTypography
           color={theme.palette.primary.main}
@@ -408,7 +408,7 @@ class Leaderboard extends Component {
             <StyledGrid
               container
               direction="column"
-              justify="center"
+              justifyContent="center"
               align="center"
               xs={9}
               sm={7}
@@ -466,7 +466,7 @@ class Leaderboard extends Component {
             <Grid
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
             >
               <Grid item>

@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Grid,
-  Typography,
-  styled,
-  Box,
-  CircularProgress,
-} from '@material-ui/core';
+import { Grid, Typography, styled, Box, CircularProgress } from '@mui/material';
 import PropTypes from 'prop-types';
 import theme from '../theme';
 
@@ -52,7 +46,7 @@ export function FormGrid({
         <Grid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignContent
           alignItems="stretch"
           spacing={2}
@@ -62,7 +56,7 @@ export function FormGrid({
         <Grid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={4}
         >

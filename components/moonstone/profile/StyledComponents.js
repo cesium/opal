@@ -1,5 +1,5 @@
-import { Grid, Avatar, Typography } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, Avatar, Typography } from '@mui/material';
+import { styled } from '@mui/system';
 import theme from '../../theme';
 
 const StyledGrid = styled(Grid)({

@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
-import { Box, Paper } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Box, Paper } from '@mui/material';
 import PropTypes from 'prop-types';
 import theme from './theme';
 

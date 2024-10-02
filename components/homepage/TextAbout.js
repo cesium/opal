@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { styled } from '@material-ui/core/styles';
-import { Typography, Paper } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Typography, Paper } from '@mui/material';
 import PropTypes from 'prop-types';
 import theme from '../theme';
 import TopSection from '../TopSection';

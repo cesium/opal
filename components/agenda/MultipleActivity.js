@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Grid } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import { Box, Grid } from '@mui/material';
+import { styled } from '@mui/system';
 import Activity from './Activity';
 import MultipleTalks from './MultipleTalks';
 import ParallelTalks from './ParallelTalks';

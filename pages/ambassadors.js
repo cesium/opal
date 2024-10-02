@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Box, Button } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, Box, Button } from '@mui/material';
+import { styled } from '@mui/system';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import Person from '../components/Person';
@@ -47,7 +47,7 @@ const Ambassadors = () => (
       contentUnderneath={global.ambassadors.allowingApplications}
     >
       {global.ambassadors.allowingApplications ? (
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <Grid item>
             <Link href={global.ambassadors.applicationsLink}>
               <StyledButton variant="contained" color="white" size="large">
@@ -62,7 +62,7 @@ const Ambassadors = () => (
       <StyledGrid
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="flex-start"
         spacing={10}
       >

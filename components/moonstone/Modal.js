@@ -1,7 +1,7 @@
 import React from 'react';
-import { Paper, Modal as MUIModal } from '@material-ui/core';
+import { Paper, Modal as MUIModal } from '@mui/material';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/styles';
+import { styled } from '@mui/system';
 import theme from '../theme';
 
 const StyledModal = styled(MUIModal)({

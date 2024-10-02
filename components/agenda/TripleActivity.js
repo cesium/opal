@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import { Grid } from '@mui/material';
+import { styled } from '@mui/system';
 import Activity from './Activity';
 
 const AgendaDoubleActivity = styled(Grid)({

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Box } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Grid, Box } from '@mui/material';
+import { styled } from '@mui/system';
 import theme from '../components/theme';
 import challenges from '../data/challenges.json';
 import TopSection from '../components/TopSection';
@@ -26,7 +26,7 @@ const Challenges = () => (
       <Grid
         container
         direction="column"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         spacing={8}
       >

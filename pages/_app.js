@@ -1,7 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import App from 'next/app';
-import { ThemeProvider } from '@material-ui/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@mui/system';
+import CssBaseline from '@mui/material/CssBaseline';
 import SEO from '../components/SEO';
 import config from '../data/global.json';
 import theme from '../components/theme';
@@ -22,7 +22,7 @@ export default class MyApp extends App {
 
     return (
       <>
-      <Head>
+        <Head>
           <meta charSet="utf-8" />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta
@@ -34,7 +34,7 @@ export default class MyApp extends App {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
-      </Head>
+        </Head>
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />

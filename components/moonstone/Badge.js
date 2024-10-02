@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 import {
   Typography,
   Avatar,
@@ -9,7 +9,7 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-} from '@material-ui/core';
+} from '@mui/material';
 import PropTypes from 'prop-types';
 import Modal from './Modal';
 import theme from '../theme';
@@ -106,7 +106,7 @@ function Badge({ found, id, avatar }) {
           <Grid
             container
             direction="column"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
           >
             <Grid item>

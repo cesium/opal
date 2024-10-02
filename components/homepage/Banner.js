@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@material-ui/core/styles';
-import { Typography, Grid, Box, Hidden } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Typography, Grid, Box, Hidden } from '@mui/material';
 import PropTypes from 'prop-types';
 import theme from '../theme';
 
@@ -83,12 +83,12 @@ function Banner({ background, logo, date, location }) {
       <StyledGrid
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
       >
         <Grid item xs={9} md={7} lg={6}>
           <Logo src={logo} />
-          <Grid container direction="row" justify="space-between">
+          <Grid container direction="row" justifyContent="space-between">
             <Grid item>
               <Text>{date}</Text>
             </Grid>

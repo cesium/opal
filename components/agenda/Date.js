@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Grid } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import { Box, Grid } from '@mui/material';
+import { styled } from '@mui/system';
 import theme from '../theme';
 
 const StyledGrid = styled(Grid)({
@@ -35,7 +35,7 @@ function Date({ day, color, fontSize, multiline }) {
       direction={multiline ? 'column' : 'row'}
       spacing={multiline ? 0 : 2}
       alignItems="center"
-      justify="center"
+      justifyContent="center"
       xs={12}
     >
       <Grid item>

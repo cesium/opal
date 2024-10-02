@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link as MUILink, styled } from '@material-ui/core';
+import { Link as MUILink, styled } from '@mui/material';
 import InternalLink from './InternalLink';
 
 const StyledInternalLink = styled(InternalLink)(({ color }) => ({

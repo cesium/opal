@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes, { object } from 'prop-types';
-import { Box, withWidth } from '@material-ui/core';
-import { styled } from '@material-ui/core/styles';
+import { Box, useMediaQuery, useTheme } from '@mui/material';
+import { styled } from '@mui/system';
 import Activity from './Activity';
 import ParallelTalks from './ParallelTalks';
 import MultipleActivity from './MultipleActivity';
@@ -81,8 +81,9 @@ const ActivityType = (activity, mobile) => {
   );
 };
 
-function Day({ day, activities, width }) {
-  const mobile = width === 'md' || width === 'sm' || width === 'xs';
+function Day({ day, activities }) {
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('md')); // Check if screen size is 'md' or smaller
 
   return (
     <AgendaDay mobile={mobile}>
@@ -95,7 +96,6 @@ function Day({ day, activities, width }) {
 Day.propTypes = {
   day: PropTypes.object.isRequired,
   activities: PropTypes.arrayOf(object).isRequired,
-  width: PropTypes.string,
 };
 
-export default withWidth()(Day);
+export default Day;

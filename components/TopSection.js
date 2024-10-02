@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Paper, Typography, Grid, Box } from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import { Paper, Typography, Grid, Box } from '@mui/material';
+import { styled } from '@mui/system';
 import Underline from './Underline';
 import theme from './theme';
 
@@ -83,7 +83,7 @@ export default function TopSection({
         <TitleGrid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={2}
         >

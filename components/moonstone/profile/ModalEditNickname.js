@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button, TextField } from '@material-ui/core';
+import { Button, TextField } from '@mui/material';
 import Modal from '../Modal';
 import { FormGrid, FormItem } from '../Form';
 import { changeNickname } from '../../../utils/apiRequests';

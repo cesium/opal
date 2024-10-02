@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@material-ui/styles';
-import { Grid, Box } from '@material-ui/core';
+import { styled } from '@mui/system';
+import { Grid, Box } from '@mui/material';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import Person from '../components/Person';
@@ -36,7 +36,7 @@ const Team = () => (
           <StyledGrid
             container
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="flexitem-start"
             spacing={5}
           >

@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { Grid, withWidth } from '@material-ui/core';
+import { Grid, useMediaQuery, useTheme } from '@mui/material';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 import Layout from '../components/Layout';
 import TopSection from '../components/TopSection';
 import theme from '../components/theme';
@@ -56,9 +56,7 @@ function getActivities(agendaDay) {
 }
 
 function daysBetween(date1, date2) {
-  // The number of milliseconds in one day
   const ONE_DAY = 1000 * 60 * 60 * 24;
-
   const differenceMs = Math.abs(date1 - date2);
   return Math.round(differenceMs / ONE_DAY);
 }
@@ -66,7 +64,7 @@ function daysBetween(date1, date2) {
 const StyledGrid = styled(Grid)({
   paddingTop: '4rem',
   paddingBottom: '2rem',
-  backgroundColor: theme.palette.primary.dark,
+  backgroundColor: theme.palette.primary.main,
 });
 
 function NextArrow(props) {
@@ -81,7 +79,6 @@ function NextArrow(props) {
         zIndex: '5',
       }}
       onClick={onClick}
-      // The following atattributes are used to solve linter problems
       role="button"
       tabIndex={0}
       aria-label="Next"
@@ -102,7 +99,6 @@ function PreviousArrow(props) {
         zIndex: '5',
       }}
       onClick={onClick}
-      // The following atattributes are used to solve linter problems
       role="button"
       tabIndex={0}
       aria-label="Previous"
@@ -111,8 +107,9 @@ function PreviousArrow(props) {
   );
 }
 
-function Agenda({ width }) {
-  const mobile = width === 'xs';
+function Agenda() {
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('sm'));
   const startDate = new Date(global.event.startingDate);
   const endDate = new Date(global.event.endingDate);
   const currentDate = new Date();
@@ -131,7 +128,7 @@ function Agenda({ width }) {
         pageTitle
       />
       <TopSection color={theme.palette.secondary.main}>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={10} md={8} xl={8}>
             <Slider
               speed={500}
@@ -141,8 +138,12 @@ function Agenda({ width }) {
               nextArrow={<NextArrow mobile={mobile} />}
               prevArrow={<PreviousArrow mobile={mobile} />}
             >
-              {agenda.map((agendaDay) => (
-                <Day day={agendaDay.day} activities={agendaDay.activities} />
+              {agenda.map((agendaDay, index) => (
+                <Day
+                  key={index}
+                  day={agendaDay.day}
+                  activities={agendaDay.activities}
+                />
               ))}
             </Slider>
           </Grid>
@@ -151,11 +152,12 @@ function Agenda({ width }) {
       <StyledGrid
         container
         direction="column"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
       >
-        {agenda.map((agendaDay) => (
+        {agenda.map((agendaDay, index) => (
           <ActivitiesInfo
+            key={index}
             day={agendaDay.day}
             activities={getActivities(agendaDay)}
           />
@@ -183,4 +185,4 @@ NextArrow.propTypes = {
   mobile: PropTypes.bool,
 };
 
-export default withWidth()(Agenda);
+export default Agenda;
